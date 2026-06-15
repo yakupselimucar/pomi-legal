@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gizlilik Politikası — Pomi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --cream: #FBF4E4;
+      --paper: #FFFFFF;
+      --cherry: #FF5B6E;
+      --mint: #2FB99B;
+      --sky: #4FA3E3;
+      --grape: #9B6DD6;
+      --sun: #FFC23D;
+      --peach: #F58E6F;
+      --ink: #27223D;
+      --ink-soft: #8B83A6;
+      --ink-line: rgba(39, 34, 61, 0.1);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--cream);
+      background-image:
+        radial-gradient(var(--ink-line) 1px, transparent 1px);
+      background-size: 24px 24px;
+      color: var(--ink);
+      font-family: 'DM Sans', sans-serif;
+      line-height: 1.65;
+      padding: 2.5rem 1rem 4rem;
+      -webkit-font-smoothing: antialiased;
+    }
+    .container { max-width: 680px; margin: 0 auto; }
+
+    header { text-align: center; margin-bottom: 2.5rem; }
+    .badge {
+      display: inline-block;
+      background: var(--paper);
+      border: 3px solid var(--ink);
+      border-radius: 18px;
+      padding: 1rem 1.5rem;
+      box-shadow: 5px 5px 0 var(--ink);
+      transform: rotate(-1.5deg);
+    }
+    .badge .tomato { font-size: 2.75rem; line-height: 1; }
+    .badge .name {
+      font-family: 'Pixelify Sans', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      margin-top: 0.25rem;
+    }
+    h1 {
+      font-family: 'Pixelify Sans', sans-serif;
+      font-size: 2.4rem;
+      font-weight: 700;
+      margin-top: 1.75rem;
+      letter-spacing: 0.5px;
+    }
+    .updated {
+      display: inline-block;
+      margin-top: 0.5rem;
+      background: var(--sun);
+      border: 2px solid var(--ink);
+      border-radius: 999px;
+      padding: 0.2rem 0.85rem;
+      font-size: 0.8rem;
+      font-weight: 700;
+      box-shadow: 2px 2px 0 var(--ink);
+    }
+
+    section {
+      background: var(--paper);
+      border: 3px solid var(--ink);
+      border-radius: 18px;
+      padding: 1.5rem 1.6rem;
+      margin-bottom: 1.4rem;
+      box-shadow: 5px 5px 0 var(--ink);
+    }
+    .num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 34px; height: 34px;
+      border: 2px solid var(--ink);
+      border-radius: 10px;
+      font-family: 'Pixelify Sans', sans-serif;
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: var(--paper);
+      margin-right: 0.7rem;
+      box-shadow: 2px 2px 0 var(--ink);
+      flex-shrink: 0;
+    }
+    section:nth-of-type(7n+1) .num { background: var(--cherry); }
+    section:nth-of-type(7n+2) .num { background: var(--mint); }
+    section:nth-of-type(7n+3) .num { background: var(--sky); }
+    section:nth-of-type(7n+4) .num { background: var(--grape); }
+    section:nth-of-type(7n+5) .num { background: var(--peach); }
+    section:nth-of-type(7n+6) .num { background: var(--sun); color: var(--ink); }
+    section:nth-of-type(7n+7) .num { background: var(--cherry); }
+
+    h2 {
+      display: flex;
+      align-items: center;
+      font-family: 'Pixelify Sans', sans-serif;
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 0.85rem;
+    }
+    p, li { font-size: 0.97rem; color: var(--ink); }
+    p + p { margin-top: 0.6rem; }
+    ul { padding-left: 0; list-style: none; margin-top: 0.6rem; }
+    li {
+      position: relative;
+      padding-left: 1.6rem;
+      margin-bottom: 0.5rem;
+    }
+    li::before {
+      content: '';
+      position: absolute;
+      left: 0; top: 0.55em;
+      width: 8px; height: 8px;
+      background: var(--mint);
+      border: 1.5px solid var(--ink);
+    }
+    strong { font-weight: 700; }
+    a {
+      color: var(--ink);
+      text-decoration: none;
+      font-weight: 700;
+      background: linear-gradient(var(--sun), var(--sun)) bottom / 100% 35% no-repeat;
+      padding: 0 2px;
+    }
+    a:hover { background-size: 100% 100%; }
+
+    footer { text-align: center; color: var(--ink-soft); font-size: 0.85rem; margin-top: 2.5rem; }
+    footer .links { margin-top: 0.6rem; }
+    footer a { color: var(--ink); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="badge">
+        <div class="tomato">🍅</div>
+        <div class="name">POMI</div>
+      </div>
+      <h1>Gizlilik Politikası</h1>
+      <div class="updated">Son güncelleme · 14 Haziran 2026</div>
+    </header>
+
+    <section>
+      <h2><span class="num">1</span>Toplanan Bilgiler</h2>
+      <p>Pomi aşağıdaki bilgileri toplayabilir:</p>
+      <ul>
+        <li>Hesap oluşturma için e-posta adresi (isteğe bağlı)</li>
+        <li>Apple veya Google ile oturum açma bilgileri (OAuth)</li>
+        <li>Uygulama içi ilerleme verileri (pomodoro sayısı, bahçe durumu)</li>
+        <li>Satın alım doğrulama verileri (App Store aracılığıyla)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2><span class="num">2</span>Bilgilerin Kullanımı</h2>
+      <p>Toplanan bilgiler yalnızca şu amaçlarla kullanılır:</p>
+      <ul>
+        <li>Hesabınızı oluşturmak ve yönetmek</li>
+        <li>İlerlemenizi cihazlar arasında senkronize etmek</li>
+        <li>Pro aboneliğinizi doğrulamak</li>
+        <li>Uygulama performansını iyileştirmek</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2><span class="num">3</span>Veri Paylaşımı</h2>
+      <p>Kişisel verileriniz üçüncü taraflarla <strong>satılmaz veya kiralanmaz</strong>. Yalnızca şu hizmet sağlayıcılarla paylaşılır:</p>
+      <ul>
+        <li><strong>Supabase</strong> — güvenli veri depolama ve kimlik doğrulama</li>
+        <li><strong>Apple App Store</strong> — satın alım işlemleri</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2><span class="num">4</span>Veri Güvenliği</h2>
+      <p>Tüm veriler şifrelenmiş bağlantılar (HTTPS/TLS) üzerinden iletilir ve güvenli sunucularda saklanır. Şifreleriniz hiçbir zaman düz metin olarak tutulmaz.</p>
+    </section>
+
+    <section>
+      <h2><span class="num">5</span>Çocukların Gizliliği</h2>
+      <p>Pomi, 13 yaş altı kullanıcılardan bilerek kişisel veri toplamaz. Bu tür bir durum fark edilirse ilgili veriler derhal silinir.</p>
+    </section>
+
+    <section>
+      <h2><span class="num">6</span>Haklarınız</h2>
+      <p>Hesabınızı ve verilerinizi istediğiniz zaman uygulama ayarlarından silebilirsiniz. Ek talepler için aşağıdaki adresten iletişime geçebilirsiniz.</p>
+    </section>
+
+    <section>
+      <h2><span class="num">7</span>İletişim</h2>
+      <p>Sorularınız için: <a href="mailto:yakupselimucar@hotmail.com">yakupselimucar@hotmail.com</a></p>
+    </section>
+
+    <footer>
+      <p>© 2026 Pomi — Tüm hakları saklıdır.</p>
+      <div class="links"><a href="terms.html">Kullanım Şartları →</a></div>
+    </footer>
+  </div>
+</body>
+</html>

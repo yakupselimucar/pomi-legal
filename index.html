@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pomi — Yasal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --cream: #FBF4E4; --paper: #FFFFFF; --cherry: #FF5B6E; --mint: #2FB99B;
+      --sky: #4FA3E3; --grape: #9B6DD6; --sun: #FFC23D; --peach: #F58E6F;
+      --ink: #27223D; --ink-soft: #8B83A6; --ink-line: rgba(39, 34, 61, 0.1);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--cream);
+      background-image: radial-gradient(var(--ink-line) 1px, transparent 1px);
+      background-size: 24px 24px;
+      color: var(--ink);
+      font-family: 'DM Sans', sans-serif;
+      min-height: 100vh;
+      display: flex; align-items: center; justify-content: center;
+      padding: 2rem 1rem;
+      -webkit-font-smoothing: antialiased;
+    }
+    .wrap { max-width: 440px; width: 100%; text-align: center; }
+    .badge {
+      display: inline-block; background: var(--paper);
+      border: 3px solid var(--ink); border-radius: 20px;
+      padding: 1.25rem 1.75rem; box-shadow: 6px 6px 0 var(--ink);
+      transform: rotate(-1.5deg); margin-bottom: 2rem;
+    }
+    .badge .tomato { font-size: 3.25rem; line-height: 1; }
+    .badge .name {
+      font-family: 'Pixelify Sans', sans-serif; font-size: 1.75rem;
+      font-weight: 700; letter-spacing: 1px; margin-top: 0.35rem;
+    }
+    .tagline { color: var(--ink-soft); font-weight: 500; margin-bottom: 2rem; }
+    .links { display: flex; flex-direction: column; gap: 1rem; }
+    a.card {
+      display: flex; align-items: center; gap: 0.85rem;
+      background: var(--paper); border: 3px solid var(--ink);
+      border-radius: 16px; padding: 1.1rem 1.3rem;
+      box-shadow: 5px 5px 0 var(--ink); text-decoration: none;
+      color: var(--ink); font-weight: 700; font-size: 1.05rem;
+      transition: transform 0.08s ease, box-shadow 0.08s ease;
+    }
+    a.card:hover { transform: translate(2px, 2px); box-shadow: 3px 3px 0 var(--ink); }
+    a.card .ic {
+      width: 40px; height: 40px; flex-shrink: 0;
+      display: inline-flex; align-items: center; justify-content: center;
+      border: 2px solid var(--ink); border-radius: 11px;
+      box-shadow: 2px 2px 0 var(--ink); color: var(--paper);
+      font-family: 'Pixelify Sans', sans-serif; font-size: 1.3rem;
+    }
+    a.card:nth-child(1) .ic { background: var(--grape); }
+    a.card:nth-child(2) .ic { background: var(--mint); }
+    a.card .arrow { margin-left: auto; color: var(--ink-soft); }
+    footer { margin-top: 2.5rem; color: var(--ink-soft); font-size: 0.82rem; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="badge">
+      <div class="tomato">🍅</div>
+      <div class="name">POMI</div>
+    </div>
+    <p class="tagline">Yasal belgeler</p>
+    <div class="links">
+      <a class="card" href="privacy.html">
+        <span class="ic">🔒</span> Gizlilik Politikası <span class="arrow">→</span>
+      </a>
+      <a class="card" href="terms.html">
+        <span class="ic">📄</span> Kullanım Şartları <span class="arrow">→</span>
+      </a>
+    </div>
+    <footer>© 2026 Pomi — Tüm hakları saklıdır.</footer>
+  </div>
+</body>
+</html>
