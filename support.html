@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Destek — Pomi</title>
+  <title data-i18n-key="support-title">Destek — Pomi</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet" />
@@ -24,6 +24,18 @@
       padding: 2.5rem 1rem 4rem;
       -webkit-font-smoothing: antialiased;
     }
+    .lang-selector {
+      position: fixed; top: 1.5rem; right: 1.5rem;
+      display: flex; gap: 0.5rem; z-index: 1000;
+    }
+    .lang-btn {
+      background: var(--paper); border: 2px solid var(--ink);
+      border-radius: 8px; padding: 0.5rem 1rem; cursor: pointer;
+      font-weight: 600; font-size: 0.9rem; transition: all 0.2s ease;
+      color: var(--ink); box-shadow: 3px 3px 0 var(--ink);
+    }
+    .lang-btn.active { background: var(--ink); color: var(--paper); }
+    .lang-btn:hover { transform: translate(1px, 1px); box-shadow: 2px 2px 0 var(--ink); }
     .container { max-width: 680px; margin: 0 auto; }
 
     header { text-align: center; margin-bottom: 2.5rem; }
@@ -102,53 +114,129 @@
   </style>
 </head>
 <body>
+  <div class="lang-selector">
+    <button class="lang-btn active" data-lang="tr">TR</button>
+    <button class="lang-btn" data-lang="en">EN</button>
+  </div>
+
   <div class="container">
     <header>
       <div class="badge">
         <div class="tomato">🍅</div>
         <div class="name">POMI</div>
       </div>
-      <h1>Destek</h1>
-      <div class="updated">Yardıma mı ihtiyacın var?</div>
+      <h1 data-i18n-key="support-heading">Destek</h1>
+      <div class="updated" data-i18n-key="support-subheading">Yardıma mı ihtiyacın var?</div>
     </header>
 
     <div class="contact">
-      <p class="lead">Her türlü soru, öneri ve sorun için bize yazabilirsin. Genellikle 48 saat içinde yanıt veriyoruz.</p>
+      <p class="lead" data-i18n-key="support-lead">Her türlü soru, öneri ve sorun için bize yazabilirsin. Genellikle 48 saat içinde yanıt veriyoruz.</p>
       <a class="mail-btn" href="mailto:yakupselimucar@hotmail.com?subject=Pomi%20Destek">✉️ yakupselimucar@hotmail.com</a>
     </div>
 
     <section>
-      <h2><span class="num">1</span>Aboneliğimi nasıl iptal ederim?</h2>
-      <p>iPhone'unda <strong>Ayarlar → [Adın] → Abonelikler</strong> yolunu izle, Pomi'yi seç ve aboneliği iptal et. İptal, mevcut dönemin sonunda geçerli olur.</p>
+      <h2><span class="num">1</span><span data-i18n-key="support-s1-title">Aboneliğimi nasıl iptal ederim?</span></h2>
+      <p data-i18n-key="support-s1-content">iPhone'unda <strong>Ayarlar → [Adın] → Abonelikler</strong> yolunu izle, Pomi'yi seç ve aboneliği iptal et. İptal, mevcut dönemin sonunda geçerli olur.</p>
     </section>
 
     <section>
-      <h2><span class="num">2</span>Satın alımımı geri yükleyemiyorum</h2>
-      <p>Paywall ekranındaki <strong>"Satın Alımları Geri Yükle"</strong> butonuna dokun. Aynı Apple ID ile giriş yaptığından emin ol. Sorun sürerse bize e-posta gönder.</p>
+      <h2><span class="num">2</span><span data-i18n-key="support-s2-title">Satın alımımı geri yükleyemiyorum</span></h2>
+      <p data-i18n-key="support-s2-content">Paywall ekranındaki <strong>"Satın Alımları Geri Yükle"</strong> butonuna dokun. Aynı Apple ID ile giriş yaptığından emin ol. Sorun sürerse bize e-posta gönder.</p>
     </section>
 
     <section>
-      <h2><span class="num">3</span>İlerlemem kayboldu</h2>
-      <p>İlerlemen hesabına bağlıdır. Aynı e-posta, Apple veya Google hesabıyla tekrar giriş yaptığında bahçen ve istatistiklerin geri gelir.</p>
+      <h2><span class="num">3</span><span data-i18n-key="support-s3-title">İlerlemem kayboldu</span></h2>
+      <p data-i18n-key="support-s3-content">İlerlemen hesabına bağlıdır. Aynı e-posta, Apple veya Google hesabıyla tekrar giriş yaptığında bahçen ve istatistiklerin geri gelir.</p>
     </section>
 
     <section>
-      <h2><span class="num">4</span>İade talebi</h2>
-      <p>İadeler Apple üzerinden yönetilir. <a href="https://reportaproblem.apple.com" target="_blank">reportaproblem.apple.com</a> adresinden talep oluşturabilirsin.</p>
+      <h2><span class="num">4</span><span data-i18n-key="support-s4-title">İade talebi</span></h2>
+      <p data-i18n-key="support-s4-content">İadeler Apple üzerinden yönetilir. <a href="https://reportaproblem.apple.com" target="_blank">reportaproblem.apple.com</a> adresinden talep oluşturabilirsin.</p>
     </section>
 
     <section>
-      <h2><span class="num">5</span>Hesabımı silmek istiyorum</h2>
-      <p>Uygulama içi ayarlardan hesabını ve tüm verilerini silebilirsin. Yardım gerekirse yukarıdaki e-postadan bize ulaş.</p>
+      <h2><span class="num">5</span><span data-i18n-key="support-s5-title">Hesabımı silmek istiyorum</span></h2>
+      <p data-i18n-key="support-s5-content">Uygulama içi ayarlardan hesabını ve tüm verilerini silebilirsin. Yardım gerekirse yukarıdaki e-postadan bize ulaş.</p>
     </section>
 
     <footer>
-      <p>© 2026 Pomi — Tüm hakları saklıdır.</p>
+      <p data-i18n-key="copyright">© 2026 Pomi — Tüm hakları saklıdır.</p>
       <div class="links">
-        <a href="privacy.html">Gizlilik</a>
-        <a href="terms.html">Şartlar</a>
+        <a href="privacy.html"><span data-i18n-key="privacy-footer">Gizlilik</span></a>
+        <a href="terms.html"><span data-i18n-key="terms-footer">Şartlar</span></a>
       </div>
     </footer>
   </div>
+
+  <script>
+    const translations = {
+      tr: {
+        'support-title': 'Destek — Pomi',
+        'support-heading': 'Destek',
+        'support-subheading': 'Yardıma mı ihtiyacın var?',
+        'support-lead': 'Her türlü soru, öneri ve sorun için bize yazabilirsin. Genellikle 48 saat içinde yanıt veriyoruz.',
+        'support-s1-title': 'Aboneliğimi nasıl iptal ederim?',
+        'support-s1-content': 'iPhone\'unda <strong>Ayarlar → [Adın] → Abonelikler</strong> yolunu izle, Pomi\'yi seç ve aboneliği iptal et. İptal, mevcut dönemin sonunda geçerli olur.',
+        'support-s2-title': 'Satın alımımı geri yükleyemiyorum',
+        'support-s2-content': 'Paywall ekranındaki <strong>"Satın Alımları Geri Yükle"</strong> butonuna dokun. Aynı Apple ID ile giriş yaptığından emin ol. Sorun sürerse bize e-posta gönder.',
+        'support-s3-title': 'İlerlemem kayboldu',
+        'support-s3-content': 'İlerlemen hesabına bağlıdır. Aynı e-posta, Apple veya Google hesabıyla tekrar giriş yaptığında bahçen ve istatistiklerin geri gelir.',
+        'support-s4-title': 'İade talebi',
+        'support-s4-content': 'İadeler Apple üzerinden yönetilir. <a href="https://reportaproblem.apple.com" target="_blank">reportaproblem.apple.com</a> adresinden talep oluşturabilirsin.',
+        'support-s5-title': 'Hesabımı silmek istiyorum',
+        'support-s5-content': 'Uygulama içi ayarlardan hesabını ve tüm verilerini silebilirsin. Yardım gerekirse yukarıdaki e-postadan bize ulaş.',
+        'copyright': '© 2026 Pomi — Tüm hakları saklıdır.',
+        'privacy-footer': 'Gizlilik',
+        'terms-footer': 'Şartlar',
+      },
+      en: {
+        'support-title': 'Support — Pomi',
+        'support-heading': 'Support',
+        'support-subheading': 'Need help?',
+        'support-lead': 'You can reach us for any questions, suggestions, or issues. We typically respond within 48 hours.',
+        'support-s1-title': 'How do I cancel my subscription?',
+        'support-s1-content': 'On your iPhone, go to <strong>Settings → [Your Name] → Subscriptions</strong>, select Pomi, and cancel the subscription. Cancellation takes effect at the end of the current period.',
+        'support-s2-title': 'I can\'t restore my purchase',
+        'support-s2-content': 'Tap the <strong>"Restore Purchases"</strong> button on the paywall screen. Make sure you\'re signed in with the same Apple ID. If the issue persists, send us an email.',
+        'support-s3-title': 'My progress was lost',
+        'support-s3-content': 'Your progress is tied to your account. When you sign back in with the same email, Apple, or Google account, your garden and statistics will return.',
+        'support-s4-title': 'Request a refund',
+        'support-s4-content': 'Refunds are managed through Apple. You can request a refund at <a href="https://reportaproblem.apple.com" target="_blank">reportaproblem.apple.com</a>.',
+        'support-s5-title': 'I want to delete my account',
+        'support-s5-content': 'You can delete your account and all your data from the app settings. If you need help, reach out to us using the email above.',
+        'copyright': '© 2026 Pomi — All rights reserved.',
+        'privacy-footer': 'Privacy',
+        'terms-footer': 'Terms',
+      }
+    };
+
+    function setLanguage(lang) {
+      localStorage.setItem('pomi-lang', lang);
+      document.documentElement.lang = lang;
+
+      document.querySelectorAll('[data-i18n-key]').forEach(el => {
+        const key = el.getAttribute('data-i18n-key');
+        if (translations[lang][key]) {
+          el.innerHTML = translations[lang][key];
+        }
+      });
+
+      document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.classList.remove('active');
+        if (btn.getAttribute('data-lang') === lang) {
+          btn.classList.add('active');
+        }
+      });
+    }
+
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        setLanguage(btn.getAttribute('data-lang'));
+      });
+    });
+
+    const savedLang = localStorage.getItem('pomi-lang') || 'tr';
+    setLanguage(savedLang);
+  </script>
 </body>
 </html>

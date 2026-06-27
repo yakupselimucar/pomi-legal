@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gizlilik Politikası — Pomi</title>
+  <title data-i18n-key="privacy-title">Gizlilik Politikası — Pomi</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet" />
@@ -33,6 +33,18 @@
       padding: 2.5rem 1rem 4rem;
       -webkit-font-smoothing: antialiased;
     }
+    .lang-selector {
+      position: fixed; top: 1.5rem; right: 1.5rem;
+      display: flex; gap: 0.5rem; z-index: 1000;
+    }
+    .lang-btn {
+      background: var(--paper); border: 2px solid var(--ink);
+      border-radius: 8px; padding: 0.5rem 1rem; cursor: pointer;
+      font-weight: 600; font-size: 0.9rem; transition: all 0.2s ease;
+      color: var(--ink); box-shadow: 3px 3px 0 var(--ink);
+    }
+    .lang-btn.active { background: var(--ink); color: var(--paper); }
+    .lang-btn:hover { transform: translate(1px, 1px); box-shadow: 2px 2px 0 var(--ink); }
     .container { max-width: 680px; margin: 0 auto; }
 
     header { text-align: center; margin-bottom: 2.5rem; }
@@ -143,76 +155,184 @@
   </style>
 </head>
 <body>
+  <div class="lang-selector">
+    <button class="lang-btn active" data-lang="tr">TR</button>
+    <button class="lang-btn" data-lang="en">EN</button>
+  </div>
+
   <div class="container">
     <header>
       <div class="badge">
         <div class="tomato">🍅</div>
         <div class="name">POMI</div>
       </div>
-      <h1>Gizlilik Politikası</h1>
-      <div class="updated">Son güncelleme · 25 Haziran 2026</div>
+      <h1 data-i18n-key="privacy-heading">Gizlilik Politikası</h1>
+      <div class="updated" data-i18n-key="privacy-updated">Son güncelleme · 25 Haziran 2026</div>
     </header>
 
     <section>
-      <h2><span class="num">1</span>Toplanan Bilgiler</h2>
-      <p>Pomi aşağıdaki bilgileri toplayabilir:</p>
+      <h2><span class="num">1</span><span data-i18n-key="privacy-s1-title">Toplanan Bilgiler</span></h2>
+      <p data-i18n-key="privacy-s1-intro">Pomi aşağıdaki bilgileri toplayabilir:</p>
       <ul>
-        <li>Hesap oluşturma için e-posta adresi (isteğe bağlı)</li>
-        <li>Apple veya Google ile oturum açma bilgileri (OAuth) — Google ile giriş yapıldığında yalnızca <strong>ad, e-posta adresi ve profil fotoğrafı</strong> talep edilir; başka hiçbir Google verisine erişilmez</li>
-        <li>Uygulama içi ilerleme verileri (pomodoro sayısı, bahçe durumu)</li>
-        <li>Satın alım doğrulama verileri (App Store aracılığıyla)</li>
+        <li data-i18n-key="privacy-s1-li1">Hesap oluşturma için e-posta adresi (isteğe bağlı)</li>
+        <li data-i18n-key="privacy-s1-li2">Apple veya Google ile oturum açma bilgileri (OAuth) — Google ile giriş yapıldığında yalnızca <strong>ad, e-posta adresi ve profil fotoğrafı</strong> talep edilir; başka hiçbir Google verisine erişilmez</li>
+        <li data-i18n-key="privacy-s1-li3">Uygulama içi ilerleme verileri (pomodoro sayısı, bahçe durumu)</li>
+        <li data-i18n-key="privacy-s1-li4">Satın alım doğrulama verileri (App Store aracılığıyla)</li>
       </ul>
     </section>
 
     <section>
-      <h2><span class="num">2</span>Bilgilerin Kullanımı</h2>
-      <p>Toplanan bilgiler yalnızca şu amaçlarla kullanılır:</p>
+      <h2><span class="num">2</span><span data-i18n-key="privacy-s2-title">Bilgilerin Kullanımı</span></h2>
+      <p data-i18n-key="privacy-s2-intro">Toplanan bilgiler yalnızca şu amaçlarla kullanılır:</p>
       <ul>
-        <li>Hesabınızı oluşturmak ve yönetmek</li>
-        <li>İlerlemenizi cihazlar arasında senkronize etmek</li>
-        <li>Pro aboneliğinizi doğrulamak</li>
-        <li>Uygulama performansını iyileştirmek</li>
+        <li data-i18n-key="privacy-s2-li1">Hesabınızı oluşturmak ve yönetmek</li>
+        <li data-i18n-key="privacy-s2-li2">İlerlemenizi cihazlar arasında senkronize etmek</li>
+        <li data-i18n-key="privacy-s2-li3">Pro aboneliğinizi doğrulamak</li>
+        <li data-i18n-key="privacy-s2-li4">Uygulama performansını iyileştirmek</li>
       </ul>
     </section>
 
     <section>
-      <h2><span class="num">3</span>Veri Paylaşımı</h2>
-      <p>Kişisel verileriniz üçüncü taraflarla <strong>satılmaz veya kiralanmaz</strong>. Yalnızca şu hizmet sağlayıcılarla paylaşılır:</p>
+      <h2><span class="num">3</span><span data-i18n-key="privacy-s3-title">Veri Paylaşımı</span></h2>
+      <p data-i18n-key="privacy-s3-intro">Kişisel verileriniz üçüncü taraflarla <strong>satılmaz veya kiralanmaz</strong>. Yalnızca şu hizmet sağlayıcılarla paylaşılır:</p>
       <ul>
-        <li><strong>Supabase</strong> — güvenli veri depolama ve kimlik doğrulama</li>
-        <li><strong>Apple App Store</strong> — satın alım işlemleri</li>
+        <li data-i18n-key="privacy-s3-li1"><strong>Supabase</strong> — güvenli veri depolama ve kimlik doğrulama</li>
+        <li data-i18n-key="privacy-s3-li2"><strong>Apple App Store</strong> — satın alım işlemleri</li>
       </ul>
     </section>
 
     <section>
-      <h2><span class="num">4</span>Veri Güvenliği</h2>
-      <p>Tüm veriler şifrelenmiş bağlantılar (HTTPS/TLS) üzerinden iletilir ve güvenli sunucularda saklanır. Şifreleriniz hiçbir zaman düz metin olarak tutulmaz.</p>
+      <h2><span class="num">4</span><span data-i18n-key="privacy-s4-title">Veri Güvenliği</span></h2>
+      <p data-i18n-key="privacy-s4-content">Tüm veriler şifrelenmiş bağlantılar (HTTPS/TLS) üzerinden iletilir ve güvenli sunucularda saklanır. Şifreleriniz hiçbir zaman düz metin olarak tutulmaz.</p>
     </section>
 
     <section>
-      <h2><span class="num">5</span>Veri Saklama Süresi</h2>
-      <p>Verileriniz hesabınız aktif olduğu sürece saklanır. Hesabınızı sildiğinizde tüm kişisel verileriniz <strong>30 gün içinde</strong> kalıcı olarak silinir. Silme talepleriniz de aynı sürede işleme alınır.</p>
+      <h2><span class="num">5</span><span data-i18n-key="privacy-s5-title">Veri Saklama Süresi</span></h2>
+      <p data-i18n-key="privacy-s5-content">Verileriniz hesabınız aktif olduğu sürece saklanır. Hesabınızı sildiğinizde tüm kişisel verileriniz <strong>30 gün içinde</strong> kalıcı olarak silinir. Silme talepleriniz de aynı sürede işleme alınır.</p>
     </section>
 
     <section>
-      <h2><span class="num">6</span>Çocukların Gizliliği</h2>
-      <p>Pomi, 13 yaş altı kullanıcılardan bilerek kişisel veri toplamaz. Bu tür bir durum fark edilirse ilgili veriler derhal silinir.</p>
+      <h2><span class="num">6</span><span data-i18n-key="privacy-s6-title">Çocukların Gizliliği</span></h2>
+      <p data-i18n-key="privacy-s6-content">Pomi, 13 yaş altı kullanıcılardan bilerek kişisel veri toplamaz. Bu tür bir durum fark edilirse ilgili veriler derhal silinir.</p>
     </section>
 
     <section>
-      <h2><span class="num">7</span>Haklarınız</h2>
-      <p>Hesabınızı ve verilerinizi istediğiniz zaman uygulama ayarlarından silebilirsiniz. Silme işlemi 30 gün içinde tamamlanır. Ek talepler için aşağıdaki adresten iletişime geçebilirsiniz.</p>
+      <h2><span class="num">7</span><span data-i18n-key="privacy-s7-title">Haklarınız</span></h2>
+      <p data-i18n-key="privacy-s7-content">Hesabınızı ve verilerinizi istediğiniz zaman uygulama ayarlarından silebilirsiniz. Silme işlemi 30 gün içinde tamamlanır. Ek talepler için aşağıdaki adresten iletişime geçebilirsiniz.</p>
     </section>
 
     <section>
-      <h2><span class="num">8</span>İletişim</h2>
-      <p>Sorularınız için: <a href="mailto:yakupselimucar@hotmail.com">yakupselimucar@hotmail.com</a></p>
+      <h2><span class="num">8</span><span data-i18n-key="privacy-s8-title">İletişim</span></h2>
+      <p data-i18n-key="privacy-s8-content">Sorularınız için: <a href="mailto:yakupselimucar@hotmail.com">yakupselimucar@hotmail.com</a></p>
     </section>
 
     <footer>
-      <p>© 2026 Pomi — Tüm hakları saklıdır.</p>
-      <div class="links"><a href="terms.html">Kullanım Şartları →</a></div>
+      <p data-i18n-key="copyright">© 2026 Pomi — Tüm hakları saklıdır.</p>
+      <div class="links"><a href="terms.html"><span data-i18n-key="terms-link">Kullanım Şartları →</span></a></div>
     </footer>
   </div>
+
+  <script>
+    const translations = {
+      tr: {
+        'privacy-title': 'Gizlilik Politikası — Pomi',
+        'privacy-heading': 'Gizlilik Politikası',
+        'privacy-updated': 'Son güncelleme · 25 Haziran 2026',
+        'privacy-s1-title': 'Toplanan Bilgiler',
+        'privacy-s1-intro': 'Pomi aşağıdaki bilgileri toplayabilir:',
+        'privacy-s1-li1': 'Hesap oluşturma için e-posta adresi (isteğe bağlı)',
+        'privacy-s1-li2': 'Apple veya Google ile oturum açma bilgileri (OAuth) — Google ile giriş yapıldığında yalnızca <strong>ad, e-posta adresi ve profil fotoğrafı</strong> talep edilir; başka hiçbir Google verisine erişilmez',
+        'privacy-s1-li3': 'Uygulama içi ilerleme verileri (pomodoro sayısı, bahçe durumu)',
+        'privacy-s1-li4': 'Satın alım doğrulama verileri (App Store aracılığıyla)',
+        'privacy-s2-title': 'Bilgilerin Kullanımı',
+        'privacy-s2-intro': 'Toplanan bilgiler yalnızca şu amaçlarla kullanılır:',
+        'privacy-s2-li1': 'Hesabınızı oluşturmak ve yönetmek',
+        'privacy-s2-li2': 'İlerlemenizi cihazlar arasında senkronize etmek',
+        'privacy-s2-li3': 'Pro aboneliğinizi doğrulamak',
+        'privacy-s2-li4': 'Uygulama performansını iyileştirmek',
+        'privacy-s3-title': 'Veri Paylaşımı',
+        'privacy-s3-intro': 'Kişisel verileriniz üçüncü taraflarla <strong>satılmaz veya kiralanmaz</strong>. Yalnızca şu hizmet sağlayıcılarla paylaşılır:',
+        'privacy-s3-li1': '<strong>Supabase</strong> — güvenli veri depolama ve kimlik doğrulama',
+        'privacy-s3-li2': '<strong>Apple App Store</strong> — satın alım işlemleri',
+        'privacy-s4-title': 'Veri Güvenliği',
+        'privacy-s4-content': 'Tüm veriler şifrelenmiş bağlantılar (HTTPS/TLS) üzerinden iletilir ve güvenli sunucularda saklanır. Şifreleriniz hiçbir zaman düz metin olarak tutulmaz.',
+        'privacy-s5-title': 'Veri Saklama Süresi',
+        'privacy-s5-content': 'Verileriniz hesabınız aktif olduğu sürece saklanır. Hesabınızı sildiğinizde tüm kişisel verileriniz <strong>30 gün içinde</strong> kalıcı olarak silinir. Silme talepleriniz de aynı sürede işleme alınır.',
+        'privacy-s6-title': 'Çocukların Gizliliği',
+        'privacy-s6-content': 'Pomi, 13 yaş altı kullanıcılardan bilerek kişisel veri toplamaz. Bu tür bir durum fark edilirse ilgili veriler derhal silinir.',
+        'privacy-s7-title': 'Haklarınız',
+        'privacy-s7-content': 'Hesabınızı ve verilerinizi istediğiniz zaman uygulama ayarlarından silebilirsiniz. Silme işlemi 30 gün içinde tamamlanır. Ek talepler için aşağıdaki adresten iletişime geçebilirsiniz.',
+        'privacy-s8-title': 'İletişim',
+        'privacy-s8-content': 'Sorularınız için: <a href="mailto:yakupselimucar@hotmail.com">yakupselimucar@hotmail.com</a>',
+        'copyright': '© 2026 Pomi — Tüm hakları saklıdır.',
+        'terms-link': 'Kullanım Şartları →',
+      },
+      en: {
+        'privacy-title': 'Privacy Policy — Pomi',
+        'privacy-heading': 'Privacy Policy',
+        'privacy-updated': 'Last updated · June 25, 2026',
+        'privacy-s1-title': 'Information We Collect',
+        'privacy-s1-intro': 'Pomi may collect the following information:',
+        'privacy-s1-li1': 'Email address for account creation (optional)',
+        'privacy-s1-li2': 'Sign-in information via Apple or Google (OAuth) — When signing in with Google, we only request <strong>name, email address, and profile picture</strong>; we do not access any other Google data',
+        'privacy-s1-li3': 'In-app progress data (pomodoro count, garden status)',
+        'privacy-s1-li4': 'Purchase verification data (via App Store)',
+        'privacy-s2-title': 'How We Use Information',
+        'privacy-s2-intro': 'Collected information is used only for the following purposes:',
+        'privacy-s2-li1': 'Create and manage your account',
+        'privacy-s2-li2': 'Synchronize your progress across devices',
+        'privacy-s2-li3': 'Verify your Pro subscription',
+        'privacy-s2-li4': 'Improve app performance',
+        'privacy-s3-title': 'Data Sharing',
+        'privacy-s3-intro': 'Your personal data is <strong>never sold or rented</strong> to third parties. We only share it with the following service providers:',
+        'privacy-s3-li1': '<strong>Supabase</strong> — secure data storage and authentication',
+        'privacy-s3-li2': '<strong>Apple App Store</strong> — purchase transactions',
+        'privacy-s4-title': 'Data Security',
+        'privacy-s4-content': 'All data is transmitted over encrypted connections (HTTPS/TLS) and stored on secure servers. Your passwords are never stored in plain text.',
+        'privacy-s5-title': 'Data Retention',
+        'privacy-s5-content': 'Your data is retained for as long as your account is active. When you delete your account, all personal data is permanently deleted within <strong>30 days</strong>. Deletion requests are processed within the same timeframe.',
+        'privacy-s6-title': 'Children\'s Privacy',
+        'privacy-s6-content': 'Pomi does not knowingly collect personal data from users under 13 years old. If we become aware of such data, it will be deleted immediately.',
+        'privacy-s7-title': 'Your Rights',
+        'privacy-s7-content': 'You can delete your account and data at any time from the app settings. Deletion is completed within 30 days. For additional requests, please contact us at the address below.',
+        'privacy-s8-title': 'Contact Us',
+        'privacy-s8-content': 'For questions: <a href="mailto:yakupselimucar@hotmail.com">yakupselimucar@hotmail.com</a>',
+        'copyright': '© 2026 Pomi — All rights reserved.',
+        'terms-link': 'Terms of Use →',
+      }
+    };
+
+    function setLanguage(lang) {
+      localStorage.setItem('pomi-lang', lang);
+      document.documentElement.lang = lang;
+
+      document.querySelectorAll('[data-i18n-key]').forEach(el => {
+        const key = el.getAttribute('data-i18n-key');
+        if (translations[lang][key]) {
+          if (el.tagName === 'A') {
+            el.innerHTML = translations[lang][key];
+          } else {
+            el.innerHTML = translations[lang][key];
+          }
+        }
+      });
+
+      document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.classList.remove('active');
+        if (btn.getAttribute('data-lang') === lang) {
+          btn.classList.add('active');
+        }
+      });
+    }
+
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        setLanguage(btn.getAttribute('data-lang'));
+      });
+    });
+
+    const savedLang = localStorage.getItem('pomi-lang') || 'tr';
+    setLanguage(savedLang);
+  </script>
 </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pomi — Yasal</title>
+  <title data-i18n-key="title">Pomi — Yasal</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet" />
@@ -25,6 +25,18 @@
       padding: 2rem 1rem;
       -webkit-font-smoothing: antialiased;
     }
+    .lang-selector {
+      position: fixed; top: 1.5rem; right: 1.5rem;
+      display: flex; gap: 0.5rem; z-index: 1000;
+    }
+    .lang-btn {
+      background: var(--paper); border: 2px solid var(--ink);
+      border-radius: 8px; padding: 0.5rem 1rem; cursor: pointer;
+      font-weight: 600; font-size: 0.9rem; transition: all 0.2s ease;
+      color: var(--ink); box-shadow: 3px 3px 0 var(--ink);
+    }
+    .lang-btn.active { background: var(--ink); color: var(--paper); }
+    .lang-btn:hover { transform: translate(1px, 1px); box-shadow: 2px 2px 0 var(--ink); }
     .wrap { max-width: 440px; width: 100%; text-align: center; }
     .badge {
       display: inline-block; background: var(--paper);
@@ -63,24 +75,79 @@
   </style>
 </head>
 <body>
+  <div class="lang-selector">
+    <button class="lang-btn active" data-lang="tr">TR</button>
+    <button class="lang-btn" data-lang="en">EN</button>
+  </div>
   <div class="wrap">
     <div class="badge">
       <div class="tomato">🍅</div>
       <div class="name">POMI</div>
     </div>
-    <p class="tagline">Yasal belgeler</p>
+    <p class="tagline" data-i18n-key="tagline">Yasal belgeler</p>
     <div class="links">
       <a class="card" href="privacy.html">
-        <span class="ic">🔒</span> Gizlilik Politikası <span class="arrow">→</span>
+        <span class="ic">🔒</span> <span data-i18n-key="privacy">Gizlilik Politikası</span> <span class="arrow">→</span>
       </a>
       <a class="card" href="terms.html">
-        <span class="ic">📄</span> Kullanım Şartları <span class="arrow">→</span>
+        <span class="ic">📄</span> <span data-i18n-key="terms">Kullanım Şartları</span> <span class="arrow">→</span>
       </a>
       <a class="card" href="support.html">
-        <span class="ic">💬</span> Destek <span class="arrow">→</span>
+        <span class="ic">💬</span> <span data-i18n-key="support">Destek</span> <span class="arrow">→</span>
       </a>
     </div>
-    <footer>© 2026 Pomi — Tüm hakları saklıdır.</footer>
+    <footer><span data-i18n-key="copyright">© 2026 Pomi — Tüm hakları saklıdır.</span></footer>
   </div>
+
+  <script>
+    const translations = {
+      tr: {
+        title: 'Pomi — Yasal',
+        tagline: 'Yasal belgeler',
+        privacy: 'Gizlilik Politikası',
+        terms: 'Kullanım Şartları',
+        support: 'Destek',
+        copyright: '© 2026 Pomi — Tüm hakları saklıdır.'
+      },
+      en: {
+        title: 'Pomi — Legal',
+        tagline: 'Legal documents',
+        privacy: 'Privacy Policy',
+        terms: 'Terms of Use',
+        support: 'Support',
+        copyright: '© 2026 Pomi — All rights reserved.'
+      }
+    };
+
+    function setLanguage(lang) {
+      localStorage.setItem('pomi-lang', lang);
+      document.documentElement.lang = lang;
+      document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+      document.title = translations[lang].title;
+
+      document.querySelectorAll('[data-i18n-key]').forEach(el => {
+        const key = el.getAttribute('data-i18n-key');
+        if (translations[lang][key]) {
+          el.textContent = translations[lang][key];
+        }
+      });
+
+      document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.classList.remove('active');
+        if (btn.getAttribute('data-lang') === lang) {
+          btn.classList.add('active');
+        }
+      });
+    }
+
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        setLanguage(btn.getAttribute('data-lang'));
+      });
+    });
+
+    const savedLang = localStorage.getItem('pomi-lang') || 'tr';
+    setLanguage(savedLang);
+  </script>
 </body>
 </html>

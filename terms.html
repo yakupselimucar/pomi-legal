@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kullanım Şartları — Pomi</title>
+  <title data-i18n-key="terms-title">Kullanım Şartları — Pomi</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet" />
@@ -32,6 +32,18 @@
       padding: 2.5rem 1rem 4rem;
       -webkit-font-smoothing: antialiased;
     }
+    .lang-selector {
+      position: fixed; top: 1.5rem; right: 1.5rem;
+      display: flex; gap: 0.5rem; z-index: 1000;
+    }
+    .lang-btn {
+      background: var(--paper); border: 2px solid var(--ink);
+      border-radius: 8px; padding: 0.5rem 1rem; cursor: pointer;
+      font-weight: 600; font-size: 0.9rem; transition: all 0.2s ease;
+      color: var(--ink); box-shadow: 3px 3px 0 var(--ink);
+    }
+    .lang-btn.active { background: var(--ink); color: var(--paper); }
+    .lang-btn:hover { transform: translate(1px, 1px); box-shadow: 2px 2px 0 var(--ink); }
     .container { max-width: 680px; margin: 0 auto; }
 
     header { text-align: center; margin-bottom: 2.5rem; }
@@ -151,75 +163,175 @@
   </style>
 </head>
 <body>
+  <div class="lang-selector">
+    <button class="lang-btn active" data-lang="tr">TR</button>
+    <button class="lang-btn" data-lang="en">EN</button>
+  </div>
+
   <div class="container">
     <header>
       <div class="badge">
         <div class="tomato">🍅</div>
         <div class="name">POMI</div>
       </div>
-      <h1>Kullanım Şartları</h1>
-      <div class="updated">Son güncelleme · 14 Haziran 2026</div>
+      <h1 data-i18n-key="terms-heading">Kullanım Şartları</h1>
+      <div class="updated" data-i18n-key="terms-updated">Son güncelleme · 14 Haziran 2026</div>
     </header>
 
     <section>
-      <h2><span class="num">1</span>Kabul</h2>
-      <p>Pomi uygulamasını kullanarak bu şartları kabul etmiş sayılırsınız. Kabul etmiyorsanız uygulamayı kullanmayınız.</p>
+      <h2><span class="num">1</span><span data-i18n-key="terms-s1-title">Kabul</span></h2>
+      <p data-i18n-key="terms-s1-content">Pomi uygulamasını kullanarak bu şartları kabul etmiş sayılırsınız. Kabul etmiyorsanız uygulamayı kullanmayınız.</p>
     </section>
 
     <section>
-      <h2><span class="num">2</span>Hizmet Tanımı</h2>
-      <p>Pomi, Pomodoro tekniği tabanlı bir üretkenlik ve bahçe oyunu uygulamasıdır. Uygulama ücretsiz ve ücretli (Pro) katmanlar sunmaktadır.</p>
+      <h2><span class="num">2</span><span data-i18n-key="terms-s2-title">Hizmet Tanımı</span></h2>
+      <p data-i18n-key="terms-s2-content">Pomi, Pomodoro tekniği tabanlı bir üretkenlik ve bahçe oyunu uygulamasıdır. Uygulama ücretsiz ve ücretli (Pro) katmanlar sunmaktadır.</p>
     </section>
 
     <section>
-      <h2><span class="num">3</span>Pomi Pro Aboneliği</h2>
-      <div class="highlight">Pro özellikler App Store üzerinden sunulan bir abonelikle etkinleştirilir.</div>
+      <h2><span class="num">3</span><span data-i18n-key="terms-s3-title">Pomi Pro Aboneliği</span></h2>
+      <div class="highlight" data-i18n-key="terms-s3-highlight">Pro özellikler App Store üzerinden sunulan bir abonelikle etkinleştirilir.</div>
       <ul>
-        <li>Abonelik, seçilen periyot sonunda otomatik olarak yenilenir.</li>
-        <li>İptal için yenileme tarihinden en az 24 saat önce App Store ayarlarından aboneliği sonlandırmanız gerekir.</li>
-        <li>Ücret, yenileme öncesinde Apple ID hesabınızdan tahsil edilir.</li>
-        <li>Deneme süresi aktifken iptal edilmezse ücretli aboneliğe geçilir.</li>
+        <li data-i18n-key="terms-s3-li1">Abonelik, seçilen periyot sonunda otomatik olarak yenilenir.</li>
+        <li data-i18n-key="terms-s3-li2">İptal için yenileme tarihinden en az 24 saat önce App Store ayarlarından aboneliği sonlandırmanız gerekir.</li>
+        <li data-i18n-key="terms-s3-li3">Ücret, yenileme öncesinde Apple ID hesabınızdan tahsil edilir.</li>
+        <li data-i18n-key="terms-s3-li4">Deneme süresi aktifken iptal edilmezse ücretli aboneliğe geçilir.</li>
       </ul>
     </section>
 
     <section>
-      <h2><span class="num">4</span>İptal ve İade</h2>
-      <p>Aboneliğinizi istediğiniz zaman App Store üzerinden iptal edebilirsiniz. İadeler Apple'ın iade politikasına tabidir; uygulama içinden iade yapılamamaktadır. Apple iade talebi için: <a href="https://reportaproblem.apple.com" target="_blank">reportaproblem.apple.com</a></p>
+      <h2><span class="num">4</span><span data-i18n-key="terms-s4-title">İptal ve İade</span></h2>
+      <p data-i18n-key="terms-s4-content">Aboneliğinizi istediğiniz zaman App Store üzerinden iptal edebilirsiniz. İadeler Apple'ın iade politikasına tabidir; uygulama içinden iade yapılamamaktadır. Apple iade talebi için: <a href="https://reportaproblem.apple.com" target="_blank">reportaproblem.apple.com</a></p>
     </section>
 
     <section>
-      <h2><span class="num">5</span>Kullanıcı Sorumlulukları</h2>
+      <h2><span class="num">5</span><span data-i18n-key="terms-s5-title">Kullanıcı Sorumlulukları</span></h2>
       <ul>
-        <li>Hesap bilgilerinizi gizli tutmakla yükümlüsünüz.</li>
-        <li>Uygulamayı yalnızca kişisel, ticari olmayan amaçlarla kullanabilirsiniz.</li>
-        <li>Uygulamayı tersine mühendislik, kopyalama veya dağıtım amacıyla kullanamazsınız.</li>
+        <li data-i18n-key="terms-s5-li1">Hesap bilgilerinizi gizli tutmakla yükümlüsünüz.</li>
+        <li data-i18n-key="terms-s5-li2">Uygulamayı yalnızca kişisel, ticari olmayan amaçlarla kullanabilirsiniz.</li>
+        <li data-i18n-key="terms-s5-li3">Uygulamayı tersine mühendislik, kopyalama veya dağıtım amacıyla kullanamazsınız.</li>
       </ul>
     </section>
 
     <section>
-      <h2><span class="num">6</span>Fikri Mülkiyet</h2>
-      <p>Uygulamadaki tüm içerik, tasarım ve kod Pomi'ye aittir. Yazılı izin olmadan kopyalanamaz veya dağıtılamaz.</p>
+      <h2><span class="num">6</span><span data-i18n-key="terms-s6-title">Fikri Mülkiyet</span></h2>
+      <p data-i18n-key="terms-s6-content">Uygulamadaki tüm içerik, tasarım ve kod Pomi'ye aittir. Yazılı izin olmadan kopyalanamaz veya dağıtılamaz.</p>
     </section>
 
     <section>
-      <h2><span class="num">7</span>Sorumluluk Sınırlaması</h2>
-      <p>Pomi, hizmet kesintileri veya veri kayıplarından doğan zararlardan sorumlu tutulamaz. Uygulama "olduğu gibi" sunulmaktadır.</p>
+      <h2><span class="num">7</span><span data-i18n-key="terms-s7-title">Sorumluluk Sınırlaması</span></h2>
+      <p data-i18n-key="terms-s7-content">Pomi, hizmet kesintileri veya veri kayıplarından doğan zararlardan sorumlu tutulamaz. Uygulama "olduğu gibi" sunulmaktadır.</p>
     </section>
 
     <section>
-      <h2><span class="num">8</span>Değişiklikler</h2>
-      <p>Bu şartlar önceden bildirim yapılmaksızın güncellenebilir. Güncel sürüm her zaman bu sayfada yayınlanır.</p>
+      <h2><span class="num">8</span><span data-i18n-key="terms-s8-title">Değişiklikler</span></h2>
+      <p data-i18n-key="terms-s8-content">Bu şartlar önceden bildirim yapılmaksızın güncellenebilir. Güncel sürüm her zaman bu sayfada yayınlanır.</p>
     </section>
 
     <section>
-      <h2><span class="num">9</span>İletişim</h2>
-      <p>Sorularınız için: <a href="mailto:yakupselimucar@hotmail.com">yakupselimucar@hotmail.com</a></p>
+      <h2><span class="num">9</span><span data-i18n-key="terms-s9-title">İletişim</span></h2>
+      <p data-i18n-key="terms-s9-content">Sorularınız için: <a href="mailto:yakupselimucar@hotmail.com">yakupselimucar@hotmail.com</a></p>
     </section>
 
     <footer>
-      <p>© 2026 Pomi — Tüm hakları saklıdır.</p>
-      <div class="links"><a href="privacy.html">← Gizlilik Politikası</a></div>
+      <p data-i18n-key="copyright">© 2026 Pomi — Tüm hakları saklıdır.</p>
+      <div class="links"><a href="privacy.html"><span data-i18n-key="privacy-link">← Gizlilik Politikası</span></a></div>
     </footer>
   </div>
+
+  <script>
+    const translations = {
+      tr: {
+        'terms-title': 'Kullanım Şartları — Pomi',
+        'terms-heading': 'Kullanım Şartları',
+        'terms-updated': 'Son güncelleme · 14 Haziran 2026',
+        'terms-s1-title': 'Kabul',
+        'terms-s1-content': 'Pomi uygulamasını kullanarak bu şartları kabul etmiş sayılırsınız. Kabul etmiyorsanız uygulamayı kullanmayınız.',
+        'terms-s2-title': 'Hizmet Tanımı',
+        'terms-s2-content': 'Pomi, Pomodoro tekniği tabanlı bir üretkenlik ve bahçe oyunu uygulamasıdır. Uygulama ücretsiz ve ücretli (Pro) katmanlar sunmaktadır.',
+        'terms-s3-title': 'Pomi Pro Aboneliği',
+        'terms-s3-highlight': 'Pro özellikler App Store üzerinden sunulan bir abonelikle etkinleştirilir.',
+        'terms-s3-li1': 'Abonelik, seçilen periyot sonunda otomatik olarak yenilenir.',
+        'terms-s3-li2': 'İptal için yenileme tarihinden en az 24 saat önce App Store ayarlarından aboneliği sonlandırmanız gerekir.',
+        'terms-s3-li3': 'Ücret, yenileme öncesinde Apple ID hesabınızdan tahsil edilir.',
+        'terms-s3-li4': 'Deneme süresi aktifken iptal edilmezse ücretli aboneliğe geçilir.',
+        'terms-s4-title': 'İptal ve İade',
+        'terms-s4-content': 'Aboneliğinizi istediğiniz zaman App Store üzerinden iptal edebilirsiniz. İadeler Apple\'ın iade politikasına tabidir; uygulama içinden iade yapılamamaktadır. Apple iade talebi için: <a href="https://reportaproblem.apple.com" target="_blank">reportaproblem.apple.com</a>',
+        'terms-s5-title': 'Kullanıcı Sorumlulukları',
+        'terms-s5-li1': 'Hesap bilgilerinizi gizli tutmakla yükümlüsünüz.',
+        'terms-s5-li2': 'Uygulamayı yalnızca kişisel, ticari olmayan amaçlarla kullanabilirsiniz.',
+        'terms-s5-li3': 'Uygulamayı tersine mühendislik, kopyalama veya dağıtım amacıyla kullanamazsınız.',
+        'terms-s6-title': 'Fikri Mülkiyet',
+        'terms-s6-content': 'Uygulamadaki tüm içerik, tasarım ve kod Pomi\'ye aittir. Yazılı izin olmadan kopyalanamaz veya dağıtılamaz.',
+        'terms-s7-title': 'Sorumluluk Sınırlaması',
+        'terms-s7-content': 'Pomi, hizmet kesintileri veya veri kayıplarından doğan zararlardan sorumlu tutulamaz. Uygulama "olduğu gibi" sunulmaktadır.',
+        'terms-s8-title': 'Değişiklikler',
+        'terms-s8-content': 'Bu şartlar önceden bildirim yapılmaksızın güncellenebilir. Güncel sürüm her zaman bu sayfada yayınlanır.',
+        'terms-s9-title': 'İletişim',
+        'terms-s9-content': 'Sorularınız için: <a href="mailto:yakupselimucar@hotmail.com">yakupselimucar@hotmail.com</a>',
+        'copyright': '© 2026 Pomi — Tüm hakları saklıdır.',
+        'privacy-link': '← Gizlilik Politikası',
+      },
+      en: {
+        'terms-title': 'Terms of Use — Pomi',
+        'terms-heading': 'Terms of Use',
+        'terms-updated': 'Last updated · June 14, 2026',
+        'terms-s1-title': 'Acceptance',
+        'terms-s1-content': 'By using the Pomi application, you accept these terms. If you do not agree, please do not use the application.',
+        'terms-s2-title': 'Service Description',
+        'terms-s2-content': 'Pomi is a productivity and garden game application based on the Pomodoro technique. The application offers free and paid (Pro) tiers.',
+        'terms-s3-title': 'Pomi Pro Subscription',
+        'terms-s3-highlight': 'Pro features are enabled through a subscription available on the App Store.',
+        'terms-s3-li1': 'Your subscription will automatically renew at the end of the selected period.',
+        'terms-s3-li2': 'To cancel, you must end the subscription from your App Store settings at least 24 hours before the renewal date.',
+        'terms-s3-li3': 'Charges will be deducted from your Apple ID account before renewal.',
+        'terms-s3-li4': 'If not cancelled during the trial period, you will be charged for the paid subscription.',
+        'terms-s4-title': 'Cancellation and Refunds',
+        'terms-s4-content': 'You can cancel your subscription at any time through the App Store. Refunds are subject to Apple\'s refund policy; refunds cannot be processed through the app. To request a refund from Apple, visit: <a href="https://reportaproblem.apple.com" target="_blank">reportaproblem.apple.com</a>',
+        'terms-s5-title': 'User Responsibilities',
+        'terms-s5-li1': 'You are responsible for keeping your account information confidential.',
+        'terms-s5-li2': 'You may only use the app for personal, non-commercial purposes.',
+        'terms-s5-li3': 'You may not reverse engineer, copy, or distribute the application.',
+        'terms-s6-title': 'Intellectual Property',
+        'terms-s6-content': 'All content, design, and code in the application belong to Pomi. They cannot be copied or distributed without written permission.',
+        'terms-s7-title': 'Limitation of Liability',
+        'terms-s7-content': 'Pomi is not responsible for damages resulting from service interruptions or data loss. The application is provided "as is."',
+        'terms-s8-title': 'Changes',
+        'terms-s8-content': 'These terms may be updated without prior notice. The current version is always published on this page.',
+        'terms-s9-title': 'Contact',
+        'terms-s9-content': 'For questions: <a href="mailto:yakupselimucar@hotmail.com">yakupselimucar@hotmail.com</a>',
+        'copyright': '© 2026 Pomi — All rights reserved.',
+        'privacy-link': '← Privacy Policy',
+      }
+    };
+
+    function setLanguage(lang) {
+      localStorage.setItem('pomi-lang', lang);
+      document.documentElement.lang = lang;
+
+      document.querySelectorAll('[data-i18n-key]').forEach(el => {
+        const key = el.getAttribute('data-i18n-key');
+        if (translations[lang][key]) {
+          el.innerHTML = translations[lang][key];
+        }
+      });
+
+      document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.classList.remove('active');
+        if (btn.getAttribute('data-lang') === lang) {
+          btn.classList.add('active');
+        }
+      });
+    }
+
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        setLanguage(btn.getAttribute('data-lang'));
+      });
+    });
+
+    const savedLang = localStorage.getItem('pomi-lang') || 'tr';
+    setLanguage(savedLang);
+  </script>
 </body>
 </html>
