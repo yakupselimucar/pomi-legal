@@ -3,151 +3,1851 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title data-i18n-key="title">Pomi — Yasal</title>
+  <title data-i18n="title">Pomi · Odaklan, bahçen büyüsün</title>
+  <meta name="description" data-i18n-attr="description" content="Pomi, 25 dakikalık her odak seansını bahçende bir bitkiye dönüştüren pomodoro uygulaması. Görevler, odalar, sesler, fetih haritası ve haftalık lig." />
+  <meta name="theme-color" content="#FDFAF2" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Pomi" />
+  <meta property="og:title" content="Pomi · Odaklan, bahçen büyüsün" />
+  <meta property="og:description" content="25 dakikalık her odak seansı bahçene yeni bir bitki ekler. Pomodoro, piksel bahçe ve arkadaşlarınla odak odaları." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' shape-rendering='crispEdges'><rect width='16' height='16' rx='3' fill='%23FBF4E4'/><rect x='7' y='2' width='2' height='2' fill='%2346C39A'/><rect x='5' y='3' width='6' height='2' fill='%2346C39A'/><rect x='3' y='5' width='10' height='8' fill='%2327223D'/><rect x='4' y='6' width='8' height='6' fill='%23E8455B'/><rect x='5' y='7' width='2' height='1' fill='%23FF7A8C'/><rect x='6' y='9' width='1' height='1' fill='%2327223D'/><rect x='9' y='9' width='1' height='1' fill='%2327223D'/></svg>" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
   <style>
+    /* ── Palet: uygulamanın kendi renkleri, tanıtım için yumuşatılmış tonlarla ── */
     :root {
-      --cream: #FBF4E4; --paper: #FFFFFF; --cherry: #FF5B6E; --mint: #2FB99B;
-      --sky: #4FA3E3; --grape: #9B6DD6; --sun: #FFC23D; --peach: #F58E6F;
-      --ink: #27223D; --ink-soft: #8B83A6; --ink-line: rgba(39, 34, 61, 0.1);
+      --bg: #FDFAF2;
+      --cream: #FBF4E4;
+      --paper: #FFFFFF;
+      --ink: #27223D;
+      --ink-2: #453F63;
+      --ink-soft: #635C7D;
+      --line: rgba(39, 34, 61, 0.10);
+      --line-soft: rgba(39, 34, 61, 0.06);
+
+      --cherry: #FF5B6E;
+      --cherry-deep: #E8455B;
+      --mint: #2FB99B;
+      --sky: #4FA3E3;
+      --grape: #9B6DD6;
+      --sun: #FFC23D;
+      --peach: #F58E6F;
+
+      --tint-rose: #FFF1F1;
+      --tint-mint: #ECF8F4;
+      --tint-sun: #FFF7E6;
+      --tint-sky: #EEF4FC;
+      --tint-grape: #F5F0FD;
+      --tint-peach: #FEF1EC;
+
+      --r-xl: 32px;
+      --r-lg: 24px;
+      --r-md: 16px;
+      --shadow: 0 30px 70px -44px rgba(39, 34, 61, 0.45), 0 2px 4px -2px rgba(39, 34, 61, 0.05);
+      --shadow-lift: 0 40px 80px -46px rgba(39, 34, 61, 0.55), 0 3px 8px -4px rgba(39, 34, 61, 0.08);
+      --ease: cubic-bezier(0.22, 1, 0.36, 1);
     }
+
     * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; color-scheme: light; }
     body {
-      background: var(--cream);
-      background-image: radial-gradient(var(--ink-line) 1px, transparent 1px);
-      background-size: 24px 24px;
+      background: var(--bg);
       color: var(--ink);
-      font-family: 'DM Sans', sans-serif;
-      min-height: 100vh;
-      display: flex; align-items: center; justify-content: center;
-      padding: 2rem 1rem;
+      font-family: 'DM Sans', -apple-system, system-ui, sans-serif;
+      font-size: 17px;
+      line-height: 1.6;
       -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
     }
-    .lang-selector {
-      position: fixed; top: 1.5rem; right: 1.5rem;
-      display: flex; gap: 0.5rem; z-index: 1000;
+    img, svg { display: block; max-width: 100%; }
+    a { color: inherit; }
+    ::selection { background: #FFD9DE; color: var(--ink); }
+    :focus-visible {
+      outline: 2px solid var(--cherry);
+      outline-offset: 3px;
+      border-radius: 6px;
+    }
+
+    .wrap { width: 100%; max-width: 1140px; margin: 0 auto; padding: 0 clamp(1.15rem, 4vw, 2.5rem); }
+    .skip {
+      position: absolute; left: -999px; top: 0; z-index: 100;
+      background: var(--ink); color: var(--cream);
+      padding: 0.7rem 1.1rem; border-radius: 0 0 12px 0; font-weight: 600;
+    }
+    .skip:focus { left: 0; }
+
+    /* ── Tipografi ── */
+    h1, h2, h3 { font-weight: 700; letter-spacing: -0.02em; line-height: 1.08; }
+    .accent {
+      font-family: 'DM Serif Display', serif;
+      font-style: italic;
+      font-weight: 400;
+      letter-spacing: -0.005em;
+    }
+    .kicker {
+      font-size: 0.74rem;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--ink-soft);
+      display: inline-flex; align-items: center; gap: 0.6rem;
+    }
+    .kicker::before {
+      content: ""; width: 7px; height: 7px; background: var(--cherry);
+      border-radius: 2px; display: inline-block;
+    }
+    .lead { color: var(--ink-soft); font-size: clamp(1.02rem, 0.95rem + 0.35vw, 1.16rem); }
+
+    /* ── Üst bar ── */
+    .nav {
+      position: sticky; top: 0; z-index: 50;
+      background: rgba(253, 250, 242, 0.82);
+      backdrop-filter: saturate(180%) blur(14px);
+      -webkit-backdrop-filter: saturate(180%) blur(14px);
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.3s ease, background 0.3s ease;
+    }
+    .nav.is-stuck { border-bottom-color: var(--line); }
+    .nav .wrap { display: flex; align-items: center; gap: 1.25rem; height: 72px; }
+    .brand { display: flex; align-items: center; gap: 0.6rem; text-decoration: none; margin-right: auto; }
+    .brand svg { width: 34px; height: 34px; }
+    .brand span {
+      font-family: 'Pixelify Sans', monospace; font-size: 1.35rem;
+      font-weight: 700; letter-spacing: 0.04em;
+    }
+    .nav-links { display: flex; gap: 1.6rem; }
+    .nav-links a {
+      text-decoration: none; font-size: 0.95rem; font-weight: 500;
+      color: var(--ink-soft); transition: color 0.2s ease;
+    }
+    .nav-links a:hover { color: var(--ink); }
+    .lang {
+      display: inline-flex; background: rgba(39, 34, 61, 0.05);
+      border-radius: 999px; padding: 3px;
     }
     .lang-btn {
-      background: var(--paper); border: 2px solid var(--ink);
-      border-radius: 8px; padding: 0.5rem 1rem; cursor: pointer;
-      font-weight: 600; font-size: 0.9rem; transition: all 0.2s ease;
-      color: var(--ink); box-shadow: 3px 3px 0 var(--ink);
+      border: 0; background: transparent; cursor: pointer;
+      font-family: inherit; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.04em;
+      color: var(--ink-soft); padding: 0.35rem 0.7rem; border-radius: 999px;
+      transition: all 0.2s ease;
     }
-    .lang-btn.active { background: var(--ink); color: var(--paper); }
-    .lang-btn:hover { transform: translate(1px, 1px); box-shadow: 2px 2px 0 var(--ink); }
-    .wrap { max-width: 440px; width: 100%; text-align: center; }
-    .badge {
-      display: inline-block; background: var(--paper);
-      border: 3px solid var(--ink); border-radius: 20px;
-      padding: 1.25rem 1.75rem; box-shadow: 6px 6px 0 var(--ink);
-      transform: rotate(-1.5deg); margin-bottom: 2rem;
+    .lang-btn.active { background: var(--paper); color: var(--ink); box-shadow: 0 1px 3px rgba(39,34,61,0.12); }
+
+    /* ── Butonlar ── */
+    .btn {
+      display: inline-flex; align-items: center; gap: 0.6rem;
+      text-decoration: none; font-weight: 600; font-size: 0.98rem;
+      padding: 0.85rem 1.35rem; border-radius: 999px;
+      border: 1px solid transparent; cursor: pointer; font-family: inherit;
+      transition: transform 0.25s var(--ease), box-shadow 0.25s var(--ease), background 0.2s ease;
     }
-    .badge .tomato { font-size: 3.25rem; line-height: 1; }
-    .badge .name {
-      font-family: 'Pixelify Sans', sans-serif; font-size: 1.75rem;
-      font-weight: 700; letter-spacing: 1px; margin-top: 0.35rem;
+    .btn-primary { background: var(--ink); color: var(--cream); box-shadow: 0 14px 26px -18px rgba(39,34,61,0.9); }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 20px 34px -18px rgba(39,34,61,0.95); }
+    .btn-ghost { background: transparent; border-color: var(--line); color: var(--ink); }
+    .btn-ghost:hover { background: rgba(39,34,61,0.04); }
+    .btn-sm { padding: 0.6rem 1.05rem; font-size: 0.9rem; }
+
+    .stores { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+    .store {
+      display: inline-flex; align-items: center; gap: 0.75rem;
+      background: var(--paper); border: 1px solid var(--line);
+      border-radius: 18px; padding: 0.7rem 1.15rem 0.7rem 0.95rem;
+      text-decoration: none; box-shadow: 0 12px 26px -22px rgba(39,34,61,0.6);
+      transition: transform 0.25s var(--ease), box-shadow 0.25s var(--ease), border-color 0.2s ease;
     }
-    .tagline { color: var(--ink-soft); font-weight: 500; margin-bottom: 2rem; }
-    .links { display: flex; flex-direction: column; gap: 1rem; }
-    a.card {
+    .store:hover { transform: translateY(-3px); box-shadow: 0 22px 34px -24px rgba(39,34,61,0.7); border-color: rgba(39,34,61,0.16); }
+    .store svg { width: 26px; height: 26px; flex: none; }
+    .store .st { display: flex; flex-direction: column; line-height: 1.15; }
+    .store .st small { font-size: 0.68rem; color: var(--ink-soft); letter-spacing: 0.06em; text-transform: uppercase; }
+    .store .st b { font-size: 1rem; font-weight: 700; letter-spacing: -0.01em; }
+
+    /* ── Hero ── */
+    .hero {
+      position: relative; overflow: hidden;
+      padding: clamp(3rem, 7vw, 6rem) 0 clamp(3rem, 6vw, 5rem);
+    }
+    .hero::before {
+      content: ""; position: absolute; inset: -25% -10% 30%;
+      background:
+        radial-gradient(46% 42% at 22% 22%, rgba(255, 91, 110, 0.13), transparent 70%),
+        radial-gradient(40% 40% at 82% 12%, rgba(47, 185, 155, 0.13), transparent 70%),
+        radial-gradient(45% 45% at 60% 68%, rgba(255, 194, 61, 0.12), transparent 70%);
+      pointer-events: none; z-index: -2;
+    }
+    .hero::after {
+      content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none;
+      background-image: radial-gradient(rgba(39, 34, 61, 0.14) 1px, transparent 1px);
+      background-size: 26px 26px;
+      -webkit-mask-image: radial-gradient(70% 60% at 50% 35%, #000 0%, transparent 78%);
+      mask-image: radial-gradient(70% 60% at 50% 35%, #000 0%, transparent 78%);
+      opacity: 0.55;
+    }
+    .hero-grid {
+      display: grid; grid-template-columns: 1.02fr 0.98fr;
+      gap: clamp(2rem, 5vw, 4rem); align-items: center;
+    }
+    .hero h1 {
+      font-size: clamp(2.5rem, 1.6rem + 4.2vw, 4.35rem);
+      margin: 1.15rem 0 1.15rem;
+      text-wrap: balance;
+    }
+    .hero h1 .accent { color: var(--cherry-deep); }
+    .hero .lead { max-width: 33ch; }
+    .hero .stores { margin-top: 1.9rem; }
+    .hero-note {
+      margin-top: 1.1rem; font-size: 0.86rem; color: var(--ink-soft);
+      display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;
+    }
+    .hero-note .dot { width: 4px; height: 4px; border-radius: 50%; background: var(--line); }
+
+    /* ── Odak kartı (canlı önizleme) ── */
+    .focus-card {
+      position: relative;
+      background: linear-gradient(168deg, #FFFFFF 0%, #FDF8EC 100%);
+      border: 1px solid var(--line-soft);
+      border-radius: var(--r-xl);
+      padding: 1.6rem 1.6rem 1.35rem;
+      box-shadow: var(--shadow);
+      max-width: 420px; margin-inline: auto; width: 100%;
+    }
+    .fc-top {
+      display: flex; align-items: center; justify-content: space-between;
+      font-size: 0.78rem; font-weight: 500;
+      letter-spacing: 0.04em; color: var(--ink-soft);
+    }
+    .fc-chip {
+      display: inline-flex; align-items: center; gap: 0.42rem;
+      background: var(--tint-rose); color: var(--cherry-deep);
+      padding: 0.22rem 0.6rem; border-radius: 999px; font-weight: 600;
+    }
+    .fc-chip i {
+      width: 6px; height: 6px; border-radius: 50%; background: var(--cherry);
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.25; } }
+    .fc-ring { position: relative; width: min(260px, 68vw); margin: 0.9rem auto 0.2rem; }
+    .fc-ring svg { width: 100%; height: auto; }
+    #ringSvg .cell { fill: rgba(39, 34, 61, 0.12); transition: fill 0.35s ease; }
+    #ringSvg .cell.on { fill: var(--cherry); }
+    .fc-clock {
+      text-align: center; font-size: 2.9rem; font-weight: 700;
+      letter-spacing: -0.02em; font-variant-numeric: tabular-nums;
+      margin-top: 0.4rem; line-height: 1;
+    }
+    .fc-state { text-align: center; color: var(--ink-soft); font-size: 0.9rem; min-height: 1.4em; }
+    .fc-people {
+      display: flex; align-items: center; justify-content: center; gap: 0.6rem;
+      margin-top: 0.85rem; font-size: 0.86rem; color: var(--ink-soft);
+    }
+    .fc-people b { color: var(--ink); font-weight: 700; }
+    .fc-avatars { display: inline-flex; }
+    .fc-avatars span {
+      width: 28px; height: 28px; border-radius: 50%; overflow: hidden;
+      background: var(--cream); border: 2px solid var(--paper);
+      display: inline-grid; place-items: center; margin-left: -9px;
+      box-shadow: 0 2px 6px -3px rgba(39, 34, 61, 0.5);
+    }
+    .fc-avatars span:first-child { margin-left: 0; }
+    
+    .fc-garden {
+      margin-top: 0.85rem; height: 84px; border-radius: 14px;
+      background: linear-gradient(180deg, #F6EBD3 0%, #EFDFC0 100%);
+      border: 1px solid rgba(39, 34, 61, 0.07);
+      display: flex; align-items: flex-end; justify-content: center; gap: 2px;
+      padding: 0 0.6rem 0.35rem; overflow: hidden;
+    }
+    .fc-garden .slot { width: 62px; height: 66px; display: grid; place-items: end center; }
+    .fc-garden .slot svg { width: 62px; height: 62px; animation: sprout 0.55s var(--ease) both; }
+    @keyframes sprout {
+      0% { transform: translateY(9px) scale(0.55); opacity: 0; }
+      60% { transform: translateY(-2px) scale(1.06); opacity: 1; }
+      100% { transform: translateY(0) scale(1); opacity: 1; }
+    }
+    .fc-foot {
+      display: flex; align-items: center; justify-content: space-between;
+      margin-top: 0.95rem; font-size: 0.82rem; color: var(--ink-soft);
+    }
+    .fc-btn {
+      border: 1px solid var(--line); background: var(--paper); cursor: pointer;
+      font-family: inherit; font-size: 0.82rem; font-weight: 600; letter-spacing: 0.01em;
+      color: var(--ink); padding: 0.38rem 0.9rem; border-radius: 999px;
+      transition: background 0.2s ease;
+    }
+    .fc-btn:hover { background: var(--cream); }
+
+    /* ── İnce şerit ── */
+    .ribbon { border-block: 1px solid var(--line-soft); background: rgba(251, 244, 228, 0.5); }
+    .ribbon .wrap {
+      display: flex; flex-wrap: wrap; gap: 0.5rem 2.4rem;
+      padding-block: 1.1rem; justify-content: space-between;
+    }
+    .ribbon li {
+      list-style: none; display: flex; align-items: center; gap: 0.55rem;
+      font-size: 0.9rem; color: var(--ink-2); font-weight: 500;
+    }
+    .ribbon li svg { width: 17px; height: 17px; flex: none; color: var(--cherry-deep); }
+
+    /* ── Bölüm başlıkları ── */
+    section { position: relative; }
+    .band { padding: clamp(3.5rem, 8vw, 6.5rem) 0; }
+    .band-head { max-width: 44ch; margin-bottom: clamp(2rem, 4vw, 3rem); }
+    .band-head h2 {
+      font-size: clamp(1.85rem, 1.3rem + 2.2vw, 2.9rem);
+      margin: 0.9rem 0 0.85rem; text-wrap: balance;
+    }
+    .band-head h2 .accent { color: var(--cherry-deep); }
+
+    /* ── Nasıl çalışır ── */
+    .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(1rem, 2.5vw, 2rem); }
+    .step { position: relative; padding-top: 1.6rem; border-top: 1px solid var(--line); }
+    .step .n {
+      font-size: 0.8rem; font-weight: 700; font-variant-numeric: tabular-nums;
+      color: var(--cherry-deep); letter-spacing: 0.14em;
+    }
+    .step h3 { font-size: 1.2rem; margin: 0.5rem 0 0.5rem; }
+    .step p { color: var(--ink-soft); font-size: 0.97rem; }
+
+    /* ── Özellik kartları ── */
+    .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(0.9rem, 1.8vw, 1.35rem); }
+    .card {
+      background: var(--paper); border: 1px solid var(--line-soft);
+      border-radius: var(--r-lg); padding: 1.5rem 1.5rem 1.65rem;
+      box-shadow: 0 20px 44px -40px rgba(39, 34, 61, 0.55);
+      transition: transform 0.35s var(--ease), box-shadow 0.35s var(--ease);
+    }
+    .card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lift); }
+    .card .viz {
+      height: 108px; border-radius: 14px; margin-bottom: 1.15rem;
+      display: grid; place-items: center; overflow: hidden;
+    }
+    .card h3 { font-size: 1.13rem; margin-bottom: 0.45rem; }
+    .card p { color: var(--ink-soft); font-size: 0.95rem; }
+    .card:nth-child(1) .viz { background: var(--tint-mint); }
+    .card:nth-child(2) .viz { background: var(--tint-sky); }
+    .card:nth-child(3) .viz { background: var(--tint-sun); }
+    .card:nth-child(4) .viz { background: var(--tint-grape); }
+    .card:nth-child(5) .viz { background: var(--tint-peach); }
+    .card:nth-child(6) .viz { background: var(--tint-rose); }
+
+    /* ── Harita bandı ── */
+    .map-band {
+      background: var(--ink); color: var(--cream);
+      border-radius: clamp(24px, 4vw, 40px);
+      padding: clamp(2.2rem, 5vw, 3.6rem);
+      display: grid; grid-template-columns: 0.86fr 1.14fr;
+      gap: clamp(1.8rem, 4vw, 3rem); align-items: center;
+      position: relative; overflow: hidden;
+    }
+    .map-band::after {
+      content: ""; position: absolute; inset: 0; pointer-events: none;
+      background: radial-gradient(60% 60% at 85% 15%, rgba(79, 163, 227, 0.22), transparent 70%),
+                  radial-gradient(50% 50% at 12% 90%, rgba(255, 91, 110, 0.18), transparent 70%);
+    }
+    .map-band > * { position: relative; z-index: 1; }
+    .map-band .kicker { color: rgba(251, 244, 228, 0.6); }
+    .map-band h2 { font-size: clamp(1.7rem, 1.2rem + 2vw, 2.6rem); margin: 0.9rem 0 0.9rem; }
+    .map-band h2 .accent { color: var(--sun); }
+    .map-band p { color: rgba(251, 244, 228, 0.72); }
+    .map-stats { display: flex; gap: 2rem; margin-top: 1.7rem; flex-wrap: wrap; }
+    .map-stats div { font-size: 0.88rem; color: rgba(251, 244, 228, 0.6); }
+    .map-stats b {
+      display: block; font-size: 1.5rem; font-weight: 700;
+      color: var(--cream); letter-spacing: -0.01em; margin-bottom: 0.15rem;
+    }
+    .map-list { list-style: none; display: grid; gap: 0.7rem; margin-top: 1.5rem; }
+    .map-list li {
+      display: flex; gap: 0.7rem; align-items: flex-start;
+      font-size: 0.95rem; color: rgba(251, 244, 228, 0.78);
+    }
+    .map-list i { width: 9px; height: 9px; border-radius: 3px; margin-top: 0.52rem; flex: none; }
+    .map-visual { position: relative; }
+    .map-hint {
+      font-size: 0.76rem; letter-spacing: 0.14em; text-transform: uppercase;
+      color: rgba(251, 244, 228, 0.5); margin-bottom: 0.75rem;
+    }
+    .warmap {
+      background: #BEE1F2; border: 3px solid var(--ink); border-radius: 16px;
+      padding: 8px; overflow: hidden;
+      box-shadow: 0 30px 60px -30px rgba(0, 0, 0, 0.65);
+    }
+    .warmap svg { width: 100%; height: auto; display: block; }
+    .warmap [data-city] { cursor: pointer; }
+    .map-city {
+      margin-top: 0.95rem; font-size: 0.9rem; color: rgba(251, 244, 228, 0.72);
+      display: flex; align-items: center; gap: 0.55rem; flex-wrap: wrap;
+    }
+    .map-city b { color: var(--cream); font-weight: 700; }
+    .map-city .swatch {
+      width: 14px; height: 14px; border-radius: 4px;
+      border: 2px solid rgba(251, 244, 228, 0.85); flex: none;
+    }
+
+    /* ── Koleksiyon ── */
+    .collection { display: grid; grid-template-columns: repeat(5, 1fr); gap: clamp(0.6rem, 1.5vw, 1rem); }
+    .plant {
+      background: var(--paper); border: 1px solid var(--line-soft); border-radius: var(--r-md);
+      padding: 1.15rem 0.6rem 0.9rem; text-align: center;
+      transition: transform 0.3s var(--ease), background 0.3s ease;
+    }
+    .plant:hover { transform: translateY(-5px) rotate(-1.5deg); background: var(--cream); }
+    .plant svg { width: 78px; height: 78px; margin: 0 auto 0.55rem; }
+    .plant span {
+      display: block; font-size: 0.86rem; font-weight: 600;
+      letter-spacing: 0.01em; color: var(--ink-2);
+    }
+    .plant em {
+      display: block; font-style: normal; font-size: 0.75rem;
+      color: var(--ink-soft); margin-top: 0.1rem;
+    }
+
+    /* ── Kapanış ── */
+    .closing {
+      text-align: center; background: var(--cream);
+      border-radius: clamp(24px, 4vw, 40px);
+      padding: clamp(2.6rem, 6vw, 4.5rem) clamp(1.2rem, 4vw, 3rem);
+      border: 1px solid var(--line-soft);
+    }
+    .closing h2 { font-size: clamp(1.9rem, 1.3rem + 2.4vw, 3rem); margin-bottom: 1rem; text-wrap: balance; }
+    .closing h2 .accent { color: var(--cherry-deep); }
+    .closing p { color: var(--ink-soft); max-width: 46ch; margin: 0 auto 2rem; }
+    .closing .stores { justify-content: center; }
+
+    /* ── Yasal kartlar ── */
+    .legal { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.9rem; }
+    .legal a {
       display: flex; align-items: center; gap: 0.85rem;
-      background: var(--paper); border: 3px solid var(--ink);
-      border-radius: 16px; padding: 1.1rem 1.3rem;
-      box-shadow: 5px 5px 0 var(--ink); text-decoration: none;
-      color: var(--ink); font-weight: 700; font-size: 1.05rem;
-      transition: transform 0.08s ease, box-shadow 0.08s ease;
+      background: var(--paper); border: 1px solid var(--line-soft);
+      border-radius: var(--r-md); padding: 1.1rem 1.25rem;
+      text-decoration: none; font-weight: 600; font-size: 1rem;
+      transition: border-color 0.2s ease, transform 0.25s var(--ease);
     }
-    a.card:hover { transform: translate(2px, 2px); box-shadow: 3px 3px 0 var(--ink); }
-    a.card .ic {
-      width: 40px; height: 40px; flex-shrink: 0;
-      display: inline-flex; align-items: center; justify-content: center;
-      border: 2px solid var(--ink); border-radius: 11px;
-      box-shadow: 2px 2px 0 var(--ink); color: var(--paper);
-      font-family: 'Pixelify Sans', sans-serif; font-size: 1.3rem;
+    .legal a:hover { border-color: rgba(39, 34, 61, 0.18); transform: translateY(-2px); }
+    .legal .ic {
+      width: 36px; height: 36px; border-radius: 11px; flex: none;
+      display: grid; place-items: center;
     }
-    a.card:nth-child(1) .ic { background: var(--grape); }
-    a.card:nth-child(2) .ic { background: var(--mint); }
-    a.card:nth-child(3) .ic { background: var(--sky); }
-    a.card .arrow { margin-left: auto; color: var(--ink-soft); }
-    footer { margin-top: 2.5rem; color: var(--ink-soft); font-size: 0.82rem; }
+    .legal .ic svg { width: 18px; height: 18px; }
+    .legal a:nth-child(1) .ic { background: var(--tint-grape); color: var(--grape); }
+    .legal a:nth-child(2) .ic { background: var(--tint-mint); color: var(--mint); }
+    .legal a:nth-child(3) .ic { background: var(--tint-sky); color: var(--sky); }
+    .legal .arrow { margin-left: auto; color: var(--ink-soft); font-size: 1.1rem; }
+
+    /* ── Alt bilgi ── */
+    footer.site {
+      border-top: 1px solid var(--line-soft); margin-top: clamp(3rem, 7vw, 5rem);
+      padding: 2.2rem 0 2.8rem;
+    }
+    footer.site .wrap {
+      display: flex; align-items: center; gap: 1rem 2rem; flex-wrap: wrap;
+      justify-content: space-between; font-size: 0.88rem; color: var(--ink-soft);
+    }
+    footer.site .fl { display: flex; gap: 1.4rem; flex-wrap: wrap; }
+    footer.site a { text-decoration: none; }
+    footer.site a:hover { color: var(--ink); }
+
+    /* ── Görünüme girme animasyonu (JS yoksa içerik görünür kalır) ── */
+    .js [data-reveal] { opacity: 0; transform: translateY(16px); }
+    .js [data-reveal].in {
+      opacity: 1; transform: none;
+      transition: opacity 0.7s var(--ease), transform 0.7s var(--ease);
+    }
+
+    /* ── Duyarlı ── */
+    @media (max-width: 940px) {
+      .hero-grid { grid-template-columns: 1fr; }
+      .hero .lead { max-width: 46ch; }
+      .cards, .steps { grid-template-columns: repeat(2, 1fr); }
+      .map-band { grid-template-columns: 1fr; }
+      .collection { grid-template-columns: repeat(3, 1fr); }
+      .legal { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 720px) {
+      .nav-links { display: none; }
+      .ribbon .wrap { gap: 0.7rem 1.5rem; }
+    }
+    @media (max-width: 560px) {
+      body { font-size: 16px; }
+      .cards, .steps { grid-template-columns: 1fr; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; }
+      .js [data-reveal] { opacity: 1; transform: none; }
+    }
   </style>
+  <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
-  <div class="lang-selector">
-    <button class="lang-btn active" data-lang="tr">TR</button>
-    <button class="lang-btn" data-lang="en">EN</button>
-  </div>
-  <div class="wrap">
-    <div class="badge">
-      <div class="tomato">🍅</div>
-      <div class="name">POMI</div>
+  <a class="skip" href="#main" data-i18n="skip">İçeriğe geç</a>
+
+  <!-- ══ Üst bar ══ -->
+  <header class="nav" id="nav">
+    <div class="wrap">
+      <a class="brand" href="#top" aria-label="Pomi">
+        <span id="brandMark" aria-hidden="true"></span>
+        <span>Pomi</span>
+      </a>
+      <nav class="nav-links" aria-label="Bölümler">
+        <a href="#how" data-i18n="navHow">Nasıl çalışır</a>
+        <a href="#features" data-i18n="navFeatures">Özellikler</a>
+        <a href="#conquest" data-i18n="navConquest">Fetih</a>
+        <a href="#collection" data-i18n="navCollection">Koleksiyon</a>
+        <a href="support.html" data-i18n="navSupport">Destek</a>
+      </nav>
+      <div class="lang" role="group" aria-label="Dil / Language">
+        <button class="lang-btn active" data-lang="tr" type="button">TR</button>
+        <button class="lang-btn" data-lang="en" type="button">EN</button>
+      </div>
+      <a class="btn btn-primary btn-sm" href="#get" data-i18n="navGet">İndir</a>
     </div>
-    <p class="tagline" data-i18n-key="tagline">Yasal belgeler</p>
-    <div class="links">
-      <a class="card" href="privacy.html">
-        <span class="ic">🔒</span> <span data-i18n-key="privacy">Gizlilik Politikası</span> <span class="arrow">→</span>
-      </a>
-      <a class="card" href="terms.html">
-        <span class="ic">📄</span> <span data-i18n-key="terms">Kullanım Şartları</span> <span class="arrow">→</span>
-      </a>
-      <a class="card" href="support.html">
-        <span class="ic">💬</span> <span data-i18n-key="support">Destek</span> <span class="arrow">→</span>
-      </a>
+  </header>
+
+  <main id="main">
+    <!-- ══ Hero ══ -->
+    <section class="hero" id="top">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="kicker" data-i18n="heroKicker">Pomodoro · Piksel bahçe</p>
+          <h1 data-i18n="heroTitle">Odaklan,<br />bahçen <span class="accent">büyüsün</span>.</h1>
+          <p class="lead" data-i18n="heroLead">Tamamladığın her 25 dakikalık seans bahçene yeni bir bitki ekler. Görevlerini planla, arkadaşlarınla aynı odada çalış, şehrin için yarış. Hepsi tek bir sakin ekranda.</p>
+          <div class="stores" id="get">
+            <a class="store" id="storeIos" href="#" target="_blank" rel="noopener">
+              <svg viewBox="0 0 16 16" shape-rendering="crispEdges" aria-hidden="true">
+                <rect x="4" y="1" width="8" height="14" rx="1" fill="#27223D"/>
+                <rect x="5" y="3" width="6" height="9" fill="#FBF4E4"/>
+                <rect x="7" y="5" width="2" height="3" fill="#FF5B6E"/>
+                <rect x="6" y="8" width="4" height="1" fill="#FF5B6E"/>
+                <rect x="7" y="13" width="2" height="1" fill="#FBF4E4"/>
+              </svg>
+              <span class="st"><small data-i18n="storeSmallIos">İndir</small><b>App Store</b></span>
+            </a>
+            <a class="store" id="storeAndroid" href="#" target="_blank" rel="noopener">
+              <svg viewBox="0 0 16 16" shape-rendering="crispEdges" aria-hidden="true">
+                <rect x="3" y="2" width="2" height="12" fill="#27223D"/>
+                <rect x="5" y="3" width="2" height="10" fill="#2FB99B"/>
+                <rect x="7" y="4" width="2" height="8" fill="#4FA3E3"/>
+                <rect x="9" y="5" width="2" height="6" fill="#FFC23D"/>
+                <rect x="11" y="7" width="2" height="2" fill="#FF5B6E"/>
+              </svg>
+              <span class="st"><small data-i18n="storeSmallAndroid">İndir</small><b>Google Play</b></span>
+            </a>
+          </div>
+          <p class="hero-note">
+            <span data-i18n="noteA">iPhone &amp; Android</span>
+            <span class="dot"></span>
+            <span data-i18n="noteB">Türkçe &amp; English</span>
+            <span class="dot"></span>
+            <span data-i18n="noteC">Reklam yok</span>
+          </p>
+        </div>
+
+        <!-- Canlı önizleme: gerçek sayaç mantığı, hızlandırılmış demo -->
+        <div class="focus-card" data-reveal>
+          <div class="fc-top">
+            <span class="fc-chip"><i></i><span data-i18n="live">canlı önizleme</span></span>
+            <span><span id="sessionCount">0</span> <span data-i18n="sessions">seans</span></span>
+          </div>
+          <div class="fc-ring"><svg viewBox="0 0 32 32" id="ringSvg" shape-rendering="crispEdges" aria-hidden="true"></svg></div>
+          <p class="fc-clock" id="clock" aria-live="off">25:00</p>
+          <p class="fc-state" id="state" data-i18n="stateFocus">Odak sürüyor…</p>
+          <div class="fc-people">
+            <span class="fc-avatars" id="peopleAvatars" aria-hidden="true"></span>
+            <span id="peopleText"></span>
+          </div>
+          <div class="fc-garden" id="garden" aria-hidden="true"></div>
+          <div class="fc-foot">
+            <span data-i18n="gardenLabel">Bahçen</span>
+            <button class="fc-btn" id="toggle" type="button" data-i18n="pause">Duraklat</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ Şerit ══ -->
+    <div class="ribbon">
+      <ul class="wrap">
+        <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="8" cy="8" r="6"/><path d="M8 5v3.5L10 10"/></svg><span data-i18n="rib1">Klasik pomodoro, esnek süreler</span></li>
+        <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M8 14s5-3.2 5-7A5 5 0 0 0 3 7c0 3.8 5 7 5 7Z"/><circle cx="8" cy="7" r="1.6"/></svg><span data-i18n="rib2">Şehrin için bölge savaşları</span></li>
+        <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2 12h12M4.5 12V8m3.5 4V5m3.5 7V9"/></svg><span data-i18n="rib3">Haftalık lig ve istatistikler</span></li>
+        <li><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 9a5 5 0 0 1 10 0"/><rect x="2" y="9" width="3" height="4" rx="1.2"/><rect x="11" y="9" width="3" height="4" rx="1.2"/></svg><span data-i18n="rib4">Odak sesleri ve ambiyans</span></li>
+      </ul>
     </div>
-    <footer><span data-i18n-key="copyright">© 2026 Pomi — Tüm hakları saklıdır.</span></footer>
-  </div>
+
+    <!-- ══ Nasıl çalışır ══ -->
+    <section class="band" id="how">
+      <div class="wrap">
+        <div class="band-head" data-reveal>
+          <p class="kicker" data-i18n="howKicker">Nasıl çalışır</p>
+          <h2 data-i18n="howTitle">Üç adım. Sonra <span class="accent">gerisi kendiliğinden</span>.</h2>
+        </div>
+        <div class="steps">
+          <article class="step" data-reveal>
+            <span class="n">01</span>
+            <h3 data-i18n="step1t">Görevini seç</h3>
+            <p data-i18n="step1p">Bugün ne yapacağını yaz, süreyi ayarla. Her seans bir göreve bağlanır.</p>
+          </article>
+          <article class="step" data-reveal>
+            <span class="n">02</span>
+            <h3 data-i18n="step2t">25 dakika odaklan</h3>
+            <p data-i18n="step2p">Retro piksel sayaç çalışırken tek işe odaklan. İstersen sesleri aç, istersen bir odaya katıl.</p>
+          </article>
+          <article class="step" data-reveal>
+            <span class="n">03</span>
+            <h3 data-i18n="step3p-t">Bitkin büyüsün</h3>
+            <p data-i18n="step3p">Seans bitince bahçene yeni bir bitki eklenir; odak dakikaların şehrinin puanına yazılır.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ Özellikler ══ -->
+    <section class="band" id="features" style="padding-top:0">
+      <div class="wrap">
+        <div class="band-head" data-reveal>
+          <p class="kicker" data-i18n="featKicker">Özellikler</p>
+          <h2 data-i18n="featTitle">Bir zamanlayıcıdan <span class="accent">fazlası</span>.</h2>
+          <p class="lead" data-i18n="featLead">Odaklanmayı sürdürülebilir kılan şey disiplin değil, geri dönüş. Pomi her seansın karşılığını görünür kılar.</p>
+        </div>
+        <div class="cards">
+          <article class="card" data-reveal>
+            <div class="viz" data-viz="garden"></div>
+            <h3 data-i18n="f1t">Piksel bahçe</h3>
+            <p data-i18n="f1p">Tamamlanan her seans bahçende bir bitkiye dönüşür. Bahçen, odak geçmişinin haritası olur.</p>
+          </article>
+          <article class="card" data-reveal>
+            <div class="viz" data-viz="map"></div>
+            <h3 data-i18n="f2t">Fetih haritası</h3>
+            <p data-i18n="f2p">Odak dakikaların bölgeleri boyar. Haritada yeni alanlar aç, kazandığın yeri elinde tut.</p>
+          </article>
+          <article class="card" data-reveal>
+            <div class="viz" data-viz="league"></div>
+            <h3 data-i18n="f3t">Lig &amp; sıralama</h3>
+            <p data-i18n="f3p">Haftalık ligde yüksel, şehrinin sıralamadaki yerini gör. Rekabet motive edici bir yan etki.</p>
+          </article>
+          <article class="card" data-reveal>
+            <div class="viz" data-viz="rooms"></div>
+            <h3 data-i18n="f4t">Odalar</h3>
+            <p data-i18n="f4p">Arkadaşlarınla aynı odada, aynı sayaçla çalış. Sessiz ama beraber.</p>
+          </article>
+          <article class="card" data-reveal>
+            <div class="viz" data-viz="sounds"></div>
+            <h3 data-i18n="f5t">Sesler</h3>
+            <p data-i18n="f5p">Yağmur, kafe, orman… Kendi çalışma ortamını kur, seviyeleri karıştır.</p>
+          </article>
+          <article class="card" data-reveal>
+            <div class="viz" data-viz="tasks"></div>
+            <h3 data-i18n="f6t">Görevler</h3>
+            <p data-i18n="f6p">Planla, tamamla, işaretle. Gün sonunda ne kadar odaklandığını net olarak gör.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ Fetih haritası ══ -->
+    <section class="band" id="conquest" style="padding-top:0">
+      <div class="wrap">
+        <div class="map-band" data-reveal>
+          <div>
+            <p class="kicker" data-i18n="mapKicker">Fetih haritası</p>
+            <h2 data-i18n="mapTitle">Odağın haritayı <span class="accent">ele geçirsin</span>.</h2>
+            <p data-i18n="mapLead">Pomi'yi diğer zamanlayıcılardan ayıran şey burası. Tamamladığın her seans şehrinin puanına yazılır; puan biriktikçe haritadaki bölgeler senin rengine döner. Bir bölge ele geçirilir, ertesi gün rakip şehir geri alır. Tek başına çalışırken bile bir takımın parçasısın.</p>
+            <ul class="map-list">
+              <li><i style="background:#FF5B6E"></i><span data-i18n="mapL1">Her seans, bulunduğun şehre puan yazar</span></li>
+              <li><i style="background:#4FA3E3"></i><span data-i18n="mapL2">Bölgeler gün içinde el değiştirir, haritayı canlı izlersin</span></li>
+              <li><i style="background:#FFC23D"></i><span data-i18n="mapL3">Sezon sonunda en çok bölgeyi tutan şehir kazanır</span></li>
+            </ul>
+            <div class="map-stats">
+              <div><b data-i18n="mapS1b">81</b><span data-i18n="mapS1">şehir yarışıyor</span></div>
+              <div><b data-i18n="mapS2b">7 gün</b><span data-i18n="mapS2">süren sezonlar</span></div>
+              <div><b data-i18n="mapS3b">1 seans</b><span data-i18n="mapS3">fark yaratmak için yeter</span></div>
+            </div>
+          </div>
+          <div class="map-visual">
+            <div class="map-hint" data-i18n="mapHint">Bir şehre dokun</div>
+            <div class="warmap" id="warmap"></div>
+            <p class="map-city" id="mapCity"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ Koleksiyon ══ -->
+    <section class="band" id="collection" style="padding-top:0">
+      <div class="wrap">
+        <div class="band-head" data-reveal>
+          <p class="kicker" data-i18n="colKicker">Koleksiyon</p>
+          <h2 data-i18n="colTitle">Odaklandıkça <span class="accent">açılan</span> bitkiler.</h2>
+          <p class="lead" data-i18n="colLead">Her bitkinin kendi büyüme aşamaları ve nadirliği var. Bazıları ilk günden, bazıları uzun bir seriden sonra gelir.</p>
+        </div>
+        <div class="collection" id="collectionGrid" data-reveal></div>
+      </div>
+    </section>
+
+    <!-- ══ Kapanış ══ -->
+    <section class="band" style="padding-top:0">
+      <div class="wrap">
+        <div class="closing" data-reveal>
+          <p class="kicker" style="justify-content:center" data-i18n="ctaKicker">Hazırsan</p>
+          <h2 data-i18n="ctaTitle">Bugün 25 dakika.<br />Yarın bir <span class="accent">bahçe</span>.</h2>
+          <p data-i18n="ctaLead">Pomi'yi indir, ilk seansını başlat. İlk bitkin bugün toprağa girsin.</p>
+          <div class="stores">
+            <a class="store" data-store="ios" href="#" target="_blank" rel="noopener">
+              <svg viewBox="0 0 16 16" shape-rendering="crispEdges" aria-hidden="true">
+                <rect x="4" y="1" width="8" height="14" rx="1" fill="#27223D"/>
+                <rect x="5" y="3" width="6" height="9" fill="#FBF4E4"/>
+                <rect x="7" y="5" width="2" height="3" fill="#FF5B6E"/>
+                <rect x="6" y="8" width="4" height="1" fill="#FF5B6E"/>
+                <rect x="7" y="13" width="2" height="1" fill="#FBF4E4"/>
+              </svg>
+              <span class="st"><small data-i18n="storeSmallIos">İndir</small><b>App Store</b></span>
+            </a>
+            <a class="store" data-store="android" href="#" target="_blank" rel="noopener">
+              <svg viewBox="0 0 16 16" shape-rendering="crispEdges" aria-hidden="true">
+                <rect x="3" y="2" width="2" height="12" fill="#27223D"/>
+                <rect x="5" y="3" width="2" height="10" fill="#2FB99B"/>
+                <rect x="7" y="4" width="2" height="8" fill="#4FA3E3"/>
+                <rect x="9" y="5" width="2" height="6" fill="#FFC23D"/>
+                <rect x="11" y="7" width="2" height="2" fill="#FF5B6E"/>
+              </svg>
+              <span class="st"><small data-i18n="storeSmallAndroid">İndir</small><b>Google Play</b></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ Yasal / destek ══ -->
+    <section class="band" style="padding-top:0">
+      <div class="wrap">
+        <div class="band-head" data-reveal style="margin-bottom:1.4rem">
+          <p class="kicker" data-i18n="legalKicker">Belgeler</p>
+        </div>
+        <div class="legal" data-reveal>
+          <a href="privacy.html">
+            <span class="ic"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3.5" y="7" width="9" height="6" rx="1.5"/><path d="M5.5 7V5a2.5 2.5 0 0 1 5 0v2"/></svg></span>
+            <span data-i18n="privacy">Gizlilik Politikası</span>
+            <span class="arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="terms.html">
+            <span class="ic"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 2.5h5L12 5.5v8H4z"/><path d="M6 8h4M6 10.5h4"/></svg></span>
+            <span data-i18n="terms">Kullanım Şartları</span>
+            <span class="arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="support.html">
+            <span class="ic"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><path d="M3.6 3.5h8.8c.9 0 1.6.7 1.6 1.6v4.3c0 .9-.7 1.6-1.6 1.6H7.4L4.6 13v-2H3.6c-.9 0-1.6-.7-1.6-1.6V5.1c0-.9.7-1.6 1.6-1.6Z"/></svg></span>
+            <span data-i18n="support">Destek</span>
+            <span class="arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site">
+    <div class="wrap">
+      <span data-i18n="copyright">© 2026 Pomi. Tüm hakları saklıdır.</span>
+      <span class="fl">
+        <a href="privacy.html" data-i18n="privacyShort">Gizlilik</a>
+        <a href="terms.html" data-i18n="termsShort">Şartlar</a>
+        <a href="support.html" data-i18n="supportShort">Destek</a>
+        <a href="mailto:yakupselimucar@hotmail.com">yakupselimucar@hotmail.com</a>
+      </span>
+    </div>
+  </footer>
 
   <script>
+    /* ════════════════════════════════════════════════════════════
+       1) MAĞAZA BAĞLANTILARI — yayın linklerini buraya yaz.
+       ════════════════════════════════════════════════════════════ */
+    const STORE = {
+      ios: 'https://apps.apple.com/tr/app/pomi-birlikte-%C3%A7al%C4%B1%C5%9F-odaklan/id6784132034?l=tr',
+      android: 'https://play.google.com/store/apps/details?id=com.yakupselimucar.pomi&hl=tr'
+    };
+
+    /* Odak kartındaki "birlikte çalışan kişi" sayısı. Sabit bir değer;
+       gerçek veriye bağlamak istersen burayı güncelle. */
+    const FOCUS_PEOPLE = 1240;
+
+    /* ── 2) Piksel çizim yardımcıları (uygulamanın 16'lık sprite ızgarası) ── */
+    const C = {
+      ink: '#27223D', R: '#E8455B', DK: '#C0344A', HL: '#FF7A8C',
+      G: '#46C39A', GD: '#2E9B78', P: '#FFC2CE', W: '#FFFFFF'
+    };
+    const px = (x, y, w, h, c) =>
+      `<rect x="${x.toFixed(2)}" y="${y.toFixed(2)}" width="${(w + 0.03).toFixed(2)}" height="${(h + 0.03).toFixed(2)}" fill="${c}"/>`;
+
+    /* Pomi karakteri — uygulamadaki sprite ile birebir aynı ızgara */
+    function pomi(u = 1, ox = 0, oy = 0) {
+      const o = [];
+      const p = (x, y, c, w = 1, h = 1) => o.push(px(ox + x * u, oy + y * u, w * u, h * u, c));
+      const rows = { 5: [5, 10], 6: [4, 11], 7: [3, 12], 8: [3, 12], 9: [3, 12], 10: [3, 12], 11: [4, 11], 12: [5, 10] };
+      Object.entries(rows).forEach(([y, [s, e]]) => p(s - 1, +y, C.ink, (e - s) + 3, 1));
+      p(4, 4, C.ink, 7, 1); p(4, 13, C.ink, 7, 1);
+      Object.entries(rows).forEach(([y, [s, e]]) => p(s, +y, C.R, (e - s) + 1, 1));
+      p(9, 11, C.DK, 3, 1); p(8, 12, C.DK, 2, 1);
+      p(5, 6, C.HL, 2, 1); p(4, 7, C.HL, 1, 1);
+      [[7, 2], [8, 2], [6, 3], [7, 3], [8, 3], [9, 3]].forEach(([x, y]) => p(x, y, C.G));
+      p(7, 4, C.GD); p(8, 4, C.GD); p(5, 4, C.G); p(10, 4, C.G);
+      p(6, 8, C.ink); p(9, 8, C.ink);
+      p(6, 8, C.W, 0.5, 0.5); p(9, 8, C.W, 0.5, 0.5);
+      p(4, 9, C.P); p(11, 9, C.P);
+      p(7, 10, C.ink); p(8, 10, C.ink);
+      p(6, 9, C.ink, 0.6, 0.6); p(9.4, 9, C.ink, 0.6, 0.6);
+      return o.join('');
+    }
+
+    /* ── Bitki maskotları ────────────────────────────────────────────────
+       Uygulamanın 24×24 sprite sistemi: pomi-mascots.jsx ve pomi-shapes.jsx
+       dosyalarından birebir portlandı (ruh hâli ve aksesuar katmanları hariç).
+       Her tür aynı iskeleti, aynı toprak çizgisini ve aynı yüz bölgesini
+       kullanır; yalnızca siluet profili türe göre değişir.                 */
+    const MI = '#27223D', GRID = 24;
+
+    const MSTAGES = [
+      { key: 'seed', pct: 0, face: 'eager' },
+      { key: 'sprout', pct: 25, face: 'focus' },
+      { key: 'grow', pct: 50, face: 'effort' },
+      { key: 'blush', pct: 75, face: 'strain' },
+      { key: 'ripe', pct: 100, face: 'triumph' }
+    ];
+    const GEO = {
+      seed: { bottom: 22 }, sprout: { bottom: 18 }, grow: { k: 0.55, bottom: 17 },
+      blush: { k: 0.8, bottom: 19 }, ripe: { k: 1, bottom: 21 }
+    };
+
+    const MSPECIES = [
+      { id: 'tomato', plant: 'Domates', name: 'Pomi',
+        ripe: '#E8455B', dark: '#C0344A', light: '#FF7A8C', mid: '#F2924A',
+        unripe: '#8CC06A', unripeDark: '#67A24C',
+        leaf: '#46C39A', leafDark: '#2E9B78', seedC: '#EBD7A4', seedD: '#BFA671',
+        profile: [3, 6, 7, 8, 8, 8, 8, 8, 7, 7, 6, 4], crown: 'calyx', ripeFrom: 'top' },
+      { id: 'straw', plant: 'Çilek', name: 'Çili',
+        ripe: '#FA4A78', dark: '#D2325C', light: '#FF8FAE', mid: '#FBA6A6',
+        unripe: '#E4EBAE', unripeDark: '#BCCB85',
+        leaf: '#4FBE7A', leafDark: '#2F9457', seedC: '#E0A79C', seedD: '#B27C72',
+        profile: [4, 7, 8, 8, 8, 7, 7, 6, 5, 4, 3, 2], crown: 'leafy', detail: 'pips', ripeFrom: 'bottom' },
+      { id: 'cactus', plant: 'Kaktüs', name: 'Kakto',
+        ripe: '#41B98C', dark: '#2C9068', light: '#74DBAE', mid: '#52C79A',
+        unripe: '#6BC7A2', unripeDark: '#43A47F',
+        leaf: '#41B98C', leafDark: '#2C9068', seedC: '#8A7457', seedD: '#5F4E39',
+        profile: [3, 4, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 4], crown: 'bloom', detail: 'ribs',
+        arms: true, ripeFrom: 'top' },
+      { id: 'corn', plant: 'Mısır', name: 'Mısko',
+        ripe: '#F5C93F', dark: '#D3A227', light: '#FFE482', mid: '#DFCF56',
+        unripe: '#A9C963', unripeDark: '#87A748',
+        leaf: '#5CBE68', leafDark: '#3B9749', seedC: '#F3D678', seedD: '#C9A94B',
+        profile: [2, 4, 5, 6, 6, 6, 6, 6, 6, 6, 5, 5, 4, 3, 2], crown: 'tassel', detail: 'kernels',
+        husk: true, ripeFrom: 'top' },
+      { id: 'carrot', plant: 'Havuç', name: 'Havi',
+        ripe: '#F08434', dark: '#C96821', light: '#FFAA63', mid: '#EBA85A',
+        unripe: '#B9C878', unripeDark: '#93A458',
+        leaf: '#4FBE7A', leafDark: '#2F9457', seedC: '#E8C79A', seedD: '#B99A6E',
+        profile: [6, 7, 7, 6, 6, 5, 5, 4, 4, 3, 2, 2], crown: 'leafy', detail: 'stripe', ripeFrom: 'top' },
+      { id: 'chili', plant: 'Biber', name: 'Bibo',
+        ripe: '#E23B3B', dark: '#B62A2E', light: '#FF7A6E', mid: '#E9A03C',
+        unripe: '#7FBF63', unripeDark: '#5C9B47',
+        leaf: '#46A85F', leafDark: '#2E8347', seedC: '#E7CDA0', seedD: '#B79B6E',
+        profile: [4, 5, 5, 5, 5, 4, 4, 4, 3, 3, 2, 2], crown: 'calyx', ripeFrom: 'bottom' },
+      { id: 'pumpkin', plant: 'Balkabağı', name: 'Balko',
+        ripe: '#EE8B2B', dark: '#C46C18', light: '#FFB25C', mid: '#E3B24A',
+        unripe: '#A8C46E', unripeDark: '#83A050',
+        leaf: '#5CA65C', leafDark: '#3C8244', seedC: '#EBD9A8', seedD: '#BFA873',
+        profile: [4, 7, 9, 9, 9, 9, 9, 8, 7, 5], crown: 'stalk', detail: 'ribs', ripeFrom: 'top' },
+      { id: 'sunflower', plant: 'Ayçiçeği', name: 'Ayça',
+        ripe: '#8A5A2E', dark: '#5F3B1C', light: '#B07C42', mid: '#C29A55',
+        petalC: '#FFC94A', petalD: '#E5A62A',
+        unripe: '#9DBE6B', unripeDark: '#7C9A50',
+        leaf: '#4FA85F', leafDark: '#337E45', seedC: '#DFC48C', seedD: '#AE9260',
+        profile: [3, 5, 7, 7, 7, 7, 6, 5, 4, 3, 3, 3], crown: 'petals', detail: 'dots', ripeFrom: 'top' },
+      { id: 'lavender', plant: 'Lavanta', name: 'Lavi',
+        ripe: '#9B6DD6', dark: '#7A4FB4', light: '#C0A0EE', mid: '#B49AD0',
+        unripe: '#A9C48C', unripeDark: '#86A26C',
+        leaf: '#6DAE7A', leafDark: '#4C8A5A', seedC: '#DCCFA6', seedD: '#AFA277',
+        profile: [3, 4, 5, 5, 5, 5, 4, 4, 3, 3, 3, 3], crown: 'sprig', ripeFrom: 'top' },
+      { id: 'apple', plant: 'Elma', name: 'Elmo',
+        ripe: '#E14257', dark: '#B62F44', light: '#FF8090', mid: '#E8B45A',
+        unripe: '#9AC46A', unripeDark: '#78A24C',
+        leaf: '#4FBE7A', leafDark: '#2F9457', seedC: '#E4D2A6', seedD: '#B69F72',
+        profile: [4, 7, 8, 8, 8, 8, 7, 6, 5, 3], crown: 'stalk', ripeFrom: 'bottom' },
+      { id: 'blueberry', plant: 'Yaban mersini', name: 'Meri',
+        ripe: '#5A6FC4', dark: '#3F4F9B', light: '#8E9EE0', mid: '#8E7FB8',
+        unripe: '#A9C48C', unripeDark: '#86A26C',
+        leaf: '#4FA85F', leafDark: '#337E45', seedC: '#D8CDAE', seedD: '#A99E7C',
+        profile: [3, 6, 7, 7, 7, 7, 6, 5, 4, 3], crown: 'calyx', detail: 'dots', ripeFrom: 'top' },
+      { id: 'tulip', plant: 'Lale', name: 'Lale',
+        ripe: '#F2557F', dark: '#C93A63', light: '#FF93AE', mid: '#F0A0A8',
+        unripe: '#9AC46A', unripeDark: '#78A24C',
+        leaf: '#4FBE7A', leafDark: '#2F9457', seedC: '#E6D3AE', seedD: '#B8A27B',
+        profile: [5, 6, 6, 6, 5, 5, 4, 4, 3, 3, 3, 3], crown: 'tulip', ripeFrom: 'top' },
+      { id: 'basil', plant: 'Fesleğen', name: 'Filiz',
+        ripe: '#3FA85F', dark: '#297E45', light: '#79D08C', mid: '#7CBE68',
+        unripe: '#B6CE8E', unripeDark: '#91A96C',
+        leaf: '#4FBE7A', leafDark: '#2F9457', seedC: '#DCCFA6', seedD: '#AFA277',
+        profile: [4, 6, 7, 7, 7, 6, 6, 5, 4, 3], crown: 'leafy', detail: 'stripe', ripeFrom: 'top' },
+      { id: 'daisy', plant: 'Papatya', name: 'Papi',
+        ripe: '#F6C63F', dark: '#D6A423', light: '#FFE07A', mid: '#EDD46B',
+        unripe: '#B7C97E', unripeDark: '#92A45F',
+        leaf: '#4FBE7A', leafDark: '#2F9457', seedC: '#E6DCB4', seedD: '#B4A87F',
+        profile: [3, 5, 6, 6, 6, 6, 5, 4, 3], crown: 'daisy', detail: 'dots',
+        petalC: '#FFFFFF', petalD: '#BCC6DE', ripeFrom: 'top' },
+      { id: 'pine', plant: 'Çam', name: 'Çamo',
+        ripe: '#2E9463', dark: '#1E6E49', light: '#5FBE8B', mid: '#69A85C',
+        unripe: '#9CC47E', unripeDark: '#7BA361',
+        leaf: '#3FA85F', leafDark: '#297E45', seedC: '#C9B48A', seedD: '#9A8663',
+        profile: [2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8], crown: 'tip', detail: 'cones', ripeFrom: 'top' }
+    ];
+    const SPECIES_BY_ID = Object.fromEntries(MSPECIES.map(s => [s.id, s]));
+
+    function scaleProfile(profile, k) {
+      const H = Math.max(4, Math.round(profile.length * k)), out = [];
+      for (let i = 0; i < H; i++) out.push(Math.max(1, Math.round(profile[Math.round((i * (profile.length - 1)) / (H - 1))] * k)));
+      return out;
+    }
+
+    /* ── Türe özel siluetler (pomi-shapes.jsx) ── */
+    const PS_LVL = s => (s === 'ripe' ? 2 : s === 'blush' ? 1 : 0);
+    const PS_MIX = (a, b, t) => {
+      const A = [1, 3, 5].map(i => parseInt(a.slice(i, i + 2), 16));
+      const B2 = [1, 3, 5].map(i => parseInt(b.slice(i, i + 2), 16));
+      return '#' + A.map((v, i) => Math.round(v + (B2[i] - v) * t).toString(16).padStart(2, '0')).join('');
+    };
+    function psEll(S, x0, y0, rx, ry, deg, fill) {
+      const a = deg * Math.PI / 180, ca = Math.cos(a), sa = Math.sin(a), R = Math.ceil(Math.max(rx, ry)) + 2;
+      for (let y = Math.floor(y0 - R); y <= Math.ceil(y0 + R); y++) for (let x = Math.floor(x0 - R); x <= Math.ceil(x0 + R); x++) {
+        const dx = x - x0, dy = y - y0, X = dx * ca + dy * sa, Y = -dx * sa + dy * ca;
+        if ((X / rx) ** 2 + (Y / ry) ** 2 <= 1) S(x, y, typeof fill === 'function' ? fill(x, y, X, Y) : fill);
+      }
+    }
+    function psRib(S, x0, y0, rx, deg, c, from = -0.6, to = 0.85) {
+      const a = deg * Math.PI / 180, ca = Math.cos(a), sa = Math.sin(a);
+      for (let t = rx * from; t <= rx * to; t += 0.4) S(Math.round(x0 + t * ca), Math.round(y0 + t * sa), c);
+    }
+    function psLeaf(S, x0, y0, rx, ry, deg, base, dk, lt) {
+      psEll(S, x0, y0, rx + 0.85, ry + 0.85, deg, MI);
+      psEll(S, x0, y0, rx, ry, deg, (x, y, X, Y) => (Y < -ry * 0.3 ? lt : Y > ry * 0.4 ? dk : base));
+      psRib(S, x0, y0, rx, deg, dk);
+    }
+    function psBlade(S, pts, dir, c, cd) {
+      pts.forEach(([x, y]) => { S(x, y, c); S(x + dir, y, cd); });
+    }
+    function psHead(S, O, o) {
+      const { cf, cy, r, po, pc, pd, n, taper = 1.05, base = -0.5, disc, dot } = o;
+      const pi = o.pi || (r - 0.7);
+      if (pi) for (let y = Math.floor(cy - po - 1); y <= Math.ceil(cy + po + 1); y++)
+        for (let x = Math.floor(cf - po - 1); x <= Math.ceil(cf + po + 1); x++) {
+          const dx = x - cf, dy = y - cy, d = Math.hypot(dx, dy);
+          if (d < pi - 0.7 || d > po) continue;
+          const t = (d - pi) / (po - pi);
+          if (Math.cos(n * Math.atan2(dy, dx)) > base + t * taper) S(x, y, t > 0.62 ? pd : pc);
+        }
+      psEll(S, cf, cy, r, r, 0, (x, y, X, Y) => (X < -r * 0.35 && Y < -r * 0.3 ? disc[2] : Y > r * 0.45 ? disc[1] : disc[0]));
+      if (dot) for (let y = Math.ceil(cy - r); y <= Math.floor(cy + r); y++) for (let x = Math.ceil(cf - r); x <= Math.floor(cf + r); x++)
+        if (Math.hypot(x - cf, y - cy) < r - 1.1 && x % 2 === 0 && y % 2 === 0) O(x, y, dot);
+    }
+
+    const PSHAPES = {};
+    PSHAPES.pine = ({ S, O, sp, stage, cx }) => {
+      const L = PS_LVL(stage);
+      const tiers = L === 2 ? [[1, 2, 3], [2, 3, 4, 5], [4, 5, 6, 7, 8]]
+        : L === 1 ? [[1, 2, 3], [2, 3, 4, 5], [3, 4, 5, 6]]
+          : [[1, 2, 3], [2, 3, 4, 5]];
+      const top = L === 2 ? 5 : L === 1 ? 7 : 10;
+      const nc = L === 0 ? sp.unripe : sp.ripe, nd = L === 0 ? sp.unripeDark : sp.dark;
+      const lt = L === 0 ? PS_MIX(sp.unripe, '#FFFFFF', 0.3) : sp.light;
+      const prof = []; let y = top;
+      tiers.forEach(t => t.forEach((hw, ri) => {
+        const last = ri === t.length - 1;
+        for (let x = cx - hw; x < cx + hw; x++) S(x, y, last ? nd : x === cx - hw ? lt : x >= cx + hw - 1 ? nd : nc);
+        prof.push(hw); y++;
+      }));
+      const cb = y - 1, tc = '#8A6039', td = '#66452A';
+      for (let yy = cb + 1; yy <= 21; yy++) { S(cx - 1, yy, tc); S(cx, yy, td); }
+      S(cx - 2, 21, tc); S(cx + 1, 21, td);
+      if (L === 2) [[-6, 14], [5, 15]].forEach(([dx, dy]) => { O(cx + dx, dy, '#A9743E'); O(cx + dx, dy + 1, '#7E5429'); });
+      return { prof, bodyTop: top, bodyBottom: cb, faceTop: L === 0 ? 13 : 12, faceDetail: L === 2 ? 'full' : 'tiny' };
+    };
+    PSHAPES.sunflower = ({ S, O, sp, stage, cx }) => {
+      const L = PS_LVL(stage), cf = cx - 0.5;
+      const cfg = L === 2 ? { cy: 9, r: 4.8, pi: 4.1, po: 7.4, pc: '#FFC94A', pd: '#E5A62A', stem: 15, faceTop: 8, fd: 'full' }
+        : L === 1 ? { cy: 11, r: 4.0, pi: 3.4, po: 6.1, pc: '#EBD263', pd: '#C3BC58', stem: 16, faceTop: 10, fd: 'tiny' }
+          : { cy: 14.5, r: 2.8, stem: 17, faceTop: 14, fd: 'tiny' };
+      const disc = L === 0 ? [sp.unripe, sp.unripeDark, PS_MIX(sp.unripe, '#FFFFFF', 0.25)] : [sp.ripe, sp.dark, sp.light];
+      psHead(S, O, { cf, cy: cfg.cy, r: cfg.r, pi: cfg.pi, po: cfg.po, pc: cfg.pc, pd: cfg.pd, n: 9, base: -0.48, taper: 1.0, disc, dot: L === 0 ? null : sp.dark });
+      if (L === 0) [[-2, -1], [1, -1], [-4, 1], [3, 1]].forEach(([dx, dy]) => S(cx + dx, Math.round(cfg.cy - cfg.r) + dy, sp.leafDark));
+      for (let yy = cfg.stem; yy <= 21; yy++) { S(cx - 1, yy, sp.leaf); S(cx, yy, sp.leafDark); }
+      const ly = L === 0 ? 19.5 : 18.5;
+      psLeaf(S, cx - 4.5, ly, 2.9, 1.5, -20, sp.leaf, sp.leafDark, PS_MIX(sp.leaf, '#FFFFFF', 0.25));
+      psLeaf(S, cx + 3.5, ly + 1, 2.6, 1.4, 20, sp.leaf, sp.leafDark, PS_MIX(sp.leaf, '#FFFFFF', 0.25));
+      for (let yy = cfg.stem; yy <= 21; yy++) { S(cx - 1, yy, sp.leaf); S(cx, yy, sp.leafDark); }
+      const outer = cfg.pi ? cfg.po : cfg.r, prof = [], bt = Math.max(0, Math.ceil(cfg.cy - outer)), bb = Math.floor(cfg.cy + outer);
+      for (let y = bt; y <= bb; y++) prof.push(Math.max(1, Math.round(Math.sqrt(Math.max(0, outer * outer - (y - cfg.cy) ** 2)))));
+      return { prof, bodyTop: bt, bodyBottom: bb, faceTop: cfg.faceTop, faceDetail: cfg.fd };
+    };
+    PSHAPES.daisy = ({ S, O, sp, stage, cx }) => {
+      const L = PS_LVL(stage), cf = cx - 0.5;
+      const cfg = L === 2 ? { cy: 9, r: 4.6, pi: 3.9, po: 7.2, pc: sp.petalC, pd: sp.petalD, stem: 15, faceTop: 8, fd: 'full' }
+        : L === 1 ? { cy: 11, r: 3.8, pi: 3.2, po: 5.9, pc: '#F2F0E0', pd: '#CFD6BE', stem: 16, faceTop: 10, fd: 'tiny' }
+          : { cy: 14.5, r: 2.6, stem: 17, faceTop: 14, fd: 'tiny' };
+      const disc = L === 0 ? [sp.unripe, sp.unripeDark, PS_MIX(sp.unripe, '#FFFFFF', 0.25)] : [sp.ripe, sp.dark, sp.light];
+      psHead(S, O, { cf, cy: cfg.cy, r: cfg.r, pi: cfg.pi, po: cfg.po, pc: cfg.pc, pd: cfg.pd, n: 8, base: -0.42, taper: 1.25, disc, dot: null });
+      if (L === 0) [[-2, -1], [1, -1], [-4, 1], [3, 1]].forEach(([dx, dy]) => S(cx + dx, Math.round(cfg.cy - cfg.r) + dy, sp.leafDark));
+      for (let yy = cfg.stem; yy <= 21; yy++) { S(cx - 1, yy, sp.leaf); S(cx, yy, sp.leafDark); }
+      psLeaf(S, cx - 4.2, 19, 2.6, 1.4, -22, sp.leaf, sp.leafDark, PS_MIX(sp.leaf, '#FFFFFF', 0.25));
+      psLeaf(S, cx + 3.4, 20, 2.3, 1.3, 22, sp.leaf, sp.leafDark, PS_MIX(sp.leaf, '#FFFFFF', 0.25));
+      for (let yy = cfg.stem; yy <= 21; yy++) { S(cx - 1, yy, sp.leaf); S(cx, yy, sp.leafDark); }
+      const outer = cfg.pi ? cfg.po : cfg.r, prof = [], bt = Math.max(0, Math.ceil(cfg.cy - outer)), bb = Math.floor(cfg.cy + outer);
+      for (let y = bt; y <= bb; y++) prof.push(Math.max(1, Math.round(Math.sqrt(Math.max(0, outer * outer - (y - cfg.cy) ** 2)))));
+      return { prof, bodyTop: bt, bodyBottom: bb, faceTop: cfg.faceTop, faceDetail: cfg.fd };
+    };
+    PSHAPES.tulip = ({ S, O, sp, stage, cx }) => {
+      const L = PS_LVL(stage);
+      const pc = L === 2 ? sp.ripe : L === 1 ? sp.mid : sp.unripe;
+      const pl = L === 2 ? sp.light : PS_MIX(pc, '#FFFFFF', 0.28), pd = L === 2 ? sp.dark : PS_MIX(pc, '#27223D', 0.22);
+      const cfg = L === 2
+        ? { hw: [6, 6, 6, 6, 5, 4, 3, 2], top: 7, tips: [[6, [-6, -5, -2, -1, 0, 1, 4, 5]], [5, [-2, -1, 0, 1]], [4, [-1, 0]]], seam: [[-3, 7, 4], [2, 7, 4], [-2, 5, 2], [1, 5, 2]], stem: 15, faceTop: 8, fd: 'full' }
+        : L === 1
+          ? { hw: [5, 5, 5, 4, 3, 2], top: 10, tips: [[9, [-5, -4, -1, 0, 3, 4]], [8, [-1, 0]]], seam: [[-3, 10, 3], [2, 10, 3]], stem: 16, faceTop: 11, fd: 'tiny' }
+          : { hw: [3, 3, 3, 2, 2], top: 13, tips: [[12, [-3, -1, 0, 2]]], seam: [], stem: 18, faceTop: 14, fd: 'tiny' };
+      cfg.hw.forEach((hw, i) => {
+        const y = cfg.top + i;
+        for (let x = cx - hw; x < cx + hw; x++) S(x, y, x === cx - hw ? pl : x >= cx + hw - 1 ? pd : pc);
+      });
+      cfg.tips.forEach(([y, xs]) => xs.forEach(dx => S(cx + dx, y, dx < -2 ? pl : dx > 1 ? pd : pc)));
+      cfg.seam.forEach(([dx, y0, n]) => { for (let i = 0; i < n; i++) O(cx + dx, y0 + i, pd); });
+      for (let yy = cfg.stem; yy <= 21; yy++) { S(cx - 1, yy, sp.leaf); S(cx, yy, sp.leafDark); }
+      const lb = L === 2 ? [[10, 20], [9, 19], [9, 18], [8, 17], [8, 16], [7, 15]] : L === 1 ? [[10, 20], [9, 19], [9, 18], [8, 17]] : [[10, 21], [9, 20], [9, 19]];
+      const rb = L === 2 ? [[13, 21], [14, 20], [14, 19], [15, 18], [15, 17]] : L === 1 ? [[13, 21], [14, 20], [14, 19]] : [[13, 21], [14, 20]];
+      psBlade(S, lb, -1, sp.leaf, sp.leafDark); psBlade(S, rb, 1, sp.leaf, sp.leafDark);
+      return { prof: cfg.hw, bodyTop: cfg.top, bodyBottom: cfg.top + cfg.hw.length - 1, faceTop: cfg.faceTop, faceDetail: cfg.fd };
+    };
+    PSHAPES.lavender = ({ S, O, sp, stage, cx }) => {
+      const L = PS_LVL(stage);
+      const rowsR = [[1, 0, 0], [1, 0, 1], [2, 1, 0], [2, 0, 1], [2, 1, 0], [2, 0, 1], [2, 1, 0], [2, 0, 1], [2, 1, 0], [2, 0, 1], [2, 1, 0], [1, 0, 0]];
+      const rowsB = [[1, 0, 0], [1, 0, 1], [2, 1, 0], [2, 0, 1], [2, 1, 0], [2, 0, 1], [2, 1, 0], [2, 0, 1], [1, 0, 0]];
+      const rowsG = [[1, 0, 0], [1, 0, 1], [2, 1, 0], [2, 0, 1], [2, 1, 0], [1, 0, 0]];
+      const cfg = L === 2 ? { rows: rowsR, top: 3, stem: 15, faceTop: 9 }
+        : L === 1 ? { rows: rowsB, top: 6, stem: 15, faceTop: 10 }
+          : { rows: rowsG, top: 11, stem: 17, faceTop: 13 };
+      const H = cfg.rows.length, purpleFrom = L === 2 ? 0 : L === 1 ? Math.round(H * 0.4) : H + 1;
+      const bud = i => (i >= purpleFrom ? sp.ripe : sp.unripe), budD = i => (i >= purpleFrom ? sp.dark : sp.unripeDark),
+        budL = i => (i >= purpleFrom ? sp.light : PS_MIX(sp.unripe, '#FFFFFF', 0.3));
+      cfg.rows.forEach(([hw, bl, br], i) => {
+        const y = cfg.top + i, band = Math.floor(i / 2) % 2;
+        for (let x = cx - hw; x < cx + hw; x++) S(x, y, x === cx - hw ? budL(i) : x >= cx + hw - 1 ? budD(i) : band ? budD(i) : bud(i));
+        if (bl) { S(cx - hw - 1, y, budL(i)); S(cx - hw - 1, y + 1, budD(i)); }
+        if (br) { S(cx + hw, y, bud(i)); S(cx + hw, y + 1, budD(i)); }
+        if (hw > 1 && i % 2 === 1) { O(cx - hw, y, budD(i)); O(cx + hw - 1, y, budL(i)); }
+      });
+      const bb = cfg.top + H - 1;
+      for (let yy = cfg.stem; yy <= 21; yy++) { S(cx - 1, yy, sp.leaf); S(cx, yy, sp.leafDark); }
+      const blades = [[[[10, 20], [9, 19], [9, 18], [8, 17]], -1], [[[13, 20], [14, 19], [14, 18]], 1]];
+      blades.forEach(([pts, dir]) => psBlade(S, pts.filter(p => p[1] > cfg.stem), dir, sp.leaf, sp.leafDark));
+      return { prof: cfg.rows.map(r => r[0]), bodyTop: cfg.top, bodyBottom: bb, faceTop: cfg.faceTop, faceDetail: 'tiny' };
+    };
+    PSHAPES.basil = ({ S, O, sp, stage, cx }) => {
+      const L = PS_LVL(stage);
+      const base = L === 0 ? sp.unripe : sp.ripe, dk = L === 0 ? sp.unripeDark : sp.dark;
+      const lt = L === 0 ? PS_MIX(sp.unripe, '#FFFFFF', 0.3) : sp.light;
+      const cfg = L === 2 ? { hw: [1, 2, 3, 4, 4, 5, 5, 5, 5, 4, 3, 2, 1], top: 6, back: [[8.0, 19.6, 2.2, 1.2, -16]], stem: 19, faceTop: 12, fd: 'full' }
+        : L === 1 ? { hw: [1, 2, 3, 4, 4, 4, 3, 2, 1], top: 10, back: [[8.2, 19.8, 2.0, 1.1, -16]], stem: 19, faceTop: 13, fd: 'tiny' }
+          : { hw: [1, 2, 3, 3, 2, 1], top: 14, back: [[8.6, 20.2, 1.7, 1.0, -14]], stem: 20, faceTop: 15, fd: 'tiny' };
+      cfg.back.forEach(([x0, y0, rx, ry, deg]) => {
+        psLeaf(S, x0, y0, rx, ry, deg, base, dk, lt);
+        psLeaf(S, 23 - x0, y0, rx, ry, -deg, base, dk, lt);
+      });
+      const bot = cfg.top + cfg.hw.length - 1;
+      for (let yy = cfg.stem; yy <= 21; yy++) { S(cx - 1, yy, base); S(cx, yy, dk); }
+      cfg.hw.forEach((hw, i) => {
+        const y = cfg.top + i;
+        S(cx - hw - 1, y, MI); S(cx + hw, y, MI);
+        for (let x = cx - hw; x < cx + hw; x++) S(x, y, i < 2 ? lt : x === cx - hw ? lt : x >= cx + hw - 1 ? dk : base);
+      });
+      S(cx - 1, cfg.top - 1, MI); S(cx, cfg.top - 1, MI);
+      const fT = cfg.faceTop;
+      for (let y = cfg.top + 1; y <= bot - 1; y++) if (y < fT - 1 || y > fT + 4) O(cx - 1, y, dk);
+      const vein = y => { for (let i = 1; i <= 2; i++) { O(cx - 1 - i, y - i, dk); O(cx + i, y - i, dk); } };
+      if (L !== 0) { vein(cfg.top + 4); vein(bot - 1); }
+      return { prof: cfg.hw, bodyTop: cfg.top, bodyBottom: bot, faceTop: cfg.faceTop, faceDetail: cfg.fd, noCheek: true };
+    };
+    PSHAPES.pumpkin = ({ S, O, sp, stage, cx }) => {
+      const L = PS_LVL(stage);
+      const cfg = L === 2 ? { hw: [6, 9, 10, 11, 11, 10, 9, 6, 3], faceOff: 2, fd: 'full' }
+        : L === 1 ? { hw: [5, 7, 8, 9, 9, 8, 7, 5, 2], faceOff: 2, fd: 'tiny' }
+          : { hw: [4, 6, 7, 7, 7, 6, 4, 2], faceOff: 1, fd: 'tiny' };
+      const base = L === 2 ? sp.ripe : L === 1 ? sp.mid : sp.unripe;
+      const dk = L === 2 ? sp.dark : L === 1 ? PS_MIX(sp.mid, '#27223D', 0.25) : sp.unripeDark;
+      const lt = L === 2 ? sp.light : L === 1 ? PS_MIX(sp.mid, '#FFFFFF', 0.25) : PS_MIX(sp.unripe, '#FFFFFF', 0.3);
+      const H = cfg.hw.length, bottom = 21, top = bottom - H + 1;
+      cfg.hw.forEach((hw, i) => {
+        const y = top + i;
+        for (let x = cx - hw; x < cx + hw; x++) S(x, y, x <= cx - hw + 1 ? lt : x >= cx + hw - 2 ? dk : base);
+      });
+      [-0.62, -0.22, 0.22, 0.62].forEach(f => {
+        for (let i = 1; i < H - 1; i++) { const hw = cfg.hw[i]; O(cx + Math.round(f * hw), top + i, dk); }
+      });
+      const stC = '#8A6039', stD = '#5F3F22';
+      S(cx - 1, top - 1, stC); S(cx, top - 1, stD);
+      if (L >= 1) { S(cx - 1, top - 2, stD); S(cx, top - 2, stC); }
+      if (L === 2) { S(cx - 2, top - 3, stC); S(cx - 1, top - 3, stD); O(cx - 2, top - 4, stD); S(cx + 2, top - 1, sp.leaf); S(cx + 3, top - 1, sp.leafDark); }
+      return { prof: cfg.hw, bodyTop: top, bodyBottom: bottom, faceTop: top + cfg.faceOff, faceDetail: cfg.fd };
+    };
+
+    /* ── Sprite kurucu (pomi-mascots.jsx · buildSprite) ── */
+    function buildSprite(sp, stageKey) {
+      const cx = 12, key = (x, y) => x + ',' + y;
+      const solid = new Map(), over = [];
+      const S = (x, y, c) => { if (c && x >= 0 && x < GRID && y >= 0 && y < GRID) solid.set(key(x, y), c); };
+      const O = (x, y, c) => { if (c && x >= 0 && x < GRID && y >= 0 && y < GRID) over.push([x, y, c]); };
+      const geo = GEO[stageKey], st = MSTAGES.find(s => s.key === stageKey);
+      let prof, bodyTop, bodyBottom = geo.bottom, faceDetail = 'full', faceTopFixed = null, noCheek = false;
+
+      if (stageKey === 'seed') {
+        prof = [2, 3, 3, 3, 2]; faceDetail = 'tiny';
+        bodyTop = bodyBottom - prof.length + 1;
+        prof.forEach((hw, i) => { const y = bodyTop + i; for (let x = cx - hw; x < cx + hw; x++) S(x, y, i < 2 ? sp.seedC : sp.seedD); });
+        S(cx - 1, bodyTop, sp.seedC); S(cx, bodyTop - 1, sp.leaf);
+      } else if (stageKey === 'sprout') {
+        prof = [2, 3, 3, 2]; faceDetail = 'tiny';
+        bodyTop = bodyBottom - prof.length + 1;
+        prof.forEach((hw, i) => { const y = bodyTop + i; for (let x = cx - hw; x < cx + hw; x++) S(x, y, i < 2 ? sp.leaf : sp.leafDark); });
+        for (let y = bodyBottom + 1; y <= 21; y++) { S(cx - 1, y, sp.leaf); S(cx, y, sp.leafDark); }
+        [-1, 1].forEach(dir => {
+          const bx = dir < 0 ? cx - 2 : cx + 1;
+          for (let i = 0; i < 4; i++) { S(bx + dir * (i + 1), 19 + (i > 2 ? 1 : 0), sp.leaf); if (i < 3) S(bx + dir * (i + 1), 20, sp.leafDark); }
+        });
+        if (sp.husk) [-1, 1].forEach(dir => { for (let i = 0; i < 3; i++) S(cx + dir * 3 + (dir < 0 ? 0 : -1), 18 - i, i === 2 ? sp.leafDark : sp.leaf); });
+        if (sp.crown === 'bloom') { O(cx - 3, bodyTop + 1, '#F3E4C4'); O(cx + 2, bodyTop + 2, '#F3E4C4'); }
+      } else if (PSHAPES[sp.id]) {
+        const r = PSHAPES[sp.id]({ S, O, sp, stage: stageKey, cx });
+        prof = r.prof; bodyTop = r.bodyTop; bodyBottom = r.bodyBottom;
+        faceDetail = r.faceDetail || 'full'; faceTopFixed = r.faceTop; noCheek = !!r.noCheek;
+      } else {
+        prof = scaleProfile(sp.profile, geo.k);
+        const H = prof.length;
+        bodyTop = bodyBottom - H + 1;
+        const front = stageKey === 'blush' ? Math.round(H * 0.5) : 0;
+        const wave = x => [0, 0, 1, 0, -1, 0, 0, 1][(x + 8) % 8];
+        const zone = (i, x) => {
+          if (stageKey === 'ripe') return 1;
+          if (stageKey !== 'blush') return -1;
+          const b = front + wave(x), d = sp.ripeFrom === 'bottom' ? (H - i - 1) - (H - b) : i - b;
+          return d < -1 ? 1 : d <= 0 ? 0 : -1;
+        };
+        const col = (i, x) => { const z = zone(i, x); return z === 1 ? sp.ripe : z === 0 ? sp.mid : sp.unripe; };
+        prof.forEach((hw, i) => { const y = bodyTop + i; for (let x = cx - hw; x < cx + hw; x++) S(x, y, col(i, x)); });
+        prof.forEach((hw, i) => {
+          const y = bodyTop + i, x0 = cx - hw, x1 = cx + hw - 1;
+          const dk = x => (zone(i, x) === -1 ? sp.unripeDark : sp.dark), lt = x => (zone(i, x) === -1 ? sp.unripe : sp.light);
+          if (i > H * 0.5) { S(x1, y, dk(x1)); if (i > H * 0.8) S(x1 - 1, y, dk(x1 - 1)); }
+          if (i >= 1 && i < H * 0.38) S(x0, y, lt(x0));
+          if (i === 2 && hw > 5) S(x0 + 1, y, lt(x0 + 1));
+        });
+        for (let y = bodyBottom + 1; y <= 21; y++) { S(cx - 1, y, sp.leaf); S(cx, y, sp.leafDark); }
+        if (stageKey !== 'ripe') [-1, 1].forEach(dir => {
+          const y = bodyBottom + 2, bx = dir < 0 ? cx - 2 : cx + 1;
+          for (let i = 0; i < 3; i++) S(bx + dir * (i + 1), y - (i > 1 ? 1 : 0), i < 2 ? sp.leaf : sp.leafDark);
+        });
+
+        if (sp.detail === 'pips' && stageKey !== 'grow') {
+          [[-4, 2], [2, 2], [-1, 4], [3, 4], [-4, 6], [0, 6], [-2, 8], [2, 7]]
+            .forEach(([dx, dy]) => { if (bodyTop + dy <= bodyBottom - 1) O(cx + dx, bodyTop + dy, '#FFF1BC'); });
+        }
+        if (sp.detail === 'kernels') for (let i = 2; i < prof.length - 2; i += 2)
+          for (let j = -1; j <= 1; j++) O(cx + j * 3 - (i % 4 === 0 ? 1 : 0), bodyTop + i, sp.dark);
+        if (sp.detail === 'ribs') {
+          for (let i = 2; i < prof.length - 1; i++) { O(cx - 4, bodyTop + i, sp.dark); O(cx + 2, bodyTop + i, sp.dark); }
+          if (stageKey === 'ripe') for (let i = 3; i < prof.length - 1; i += 3) { O(cx - 5, bodyTop + i, '#F3E4C4'); O(cx + 4, bodyTop + i, '#F3E4C4'); }
+        }
+        const hwOf = i => prof[Math.max(0, Math.min(prof.length - 1, i))];
+        if (sp.detail === 'stripe') for (let i = 1; i < prof.length - 1; i += 2) {
+          const hw = hwOf(i); O(cx - hw + 1, bodyTop + i, sp.dark); O(cx + hw - 2, bodyTop + i, sp.dark);
+        }
+        if (sp.detail === 'cones') [[-3, 4], [2, 6], [-4, 8], [3, 9]].forEach(([dx, dy]) => {
+          const hw = hwOf(dy);
+          if (bodyTop + dy <= bodyBottom - 1 && dx >= -hw + 1 && dx <= hw - 2) {
+            const cc = stageKey === 'ripe' ? '#A9743E' : '#8FA35F';
+            O(cx + dx, bodyTop + dy, cc); O(cx + dx, bodyTop + dy + 1, stageKey === 'ripe' ? '#7E5429' : '#71834A');
+          }
+        });
+        if (sp.detail === 'dots') [[-4, 2], [3, 4], [-3, 6], [1, 7]].forEach(([dx, dy]) => {
+          const hw = hwOf(dy);
+          if (bodyTop + dy <= bodyBottom - 1 && dx >= -hw + 1 && dx <= hw - 2) O(cx + dx, bodyTop + dy, '#F3E4C4');
+        });
+
+        const t = bodyTop, small = stageKey === 'grow';
+        if (sp.crown === 'calyx' || sp.crown === 'leafy') {
+          const w = small ? 2 : 4;
+          for (let x = cx - w; x < cx + w; x++) S(x, t - 1, sp.leaf);
+          if (!small) for (let x = cx - (w - 2); x < cx + (w - 2); x++) S(x, t - 2, sp.leaf);
+          S(cx - w - 1, t - 1, sp.leafDark); S(cx + w, t - 1, sp.leafDark);
+          if (!small) { S(cx - 1, t - 3, sp.leafDark); S(cx, t - 3, sp.leafDark); S(cx - w - 2, t, sp.leafDark); S(cx + w + 1, t, sp.leafDark); }
+          O(cx - 2, t - 1, sp.leafDark); O(cx + 1, t - 1, sp.leafDark);
+        } else if (sp.crown === 'bloom' && !small) {
+          const fc = stageKey === 'ripe' ? '#FF8FB0' : '#F6C7D6';
+          for (let x = cx - 2; x < cx + 2; x++) S(x, t - 1, fc);
+          S(cx - 1, t - 2, '#FFB6CD'); S(cx, t - 2, '#FFB6CD');
+          if (stageKey === 'ripe') { S(cx - 3, t - 1, fc); S(cx + 2, t - 1, fc); O(cx - 1, t - 1, '#FFE08A'); O(cx, t - 1, '#FFE08A'); }
+        } else if (sp.crown === 'tassel') {
+          const tc = stageKey === 'ripe' ? '#E5C284' : '#BFCF88';
+          S(cx - 1, t - 1, tc); S(cx, t - 1, tc); S(cx - 1, t - 2, tc); S(cx, t - 2, tc);
+          S(cx - 2, t - 2, tc); S(cx + 1, t - 3, tc); S(cx - 2, t - 4, tc); S(cx + 1, t - 4, tc);
+          if (stageKey === 'ripe') { S(cx - 3, t - 3, tc); S(cx + 2, t - 2, tc); }
+        } else if (sp.crown === 'stalk') {
+          const sc = '#8A6039', sd = '#66452A';
+          S(cx - 1, t - 1, sc); S(cx, t - 1, sc); S(cx - 1, t - 2, sd); S(cx, t - 2, sc);
+          if (!small) {
+            S(cx - 1, t - 3, sc); S(cx, t - 3, sd);
+            for (let i = 0; i < 3; i++) S(cx + 1 + i, t - 2, i < 2 ? sp.leaf : sp.leafDark);
+            S(cx + 2, t - 3, sp.leaf); S(cx + 3, t - 3, sp.leafDark);
+          }
+        } else if (sp.crown === 'petals') {
+          const pc = stageKey === 'ripe' ? '#FFC94A' : '#D6DD8A', pd = stageKey === 'ripe' ? '#E5A62A' : '#B3BC6C';
+          const n = Math.min(small ? 3 : 5, prof.length);
+          for (let i = 0; i < n; i++) {
+            const y = t + i, hw = prof[i];
+            S(cx - hw - 1, y, i % 2 ? pd : pc); S(cx + hw, y, i % 2 ? pd : pc);
+            if (!small) { S(cx - hw - 2, y, i % 2 ? pc : pd); S(cx + hw + 1, y, i % 2 ? pc : pd); }
+          }
+          for (let x = cx - prof[0] - 1; x < cx + prof[0] + 1; x++) S(x, t - 1, pc);
+          if (!small) for (let x = cx - prof[0] + 1; x < cx + prof[0] - 1; x++) S(x, t - 2, pd);
+        } else if (sp.crown === 'daisy') {
+          const ripeS = stageKey === 'ripe';
+          const pc = ripeS ? (sp.petalC || '#FFFFFF') : '#D9E4BC', pd = ripeS ? (sp.petalD || '#BCC6DE') : '#B6C296';
+          const H2 = prof.length, blob = (x, y, c) => { S(x, y, c); S(x + 1, y, c); S(x, y + 1, c); S(x + 1, y + 1, c); };
+          const hw = i => prof[Math.max(0, Math.min(H2 - 1, i))];
+          const ty = t - (small ? 2 : 3);
+          [-4, -1, 2].forEach((dx, i) => blob(cx + dx, ty + (i === 1 ? -1 : 0), i === 1 ? pc : pd));
+          const rows = small ? [Math.round(H2 * 0.45)] : [1, Math.round(H2 * 0.45), H2 - 2];
+          rows.forEach((i, k) => {
+            const w = hw(i), y = t + i, c = k === 1 ? pc : pd;
+            blob(cx - w - 3, y, c); blob(cx + w + 1, y, c);
+          });
+        } else if (sp.crown === 'sprig') {
+          const bc = stageKey === 'ripe' ? '#B48CE8' : '#C9D48F', bd = stageKey === 'ripe' ? '#8A63C4' : '#A8B472';
+          for (let i = 0; i < (small ? 3 : 5); i++) {
+            const y = t - 1 - i, w = i < 2 ? 2 : 1;
+            for (let x = cx - w; x < cx + w; x++) S(x, y, i % 2 ? bd : bc);
+          }
+        } else if (sp.crown === 'tip') {
+          S(cx - 1, t - 1, sp.ripe); S(cx, t - 1, sp.ripe); S(cx - 1, t - 2, sp.dark);
+          if (!small) { S(cx, t - 2, sp.ripe); S(cx - 1, t - 3, sp.dark); }
+          if (stageKey === 'ripe') { O(cx - 1, t - 3, '#FFC23D'); O(cx, t - 3, '#FFC23D'); O(cx - 1, t - 4, '#FFE9A8'); }
+        } else if (sp.crown === 'tulip') {
+          const pc = stageKey === 'ripe' ? sp.light : sp.unripe;
+          [-4, -3, -1, 0, 2, 3].forEach(dx => S(cx + dx, t - 1, pc));
+          if (!small) { [-4, -1, 0, 3].forEach(dx => S(cx + dx, t - 2, pc)); S(cx - 1, t - 3, pc); S(cx, t - 3, pc); }
+        }
+
+        if (sp.arms && !small) {
+          const armY = bodyTop + Math.round(prof.length * 0.45);
+          for (let y = armY - 3; y <= armY; y++) { S(cx - 8, y, sp.ripe); S(cx - 7, y, sp.dark); }
+          for (let x = cx - 8; x < cx - 5; x++) S(x, armY, sp.ripe);
+          if (stageKey === 'ripe') {
+            for (let y = armY - 1; y <= armY + 2; y++) { S(cx + 6, y, sp.ripe); S(cx + 7, y, sp.dark); }
+            for (let x = cx + 5; x < cx + 8; x++) S(x, armY + 2, sp.ripe);
+          }
+        }
+        if (sp.husk) [-1, 1].forEach(dir => {
+          const x0 = dir < 0 ? cx - 2 : cx + 1, n = small ? 4 : 6;
+          for (let i = 0; i < n; i++) {
+            const y = 21 - i, x = x0 + dir * Math.round(1 + i * (small ? 0.6 : 0.9));
+            S(x, y, sp.leaf); if (i < n - 2) S(x + dir, y, sp.leafDark);
+          }
+        });
+      }
+
+      /* Tüm siluetin çevresine ortak mürekkep konturu */
+      const cells = [], N = [[-1, 0], [1, 0], [0, -1], [0, 1], [-1, -1], [1, -1], [-1, 1], [1, 1]];
+      const outline = new Set();
+      solid.forEach((_, k) => {
+        const [x, y] = k.split(',').map(Number);
+        N.forEach(([dx, dy]) => {
+          const nx = x + dx, ny = y + dy;
+          if (nx >= 0 && nx < GRID && ny >= 0 && ny < GRID && !solid.has(key(nx, ny))) outline.add(key(nx, ny));
+        });
+      });
+      outline.forEach(k => { const [x, y] = k.split(',').map(Number); cells.push([x, y, MI]); });
+      solid.forEach((c, k) => { const [x, y] = k.split(',').map(Number); cells.push([x, y, c]); });
+      over.forEach(c => cells.push(c));
+
+      /* Yüz */
+      const bh = bodyBottom - bodyTop + 1;
+      if (bh < 9 && faceTopFixed == null) faceDetail = 'tiny';
+      const faceTop = faceTopFixed != null ? faceTopFixed : faceDetail === 'tiny'
+        ? Math.min(bodyTop + Math.max(1, Math.round(bh * 0.3)), bodyBottom - 3)
+        : Math.max(bodyTop + 2, Math.min(bodyTop + Math.round(bh * 0.34), bodyBottom - 6));
+      drawFace(cells, cx, faceTop, st.face, faceDetail, noCheek);
+
+      if (stageKey === 'blush') cells.push([cx + 7, faceTop, '#5BB6E8'], [cx + 7, faceTop + 1, '#8FD3F5']);
+      if (stageKey === 'ripe') [[cx - 9, bodyTop + 1], [cx + 8, bodyTop + 3], [cx + 9, bodyTop + 10]].forEach(([x, y]) =>
+        cells.push([x, y, '#FFC23D'], [x - 1, y + 1, '#FFC23D'], [x + 1, y + 1, '#FFC23D'], [x, y + 2, '#FFC23D'], [x, y + 1, '#FFE9A8']));
+
+      return cells;
+    }
+
+    /* ── Yüz kütüphanesi ── */
+    function drawFace(cells, cx, y, kind, detail, noCheek) {
+      const P = (x, yy, c) => cells.push([x, yy, c]);
+      const cheek = '#FFB3C1';
+      const CH = (x, yy) => { if (!noCheek) P(x, yy, cheek); };
+      if (detail === 'tiny') {
+        const eL = cx - 2, eR = cx + 1;
+        if (kind === 'triumph' || kind === 'effort') { P(eL, y + 1, MI); P(eL, y, MI); P(eR, y, MI); P(eR, y + 1, MI); }
+        else { P(eL, y, MI); P(eR, y, MI); }
+        if (kind === 'triumph') { P(cx - 1, y + 2, MI); P(cx, y + 2, MI); P(cx - 1, y + 3, '#FF8FA6'); P(cx, y + 3, '#FF8FA6'); }
+        else if (kind === 'eager') { P(cx - 1, y + 2, MI); P(cx, y + 2, MI); }
+        else P(cx - 1, y + 2, MI);
+        return;
+      }
+      const L = cx - 4, R = cx + 2;
+      const block = (x, yy) => { P(x, yy, MI); P(x + 1, yy, MI); P(x, yy + 1, MI); P(x + 1, yy + 1, MI); };
+      const arch = (x, yy) => { P(x, yy + 1, MI); P(x + 1, yy, MI); P(x + 2, yy + 1, MI); };
+      const flat = (x, yy) => { P(x, yy + 1, MI); P(x + 1, yy + 1, MI); P(x + 2, yy + 1, MI); };
+      if (kind === 'eager') {
+        block(L, y); block(R, y);
+        P(L, y, '#fff'); P(R, y, '#fff');
+        P(cx - 1, y + 3, MI); P(cx, y + 3, MI); P(cx - 1, y + 4, MI); P(cx, y + 4, MI);
+        CH(cx - 6, y + 2); CH(cx + 5, y + 2);
+      } else if (kind === 'focus') {
+        block(L, y); block(R, y); P(L, y, '#fff'); P(R, y, '#fff');
+        P(L - 1, y - 1, MI); P(L, y - 1, MI); P(R + 1, y - 1, MI); P(R + 2, y - 1, MI);
+        for (let i = -1; i <= 1; i++) P(cx + i, y + 3, MI);
+      } else if (kind === 'effort') {
+        arch(L, y); arch(R, y);
+        P(L - 1, y - 1, MI); P(L, y - 1, MI); P(R + 1, y - 1, MI); P(R + 2, y - 1, MI);
+        for (let i = -1; i <= 1; i++) P(cx + i, y + 3, MI);
+        P(cx - 2, y + 2, MI); P(cx + 2, y + 2, MI);
+      } else if (kind === 'strain') {
+        flat(L, y); flat(R, y);
+        P(L - 1, y - 1, MI); P(L, y - 1, MI); P(R + 1, y - 1, MI); P(R + 2, y - 1, MI);
+        for (let i = -1; i <= 1; i++) { P(cx + i, y + 3, MI); P(cx + i, y + 4, MI); }
+        P(cx, y + 4, '#FF8FA6');
+      } else {
+        P(L, y + 1, MI); P(L + 1, y, MI); P(L + 2, y, MI); P(L + 3, y + 1, MI);
+        P(R - 1, y + 1, MI); P(R, y, MI); P(R + 1, y, MI); P(R + 2, y + 1, MI);
+        for (let i = -2; i <= 2; i++) P(cx + i, y + 3, MI);
+        for (let i = -1; i <= 1; i++) P(cx + i, y + 4, MI);
+        P(cx - 1, y + 4, '#FF8FA6'); P(cx, y + 4, '#FF8FA6');
+        CH(cx - 6, y + 2); CH(cx + 5, y + 2);
+      }
+    }
+
+    /* SVG çıktısı — aynı hücreler, canvas yerine rect'lerle */
+    const SPRITE_CACHE = new Map();
+    function plantSVG(species, size, stage = 'ripe', viewBox = `0 0 ${GRID} ${GRID}`) {
+      const sp = typeof species === 'string' ? SPECIES_BY_ID[species] : species;
+      const ck = sp.id + '|' + stage;
+      let body = SPRITE_CACHE.get(ck);
+      if (!body) {
+        body = buildSprite(sp, stage).map(([x, y, c]) => px(x, y, 1, 1, c)).join('');
+        SPRITE_CACHE.set(ck, body);
+      }
+      return `<svg viewBox="${viewBox}" width="${size}" height="${size}" shape-rendering="crispEdges" aria-hidden="true">${body}</svg>`;
+    }
+
+    /* Avatar için gövdeye yakın kırpma (yüz ortada kalsın) */
+    const plantAvatarSVG = (id, size) => plantSVG(id, size, 'ripe', '4 6 16 16');
+
+    /* ── 3) Marka işareti ── */
+    document.getElementById('brandMark').innerHTML =
+      `<svg viewBox="0 0 16 16" shape-rendering="crispEdges" aria-hidden="true">${pomi(1)}</svg>`;
+
+    /* ── 4) Piksel sayaç halkası ── */
+    const ringSvg = document.getElementById('ringSvg');
+    const ringCells = [];
+    (function buildRing() {
+      const cx = 16, cy = 16, rOut = 15.3, rIn = 12.9, u = 1.15;
+      let markup = '<g id="cells">';
+      const angles = [];
+      for (let y = cy - rOut - u; y <= cy + rOut + u; y += u) {
+        for (let x = cx - rOut - u; x <= cx + rOut + u; x += u) {
+          const d = Math.hypot(x - cx, y - cy);
+          if (d < rIn || d > rOut) continue;
+          let a = Math.atan2(y - cy, x - cx) * 180 / Math.PI;
+          a = (a + 90 + 360) % 360;
+          angles.push(a);
+          markup += `<rect class="cell" x="${(x - u / 2).toFixed(2)}" y="${(y - u / 2).toFixed(2)}" width="${(u + 0.05).toFixed(2)}" height="${(u + 0.05).toFixed(2)}"/>`;
+        }
+      }
+      markup += '</g>';
+      const s = 1.42;
+      markup += `<g transform="translate(${(16 - 7.75 * s).toFixed(2)}, ${(16 - 8.1 * s).toFixed(2)}) scale(${s})">${pomi(1)}</g>`;
+      ringSvg.innerHTML = markup;
+      ringSvg.querySelectorAll('.cell').forEach((el, i) => ringCells.push({ el, a: angles[i] }));
+    })();
+
+    function paintRing(pct) {
+      const deg = pct * 360;
+      ringCells.forEach(({ el, a }) => el.classList.toggle('on', a <= deg));
+    }
+
+    /* ── 5) Demo sayaç: 25:00'lık seansı hızlandırılmış oynatır ── */
+    const SESSION_SECONDS = 1500;   // 25 dakika
+    const DEMO_MS = 26000;          // önizleme süresi
+    const clockEl = document.getElementById('clock');
+    const stateEl = document.getElementById('state');
+    const gardenEl = document.getElementById('garden');
+    const countEl = document.getElementById('sessionCount');
+    const toggleBtn = document.getElementById('toggle');
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    let elapsed = 0, last = 0, running = !reduceMotion, sessions = 0, rafId = null;
+
+    /* Bahçe boş başlamasın: önizleme birkaç tamamlanmış seansla açılır */
+    function seedGarden(list) {
+      list.forEach(p => {
+        const slot = document.createElement('div');
+        slot.className = 'slot';
+        slot.innerHTML = plantSVG(p, 62, 'ripe', '1 2 22 22');
+        gardenEl.appendChild(slot);
+      });
+      sessions = list.length;
+      countEl.textContent = sessions;
+    }
+
+    function fmt(sec) {
+      const m = Math.floor(sec / 60), s = Math.floor(sec % 60);
+      return `${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
+    }
+
+    function addPlant() {
+      if (gardenEl.children.length >= 5) gardenEl.innerHTML = '';
+      const plant = MSPECIES[Math.floor(Math.random() * MSPECIES.length)];
+      const slot = document.createElement('div');
+      slot.className = 'slot';
+      slot.innerHTML = plantSVG(plant, 62, 'ripe', '1 2 22 22');
+      gardenEl.appendChild(slot);
+      sessions++;
+      countEl.textContent = sessions;
+    }
+
+    function tick(now) {
+      if (!last) last = now;
+      const dt = now - last;
+      last = now;
+      if (running) elapsed += dt;
+
+      if (elapsed >= DEMO_MS) {
+        elapsed = 0;
+        addPlant();
+        stateEl.textContent = t('stateDone');
+        setTimeout(() => { if (running) stateEl.textContent = t('stateFocus'); }, 1600);
+      }
+      const pct = elapsed / DEMO_MS;
+      paintRing(pct);
+      clockEl.textContent = fmt(SESSION_SECONDS * (1 - pct));
+      rafId = requestAnimationFrame(tick);
+    }
+
+    toggleBtn.addEventListener('click', () => {
+      running = !running;
+      toggleBtn.textContent = running ? t('pause') : t('start');
+      stateEl.textContent = running ? t('stateFocus') : t('statePaused');
+      last = 0;
+    });
+
+    /* ── 6) Fetih haritası ─────────────────────────────────────────────
+       screens-war.jsx · WarMap ("fetih" katmanı) portu. Kara parçası satır
+       aralıklarıyla kuruluyor, her hücre güç/uzaklık oranına göre en yakın
+       ile bağlanıyor; iki il eşit yakınsa hücre çatışma hattı oluyor.     */
+    const SEA_W = '#BEE1F2', LAND_W = '#E4EFC8';
+    const WP = { cherry: '#FF5B6E', mint: '#2FB99B', sky: '#4FA3E3', grape: '#9B6DD6', sun: '#FFC23D', peach: '#F58E6F', ink: '#27223D' };
+
+    /* [il, renk, güç (fetih yarıçapı), ortalama, sıra, gridX, gridY, savunucu] */
+    const WAR_CITIES = [
+      ['Eskişehir', WP.sun, 4.4, '3s 42d', 1, 12.17, 7.92, '9.4'],
+      ['Ankara', WP.grape, 5.6, '3s 30d', 2, 17.32, 7.49, '31.2'],
+      ['İzmir', WP.mint, 5.0, '3s 18d', 3, 4.69, 11.79, '22.7'],
+      ['Bursa', WP.sky, 3.8, '3s 09d', 4, 8.94, 6.73, '11.8'],
+      ['Antalya', WP.peach, 4.0, '2s 58d', 5, 12.59, 16.09, '8.9'],
+      ['Konya', WP.mint, 4.4, '2s 54d', 6, 16.5, 13.34, '7.6'],
+      ['İstanbul', WP.cherry, 5.2, '2s 49d', 7, 8.76, 4.35, '24.8'],
+      ['Trabzon', WP.sky, 3.4, '2s 45d', 8, 32.51, 4.38, '3.1'],
+      ['Gaziantep', WP.grape, 3.8, '2s 40d', 9, 27.34, 15.57, '5.2'],
+      ['Adana', WP.peach, 3.6, '2s 36d', 10, 22.78, 15.76, '6.4'],
+      ['Van', WP.mint, 4.0, '2s 31d', 11, 40.6, 11.6, '2.4']
+    ];
+    const ME_W = 'İstanbul';
+
+    const SPANS_W = { 1: [[3, 6], [18, 22]], 2: [[3, 6], [16, 24]], 3: [[3, 8], [14, 26], [35, 39]], 4: [[3, 5], [9, 28], [30, 40]], 5: [[2, 4], [9, 40]], 6: [[5, 40]], 7: [[4, 42]], 8: [[3, 42]], 9: [[3, 41]], 10: [[4, 42]], 11: [[3, 42]], 12: [[3, 42]], 13: [[4, 42]], 14: [[5, 42]], 15: [[5, 35]], 16: [[6, 20], [22, 27], [30, 31]], 17: [[9, 11], [16, 19], [24, 25]], 18: [[24, 24]] };
+    const COLS_W = 46, ROWS_W = 20;
+
+    function mixW(a, b, t) {
+      const p = h => [parseInt(h.slice(1, 3), 16), parseInt(h.slice(3, 5), 16), parseInt(h.slice(5, 7), 16)];
+      const [r1, g1, b1] = p(a), [r2, g2, b2] = p(b);
+      const c = (x, y) => Math.round(x + (y - x) * t).toString(16).padStart(2, '0');
+      return `#${c(r1, r2)}${c(g1, g2)}${c(b1, b2)}`;
+    }
+
+    const LAND_CELLS = [];
+    Object.entries(SPANS_W).forEach(([r, spans]) => spans.forEach(([s, e]) => {
+      for (let c = s; c <= e; c++) LAND_CELLS.push([c, +r]);
+    }));
+
+    function ownerOf(c, r) {
+      let best = null, bestS = 1e9, second = 1e9;
+      WAR_CITIES.forEach(city => {
+        const dx = c - city[5], dy = (r - city[6]) * 1.05;
+        const s = Math.sqrt(dx * dx + dy * dy) / city[2];
+        if (s < bestS) { second = bestS; bestS = s; best = city; } else if (s < second) second = s;
+      });
+      if (bestS > 1) return [null, false];
+      return [best, second - bestS < 0.1];
+    }
+    const OWNER_MAP = {};
+    LAND_CELLS.forEach(([c, r]) => { OWNER_MAP[c + ',' + r] = ownerOf(c, r); });
+    const heldCount = name => LAND_CELLS.filter(([c, r]) => (OWNER_MAP[c + ',' + r][0] || [])[0] === name).length;
+
+    /* canlı odak nabızları (sabit tohum) */
+    const LIVE_DOTS = [[8.8, 4.4, 3], [9.6, 5.2, 2], [7.9, 3.8, 1], [17.3, 7.5, 3], [18.2, 8.3, 2], [12.2, 7.9, 2], [4.7, 11.8, 3], [5.6, 12.4, 1], [16.5, 13.3, 2], [22.8, 15.8, 1], [12.6, 16.1, 2], [27.3, 15.6, 1], [32.5, 4.4, 1], [40.6, 11.6, 1], [8.9, 6.7, 2], [10.4, 6.1, 1], [20.1, 10.2, 1], [24.6, 8.4, 1]];
+
+    function warMapSVG({ cell = 7.6, selected = ME_W, markers = true, labels = true, live = true } = {}) {
+      const W = COLS_W * cell, H = ROWS_W * cell;
+      let out = `<svg viewBox="0 0 ${W} ${H}" shape-rendering="crispEdges" role="img" aria-label="Pomi fetih haritası">`;
+      out += `<rect x="0" y="0" width="${W}" height="${H}" fill="${SEA_W}" rx="4"/>`;
+      [[9, 0.4], [26, 0.5], [38, 1.6], [1.2, 11], [3, 17.5], [17, 19], [44, 7.5]].forEach(([x, y]) => {
+        out += `<rect x="${x * cell}" y="${y * cell}" width="${cell * 0.5}" height="${cell * 0.5}" fill="#A9D3EA" rx="1"/>`;
+      });
+
+      LAND_CELLS.forEach(([c, r]) => {
+        const [own, clash] = OWNER_MAP[c + ',' + r];
+        const col = own ? mixW(LAND_W, own[1], 0.72) : LAND_W;
+        out += `<rect x="${c * cell + 0.5}" y="${r * cell + 0.5}" width="${cell - 0.9}" height="${cell - 0.9}" fill="${col}" rx="1"/>`;
+        if (clash) out += `<rect x="${c * cell + cell * 0.34}" y="${r * cell + cell * 0.34}" width="${cell * 0.3}" height="${cell * 0.3}" fill="rgba(39,34,61,0.35)"/>`;
+        if (own && own[0] === selected) out += `<rect x="${c * cell + 0.5}" y="${r * cell + 0.5}" width="${cell - 0.9}" height="${cell - 0.9}" fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="0.7"/>`;
+      });
+
+      /* sınırlar: komşu farklı sahipteyse kenar çiz */
+      LAND_CELLS.forEach(([c, r]) => {
+        const a = (OWNER_MAP[c + ',' + r][0] || [])[0];
+        [[1, 0], [0, 1]].forEach(([dx, dy], k) => {
+          const nk = (c + dx) + ',' + (r + dy);
+          const b = OWNER_MAP[nk] ? (OWNER_MAP[nk][0] || [])[0] : undefined;
+          if (a === b || !a || !b) return;
+          const hot = a === selected || b === selected;
+          const col = hot ? WP.ink : 'rgba(39,34,61,0.55)';
+          const x = (c + (k === 0 ? 1 : 0)) * cell, y = (r + (k === 1 ? 1 : 0)) * cell;
+          out += `<rect x="${k === 0 ? x - 0.8 : x}" y="${k === 1 ? y - 0.8 : y}" width="${k === 0 ? 1.6 : cell}" height="${k === 1 ? 1.6 : cell}" fill="${col}"/>`;
+        });
+      });
+
+      if (live) LIVE_DOTS.forEach(([x, y, s], i) => {
+        const dur = (1.4 + (i % 4) * 0.3).toFixed(1);
+        out += `<circle cx="${x * cell}" cy="${y * cell}" r="${cell * 0.34 * s}" fill="${WP.cherry}" opacity="0.85"/>`;
+        out += `<circle cx="${x * cell}" cy="${y * cell}" r="${cell * 0.34 * s}" fill="none" stroke="${WP.cherry}" stroke-width="1.2">
+          <animate attributeName="r" values="${cell * 0.3 * s};${cell * 1.5 * s}" dur="${dur}s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0.8;0" dur="${dur}s" repeatCount="indefinite"/></circle>`;
+      });
+
+      if (markers) WAR_CITIES.forEach(city => {
+        const [name, color, , , rank, gx, gy] = city;
+        const cx = gx * cell, cy = gy * cell, me = name === ME_W, sel = name === selected;
+        const r = cell * (sel ? 1.05 : me ? 0.95 : 0.72);
+        out += `<g data-city="${name}">`;
+        if (sel) out += `<circle cx="${cx}" cy="${cy}" r="${r * 1.7}" fill="none" stroke="${WP.ink}" stroke-width="1.6" opacity="0.5" stroke-dasharray="3 3"/>`;
+        out += `<circle cx="${cx}" cy="${cy}" r="${r}" fill="${color}" stroke="${WP.ink}" stroke-width="${sel ? 2.4 : 1.8}"/>`;
+        out += me
+          ? `<rect x="${cx - cell * 0.16}" y="${cy - cell * 0.3}" width="${cell * 0.32}" height="${cell * 0.6}" fill="#fff"/>`
+          : `<text x="${cx}" y="${cy + cell * 0.3}" text-anchor="middle" font-family="'DM Sans',sans-serif" font-weight="700" font-size="${cell * 0.85}" fill="#fff">${rank}</text>`;
+        if (labels && sel) {
+          const w = name.length * cell * 0.62 + 16;
+          const lx = Math.min(W - w, Math.max(1, cx - w / 2));
+          out += `<rect x="${lx}" y="${cy - cell * 2.85}" width="${w}" height="${cell * 1.75}" rx="${cell * 0.6}" fill="${WP.ink}" stroke="#fff" stroke-width="1.6"/>`;
+          out += `<text x="${lx + w / 2}" y="${cy - cell * 1.7}" text-anchor="middle" font-family="'DM Sans',sans-serif" font-weight="700" font-size="${cell * 1.05}" fill="#fff">${name}</text>`;
+        }
+        out += '</g>';
+      });
+
+      return out + '</svg>';
+    }
+
+    function initWarMap() {
+      const host = document.getElementById('warmap');
+      const info = document.getElementById('mapCity');
+      if (!host) return;
+      let selected = ME_W;
+
+      function paint() {
+        host.innerHTML = warMapSVG({ selected, live: !reduceMotion });
+        const city = WAR_CITIES.find(c => c[0] === selected);
+        info.innerHTML = `<span class="swatch" style="background:${city[1]}"></span>` +
+          t('mapCity')
+            .replace('{city}', `<b>${city[0]}</b>`)
+            .replace('{rank}', city[4])
+            .replace('{regions}', heldCount(city[0]))
+            .replace('{defenders}', city[7] + (lang === 'tr' ? 'B' : 'K'));
+        host.querySelectorAll('[data-city]').forEach(g => {
+          g.addEventListener('click', () => { selected = g.getAttribute('data-city'); paint(); });
+        });
+      }
+      paint();
+      window.repaintWarMap = paint;   // dil değişince yeniden çiz
+    }
+
+    /* ── 7) Kart görselleri ── */
+    const VIZ = {
+      garden() {
+        const picks = ['tomato', 'sunflower', 'tulip', 'pumpkin'];
+        return `<div style="display:flex;align-items:flex-end;gap:0">${picks.map(p => plantSVG(p, 58, 'ripe', '2 2 20 20')).join('')}</div>`;
+      },
+      map() {
+        return `<div style="width:100%;padding:0 24px">${warMapSVG({ cell: 4.2, markers: false, labels: false, live: false })}</div>`;
+      },
+      league() {
+        const hs = [26, 44, 62, 36];
+        return `<div style="display:flex;align-items:flex-end;gap:8px">${hs.map((h, i) => `
+          <div style="width:16px;height:${h}px;border-radius:5px;background:${i === 2 ? '#FFC23D' : 'rgba(39,34,61,.14)'}"></div>`).join('')}
+          </div>`;
+      },
+      rooms() {
+        const cs = ['#9B6DD6', '#FF5B6E', '#2FB99B', '#4FA3E3'];
+        return `<div style="display:flex;gap:-6px">${cs.map((c, i) => `
+          <span style="width:30px;height:30px;border-radius:50%;background:${c};display:inline-block;border:3px solid #F5F0FD;margin-left:${i ? -10 : 0}px"></span>`).join('')}
+          </div>`;
+      },
+      sounds() {
+        const hs = [12, 26, 40, 30, 48, 22, 34, 16];
+        return `<div style="display:flex;align-items:center;gap:5px">${hs.map(h => `
+          <span style="width:6px;height:${h}px;border-radius:3px;background:#F58E6F;display:inline-block"></span>`).join('')}
+          </div>`;
+      },
+      tasks() {
+        const rows = [1, 1, 0];
+        return `<div style="display:flex;flex-direction:column;gap:9px">${rows.map(done => `
+          <span style="display:flex;align-items:center;gap:9px">
+            <span style="width:15px;height:15px;border-radius:4px;background:${done ? '#FF5B6E' : 'transparent'};border:2px solid ${done ? '#FF5B6E' : 'rgba(39,34,61,.22)'}"></span>
+            <span style="width:${done ? 62 : 46}px;height:7px;border-radius:4px;background:rgba(39,34,61,${done ? '.16' : '.10'})"></span>
+          </span>`).join('')}</div>`;
+      }
+    };
+    document.querySelectorAll('[data-viz]').forEach(el => {
+      const fn = VIZ[el.dataset.viz];
+      if (fn) el.innerHTML = fn();
+    });
+
+    /* ── 8) Koleksiyon şeridi ── */
+    const collectionEl = document.getElementById('collectionGrid');
+    MSPECIES.forEach(p => {
+      const cell = document.createElement('div');
+      cell.className = 'plant';
+      cell.innerHTML = `${plantSVG(p, 78, 'ripe', '1 1 22 22')}<span data-plant="${p.id}">${p.plant}</span><em>${p.name}</em>`;
+      collectionEl.appendChild(cell);
+    });
+
+    /* ── Birlikte odaklananlar: küçük bitki avatarları ── */
+    const peopleAvatars = document.getElementById('peopleAvatars');
+    const peopleText = document.getElementById('peopleText');
+    ['tomato', 'sunflower', 'lavender', 'pine'].forEach(id => {
+      const dot = document.createElement('span');
+      dot.innerHTML = plantAvatarSVG(id, 28);
+      peopleAvatars.appendChild(dot);
+    });
+
+    /* ── 9) Çeviriler ── */
     const translations = {
       tr: {
-        title: 'Pomi — Yasal',
-        tagline: 'Yasal belgeler',
-        privacy: 'Gizlilik Politikası',
-        terms: 'Kullanım Şartları',
-        support: 'Destek',
-        copyright: '© 2026 Pomi — Tüm hakları saklıdır.'
+        title: 'Pomi · Odaklan, bahçen büyüsün',
+        description: 'Pomi, 25 dakikalık her odak seansını bahçende bir bitkiye dönüştüren pomodoro uygulaması. Görevler, odalar, sesler, fetih haritası ve haftalık lig.',
+        skip: 'İçeriğe geç',
+        navHow: 'Nasıl çalışır', navFeatures: 'Özellikler', navConquest: 'Fetih', navCollection: 'Koleksiyon', navSupport: 'Destek', navGet: 'İndir',
+        heroKicker: 'Pomodoro · Piksel bahçe',
+        heroTitle: 'Odaklan,<br />bahçen <span class="accent">büyüsün</span>.',
+        heroLead: 'Tamamladığın her 25 dakikalık seans bahçene yeni bir bitki ekler. Görevlerini planla, arkadaşlarınla aynı odada çalış, şehrin için yarış. Hepsi tek bir sakin ekranda.',
+        storeSmallIos: 'İndir', storeSmallAndroid: 'İndir',
+        noteA: 'iPhone &amp; Android', noteB: 'Türkçe &amp; English', noteC: 'Reklam yok',
+        live: 'canlı önizleme', sessions: 'seans', gardenLabel: 'Bahçen',
+        pause: 'Duraklat', start: 'Başlat',
+        stateFocus: 'Odak sürüyor…', statePaused: 'Duraklatıldı', stateDone: 'Seans tamamlandı, bahçene yeni bitki eklendi 🌱',
+        rib1: 'Klasik pomodoro, esnek süreler',
+        rib2: 'Şehrin için bölge savaşları',
+        rib3: 'Haftalık lig ve istatistikler',
+        rib4: 'Odak sesleri ve ambiyans',
+        howKicker: 'Nasıl çalışır',
+        howTitle: 'Üç adım. Sonra <span class="accent">gerisi kendiliğinden</span>.',
+        step1t: 'Görevini seç',
+        step1p: 'Bugün ne yapacağını yaz, süreyi ayarla. Her seans bir göreve bağlanır.',
+        step2t: '25 dakika odaklan',
+        step2p: 'Retro piksel sayaç çalışırken tek işe odaklan. İstersen sesleri aç, istersen bir odaya katıl.',
+        'step3p-t': 'Bitkin büyüsün',
+        step3p: 'Seans bitince bahçene yeni bir bitki eklenir; odak dakikaların şehrinin puanına yazılır.',
+        featKicker: 'Özellikler',
+        featTitle: 'Bir zamanlayıcıdan <span class="accent">fazlası</span>.',
+        featLead: 'Odaklanmayı sürdürülebilir kılan şey disiplin değil, geri dönüş. Pomi her seansın karşılığını görünür kılar.',
+        f1t: 'Piksel bahçe', f1p: 'Tamamlanan her seans bahçende bir bitkiye dönüşür. Bahçen, odak geçmişinin haritası olur.',
+        f2t: 'Fetih haritası', f2p: 'Odak dakikaların bölgeleri boyar. Haritada yeni alanlar aç, kazandığın yeri elinde tut.',
+        f3t: 'Lig &amp; sıralama', f3p: 'Haftalık ligde yüksel, şehrinin sıralamadaki yerini gör. Rekabet motive edici bir yan etki.',
+        f4t: 'Odalar', f4p: 'Arkadaşlarınla aynı odada, aynı sayaçla çalış. Sessiz ama beraber.',
+        f5t: 'Sesler', f5p: 'Yağmur, kafe, orman… Kendi çalışma ortamını kur, seviyeleri karıştır.',
+        f6t: 'Görevler', f6p: 'Planla, tamamla, işaretle. Gün sonunda ne kadar odaklandığını net olarak gör.',
+        mapKicker: 'Fetih haritası',
+        mapTitle: 'Odağın haritayı <span class="accent">ele geçirsin</span>.',
+        mapLead: 'Pomi\'yi diğer zamanlayıcılardan ayıran şey burası. Tamamladığın her seans şehrinin puanına yazılır; puan biriktikçe haritadaki bölgeler senin rengine döner. Bir bölge ele geçirilir, ertesi gün rakip şehir geri alır. Tek başına çalışırken bile bir takımın parçasısın.',
+        mapL1: 'Her seans, bulunduğun şehre puan yazar',
+        mapL2: 'Bölgeler gün içinde el değiştirir, haritayı canlı izlersin',
+        mapL3: 'Sezon sonunda en çok bölgeyi tutan şehir kazanır',
+        mapHint: 'Bir şehre dokun',
+        mapCity: '{city} · {rank}. sıra · {regions} bölge · {defenders} savunucu',
+        people: 'şu anda <b>{n} kişi</b> Pomi\'de odakta',
+        mapS1b: '81', mapS1: 'şehir yarışıyor',
+        mapS2b: '7 gün', mapS2: 'süren sezonlar',
+        mapS3b: '1 seans', mapS3: 'fark yaratmak için yeter',
+        colKicker: 'Koleksiyon',
+        colTitle: 'Odaklandıkça <span class="accent">açılan</span> bitkiler.',
+        colLead: 'Her bitkinin kendi büyüme aşamaları ve nadirliği var. Bazıları ilk günden, bazıları uzun bir seriden sonra gelir.',
+        ctaKicker: 'Hazırsan',
+        ctaTitle: 'Bugün 25 dakika.<br />Yarın bir <span class="accent">bahçe</span>.',
+        ctaLead: 'Pomi\'yi indir, ilk seansını başlat. İlk bitkin bugün toprağa girsin.',
+        legalKicker: 'Belgeler',
+        privacy: 'Gizlilik Politikası', terms: 'Kullanım Şartları', support: 'Destek',
+        privacyShort: 'Gizlilik', termsShort: 'Şartlar', supportShort: 'Destek',
+        copyright: '© 2026 Pomi. Tüm hakları saklıdır.',
+        plants: {
+          tomato: 'Domates', straw: 'Çilek', cactus: 'Kaktüs', corn: 'Mısır', carrot: 'Havuç',
+          chili: 'Biber', pumpkin: 'Balkabağı', sunflower: 'Ayçiçeği', lavender: 'Lavanta', apple: 'Elma',
+          blueberry: 'Yaban mersini', tulip: 'Lale', basil: 'Fesleğen', daisy: 'Papatya', pine: 'Çam'
+        }
       },
       en: {
-        title: 'Pomi — Legal',
-        tagline: 'Legal documents',
-        privacy: 'Privacy Policy',
-        terms: 'Terms of Use',
-        support: 'Support',
-        copyright: '© 2026 Pomi — All rights reserved.'
+        title: 'Pomi · Focus, and watch your garden grow',
+        description: 'Pomi turns every 25-minute focus session into a plant in your pixel garden. Tasks, shared rooms, ambient sounds, a conquest map and a weekly league.',
+        skip: 'Skip to content',
+        navHow: 'How it works', navFeatures: 'Features', navConquest: 'Conquest', navCollection: 'Collection', navSupport: 'Support', navGet: 'Get the app',
+        heroKicker: 'Pomodoro · Pixel garden',
+        heroTitle: 'Focus, and watch<br />your garden <span class="accent">grow</span>.',
+        heroLead: 'Every 25-minute session you finish plants something new in your garden. Plan your tasks, focus with friends in shared rooms, compete for your city, all on one calm screen.',
+        storeSmallIos: 'Download on the', storeSmallAndroid: 'Get it on',
+        noteA: 'iPhone &amp; Android', noteB: 'Türkçe &amp; English', noteC: 'No ads',
+        live: 'live preview', sessions: 'sessions', gardenLabel: 'Your garden',
+        pause: 'Pause', start: 'Start',
+        stateFocus: 'Focusing…', statePaused: 'Paused', stateDone: 'Session complete, a new plant joined your garden 🌱',
+        rib1: 'Classic pomodoro, flexible lengths',
+        rib2: 'Region battles for your city',
+        rib3: 'Weekly league and statistics',
+        rib4: 'Focus sounds and ambience',
+        howKicker: 'How it works',
+        howTitle: 'Three steps. Then <span class="accent">it takes care of itself</span>.',
+        step1t: 'Pick a task',
+        step1p: 'Write down what you\'re working on and set the length. Every session belongs to a task.',
+        step2t: 'Focus for 25 minutes',
+        step2p: 'While the retro pixel timer runs, do one thing only. Turn on sounds, or join a room.',
+        'step3p-t': 'Watch it grow',
+        step3p: 'When the session ends a new plant joins your garden, and your minutes count towards your city.',
+        featKicker: 'Features',
+        featTitle: 'A little <span class="accent">more</span> than a timer.',
+        featLead: 'What makes focus sustainable isn\'t discipline, it\'s feedback. Pomi makes every session visible.',
+        f1t: 'Pixel garden', f1p: 'Each finished session becomes a plant. Your garden turns into a map of your focus history.',
+        f2t: 'Conquest map', f2p: 'Your focus minutes colour regions. Open up new ground and hold on to what you\'ve won.',
+        f3t: 'League &amp; ranks', f3p: 'Climb the weekly league and see where your city stands. Competition as a useful side effect.',
+        f4t: 'Rooms', f4p: 'Work in the same room, on the same timer, with your friends. Quiet, but together.',
+        f5t: 'Sounds', f5p: 'Rain, café, forest… Build your own working environment and mix the levels.',
+        f6t: 'Tasks', f6p: 'Plan, finish, check off. At the end of the day you can see exactly where the focus went.',
+        mapKicker: 'Conquest map',
+        mapTitle: 'Let your focus <span class="accent">take the map</span>.',
+        mapLead: 'This is what sets Pomi apart from every other timer. Each session you finish adds to your city\'s score, and as the score grows, regions on the map turn your colour. A region falls today, a rival city takes it back tomorrow. Even working alone, you\'re part of a team.',
+        mapL1: 'Every session scores points for your city',
+        mapL2: 'Regions change hands through the day, and you watch it live',
+        mapL3: 'The city holding the most regions wins the season',
+        mapHint: 'Tap a city',
+        mapCity: '{city} · rank {rank} · {regions} regions · {defenders} defenders',
+        people: '<b>{n} people</b> are focusing on Pomi right now',
+        mapS1b: '81', mapS1: 'cities competing',
+        mapS2b: '7 days', mapS2: 'per season',
+        mapS3b: '1 session', mapS3: 'is enough to matter',
+        colKicker: 'Collection',
+        colTitle: 'Plants that <span class="accent">unlock</span> as you focus.',
+        colLead: 'Every plant has its own growth stages and rarity. Some arrive on day one, others after a long streak.',
+        ctaKicker: 'Whenever you\'re ready',
+        ctaTitle: '25 minutes today.<br />A <span class="accent">garden</span> tomorrow.',
+        ctaLead: 'Download Pomi and start your first session. Let your first plant go into the ground today.',
+        legalKicker: 'Documents',
+        privacy: 'Privacy Policy', terms: 'Terms of Use', support: 'Support',
+        privacyShort: 'Privacy', termsShort: 'Terms', supportShort: 'Support',
+        copyright: '© 2026 Pomi. All rights reserved.',
+        plants: {
+          tomato: 'Tomato', straw: 'Strawberry', cactus: 'Cactus', corn: 'Corn', carrot: 'Carrot',
+          chili: 'Pepper', pumpkin: 'Pumpkin', sunflower: 'Sunflower', lavender: 'Lavender', apple: 'Apple',
+          blueberry: 'Blueberry', tulip: 'Tulip', basil: 'Basil', daisy: 'Daisy', pine: 'Pine'
+        }
       }
     };
 
-    function setLanguage(lang) {
+    let lang = localStorage.getItem('pomi-lang') || 'tr';
+    if (!translations[lang]) lang = 'tr';
+    const t = key => translations[lang][key] || '';
+
+    function setLanguage(next) {
+      lang = translations[next] ? next : 'tr';
       localStorage.setItem('pomi-lang', lang);
       document.documentElement.lang = lang;
-      document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
-      document.title = translations[lang].title;
+      document.title = t('title');
 
-      document.querySelectorAll('[data-i18n-key]').forEach(el => {
-        const key = el.getAttribute('data-i18n-key');
-        if (translations[lang][key]) {
-          el.textContent = translations[lang][key];
-        }
-      });
+      const meta = document.querySelector('meta[name="description"]');
+      if (meta) meta.setAttribute('content', t('description'));
 
-      document.querySelectorAll('.lang-btn').forEach(btn => {
-        btn.classList.remove('active');
-        if (btn.getAttribute('data-lang') === lang) {
-          btn.classList.add('active');
-        }
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const value = t(el.getAttribute('data-i18n'));
+        if (value) el.innerHTML = value;
       });
+      document.querySelectorAll('[data-plant]').forEach(el => {
+        el.textContent = translations[lang].plants[el.getAttribute('data-plant')] || '';
+      });
+      peopleText.innerHTML = t('people').replace('{n}', FOCUS_PEOPLE.toLocaleString(lang === 'tr' ? 'tr-TR' : 'en-US'));
+      if (window.repaintWarMap) window.repaintWarMap();
+      document.querySelectorAll('.lang-btn').forEach(btn =>
+        btn.classList.toggle('active', btn.getAttribute('data-lang') === lang));
+
+      toggleBtn.textContent = running ? t('pause') : t('start');
+      stateEl.textContent = running ? t('stateFocus') : t('statePaused');
     }
 
-    document.querySelectorAll('.lang-btn').forEach(btn => {
-      btn.addEventListener('click', () => {
-        setLanguage(btn.getAttribute('data-lang'));
-      });
-    });
+    document.querySelectorAll('.lang-btn').forEach(btn =>
+      btn.addEventListener('click', () => setLanguage(btn.getAttribute('data-lang'))));
 
-    const savedLang = localStorage.getItem('pomi-lang') || 'tr';
-    setLanguage(savedLang);
+    /* ── 10) Mağaza linkleri ── */
+    document.querySelectorAll('#storeIos, [data-store="ios"]').forEach(a => { a.href = STORE.ios; });
+    document.querySelectorAll('#storeAndroid, [data-store="android"]').forEach(a => { a.href = STORE.android; });
+
+    /* ── 11) Görünüme girince belirme ── */
+    if ('IntersectionObserver' in window && !reduceMotion) {
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add('in');
+          io.unobserve(entry.target);
+        });
+      }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
+      document.querySelectorAll('[data-reveal]').forEach((el, i) => {
+        el.style.transitionDelay = `${Math.min(i % 6, 4) * 60}ms`;
+        io.observe(el);
+      });
+    } else {
+      document.querySelectorAll('[data-reveal]').forEach(el => el.classList.add('in'));
+    }
+
+    /* ── 12) Yapışkan başlıkta ince çizgi ── */
+    const nav = document.getElementById('nav');
+    const onScroll = () => nav.classList.toggle('is-stuck', window.scrollY > 8);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+
+    /* ── 13) Başlat ── */
+    setLanguage(lang);
+    initWarMap();
+    paintRing(0);
+    if (reduceMotion) {
+      paintRing(0.72);
+      clockEl.textContent = '07:00';
+      stateEl.textContent = t('stateFocus');
+      seedGarden(['tomato', 'sunflower', 'tulip']);
+    } else {
+      seedGarden(['basil', 'daisy']);
+      rafId = requestAnimationFrame(tick);
+      document.addEventListener('visibilitychange', () => {
+        if (document.hidden) { cancelAnimationFrame(rafId); rafId = null; }
+        else if (!rafId) { last = 0; rafId = requestAnimationFrame(tick); }
+      });
+    }
   </script>
 </body>
 </html>
