@@ -14,7 +14,7 @@
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' shape-rendering='crispEdges'><rect width='16' height='16' rx='3' fill='%23FBF4E4'/><rect x='7' y='2' width='2' height='2' fill='%2346C39A'/><rect x='5' y='3' width='6' height='2' fill='%2346C39A'/><rect x='3' y='5' width='10' height='8' fill='%2327223D'/><rect x='4' y='6' width='8' height='6' fill='%23E8455B'/><rect x='5' y='7' width='2' height='1' fill='%23FF7A8C'/><rect x='6' y='9' width='1' height='1' fill='%2327223D'/><rect x='9' y='9' width='1' height='1' fill='%2327223D'/></svg>" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet" />
   <style>
     /* Palet index.html ile birebir aynı — davet sayfası siteden kopmasın. */
     :root {
@@ -38,8 +38,9 @@
     html { color-scheme: light; }
     body {
       min-height: 100vh;
-      display: grid;
-      place-items: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       padding: clamp(1.15rem, 5vw, 2.5rem);
       background: var(--bg);
       color: var(--ink);
@@ -75,16 +76,31 @@
       text-transform: uppercase;
       color: var(--ink-soft);
     }
+    /* Kod ekrandan okunup başka bir cihaza elle yazılır: tek yanlış karakter
+       "oda bulunamadı" demektir. Pixelify Sans'ta alfabemizin karışan çiftleri
+       (S/5, B/8, Z/2, G/6) ayırt edilemiyordu — uygulamayla aynı fonta,
+       Press Start 2P'ye geçildi ve kod üçerli öbeklere ayrıldı. */
     .code {
       margin-top: 0.5rem;
-      padding: 0.85rem 0.5rem 0.85rem 1.1rem;
+      padding: 0.95rem 0.5rem;
       background: var(--cream);
       border-radius: var(--r-md);
-      font-family: 'Pixelify Sans', ui-monospace, monospace;
-      font-weight: 700;
-      font-size: 2.1rem;
-      letter-spacing: 0.6em;
-      line-height: 1.2;
+      font-family: 'Press Start 2P', ui-monospace, SFMono-Regular, monospace;
+      font-size: clamp(1rem, 5.2vw, 1.35rem);
+      letter-spacing: 0.22em;
+      line-height: 1.4;
+      white-space: nowrap;
+    }
+    /* Öbek arası boşluk karakter aralığından belirgin biçimde geniş olmalı ki
+       sınır ilk bakışta seçilsin. */
+    /* `letter-spacing` son karakterin de sağına boşluk koyar; öbek arası
+       boşluk simetrik kalsın diye o fazlalık düşülür. */
+    .code .gap { display: inline-block; width: calc(0.8em - 0.22em); }
+
+    /* Ekran okuyucu kodu tek kelime gibi okumasın: harf harf söylesin. */
+    .sr-only {
+      position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+      overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
     }
 
     .actions { margin-top: 1.5rem; display: grid; gap: 0.6rem; }
@@ -156,7 +172,10 @@
       <p class="lede" data-i18n="lede">Uygulamayı aç, odaya katıl ve arkadaşınla birlikte odaklan.</p>
 
       <div class="code-label" data-i18n="codeLabel">Oda kodu</div>
-      <div class="code" id="code">------</div>
+      <div class="code">
+        <span class="sr-only" id="code-sr"></span>
+        <span id="code" aria-hidden="true">------</span>
+      </div>
 
       <div class="actions">
         <!-- Otomatik yönlendirme YOK: iOS Safari kullanıcı dokunuşu olmadan özel
@@ -222,7 +241,18 @@
     // (bkz. lib/features/rooms/data/room_invite_link.dart).
     var code = (new URLSearchParams(location.search).get('kod') || '').trim().toUpperCase();
     if (/^[A-HJ-NP-Z2-9]{6}$/.test(code)) {
-      document.getElementById('code').textContent = code;
+      // Üçerli öbekleme — kopyalanan/yazılan değer yine kesintisiz koddur.
+      var el = document.getElementById('code');
+      el.textContent = '';
+      document.getElementById('code-sr').textContent = code.split('').join(' ');
+      [code.slice(0, 3), code.slice(3)].forEach(function (part, i) {
+        if (i > 0) {
+          var gap = document.createElement('span');
+          gap.className = 'gap';
+          el.appendChild(gap);
+        }
+        el.appendChild(document.createTextNode(part));
+      });
       document.getElementById('open').href = 'io.pomi.app://oda/' + code;
     } else {
       document.body.setAttribute('data-missing', '1');
