@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="title">Pomi · Odaya katıl</title>
+  <meta name="description" data-i18n-attr="description" content="Bir Pomi odak odasına davet edildin. Uygulamayı aç, arkadaşınla birlikte çalış." />
+  <meta name="theme-color" content="#FDFAF2" />
+  <meta name="robots" content="noindex" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Pomi" />
+  <meta property="og:title" content="Pomi odasına davet edildin 🍅" />
+  <meta property="og:description" content="Birlikte odaklanmak için Pomi'de buluşalım." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' shape-rendering='crispEdges'><rect width='16' height='16' rx='3' fill='%23FBF4E4'/><rect x='7' y='2' width='2' height='2' fill='%2346C39A'/><rect x='5' y='3' width='6' height='2' fill='%2346C39A'/><rect x='3' y='5' width='10' height='8' fill='%2327223D'/><rect x='4' y='6' width='8' height='6' fill='%23E8455B'/><rect x='5' y='7' width='2' height='1' fill='%23FF7A8C'/><rect x='6' y='9' width='1' height='1' fill='%2327223D'/><rect x='9' y='9' width='1' height='1' fill='%2327223D'/></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet" />
+  <style>
+    /* Palet index.html ile birebir aynı — davet sayfası siteden kopmasın. */
+    :root {
+      --bg: #FDFAF2;
+      --cream: #FBF4E4;
+      --paper: #FFFFFF;
+      --ink: #27223D;
+      --ink-soft: #635C7D;
+      --line: rgba(39, 34, 61, 0.10);
+      --cherry: #FF5B6E;
+      --cherry-deep: #E8455B;
+      --mint: #2FB99B;
+      --tint-mint: #ECF8F4;
+      --r-lg: 24px;
+      --r-md: 16px;
+      --shadow: 0 30px 70px -44px rgba(39, 34, 61, 0.45), 0 2px 4px -2px rgba(39, 34, 61, 0.05);
+      --ease: cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { color-scheme: light; }
+    body {
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: clamp(1.15rem, 5vw, 2.5rem);
+      background: var(--bg);
+      color: var(--ink);
+      font-family: 'DM Sans', -apple-system, system-ui, sans-serif;
+      font-size: 17px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; text-decoration: none; }
+    :focus-visible { outline: 2px solid var(--cherry); outline-offset: 3px; border-radius: 8px; }
+
+    .card {
+      width: 100%;
+      max-width: 420px;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: var(--r-lg);
+      box-shadow: var(--shadow);
+      padding: clamp(1.75rem, 6vw, 2.5rem) clamp(1.35rem, 5vw, 2rem);
+      text-align: center;
+    }
+
+    .mark { width: 64px; height: 64px; margin: 0 auto 1.15rem; display: block; }
+
+    h1 { font-size: 1.5rem; font-weight: 700; letter-spacing: -0.02em; line-height: 1.15; }
+    .lede { margin-top: 0.55rem; color: var(--ink-soft); font-size: 0.98rem; }
+
+    .code-label {
+      margin-top: 1.75rem;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--ink-soft);
+    }
+    .code {
+      margin-top: 0.5rem;
+      padding: 0.85rem 0.5rem 0.85rem 1.1rem;
+      background: var(--cream);
+      border-radius: var(--r-md);
+      font-family: 'Pixelify Sans', ui-monospace, monospace;
+      font-weight: 700;
+      font-size: 2.1rem;
+      letter-spacing: 0.6em;
+      line-height: 1.2;
+    }
+
+    .actions { margin-top: 1.5rem; display: grid; gap: 0.6rem; }
+    .btn {
+      display: block;
+      padding: 0.95rem 1.1rem;
+      border-radius: var(--r-md);
+      font-weight: 600;
+      font-size: 1rem;
+      transition: transform 0.18s var(--ease), box-shadow 0.18s var(--ease);
+    }
+    .btn:active { transform: translateY(1px); }
+    .btn-primary {
+      background: var(--cherry);
+      color: #fff;
+      box-shadow: 0 14px 28px -18px var(--cherry-deep);
+    }
+    .btn-ghost { background: var(--cream); color: var(--ink); font-size: 0.94rem; }
+
+    .hint {
+      margin-top: 1.35rem;
+      font-size: 0.86rem;
+      color: var(--ink-soft);
+      line-height: 1.5;
+    }
+    .hint strong { color: var(--ink); font-weight: 600; }
+
+    /* Uygulama açılmadıysa (özel şema sessizce düşer) belirginleşen ipucu. */
+    .fallback {
+      display: none;
+      margin-top: 1.1rem;
+      padding: 0.85rem 1rem;
+      background: var(--tint-mint);
+      border-radius: var(--r-md);
+      font-size: 0.88rem;
+      color: var(--ink);
+    }
+    body[data-stalled="1"] .fallback { display: block; }
+
+    .langs { margin-top: 1.6rem; display: flex; justify-content: center; gap: 0.35rem; }
+    .lang {
+      border: 0; background: none; cursor: pointer; padding: 0.3rem 0.6rem;
+      border-radius: 999px; font: inherit; font-size: 0.8rem; font-weight: 600;
+      color: var(--ink-soft);
+    }
+    .lang[aria-pressed="true"] { background: var(--cream); color: var(--ink); }
+
+    /* Kodsuz bağlantı: davet yerine "kod eksik" hâli gösterilir. */
+    body[data-missing="1"] .present { display: none; }
+    .absent { display: none; }
+    body[data-missing="1"] .absent { display: block; }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <svg class="mark" viewBox="0 0 16 16" shape-rendering="crispEdges" role="img" aria-label="Pomi">
+      <rect width="16" height="16" rx="3" fill="#FBF4E4"/>
+      <rect x="7" y="2" width="2" height="2" fill="#46C39A"/>
+      <rect x="5" y="3" width="6" height="2" fill="#46C39A"/>
+      <rect x="3" y="5" width="10" height="8" fill="#27223D"/>
+      <rect x="4" y="6" width="8" height="6" fill="#E8455B"/>
+      <rect x="5" y="7" width="2" height="1" fill="#FF7A8C"/>
+      <rect x="6" y="9" width="1" height="1" fill="#27223D"/>
+      <rect x="9" y="9" width="1" height="1" fill="#27223D"/>
+    </svg>
+
+    <div class="present">
+      <h1 data-i18n="heading">Pomi odasına davet edildin</h1>
+      <p class="lede" data-i18n="lede">Uygulamayı aç, odaya katıl ve arkadaşınla birlikte odaklan.</p>
+
+      <div class="code-label" data-i18n="codeLabel">Oda kodu</div>
+      <div class="code" id="code">------</div>
+
+      <div class="actions">
+        <!-- Otomatik yönlendirme YOK: iOS Safari kullanıcı dokunuşu olmadan özel
+             şemaya atlamayı engeller, sayfa da sessizce ölü görünürdü. -->
+        <a class="btn btn-primary" id="open" href="#" data-i18n="open">Pomi'de aç</a>
+        <a class="btn btn-ghost" id="ios" href="https://apps.apple.com/tr/app/pomi-birlikte-%C3%A7al%C4%B1%C5%9F-odaklan/id6784132034?l=tr" data-i18n="ios">App Store'dan indir</a>
+        <a class="btn btn-ghost" id="android" href="https://play.google.com/store/apps/details?id=com.yakupselimucar.pomi&hl=tr" data-i18n="android">Google Play'den indir</a>
+      </div>
+
+      <p class="fallback" data-i18n="fallback">Uygulama açılmadı mı? Pomi'yi indirdikten sonra <strong>Odalar → Kodla katıl</strong> adımından yukarıdaki kodu girebilirsin.</p>
+      <p class="hint" data-i18n="hint">Pomi kuruluysa buton doğrudan odayı açar.</p>
+    </div>
+
+    <div class="absent">
+      <h1 data-i18n="missingHeading">Davet kodu eksik</h1>
+      <p class="lede" data-i18n="missingLede">Bu bağlantıda oda kodu yok. Arkadaşından daveti yeniden paylaşmasını iste.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="https://apps.apple.com/tr/app/pomi-birlikte-%C3%A7al%C4%B1%C5%9F-odaklan/id6784132034?l=tr" data-i18n="ios">App Store'dan indir</a>
+        <a class="btn btn-ghost" href="https://play.google.com/store/apps/details?id=com.yakupselimucar.pomi&hl=tr" data-i18n="android">Google Play'den indir</a>
+      </div>
+    </div>
+
+    <div class="langs">
+      <button class="lang" type="button" data-lang="tr">Türkçe</button>
+      <button class="lang" type="button" data-lang="en">English</button>
+    </div>
+  </main>
+
+<script>
+  (function () {
+    var DICT = {
+      tr: {
+        title: 'Pomi · Odaya katıl',
+        description: 'Bir Pomi odak odasına davet edildin. Uygulamayı aç, arkadaşınla birlikte çalış.',
+        heading: 'Pomi odasına davet edildin',
+        lede: 'Uygulamayı aç, odaya katıl ve arkadaşınla birlikte odaklan.',
+        codeLabel: 'Oda kodu',
+        open: "Pomi'de aç",
+        ios: "App Store'dan indir",
+        android: "Google Play'den indir",
+        fallback: 'Uygulama açılmadı mı? Pomi\'yi indirdikten sonra <strong>Odalar → Kodla katıl</strong> adımından yukarıdaki kodu girebilirsin.',
+        hint: 'Pomi kuruluysa buton doğrudan odayı açar.',
+        missingHeading: 'Davet kodu eksik',
+        missingLede: 'Bu bağlantıda oda kodu yok. Arkadaşından daveti yeniden paylaşmasını iste.'
+      },
+      en: {
+        title: 'Pomi · Join a room',
+        description: "You've been invited to a Pomi focus room. Open the app and study together.",
+        heading: "You've been invited to a Pomi room",
+        lede: 'Open the app, join the room and focus together with your friend.',
+        codeLabel: 'Room code',
+        open: 'Open in Pomi',
+        ios: 'Download on the App Store',
+        android: 'Get it on Google Play',
+        fallback: "App didn't open? After installing Pomi, go to <strong>Rooms → Join with code</strong> and enter the code above.",
+        hint: 'If Pomi is installed, the button opens the room directly.',
+        missingHeading: 'Invite code missing',
+        missingLede: "This link has no room code. Ask your friend to share the invite again."
+      }
+    };
+
+    // Kod alfabesi uygulamadakiyle aynı: karışabilen I/O/0/1 yok
+    // (bkz. lib/features/rooms/data/room_invite_link.dart).
+    var code = (new URLSearchParams(location.search).get('kod') || '').trim().toUpperCase();
+    if (/^[A-HJ-NP-Z2-9]{6}$/.test(code)) {
+      document.getElementById('code').textContent = code;
+      document.getElementById('open').href = 'io.pomi.app://oda/' + code;
+    } else {
+      document.body.setAttribute('data-missing', '1');
+    }
+
+    // Özel şema kurulu olmayan uygulamada sessizce düşer: sayfa hâlâ
+    // görünüyorsa mağaza + elle kod ipucunu öne çıkar.
+    document.getElementById('open').addEventListener('click', function () {
+      setTimeout(function () {
+        if (!document.hidden) document.body.setAttribute('data-stalled', '1');
+      }, 1500);
+    });
+
+    function apply(lang) {
+      var d = DICT[lang] || DICT.tr;
+      document.documentElement.lang = lang;
+      document.title = d.title;
+      var meta = document.querySelector('meta[name="description"]');
+      if (meta) meta.setAttribute('content', d.description);
+      document.querySelectorAll('[data-i18n]').forEach(function (el) {
+        var value = d[el.getAttribute('data-i18n')];
+        if (value != null) el.innerHTML = value;
+      });
+      document.querySelectorAll('.lang').forEach(function (btn) {
+        btn.setAttribute('aria-pressed', String(btn.getAttribute('data-lang') === lang));
+      });
+      try { localStorage.setItem('pomi-lang', lang); } catch (e) { /* özel mod */ }
+    }
+
+    var stored = null;
+    try { stored = localStorage.getItem('pomi-lang'); } catch (e) { /* özel mod */ }
+    var initial = stored || ((navigator.language || 'tr').slice(0, 2) === 'tr' ? 'tr' : 'en');
+    document.querySelectorAll('.lang').forEach(function (btn) {
+      btn.addEventListener('click', function () { apply(btn.getAttribute('data-lang')); });
+    });
+    apply(DICT[initial] ? initial : 'tr');
+  })();
+</script>
+</body>
+</html>
