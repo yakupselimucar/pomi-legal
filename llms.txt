@@ -1,0 +1,44 @@
+# Pomi
+
+> Pomi is a free retro pixel-art Pomodoro timer and study app for iPhone, iPad and Android. Every completed 25-minute focus session grows a plant in your pixel garden. You can plan tasks, focus with friends in live rooms on a shared timer, win regions for your city on a conquest map where Turkey's 81 cities compete, and climb a weekly league. No ads, works offline, available in Turkish and English.
+
+Pomi, odaklanmayı oyuna dönüştüren ücretsiz, retro piksel temalı bir Pomodoro zamanlayıcı ve ders çalışma uygulamasıdır. Tamamlanan her 25 dakikalık seans bahçene bir bitki ekler; arkadaşlarınla canlı odalarda birlikte çalışır, şehrin için fetih haritasında bölge kazanırsın.
+
+## Key facts
+
+- Name: Pomi (App Store / Google Play: "Pomi: Study & Focus Together", "Pomi: Birlikte Çalış & Odaklan")
+- Category: Productivity (Pomodoro timer, focus timer, study app)
+- Platforms: iOS 15.0 or later (iPhone, iPad), Android
+- Price: Free to download, optional "Pomi Pro" subscription, no ads
+- Languages: Turkish, English
+- Age rating: 12+
+- First release: 2026-07-05
+- Developer: Yakup Selim Uçar
+- Support: yakupselimucar@hotmail.com
+
+## Features
+
+- Pomodoro timer: classic 25/5 technique with customizable work and break durations; keeps running when the app is closed
+- Pixel garden: each finished focus session grows a plant; collectible plants with growth stages and rarity
+- Live rooms: focus together with friends on the same timer, join with a 6-character invite code
+- Conquest map: focus minutes score points for your city; regions change hands through the day; 7-day seasons
+- Weekly league and rankings
+- Tasks: plan work and link each session to a task
+- Focus sounds: rain, café, forest and more, with mixable levels
+- Weekly focus statistics, dark mode, offline support
+
+## Who it is for
+
+Students, people preparing for exams, and anyone who wants a calm, motivating way to focus, alone or with friends ("study with me" style co-working).
+
+## Links
+
+- [Pomi website](https://yakupselimucar.github.io/pomi-legal/): Product overview and features
+- [Download on the App Store](https://apps.apple.com/tr/app/id6784132034): iPhone and iPad
+- [Get it on Google Play](https://play.google.com/store/apps/details?id=com.yakupselimucar.pomi): Android
+- [Support and FAQ](https://yakupselimucar.github.io/pomi-legal/support.html): Subscriptions, restoring purchases, account deletion
+
+## Optional
+
+- [Privacy Policy](https://yakupselimucar.github.io/pomi-legal/privacy.html)
+- [Terms of Use](https://yakupselimucar.github.io/pomi-legal/terms.html)
