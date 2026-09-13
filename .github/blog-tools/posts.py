@@ -16,6 +16,7 @@ POSTS = []
 # ─────────────────────────────────────────────────────────────────
 POSTS.append(dict(
   slug="en-iyi-pomodoro-uygulamalari-2026", lang="tr", pair="best-pomodoro-apps-2026",
+  related=["forest-alternatifi-ucretsiz-uygulamalar", "pomodoro-teknigi-nedir", "odak-uygulamalarinda-oyunlastirma-ise-yarar-mi"],
   section="Karşılaştırma", date=D, date_human=DH_TR, rfc822=RFC, read=7, words=1400,
   title="2026'nın En İyi Pomodoro Uygulamaları (iOS ve Android)",
   short="En iyi Pomodoro uygulamaları 2026",
@@ -155,6 +156,7 @@ POSTS.append(dict(
 # ─────────────────────────────────────────────────────────────────
 POSTS.append(dict(
   slug="best-pomodoro-apps-2026", lang="en", pair="en-iyi-pomodoro-uygulamalari-2026",
+  related=["forest-app-alternatives", "what-is-the-pomodoro-technique", "does-gamification-help-you-focus"],
   section="Comparison", date=D, date_human=DH_EN, rfc822=RFC, read=7, words=1350,
   title="The Best Pomodoro Apps in 2026 (iOS and Android)",
   short="Best Pomodoro apps 2026",
@@ -294,7 +296,8 @@ POSTS.append(dict(
 # ─────────────────────────────────────────────────────────────────
 POSTS.append(dict(
   slug="ogrenciler-icin-en-iyi-odaklanma-araclari", lang="tr", pair="best-focus-apps-for-students",
-  section="Rehber", date=D, date_human=DH_TR, rfc822=RFC, read=6, words=1150,
+  related=["verimli-ders-calisma-teknikleri", "ders-calisirken-telefonu-birakmak", "odaklanmak-icin-en-iyi-sesler"],
+  section="Öğrenciler", date=D, date_human=DH_TR, rfc822=RFC, read=6, words=1150,
   title="Öğrenciler İçin En İyi Odaklanma Araçları (2026)",
   short="Öğrenciler için odaklanma araçları",
   h1="Öğrenciler için en iyi <span class=\"accent\">odaklanma</span> araçları",
@@ -361,7 +364,8 @@ POSTS.append(dict(
 # ─────────────────────────────────────────────────────────────────
 POSTS.append(dict(
   slug="best-focus-apps-for-students", lang="en", pair="ogrenciler-icin-en-iyi-odaklanma-araclari",
-  section="Guide", date=D, date_human=DH_EN, rfc822=RFC, read=6, words=1100,
+  related=["evidence-based-study-techniques", "how-to-stop-checking-your-phone-while-studying", "best-background-sounds-for-studying"],
+  section="Students", date=D, date_human=DH_EN, rfc822=RFC, read=6, words=1100,
   title="The Best Focus Apps for Students (2026)",
   short="Best focus apps for students",
   h1="The best <span class=\"accent\">focus</span> apps for students",
@@ -426,7 +430,8 @@ POSTS.append(dict(
 # 3) TR — Pomodoro tekniği nedir?
 # ─────────────────────────────────────────────────────────────────
 POSTS.append(dict(
-  slug="pomodoro-teknigi-nedir", lang="tr",
+  slug="pomodoro-teknigi-nedir", lang="tr", pair="what-is-the-pomodoro-technique",
+  related=["pomodoro-mu-flowtime-mi-52-17-odak-teknikleri", "gunde-kac-pomodoro-yapmali", "pomodoro-molasinda-ne-yapmali"],
   section="Temel bilgi", date=D, date_human=DH_TR, rfc822=RFC, read=6, words=1100,
   title="Pomodoro Tekniği Nedir? Nasıl Uygulanır? (Adım Adım Rehber)",
   short="Pomodoro tekniği nedir",
@@ -498,7 +503,8 @@ POSTS.append(dict(
 # 4) TR — Study with me / birlikte ders çalışma
 # ─────────────────────────────────────────────────────────────────
 POSTS.append(dict(
-  slug="study-with-me-birlikte-ders-calisma", lang="tr",
+  slug="study-with-me-birlikte-ders-calisma", lang="tr", pair="study-with-me-how-to-study-together",
+  related=["pomi-nasil-kullanilir", "erteleme-aliskanligini-yenmek", "sinava-hazirlanirken-pomodoro"],
   section="Rehber", date=D, date_human=DH_TR, rfc822=RFC, read=5, words=950,
   title="Study With Me: Arkadaşlarınla Birlikte Ders Çalışmak Neden İşe Yarar?",
   short="Study with me rehberi",
