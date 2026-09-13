@@ -36,6 +36,7 @@ Students, people preparing for exams, and anyone who wants a calm, motivating wa
 - [Pomi website](https://yakupselimucar.github.io/pomi-legal/): Product overview and features
 - [Download on the App Store](https://apps.apple.com/tr/app/id6784132034): iPhone and iPad
 - [Get it on Google Play](https://play.google.com/store/apps/details?id=com.yakupselimucar.pomi): Android
+- [About the maker](https://yakupselimucar.github.io/pomi-legal/about.html): Who builds Pomi and why
 - [Support and FAQ](https://yakupselimucar.github.io/pomi-legal/support.html): Subscriptions, restoring purchases, account deletion
 
 <!-- blog:start -->

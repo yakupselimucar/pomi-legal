@@ -45,7 +45,7 @@ T = {
              blog_desc="Pomodoro tekniği, odaklanma araçları ve öğrenciler için verimlilik rehberleri. Pomi ekibinden kısa, kaynaklı yazılar.",
              blog_h1="Odak üzerine <span class=\"accent\">kısa yazılar</span>",
              blog_lead="Pomodoro tekniği, odaklanma uygulamaları ve birlikte ders çalışma üzerine rehberler. Süslü sözler yok; denenmiş yöntemler ve dürüst karşılaştırmalar.",
-             count="yazı", rss="RSS", all_posts="Tüm yazılar"),
+             count="yazı", rss="RSS", all_posts="Tüm yazılar", maker="Yapımcı"),
   "en": dict(skip="Skip to content", home="Home", blog="Blog", support="Support", get="Download",
              nav_aria="Sections", by="By", updated="Updated", read="min read",
              tldr="Short answer", faq="Frequently asked questions", related="Keep reading", sources="Sources",
@@ -57,7 +57,7 @@ T = {
              blog_desc="Guides on the Pomodoro technique, focus apps and productivity for students. Short, sourced articles from the Pomi team.",
              blog_h1="Short reads on <span class=\"accent\">focus</span>",
              blog_lead="Guides on the Pomodoro technique, focus apps and studying together. No fluff; tested methods and honest comparisons.",
-             count="articles", rss="RSS", all_posts="All articles"),
+             count="articles", rss="RSS", all_posts="All articles", maker="Maker"),
 }
 
 # Dizin sayfasında kategori sırası (burada olmayanlar sona eklenir).
@@ -91,6 +91,7 @@ def footer(lang):
         <a href="../privacy.html">{t['privacy']}</a>
         <a href="../terms.html">{t['terms']}</a>
         <a href="../support.html">{t['support']}</a>
+        <a href="../about.html">{t['maker']}</a>
         <a href="feed.xml">{t['rss']}</a>
         <a href="mailto:yakupselimucar@hotmail.com">yakupselimucar@hotmail.com</a>
       </span>
@@ -129,7 +130,8 @@ def ld(obj):
 
 def person():
     return {"@type": "Person", "@id": SITE + "#founder", "name": "Yakup Selim Uçar",
-            "url": SITE, "jobTitle": "Pomi geliştiricisi"}
+            "url": SITE + "about.html", "jobTitle": "Pomi geliştiricisi",
+            "sameAs": ["https://github.com/yakupselimucar", IOS, ANDROID]}
 
 def pick_related(p, all_posts):
     """Aynı dildeki yazılardan en fazla RELATED_MAX tane: önce açıkça belirtilenler,
@@ -319,7 +321,7 @@ def feed(all_posts):
 </rss>
 """
 
-STATIC_PAGES = [("", "2026-09-13"), ("support.html", "2026-09-12"), ("privacy.html", "2026-09-12"), ("terms.html", "2026-09-12")]
+STATIC_PAGES = [("", "2026-09-13"), ("about.html", "2026-09-13"), ("support.html", "2026-09-12"), ("privacy.html", "2026-09-12"), ("terms.html", "2026-09-12")]
 
 def sitemap(all_posts):
     latest = max(q.get("modified", q["date"]) for q in all_posts)
