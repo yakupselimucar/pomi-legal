@@ -75,6 +75,7 @@ def nav(lang, current):
       <nav class="nav-links" aria-label="{t['nav_aria']}">
         <a href="../">{t['home']}</a>
         <a href="./{'' if lang=='tr' else 'en.html'}"{' aria-current="page"' if current=='blog' else ''}>{t['blog']}</a>
+        <a href="../about.html">{t['maker']}</a>
         <a href="../support.html">{t['support']}</a>
       </nav>
       <a class="btn btn-primary btn-sm" href="../#get">{t['get']}</a>
