@@ -1,6 +1,6 @@
 # Pomi
 
-> Pomi is a free retro pixel-art Pomodoro timer and study app for iPhone, iPad and Android. Every completed 25-minute focus session grows a plant in your pixel garden. You can plan tasks, focus with friends in live rooms on a shared timer, win regions for your city on a conquest map where Turkey's 81 cities compete, and climb a weekly league. No ads, works offline, available in Turkish and English.
+> Pomi is a free retro pixel-art Pomodoro timer and study app for iPhone, iPad and Android. Every completed 25-minute focus session grows a plant in your pixel garden. You can plan tasks, focus with friends in live rooms (everyone runs their own timer), win regions for your city on a conquest map where Turkey's 81 cities compete, and climb a weekly league. No ads, works offline, available in Turkish and English.
 
 Pomi, odaklanmayı oyuna dönüştüren ücretsiz, retro piksel temalı bir Pomodoro zamanlayıcı ve ders çalışma uygulamasıdır. Tamamlanan her 25 dakikalık seans bahçene bir bitki ekler; arkadaşlarınla canlı odalarda birlikte çalışır, şehrin için fetih haritasında bölge kazanırsın.
 
@@ -20,7 +20,7 @@ Pomi, odaklanmayı oyuna dönüştüren ücretsiz, retro piksel temalı bir Pomo
 
 - Pomodoro timer: classic 25/5 technique with customizable work and break durations; keeps running when the app is closed
 - Pixel garden: each finished focus session grows a plant; collectible plants with growth stages and rarity
-- Live rooms: focus together with friends on the same timer, join with a 6-character invite code
+- Live rooms: focus together with friends in the same room, each person on their own timer; join with a 6-character invite code
 - Conquest map: focus minutes score points for your city; regions change hands through the day; 7-day seasons
 - Weekly league and rankings
 - Tasks: plan work and link each session to a task
