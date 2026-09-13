@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>Pomi Blog</title>
+  <link>https://yakupselimucar.github.io/pomi-legal/blog/</link>
+  <atom:link href="https://yakupselimucar.github.io/pomi-legal/blog/feed.xml" rel="self" type="application/rss+xml" />
+  <description>Pomodoro tekniği, odaklanma uygulamaları ve birlikte ders çalışma üzerine yazılar. Articles on the Pomodoro technique, focus apps and studying together.</description>
+  <language>tr</language>
+  <item>
+    <title>2026&#x27;nın En İyi Pomodoro Uygulamaları (iOS ve Android)</title>
+    <link>https://yakupselimucar.github.io/pomi-legal/blog/en-iyi-pomodoro-uygulamalari-2026.html</link>
+    <guid isPermaLink="true">https://yakupselimucar.github.io/pomi-legal/blog/en-iyi-pomodoro-uygulamalari-2026.html</guid>
+    <pubDate>Sun, 13 Sep 2026 09:00:00 +0300</pubDate>
+    <description>2026&#x27;da iPhone ve Android için en iyi Pomodoro uygulamaları: Pomi, Forest, Focus To-Do, Flora, Pomofocus, Tide, Study Bunny ve Be Focused. Ücret, reklam, çevrimdışı ve birlikte çalışma karşılaştırması.</description>
+    <category>Karşılaştırma</category>
+  </item>
+  <item>
+    <title>The Best Pomodoro Apps in 2026 (iOS and Android)</title>
+    <link>https://yakupselimucar.github.io/pomi-legal/blog/best-pomodoro-apps-2026.html</link>
+    <guid isPermaLink="true">https://yakupselimucar.github.io/pomi-legal/blog/best-pomodoro-apps-2026.html</guid>
+    <pubDate>Sun, 13 Sep 2026 09:00:00 +0300</pubDate>
+    <description>The best Pomodoro apps for iPhone and Android in 2026: Pomi, Forest, Focus To-Do, Flora, Pomofocus, Tide, Study Bunny and Be Focused, compared on price, ads, offline use and co-working.</description>
+    <category>Comparison</category>
+  </item>
+  <item>
+    <title>Öğrenciler İçin En İyi Odaklanma Araçları (2026)</title>
+    <link>https://yakupselimucar.github.io/pomi-legal/blog/ogrenciler-icin-en-iyi-odaklanma-araclari.html</link>
+    <guid isPermaLink="true">https://yakupselimucar.github.io/pomi-legal/blog/ogrenciler-icin-en-iyi-odaklanma-araclari.html</guid>
+    <pubDate>Sun, 13 Sep 2026 09:00:00 +0300</pubDate>
+    <description>2026&#x27;da öğrenciler için en iyi odaklanma araçları: Pomodoro sayacı (Pomi), site engelleyici, aralıklı tekrar (Anki), planlayıcı ve odak sesleri. Az uygulama, net kullanım.</description>
+    <category>Rehber</category>
+  </item>
+  <item>
+    <title>The Best Focus Apps for Students (2026)</title>
+    <link>https://yakupselimucar.github.io/pomi-legal/blog/best-focus-apps-for-students.html</link>
+    <guid isPermaLink="true">https://yakupselimucar.github.io/pomi-legal/blog/best-focus-apps-for-students.html</guid>
+    <pubDate>Sun, 13 Sep 2026 09:00:00 +0300</pubDate>
+    <description>The best focus apps for students in 2026: a Pomodoro timer (Pomi), a distraction blocker, spaced repetition (Anki), a planner and focus sounds. Few apps, clear usage.</description>
+    <category>Guide</category>
+  </item>
+  <item>
+    <title>Pomodoro Tekniği Nedir? Nasıl Uygulanır? (Adım Adım Rehber)</title>
+    <link>https://yakupselimucar.github.io/pomi-legal/blog/pomodoro-teknigi-nedir.html</link>
+    <guid isPermaLink="true">https://yakupselimucar.github.io/pomi-legal/blog/pomodoro-teknigi-nedir.html</guid>
+    <pubDate>Sun, 13 Sep 2026 09:00:00 +0300</pubDate>
+    <description>Pomodoro tekniği nedir, nasıl uygulanır? 25/5 döngüsü, uzun mola kuralı, Francesco Cirillo&#x27;nun yöntemi, sık hatalar ve öğrenciler için uyarlama önerileri.</description>
+    <category>Temel bilgi</category>
+  </item>
+  <item>
+    <title>Study With Me: Arkadaşlarınla Birlikte Ders Çalışmak Neden İşe Yarar?</title>
+    <link>https://yakupselimucar.github.io/pomi-legal/blog/study-with-me-birlikte-ders-calisma.html</link>
+    <guid isPermaLink="true">https://yakupselimucar.github.io/pomi-legal/blog/study-with-me-birlikte-ders-calisma.html</guid>
+    <pubDate>Sun, 13 Sep 2026 09:00:00 +0300</pubDate>
+    <description>Study with me nedir, neden işe yarar? Sosyal kolaylaştırma ve body doubling etkisi, YouTube ve Discord ile uygulama karşılaştırması, Pomi odalarıyla arkadaşlarla uzaktan birlikte ders çalışma rehberi.</description>
+    <category>Rehber</category>
+  </item>
+</channel>
+</rss>

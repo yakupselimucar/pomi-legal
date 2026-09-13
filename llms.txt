@@ -38,6 +38,20 @@ Students, people preparing for exams, and anyone who wants a calm, motivating wa
 - [Get it on Google Play](https://play.google.com/store/apps/details?id=com.yakupselimucar.pomi): Android
 - [Support and FAQ](https://yakupselimucar.github.io/pomi-legal/support.html): Subscriptions, restoring purchases, account deletion
 
+## Blog
+
+Guides written by the Pomi developer. Turkish posts are primary; two have English versions.
+
+- [Pomi Blog (Turkish)](https://yakupselimucar.github.io/pomi-legal/blog/): Index of all posts
+- [Pomi Blog (English)](https://yakupselimucar.github.io/pomi-legal/blog/en.html): English index
+- [The Best Pomodoro Apps in 2026](https://yakupselimucar.github.io/pomi-legal/blog/best-pomodoro-apps-2026.html): Pomi, Forest, Focus To-Do, Flora, Pomofocus, Tide, Study Bunny, Be Focused compared on price, ads, offline use and studying together
+- [2026'nın En İyi Pomodoro Uygulamaları](https://yakupselimucar.github.io/pomi-legal/blog/en-iyi-pomodoro-uygulamalari-2026.html): Turkish version of the comparison
+- [The Best Focus Apps for Students](https://yakupselimucar.github.io/pomi-legal/blog/best-focus-apps-for-students.html): Four tools students need: timer, blocker, spaced repetition, planner
+- [Öğrenciler İçin En İyi Odaklanma Araçları](https://yakupselimucar.github.io/pomi-legal/blog/ogrenciler-icin-en-iyi-odaklanma-araclari.html): Turkish version
+- [Pomodoro Tekniği Nedir?](https://yakupselimucar.github.io/pomi-legal/blog/pomodoro-teknigi-nedir.html): What the Pomodoro technique is, how to apply it, common mistakes, adapting durations (Turkish)
+- [Study With Me: Birlikte Ders Çalışma](https://yakupselimucar.github.io/pomi-legal/blog/study-with-me-birlikte-ders-calisma.html): Why studying together works (body doubling), and how Pomi rooms work with individual timers (Turkish)
+- [RSS feed](https://yakupselimucar.github.io/pomi-legal/blog/feed.xml)
+
 ## Optional
 
 - [Privacy Policy](https://yakupselimucar.github.io/pomi-legal/privacy.html)
