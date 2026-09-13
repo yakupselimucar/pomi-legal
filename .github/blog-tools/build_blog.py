@@ -131,7 +131,7 @@ def ld(obj):
 def person():
     return {"@type": "Person", "@id": SITE + "#founder", "name": "Yakup Selim Uçar",
             "url": SITE + "about.html", "jobTitle": "Pomi geliştiricisi",
-            "sameAs": ["https://github.com/yakupselimucar", IOS, ANDROID]}
+            "sameAs": ["https://github.com/yakupselimucar", "https://www.linkedin.com/in/yakup-selim-ucar/", "https://www.threads.com/@yakupselim_ucar", "https://www.instagram.com/yakupselim_ucar/", "https://medium.com/@yakupselimucar", IOS, ANDROID]}
 
 def pick_related(p, all_posts):
     """Aynı dildeki yazılardan en fazla RELATED_MAX tane: önce açıkça belirtilenler,
