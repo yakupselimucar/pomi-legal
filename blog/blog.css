@@ -228,3 +228,21 @@ footer.site a:hover { color: var(--ink); }
   html { scroll-behavior: auto; }
   .btn, .post-card, .cta .store { transition: none; }
 }
+
+/* Kaynaklar */
+.sources { padding-left: 1.4rem; font-size: 0.9rem; color: var(--ink-soft); }
+.sources li + li { margin-top: 0.35rem; }
+.sources em { font-style: italic; }
+
+/* Dizin: konu başlıkları ve kategori grupları */
+.topics { display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; margin-top: 1.4rem; }
+.topics a { font-size: 0.85rem; font-weight: 600; text-decoration: none; padding: 0.4rem 0.9rem; border-radius: 999px; border: 1px solid var(--line); background: var(--paper); color: var(--ink-2); transition: border-color 0.2s ease, color 0.2s ease; }
+.topics a:hover { border-color: var(--cherry); color: var(--ink); }
+.topics .total { font-size: 0.82rem; color: var(--ink-soft); margin-left: 0.4rem; }
+.post-section { margin-top: 2.4rem; scroll-margin-top: 90px; }
+.post-section .section-h { font-size: 1.35rem; display: flex; align-items: baseline; gap: 0.6rem; }
+.post-section .section-h .n { font-family: 'Pixelify Sans', monospace; font-size: 0.95rem; color: var(--ink-soft); font-weight: 400; }
+.post-section .post-grid { margin-top: 1rem; }
+.all-link { margin-top: 1rem; font-weight: 600; }
+.all-link a { text-decoration: none; }
+.all-link a:hover { color: var(--cherry); }

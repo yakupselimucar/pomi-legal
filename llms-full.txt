@@ -1,0 +1,3160 @@
+# Pomi Blog — full text
+> Full text of every article on the Pomi blog (https://yakupselimucar.github.io/pomi-legal/blog/). Pomi is a free, ad-free pixel-art Pomodoro and study app for iOS and Android by Yakup Selim Uçar. Turkish articles are primary; English versions are marked. Each article ends with its FAQ.
+
+
+---
+
+# 2026'nın En İyi Pomodoro Uygulamaları (iOS ve Android)
+
+URL: https://yakupselimucar.github.io/pomi-legal/blog/en-iyi-pomodoro-uygulamalari-2026.html
+Language: tr
+Published: 2026-09-13
+Section: Karşılaştırma
+
+2026'da iPhone ve Android için en iyi Pomodoro uygulamaları: Pomi, Forest, Focus To-Do, Flora, Pomofocus, Tide, Study Bunny ve Be Focused. Ücret, reklam, çevrimdışı ve birlikte çalışma karşılaştırması.
+
+**Kısa cevap:** Kısa cevap: Arkadaşlarınla birlikte çalışmak ve ilerlemeni görselleştirmek istiyorsan Pomi; sadece telefonu elinden bırakmak istiyorsan Forest; görev listesini sayaçla birleştirmek istiyorsan Focus To-Do; hiçbir şey yüklemek istemiyorsan Pomofocus iyi bir seçim. Hepsi ücretsiz başlangıç sunuyor.
+
+## Bu listeyi nasıl hazırladık?
+
+Pomodoro uygulamalarının çoğu aynı şeyi yapar: 25 dakika say, 5 dakika mola ver. Farkı yaratan, sayacın etrafına ne koyduklarıdır. Her uygulamayı şu altı soruya göre değerlendirdik:
+
+- Ücret ve reklam: Ücretsiz sürüm gerçekten kullanılabilir mi, reklam var mı?
+
+- Çevrimdışı: İnternet yokken sayaç çalışıyor mu?
+
+- Arka plan: Uygulamayı kapatınca sayaç devam ediyor mu?
+
+- Oyunlaştırma: Seans bitince elle tutulur bir şey kazanıyor musun?
+
+- Birlikte çalışma: Arkadaşlarınla aynı anda odaklanabiliyor musun?
+
+- Platform: iOS, Android, web, masaüstü?
+
+## Karşılaştırma tablosu
+
+| Uygulama | Platform | Ücretsiz sürüm | Reklam | Çevrimdışı | Oyunlaştırma | Birlikte çalışma
+
+| Pomi | iOS, Android | Evet, tam sayaç | Yok | Evet | Piksel bahçe, fetih haritası, lig | Canlı odalar (herkes kendi sayacıyla)
+
+| Forest | iOS, Android, tarayıcı eklentisi | Android'de ücretsiz, iOS'ta ücretli | Ücretsiz sürümde var | Evet | Sanal ağaç dikme | Ortak ağaç dikme
+
+| Focus To-Do | iOS, Android, Windows, macOS, web | Evet | Yok | Evet | Yok, istatistik odaklı | Yok
+
+| Flora | iOS, Android | Evet | Yok | Kısmen | Ağaç dikme | Arkadaşla ortak seans
+
+| Pomofocus | Web | Evet | Var | Sınırlı | Yok | Yok
+
+| Tide | iOS, Android | Evet, sınırlı | Yok | Evet | Yok, ses odaklı | Yok
+
+| Study Bunny | iOS, Android | Evet | Var | Evet | Tavşan bakımı, para birimi | Yok
+
+| Be Focused | iOS, macOS | Evet | Ücretsiz sürümde var | Evet | Yok | Yok
+
+Bilgiler Eylül 2026'daki mağaza sayfalarına dayanır. Uygulamalar fiyat ve özellik değiştirebilir; indirmeden önce mağaza sayfasını kontrol et.
+
+## Uygulamalar tek tek
+
+### 1. Pomi Birlikte çalışma Reklamsız
+
+Pomi, her tamamlanan 25 dakikalık seansı piksel bir bahçede yeni bir bitkiye dönüştürür. Diğer oyunlaştırılmış sayaçlardan iki farkı var: canlı odalar ve fetih haritası. Odalarda arkadaşlarınla aynı ekranda çalışırsın ama herkes kendi sayacını kullanır; biri mola verince diğerlerinin seansı bozulmaz. Fetih haritasında odak dakikaların şehrine puan yazar ve Türkiye'nin 81 şehri 7 günlük sezonlarda bölge kazanmak için yarışır.
+
+Kime uygun
+Sınava hazırlanan öğrenciler, "study with me" tarzı birlikte çalışmayı sevenler, ilerlemesini görmek isteyenler
+
+Ücret
+Ücretsiz; isteğe bağlı Pomi Pro aboneliği. Reklam yok.
+
+Eksik
+Web ve masaüstü sürümü yok; şu an yalnızca iOS ve Android.
+
+İndir
+App Store · Google Play
+
+### 2. Forest Telefon bağımlılığı
+
+Kategorinin en bilinen uygulaması. Seansı başlatınca bir ağaç dikersin, uygulamadan çıkarsan ağaç kurur. Basit ve etkili bir "telefonu elinden bırak" mekaniği. Android'de reklamlı ücretsiz sürüm var, iOS'ta tek seferlik ücretli.
+
+Kime uygun
+Sorunu odaklanmaktan çok telefonu bırakamamak olanlar
+
+Eksik
+Görev yönetimi zayıf; sosyal özellikler sınırlı.
+
+### 3. Focus To-Do Görev + sayaç
+
+Pomodoro sayacıyla tam bir görev yöneticisini birleştirir: projeler, alt görevler, tekrar eden işler, tahmini pomodoro sayısı. Telefon, bilgisayar ve web arasında senkronize olur. Oyunlaştırma yok, bu bazıları için artı.
+
+Kime uygun
+İş takibi yapan profesyoneller, çok cihaz kullananlar
+
+Eksik
+Arayüz kalabalık; motivasyon katmanı yok.
+
+### 4. Flora Ücretsiz
+
+Forest'a benzer ağaç dikme mekaniği, ama ücretsiz ve arkadaşınla ortak seans başlatabiliyorsun. Seansı bozan kişi ağacı öldürür; sosyal baskı işe yarıyor.
+
+Kime uygun
+Forest'ı ücretsiz isteyenler, çiftler ve ikili çalışma grupları
+
+Eksik
+İstatistikler ve görev yönetimi yüzeysel.
+
+### 5. Pomofocus Web
+
+Tarayıcıda açılan, kurulum gerektirmeyen bir Pomodoro sayacı. Süreleri ayarlar, görev eklersin, o kadar. Bilgisayar başında çalışanlar için en hızlı başlangıç.
+
+Kime uygun
+Masaüstünde çalışanlar, uygulama yüklemek istemeyenler
+
+Eksik
+Mobil uygulama yok; sekmeyi kapatınca sayaç durur.
+
+### 6. Tide Sesler
+
+Odak sayacı ile doğa sesleri, meditasyon ve uyku modlarını tek uygulamada toplar. Tasarımı sakin ve şık. Sayaç ikinci planda, asıl ürün ses.
+
+Kime uygun
+Beyaz gürültüyle çalışanlar, nefes egzersizi isteyenler
+
+Eksik
+Görev ve sosyal özellik yok; ücretsiz sürüm sınırlı.
+
+### 7. Study Bunny Öğrenci
+
+Çalıştıkça beslediğin bir tavşan karakteri, biriken para birimi ve dükkân. Lise ve üniversite öğrencileri arasında popüler; sevimli ama reklam yoğunluğu yüksek.
+
+Kime uygun
+Sevimli karakter isteyen öğrenciler
+
+Eksik
+Reklamlar; tasarım eski.
+
+### 8. Be Focused Apple
+
+iPhone ve Mac'te sade bir Pomodoro sayacı. Görev bazlı istatistik tutar, iCloud ile senkronize olur. Fazlası yok, eksiği de yok.
+
+Kime uygun
+Sadelik isteyen Apple kullanıcıları
+
+Eksik
+Android yok; ücretsiz sürümde reklam.
+
+## Hangi Pomodoro uygulamasını seçmeliyim?
+
+- Arkadaşlarınla çalışıyorsan: Pomi (herkes kendi sayacıyla, ortak oda) veya Flora (ikili ortak seans).
+
+- Telefonu bırakamıyorsan: Forest.
+
+- Görev listen kalabalıksa: Focus To-Do.
+
+- Bilgisayardaysan ve hemen başlamak istiyorsan: Pomofocus.
+
+- Sesle çalışıyorsan: Tide veya Pomi'nin karıştırılabilir odak sesleri.
+
+Hangisini seçersen seç, tekniğin kendisi uygulamadan önemli. Nasıl uygulandığını Pomodoro tekniği rehberimizde anlattık.
+
+## Sık sorulan sorular
+
+**En iyi ücretsiz Pomodoro uygulaması hangisi?**
+Reklamsız ve tam özellikli ücretsiz sürüm arıyorsan Pomi ve Focus To-Do öne çıkar. Pomi oyunlaştırma ve birlikte çalışma, Focus To-Do görev yönetimi tarafında güçlüdür. Web için Pomofocus ücretsizdir.
+
+**Arkadaşlarımla birlikte kullanabileceğim bir Pomodoro uygulaması var mı?**
+Evet. Pomi'de 6 haneli davet koduyla canlı odalar kurulur; herkes aynı odada ama kendi sayacıyla çalışır. Flora ve Forest ise ortak ağaç dikme seansı sunar; orada biri seansı bozarsa herkes etkilenir.
+
+**Pomodoro uygulaması telefonu kapatınca çalışmaya devam eder mi?**
+Pomi, Forest, Focus To-Do, Tide ve Be Focused arka planda ve uygulama kapalıyken saymaya devam eder. Web tabanlı Pomofocus'ta sekmeyi kapatırsan sayaç durur.
+
+**Pomodoro uygulaması çevrimdışı çalışır mı?**
+Pomi, Forest, Focus To-Do, Tide, Study Bunny ve Be Focused internet olmadan çalışır. Pomi'de odalar ve fetih haritası gibi sosyal özellikler için bağlantı gerekir, sayaç ve bahçe çevrimdışı çalışır.
+
+**Forest yerine ücretsiz alternatif var mı?**
+Flora aynı ağaç dikme mekaniğini ücretsiz sunar. Pomi de ücretsizdir; ağaç yerine seans başına bir bitki büyütürsün ve ek olarak odalar ve şehir yarışı vardır.
+
+
+---
+
+# The Best Pomodoro Apps in 2026 (iOS and Android)
+
+URL: https://yakupselimucar.github.io/pomi-legal/blog/best-pomodoro-apps-2026.html
+Language: en
+Published: 2026-09-13
+Section: Comparison
+
+The best Pomodoro apps for iPhone and Android in 2026: Pomi, Forest, Focus To-Do, Flora, Pomofocus, Tide, Study Bunny and Be Focused, compared on price, ads, offline use and co-working.
+
+**Short answer:** Short answer: If you want to study together with friends and see your progress grow, pick Pomi. If your problem is putting the phone down, pick Forest. If you live in a task list, pick Focus To-Do. If you do not want to install anything, use Pomofocus. All of them have a free tier.
+
+## How we picked
+
+Most Pomodoro apps do the same core thing: count 25 minutes, then 5. What differs is what they build around the timer. We rated each app on six questions:
+
+- Price and ads: Is the free tier actually usable, and does it show ads?
+
+- Offline: Does the timer work without internet?
+
+- Background: Does the timer keep running when you close the app?
+
+- Gamification: Do you earn something tangible when a session ends?
+
+- Studying together: Can you focus with friends at the same time?
+
+- Platforms: iOS, Android, web, desktop?
+
+## Comparison table
+
+| App | Platforms | Free tier | Ads | Offline | Gamification | Study together
+
+| Pomi | iOS, Android | Yes, full timer | None | Yes | Pixel garden, conquest map, weekly league | Live rooms (everyone on their own timer)
+
+| Forest | iOS, Android, browser extension | Free on Android, paid on iOS | In free tier | Yes | Virtual tree planting | Group planting
+
+| Focus To-Do | iOS, Android, Windows, macOS, web | Yes | None | Yes | None, stats-focused | No
+
+| Flora | iOS, Android | Yes | None | Partial | Tree planting | Shared session with a friend
+
+| Pomofocus | Web | Yes | Yes | Limited | None | No
+
+| Tide | iOS, Android | Yes, limited | None | Yes | None, sound-focused | No
+
+| Study Bunny | iOS, Android | Yes | Yes | Yes | Bunny care, in-app currency | No
+
+| Be Focused | iOS, macOS | Yes | In free tier | Yes | None | No
+
+Based on public store listings as of September 2026. Apps change prices and features; check the store page before downloading.
+
+## The apps, one by one
+
+### 1. Pomi Study together No ads
+
+Pomi turns every completed 25-minute session into a new plant in a pixel-art garden. Two things set it apart from other gamified timers: live rooms and a conquest map. In a room you focus on the same screen as your friends, but everyone runs their own timer, so one person taking a break does not break anyone else's session. On the conquest map your focus minutes score points for your city, and 81 cities of Turkey compete for regions in 7-day seasons.
+
+Best for
+Students preparing for exams, fans of "study with me" co-working, anyone who wants to see progress accumulate
+
+Price
+Free, with an optional Pomi Pro subscription. No ads.
+
+Missing
+No web or desktop version yet; iOS and Android only.
+
+Get it
+App Store · Google Play
+
+### 2. Forest Phone addiction
+
+The best-known app in the category. Start a session and you plant a tree; leave the app and the tree dies. A simple, effective "put the phone down" mechanic. Free with ads on Android, a one-time purchase on iOS.
+
+Best for
+People whose real problem is picking up the phone, not focusing
+
+Missing
+Weak task management; limited social features.
+
+### 3. Focus To-Do Tasks + timer
+
+Combines a Pomodoro timer with a full task manager: projects, subtasks, recurring tasks, estimated pomodoros per task. Syncs across phone, desktop and web. No gamification, which some people prefer.
+
+Best for
+Professionals tracking work, multi-device users
+
+Missing
+Busy interface; no motivation layer.
+
+### 4. Flora Free
+
+The same tree-planting idea as Forest, but free, and you can start a shared session with a friend. Whoever breaks the session kills the tree. Social pressure works.
+
+Best for
+People who want Forest for free, couples and study pairs
+
+Missing
+Shallow statistics and task management.
+
+### 5. Pomofocus Web
+
+A browser-based Pomodoro timer with nothing to install. Set your durations, add tasks, go. The fastest start if you work at a computer.
+
+Best for
+Desktop workers, anyone who does not want another app
+
+Missing
+No mobile app; the timer stops when you close the tab.
+
+### 6. Tide Sounds
+
+Bundles a focus timer with nature sounds, meditation and sleep modes. Calm, polished design. The timer is secondary; the real product is the audio.
+
+Best for
+People who work with white noise, anyone wanting breathing exercises
+
+Missing
+No tasks or social features; limited free tier.
+
+### 7. Study Bunny Students
+
+A bunny you feed by studying, in-app coins and a shop. Popular with high-school and university students. Cute, but heavy on ads.
+
+Best for
+Students who want a cute character
+
+Missing
+Ads; dated design.
+
+### 8. Be Focused Apple
+
+A clean Pomodoro timer for iPhone and Mac. Tracks stats per task and syncs through iCloud. Nothing extra, nothing missing.
+
+Best for
+Apple users who want simplicity
+
+Missing
+No Android; ads in the free tier.
+
+## Which Pomodoro app should I choose?
+
+- Studying with friends: Pomi (shared room, individual timers) or Flora (paired session).
+
+- Cannot put the phone down: Forest.
+
+- Long task list: Focus To-Do.
+
+- At a computer, want to start now: Pomofocus.
+
+- Work with sound: Tide, or Pomi's mixable focus sounds.
+
+Whichever you choose, the technique matters more than the app. Our Turkish-language Pomodoro guide covers how to apply it.
+
+## Frequently asked questions
+
+**What is the best free Pomodoro app?**
+For an ad-free, fully usable free tier, Pomi and Focus To-Do stand out. Pomi is stronger on gamification and studying together; Focus To-Do is stronger on task management. On the web, Pomofocus is free.
+
+**Is there a Pomodoro app I can use with friends?**
+Yes. Pomi has live rooms you join with a 6-character invite code; everyone is in the same room but runs their own timer. Flora and Forest offer shared tree-planting sessions, where one person leaving affects everyone.
+
+**Does the timer keep running when I close the app?**
+Pomi, Forest, Focus To-Do, Tide and Be Focused keep counting in the background and when the app is closed. The web-based Pomofocus stops when you close the tab.
+
+**Do Pomodoro apps work offline?**
+Pomi, Forest, Focus To-Do, Tide, Study Bunny and Be Focused work without internet. In Pomi, social features such as rooms and the conquest map need a connection, while the timer and garden work offline.
+
+**Is there a free alternative to Forest?**
+Flora offers the same tree-planting mechanic for free. Pomi is also free; instead of a tree you grow one plant per session, plus rooms and a city competition.
+
+
+---
+
+# Öğrenciler İçin En İyi Odaklanma Araçları (2026)
+
+URL: https://yakupselimucar.github.io/pomi-legal/blog/ogrenciler-icin-en-iyi-odaklanma-araclari.html
+Language: tr
+Published: 2026-09-13
+Section: Öğrenciler
+
+2026'da öğrenciler için en iyi odaklanma araçları: Pomodoro sayacı (Pomi), site engelleyici, aralıklı tekrar (Anki), planlayıcı ve odak sesleri. Az uygulama, net kullanım.
+
+**Kısa cevap:** Kısa cevap: Bir öğrencinin ihtiyacı dört araçtan fazlası değil: zamanı bölmek için bir Pomodoro sayacı (Pomi), dikkat dağıtıcıları kesmek için bir engelleyici, ezber için aralıklı tekrar (Anki) ve haftayı görmek için bir planlayıcı. Gerisi isteğe bağlı.
+
+## Neden dört araç, on değil?
+
+Her yeni uygulama bir kurulum, bir bildirim ve bir dikkat dağıtıcı daha demek. Uzun süre ders çalışan öğrencilerde ortak nokta, kullandıkları uygulama sayısının azlığı. Aşağıdaki liste, her ihtiyaç için tek bir öneriyle sınırlı tutuldu; alternatifler kısa not olarak var.
+
+## 1. Zamanı bölmek: Pomodoro sayacı
+
+### Pomi Öneri
+
+25 dakika çalış, 5 dakika dinlen; her seans piksel bahçende bir bitki büyütür. Öğrenciler için asıl fark odalar: sınıf arkadaşlarınla 6 haneli davet koduyla aynı odaya girersin, herkes kendi sayacını çalıştırır. Kütüphane hissi, kütüphaneye gitmeden. Fetih haritası odak dakikalarını şehrine puan olarak yazar; 81 şehir 7 günlük sezonlarda yarışır. Reklam yok, çevrimdışı çalışır.
+
+Nasıl kullan
+Her ders için bir görev oluştur, seansı göreve bağla. Haftalık istatistikte hangi derse kaç saat gittiğini gör.
+
+Alternatif
+Forest (telefonu bırakamayanlar için), Focus To-Do (görev ağırlıklı)
+
+İndir
+App Store · Google Play
+
+Tüm sayaçların karşılaştırması için 2026'nın en iyi Pomodoro uygulamaları yazısına bak.
+
+## 2. Dikkat dağıtıcıları kesmek: engelleyici
+
+Sayaç çalışırken TikTok'a bakmak seansı boşa çıkarır. Telefonun kendi araçları çoğu öğrenci için yeterli:
+
+- iPhone: Ayarlar → Ekran Süresi → Uygulama Sınırları, ya da bir "Odaklanma" modu oluşturup ders saatlerine planla.
+
+- Android: Dijital Denge → Odak modu; seçtiğin uygulamalar gri çıkar ve açılmaz.
+
+- Bilgisayar: Cold Turkey veya Freedom gibi engelleyiciler; tarayıcıda uBlock Origin ile YouTube önerilerini kapat.
+
+Pomi'de seans başlatınca uygulama kilitlemesi yok; bilerek. Bahçe ve oda seni ekranda tutar, yasak değil. Yasak istiyorsan yukarıdaki sistem araçlarını Pomi ile birlikte kullan.
+
+## 3. Ezber ve kalıcılık: aralıklı tekrar
+
+Anki (Android'de ücretsiz, iOS'ta ücretli, web ücretsiz) aralıklı tekrar algoritmasıyla kartları tam unutmak üzereyken önüne getirir. Tıp, hukuk, dil ve YKS öğrencilerinin yıllardır kullandığı bir sistem. Alternatif: Quizlet (daha kolay, daha az güçlü).
+
+Pratik kural: Anki'yi Pomodoro molalarına değil, günün ilk seansına koy. Tekrar bittiğinde yeni konuya geç.
+
+## 4. Haftayı görmek: planlayıcı
+
+Google Takvim ya da Apple Takvim yeter. Her derse haftada kaç seans ayıracağını takvime blok olarak yaz; Pomi'deki haftalık istatistikle karşılaştır. Planla gerçek arasındaki fark, bir sonraki haftanın planıdır.
+
+Not tutmak için Notion veya Apple Notlar; ikisi de ücretsiz. Sistem kurmaya haftalar harcama, düz bir sayfa yeter.
+
+## İsteğe bağlı: odak sesleri
+
+Bazı öğrenciler sessizlikte, bazıları kafe uğultusunda çalışır. Pomi'nin içinde yağmur, kafe ve orman gibi karıştırılabilir sesler var; ayrı bir uygulamaya gerek yok. Müzik dinleyeceksen sözsüz olsun; sözlü müzik okuduğunu anlamayı ölçülebilir biçimde düşürür.
+
+## Bu araçlarla örnek bir çalışma günü
+
+- 08:30 Telefonda odak modu açık. Anki tekrarı, 1 seans.
+
+- 09:00 Pomi'de arkadaşlarla oda. Matematik, 4 seans (2 saat), her 4 seanstan sonra 20 dakika uzun mola.
+
+- 11:30 Türkçe/paragraf, 2 seans.
+
+- Öğleden sonra Deneme çözümü; sayaç kapalı, gerçek sınav süresi.
+
+- Akşam Pomi haftalık istatistiğe bak, yarının takvim bloklarını düzelt.
+
+Pomodoro'nun neden 25 dakika olduğunu ve nasıl uyarlanacağını Pomodoro tekniği nedir yazısında anlattık. Arkadaşlarla çalışmanın neden işe yaradığına dair study with me rehberi de var.
+
+## Sık sorulan sorular
+
+**YKS için en iyi odaklanma uygulaması hangisi?**
+Tek bir uygulama yerine ihtiyaca göre seç: zamanı bölmek için Pomi gibi bir Pomodoro sayacı, sosyal medyayı kesmek için telefonun odak modu, ezber için Anki. Pomi'de odalar sayesinde sınıf arkadaşlarınla aynı anda çalışabilirsin.
+
+**Ders çalışırken telefonu nasıl bırakırım?**
+Telefonun yerleşik odak modunu ders saatlerine planla, bildirimleri kapat ve sayacı başlat. Pomi gibi her seans için görsel bir ödül veren uygulamalar ekrana geri dönme isteğini azaltır.
+
+**Ders çalışırken müzik dinlemek zararlı mı?**
+Sözlü müzik okuduğunu anlamayı düşürür. Sözsüz müzik, yağmur veya kafe sesi gibi sabit arka plan sesleri çoğu öğrenci için nötr veya faydalıdır. Pomi bu sesleri uygulama içinde sunar.
+
+**Arkadaşlarımla uzaktan birlikte ders çalışabilir miyim?**
+Evet. Pomi'de bir oda oluşturup 6 haneli davet kodunu paylaşırsın; herkes aynı odada ama kendi sayacıyla çalışır. Kamera ya da mikrofon gerekmez.
+
+
+---
+
+# The Best Focus Apps for Students (2026)
+
+URL: https://yakupselimucar.github.io/pomi-legal/blog/best-focus-apps-for-students.html
+Language: en
+Published: 2026-09-13
+Section: Students
+
+The best focus apps for students in 2026: a Pomodoro timer (Pomi), a distraction blocker, spaced repetition (Anki), a planner and focus sounds. Few apps, clear usage.
+
+**Short answer:** Short answer: A student needs no more than four tools: a Pomodoro timer to split time (Pomi), a blocker to cut distractions, spaced repetition for memorisation (Anki) and a planner to see the week. Everything else is optional.
+
+## Why four tools, not ten?
+
+Every new app is one more setup, one more notification, one more distraction. Students who study for long stretches tend to have one thing in common: a short app list. This guide gives one recommendation per need, with alternatives as short notes.
+
+## 1. Splitting time: a Pomodoro timer
+
+### Pomi Pick
+
+Work 25 minutes, rest 5; every session grows a plant in your pixel garden. The real difference for students is rooms: join classmates with a 6-character invite code, and everyone runs their own timer. The feel of a library, without going to one. The conquest map turns your focus minutes into points for your city, with 81 cities competing in 7-day seasons. No ads, works offline.
+
+How to use it
+Create one task per subject and link each session to it. The weekly stats show how many hours went to each subject.
+
+Alternatives
+Forest (if you cannot put the phone down), Focus To-Do (task-heavy)
+
+Get it
+App Store · Google Play
+
+For a full comparison of timers, see the best Pomodoro apps in 2026.
+
+## 2. Cutting distractions: a blocker
+
+Checking TikTok while the timer runs wastes the session. The tools built into your phone are enough for most students:
+
+- iPhone: Settings → Screen Time → App Limits, or create a Focus mode and schedule it for study hours.
+
+- Android: Digital Wellbeing → Focus mode; chosen apps turn grey and will not open.
+
+- Computer: Blockers such as Cold Turkey or Freedom; in the browser, hide YouTube recommendations with uBlock Origin.
+
+Pomi does not lock your apps when a session starts, on purpose. The garden and the room keep you on task through reward, not prohibition. If you want prohibition, combine Pomi with the system tools above.
+
+## 3. Memorisation: spaced repetition
+
+Anki (free on Android and web, paid on iOS) uses a spaced-repetition algorithm to show you a card right before you would forget it. Medical, law and language students have relied on it for years. Alternative: Quizlet (easier, less powerful).
+
+Practical rule: put Anki in the first session of the day, not in the Pomodoro breaks. When review is done, move on to new material.
+
+## 4. Seeing the week: a planner
+
+Google Calendar or Apple Calendar is enough. Block out how many sessions each subject gets per week, then compare with Pomi's weekly stats. The gap between plan and reality is next week's plan.
+
+For notes, Notion or Apple Notes, both free. Do not spend weeks building a system; a plain page is fine.
+
+## Optional: focus sounds
+
+Some students work in silence, others in café noise. Pomi includes mixable sounds such as rain, café and forest, so no extra app is needed. If you listen to music, make it instrumental; lyrics measurably reduce reading comprehension.
+
+## A sample study day with these tools
+
+- 08:30 Focus mode on. Anki review, 1 session.
+
+- 09:00 Pomi room with friends. Maths, 4 sessions (2 hours), 20-minute long break after every 4 sessions.
+
+- 11:30 Reading and essays, 2 sessions.
+
+- Afternoon Practice exam; timer off, real exam timing.
+
+- Evening Check Pomi weekly stats, adjust tomorrow's calendar blocks.
+
+## Frequently asked questions
+
+**What is the best focus app for exam preparation?**
+Choose by need rather than a single app: a Pomodoro timer such as Pomi to split time, your phone's focus mode to cut social media, and Anki for memorisation. Pomi's rooms let you study at the same time as classmates.
+
+**How do I stop picking up my phone while studying?**
+Schedule your phone's built-in focus mode for study hours, silence notifications and start a timer. Apps like Pomi that give a visible reward per session reduce the urge to return to the screen.
+
+**Is listening to music while studying bad?**
+Music with lyrics reduces reading comprehension. Instrumental music or steady background sounds such as rain or café noise are neutral or helpful for most students. Pomi provides these sounds in-app.
+
+**Can I study together with friends remotely?**
+Yes. In Pomi you create a room and share a 6-character invite code; everyone is in the same room but on their own timer. No camera or microphone needed.
+
+
+---
+
+# Pomodoro Tekniği Nedir? Nasıl Uygulanır? (Adım Adım Rehber)
+
+URL: https://yakupselimucar.github.io/pomi-legal/blog/pomodoro-teknigi-nedir.html
+Language: tr
+Published: 2026-09-13
+Section: Temel bilgi
+
+Pomodoro tekniği nedir, nasıl uygulanır? 25/5 döngüsü, uzun mola kuralı, Francesco Cirillo'nun yöntemi, sık hatalar ve öğrenciler için uyarlama önerileri.
+
+**Kısa cevap:** Kısa cevap: Pomodoro tekniği, işi 25 dakikalık kesintisiz odak bloklarına bölüp her blok sonunda 5 dakika mola vermeye dayanır. Dört bloktan sonra 15 ile 30 dakika arası uzun mola verilir. 1980'lerin sonunda Francesco Cirillo tarafından geliştirildi; adı, kullandığı domates şeklindeki mutfak zamanlayıcısından gelir.
+
+## Pomodoro tekniği nedir?
+
+Pomodoro, İtalyanca "domates" demek. Üniversite öğrencisi Francesco Cirillo 1980'lerin sonunda ders çalışamadığı bir gün mutfaktan domates şeklindeki mekanik zamanlayıcıyı alıp "10 dakika odaklanabilir miyim?" diye denedi. Yöntem zamanla 25 dakikalık bloklara oturdu ve bugün dünyada en yaygın zaman yönetimi tekniklerinden biri hâline geldi.
+
+Tekniğin özü tek cümle: Zamanı değil, dikkati yönet. 25 dakika kısa olduğu için başlaması kolay, bittiği belli olduğu için tükenmeden bırakırsın.
+
+## Pomodoro tekniği nasıl uygulanır? 6 adım
+
+- Görevi seç. Tek ve somut olsun: "matematik çalış" değil, "türev soru bankası sayfa 40-48".
+
+- Sayacı 25 dakikaya kur. Telefonun sayacı ya da Pomi gibi bir Pomodoro uygulaması.
+
+- Sayaç bitene kadar sadece o işi yap. Aklına gelen başka işleri kâğıda not et, sonra dön.
+
+- Sayaç çalınca dur. Cümlenin ortasında bile olsan. Bu, tekniğin en zor ve en önemli kuralı.
+
+- 5 dakika mola. Ekrandan uzak: su iç, yürü, pencereye bak.
+
+- Dört pomodoro sonra 15-30 dakika uzun mola. Sonra döngüye baştan başla.
+
+## Neden işe yarıyor?
+
+- Başlama direncini kırar. "3 saat çalışacağım" ürkütücü, "25 dakika" değil. Sayaç başladığında en zor kısım geride kalmıştır.
+
+- Zamanı görünür kılar. Bir sayfa sorunun kaç pomodoro tuttuğunu öğrenince plan yapmak kolaylaşır.
+
+- Molayı zorunlu kılar. Dikkat, süreklilik değil dalga hâlindedir. Düzenli kısa mola, öğleden sonra çöküşünü azaltır.
+
+- Kesintiyi ölçer. Bir pomodoroyu kaç kez böldüğünü saydığında, dikkat dağıtıcıların gerçek boyutunu görürsün.
+
+## Sık yapılan 5 hata
+
+- Molada telefona bakmak. 5 dakikalık mola 20 dakikaya uzar ve dikkat sıfırlanır. Mola ekransız olsun.
+
+- Sayaç çalınca devam etmek. "Akış hâlindeyim" dersin, iki saat sonra tükenirsin. Bir pomodoro daha başlat, ama molayı atlama.
+
+- Çok büyük görev seçmek. "Tezimi yaz" bir pomodoroya sığmaz. Bir oturuşta bitecek parçaya böl.
+
+- Süreyi sürekli değiştirmek. Önce iki hafta 25/5 ile dene, sonra uyarlama yap.
+
+- Sadece sayaca güvenmek. Sayaç çalışırken bildirimler açıksa sayaç değil, telefon kazanır. Odak modunu aç.
+
+## Süreyi kendine göre uyarlamak
+
+25/5 bir başlangıç noktası, kutsal bir kural değil. Yaygın uyarlamalar:
+
+| Döngü | Kime uygun
+
+| 15 / 3 | Başlamakta zorlananlar, dikkat eksikliği olanlar, ilk hafta
+
+| 25 / 5 | Klasik. Ders çalışma, soru çözme, e-posta
+
+| 50 / 10 | Yazılım, yazı yazma, derin okuma gibi ısınma gerektiren işler
+
+| 90 / 20 | Ultradiyen ritme yakın. Deneyimli kullanıcılar, tek işe uzun dalış
+
+Pomi'de çalışma ve mola sürelerini ayarlardan değiştirebilirsin; bahçedeki bitki hangi süreyi seçersen seç seans tamamlanınca büyür.
+
+## Öğrenciler için not
+
+Deneme sınavı çözerken Pomodoro kullanma; gerçek sınav süresiyle çalış. Konu çalışırken, tekrar yaparken ve soru bankası çözerken kullan. Arkadaşlarınla aynı saatte çalışıyorsan, Pomi'de bir oda açıp herkesin kendi sayacıyla girmesi motivasyonu belirgin biçimde artırır; bunun nedenini study with me yazısında anlattık.
+
+## Sık sorulan sorular
+
+**Pomodoro tekniği kaç dakika?**
+Klasik döngü 25 dakika çalışma ve 5 dakika moladır. Dört döngüden sonra 15 ile 30 dakika arası uzun mola verilir. Süreler kişiye göre 15/3 veya 50/10 gibi uyarlanabilir.
+
+**Pomodoro tekniğini kim buldu?**
+Francesco Cirillo, 1980'lerin sonunda üniversite öğrencisiyken geliştirdi. Adı, kullandığı domates şeklindeki mutfak zamanlayıcısından gelir; pomodoro İtalyanca domates demektir.
+
+**Pomodoro molasında ne yapmalıyım?**
+Ekrandan uzak kal: su iç, ayağa kalk, birkaç adım yürü, pencereden bak. Sosyal medya molası, 5 dakikayı 20 dakikaya uzatır ve odağı sıfırlar.
+
+**Pomodoro tekniği herkes için uygun mu?**
+Çoğu iş için uygundur ama yaratıcı akış gerektiren uzun görevlerde 50/10 veya 90/20 gibi uzun bloklar daha iyi çalışabilir. Sınav simülasyonunda kullanılmamalı, gerçek sınav süresi esas alınmalıdır.
+
+**Pomodoro için uygulama şart mı?**
+Hayır, mutfak zamanlayıcısı yeter. Uygulama, seansları kaydetmek, istatistik görmek ve arkadaşlarla birlikte çalışmak istiyorsan fark yaratır. Pomi bunları ücretsiz ve reklamsız sunar.
+
+
+---
+
+# Study With Me: Arkadaşlarınla Birlikte Ders Çalışmak Neden İşe Yarar?
+
+URL: https://yakupselimucar.github.io/pomi-legal/blog/study-with-me-birlikte-ders-calisma.html
+Language: tr
+Published: 2026-09-13
+Section: Rehber
+
+Study with me nedir, neden işe yarar? Sosyal kolaylaştırma ve body doubling etkisi, YouTube ve Discord ile uygulama karşılaştırması, Pomi odalarıyla arkadaşlarla uzaktan birlikte ders çalışma rehberi.
+
+**Kısa cevap:** Kısa cevap: Başkalarının çalıştığını görmek, beynin "şu an çalışma zamanı" sinyalini güçlendirir; buna body doubling ve sosyal kolaylaştırma denir. Bunu evde kurmanın en kolay yolu, arkadaşlarınla aynı anda bir odak odasına girip herkesin kendi sayacını çalıştırmasıdır. Kamera ya da mikrofon gerekmez.
+
+## Study with me nedir?
+
+"Study with me", birinin ders çalışırken kendini kaydedip yayınladığı, izleyenin de onunla aynı anda çalıştığı bir içerik türü olarak YouTube'da doğdu. Saatlerce süren, konuşmasız, çoğu zaman bir Pomodoro sayacı ve yağmur sesi eşliğinde çekilmiş videolar milyonlarca kez izleniyor. Pandemiyle birlikte Discord'da 7/24 açık "sessiz kütüphane" odalarına, oradan da doğrudan bu iş için tasarlanmış uygulamalara taşındı.
+
+## Neden işe yarıyor?
+
+- Body doubling. Yanında çalışan biri varken bir işe başlamak ve devam etmek kolaylaşır. Özellikle dikkat eksikliği olan kişilerde iyi belgelenmiş bir etki; ama herkeste çalışır.
+
+- Sosyal kolaylaştırma. Basit ve iyi bilinen görevlerde, izlendiğini bilmek performansı artırır. Ders tekrarı ve soru çözümü tam bu kategoriye girer.
+
+- Randevu etkisi. "Saat 9'da odada buluşuyoruz" demek, "bir ara çalışırım" demekten çok daha bağlayıcıdır.
+
+- Normalleştirme. Herkes çalışıyorsa çalışmak sıradan bir şeye dönüşür; erteleme için bahane azalır.
+
+## Üç yol: YouTube, Discord, uygulama
+
+| Yöntem | Artı | Eksi
+
+| YouTube videosu | Sıfır kurulum, istediğin süre ve atmosferi seç | Tek yönlü; seni gören yok. Öneriler dikkat dağıtır.
+
+| Discord sunucusu | Gerçek insanlar, canlı sohbet, büyük topluluklar | Sohbet dikkat dağıtır; kamera baskısı; kurulum ve moderasyon yükü.
+
+| Odak uygulaması (Pomi) | Arkadaşlarınla özel oda, herkes kendi sayacıyla, ilerleme kaydı, telefonda | Uygulama yüklemek gerekir; topluluk Discord kadar büyük değil.
+
+## Pomi odaları nasıl çalışır?
+
+Pomi'de bir oda oluşturursun, uygulama 6 haneli bir davet kodu verir. Kodu arkadaşlarına gönderirsin; onlar da odaya girer. Odada herkesin ismini ve sayacını görürsün ama her kişi kendi sayacını başlatır. Ortak bir sayaç yoktur: biri 25 dakikalık seansı bitirip mola verdiğinde diğerlerinin seansı devam eder. Bu, "biri odadan çıkınca herkesin ağacı kurusun" tarzı yaklaşımların yarattığı gerginliği ortadan kaldırır.
+
+Her tamamlanan seans hem kendi bahçene bir bitki ekler hem de fetih haritasında şehrine puan yazar. Aynı şehirden arkadaşlar aynı odada çalışınca, şehrin bölge kazanması için birlikte çalışmış olursunuz.
+
+Kamera, mikrofon ve sohbet yok. Oda, "birlikte sessizce çalışıyoruz" hissini vermek için var; konuşmak için değil.
+
+## İyi bir study with me oturumu için 5 kural
+
+- Saat belirle ve paylaş. "Bu akşam 20:00, oda kodu ABC123." Randevu etkisi burada başlıyor.
+
+- Herkes kendi görevini önceden yazsın. Odaya girip ne çalışacağına karar vermek, ilk pomodoroyu yakar.
+
+- Molada konuşun, seansta konuşmayın. Sohbeti 5 dakikalık molaya sığdır.
+
+- En az 4 pomodoro hedefle. Tek seans, oda kurma zahmetine değmez; 2 saat bir çalışma bloğu eder.
+
+- Sonunda sayıları paylaşın. "Bugün 6 seans yaptım" cümlesi, yarın odaya geri dönmenin en güçlü nedeni.
+
+Hangi sayacı kullanacağına karar vermediysen Pomodoro uygulamaları karşılaştırmasına, tekniğin temellerine ise Pomodoro tekniği rehberine göz at.
+
+## Sık sorulan sorular
+
+**Study with me ne demek?**
+Birinin ders çalışırken yayın yapması ve izleyenlerin de aynı anda çalışması anlamına gelir. Zamanla Discord odalarına ve Pomi gibi arkadaşlarla aynı odada çalışmayı sağlayan uygulamalara taşındı.
+
+**Body doubling nedir?**
+Bir işi yaparken yanında başka birinin bulunmasının başlama ve sürdürme kolaylığı sağlamasıdır. Dikkat eksikliği olan kişilerde özellikle etkilidir; sanal odalarda da aynı etki görülür.
+
+**Pomi odalarında ortak sayaç var mı?**
+Hayır. Odada herkes kendi sayacını başlatır ve durdurur. Biri mola verdiğinde diğerlerinin seansı etkilenmez. Oda, birlikte çalışma hissini vermek için vardır.
+
+**Pomi odasına nasıl katılırım?**
+Oda oluşturan kişi 6 haneli davet kodunu paylaşır. Uygulamada Odalar sekmesinden kodu girersin ve odaya katılırsın. Kamera veya mikrofon gerekmez.
+
+
+---
+
+# Pomodoro mu, 52/17 mi, Flowtime mı? Odak Tekniklerinin Dürüst Karşılaştırması
+
+URL: https://yakupselimucar.github.io/pomi-legal/blog/pomodoro-mu-flowtime-mi-52-17-odak-teknikleri.html
+Language: tr
+Published: 2026-09-13
+Section: Karşılaştırma
+
+Pomodoro, 52/17, Flowtime, 90 dakikalık ultradiyen blok ve zaman bloklama karşılaştırması. Her tekniğin kökeni, artıları, eksileri ve hangi iş türüne uyduğu.
+
+**Kısa cevap:** Kısa cevap: Başlamakta zorlanıyorsan ve işin parçalara bölünebiliyorsa Pomodoro (25/5). Bilgisayar başında uzun gün geçiriyorsan 52/17. Akışa girince bölünmek istemiyorsan Flowtime. Yazılım, yazı ve araştırma gibi ısınma gerektiren işlerde 90/20. Takvimin yoğunsa hepsinin üstüne zaman bloklama. Teknikler birbirini dışlamaz; çoğu insan ikisini birlikte kullanır.
+
+## Teknik neden fark eder?
+
+Bütün odak teknikleri aynı iki soruna cevap arar: başlayamamak ve sürdürememek. Fark, sorunu nasıl çözdüklerinde. Pomodoro kısa ve kesin sınırlarla başlamayı kolaylaştırır; Flowtime sınırları kaldırıp akışı korur; 52/17 ve 90/20 sınırı vücudun doğal ritmine yaklaştırır. Doğru teknik, senin hangi sorundan daha çok çektiğine bağlı.
+
+## Beş teknik tek tabloda
+
+| Teknik | Döngü | Köken | En iyi olduğu iş | Zayıf noktası
+
+| Pomodoro | 25 dk çalış / 5 dk mola, 4 turda uzun mola | Francesco Cirillo, 1980'ler | Ders çalışma, soru çözme, e-posta, sevilmeyen işler | Akıştayken sayaç böler
+
+| 52/17 | 52 dk çalış / 17 dk mola | DeskTime kullanım verisi, 2014 | Ofis işi, bilgisayar başı görevler | 52 dakika, yeni başlayan için uzun
+
+| Flowtime | Sıkılana kadar çalış, süreyi kaydet, orantılı mola | Zoë Read-Bivens, 2016 | Yaratıcı iş, programlama, yazı | Disiplin ister; kayıt tutmazsan dağılır
+
+| 90/20 (ultradiyen) | 90 dk çalış / 20 dk mola | Kleitman'ın uyku ritmi araştırması | Derin okuma, tez, tasarım | Günde 3-4 blok sınırı; kesintiye dayanıksız
+
+| Zaman bloklama | Takvimde her işe saat aralığı | Cal Newport'un popülerleştirdiği yöntem | Toplantılı, çok görevli günler | Blok içinde ne yapacağını söylemez
+
+## Pomodoro: 25 / 5
+
+Kuralları basit ve katı: 25 dakika tek iş, 5 dakika mola, dört turda 15-30 dakika uzun mola. Sayaç çalarken durursun, cümlenin ortasında bile olsan. Detaylı uygulamayı Pomodoro tekniği rehberinde anlattık.
+
+- Artısı: Başlama eşiği çok düşük. 25 dakika, en isteksiz günde bile kabul edilebilir. Kesintileri sayabildiğin için dikkat dağıtıcıların gerçek boyutunu görürsün.
+
+- Eksisi: Akışa girdiğin 20. dakikada sayaç çalar. Cirillo bunu bilerek yapar ("mola kutsaldır"), ama yazılımcılar ve yazarlar için bu kural pahalıya patlayabilir.
+
+- Kime: Öğrenciler, ertelemeye eğilimli olanlar, dikkat eksikliği olanlar, işi küçük parçalara bölünebilenler.
+
+## 52/17: verinin söylediği
+
+2014'te zaman takip uygulaması DeskTime, en verimli yüzde 10'luk kullanıcı diliminin ortalama 52 dakika çalışıp 17 dakika ara verdiğini yayımladı. Bilimsel bir deney değil, kullanım verisinden çıkarılmış bir gözlem; ama sayılar çoğu ofis çalışanı için mantıklı bir orta yol sunuyor. Mola uzun olduğu için gerçekten ekrandan kalkarsın.
+
+- Artısı: Isınma için yeterli süre, gerçek dinlenme için yeterli mola.
+
+- Eksisi: 52 dakika kesintisiz odak, alışkın olmayan için zor. Molanın 17 dakikası sosyal medyaya giderse tekniğin anlamı kalmaz.
+
+- Kime: Bilgisayar başında tam gün çalışanlar, Pomodoro'yu fazla bölücü bulanlar.
+
+## Flowtime: sayaç yok, kayıt var
+
+Zoë Read-Bivens'ın 2016'da önerdiği yöntem Pomodoro'nun en çok eleştirilen kuralını, zorunlu kesintiyi kaldırır. Bir görev seçersin, başlangıç saatini not edersin, dikkatin dağılana ya da yorulana kadar çalışırsın, bitişi not edersin. Mola süresi çalıştığın süreyle orantılı: 25 dakikaya 5, 50'ye 8, 90'a 15 gibi.
+
+- Artısı: Akışı korur. Kayıtlar zamanla senin gerçek odak süreni gösterir; çoğu insan 35-45 dakikada zirve yaptığını keşfeder.
+
+- Eksisi: Dış sınır olmadığı için "biraz daha" tuzağına düşmek kolay. Kayıt tutmayı bırakırsan teknik buharlaşır.
+
+- Kime: Deneyimli odaklananlar, programcılar, yazarlar, tasarımcılar.
+
+## 90/20: ultradiyen ritim
+
+Uyku araştırmacısı Nathaniel Kleitman, uykuda 90 dakikalık döngüler olduğunu ve benzer bir dinlenme-uyanıklık dalgasının gün boyunca da sürdüğünü öne sürdü. Buradan türetilen 90/20, işi vücudun doğal dalgasına oturtmayı hedefler. Anders Ericsson'un uzman kemancılar üzerindeki çalışması da benzer bir tabloya işaret eder: en iyi öğrenciler günde toplam 4 saati geçmeyen, yaklaşık 90 dakikalık bloklar hâlinde çalışır.
+
+- Artısı: Derin işe gerçekten dalmaya izin verir.
+
+- Eksisi: Günde en fazla 3-4 blok yapabilirsin. Açık ofiste ya da kalabalık evde 90 dakika kesintisizlik bulmak zor.
+
+- Kime: Tez yazanlar, araştırmacılar, sabah saatlerini kendine ayırabilenler.
+
+## Zaman bloklama: takvim tekniği
+
+Bu bir ritim değil, planlama yöntemi. Günün başında ya da önceki akşam her işe takvimde bir saat aralığı ayırırsın: 09:00-10:30 rapor, 10:30-11:00 e-posta, 11:00-12:30 kod. Blok içinde ne yapacağını söylemez; o yüzden Pomodoro veya 52/17 ile birlikte kullanılır. Takvimin dolu olduğu bir günde en gerçekçi tekniktir çünkü toplantıların etrafındaki boşlukları görünür kılar.
+
+## Teknikleri birleştirmek
+
+Pratikte insanlar tek tekniğe bağlı kalmaz. İşe yaradığını gördüğümüz üç kombinasyon:
+
+- Blok + Pomodoro: Takvimde 2 saatlik "ders" bloğu, içinde 4 pomodoro. Öğrenciler için en güvenli düzen.
+
+- Pomodoro ile ısın, Flowtime ile sür: Güne bir 25'likle başla; akışa girdiysen sayacı kapat, süreyi not et. İsteksiz sabahlar için.
+
+- Sabah 90/20, öğleden sonra 25/5: Zihin en tazeyken derin iş, enerjinin düştüğü saatlerde kısa turlar.
+
+Pomi'de çalışma ve mola sürelerini serbestçe ayarlayabildiğin için aynı uygulamayla 25/5, 52/17 veya 90/20 çalışabilirsin; bahçedeki bitki, hangi süreyi seçersen seç seans tamamlanınca büyür. Günde kaç tur yapmanın gerçekçi olduğunu ayrı bir yazıda ele aldık.
+
+## Nasıl seçmeli? Üç soru
+
+- Asıl sorunum başlamak mı? Evetse Pomodoro. Kısa sınır, başlama direncini kırar.
+
+- Akışa girince bölünmek beni kızdırıyor mu? Evetse Flowtime veya 90/20.
+
+- Günüm toplantı ve kesintiyle dolu mu? Evetse önce zaman bloklama, boşluklara Pomodoro.
+
+Hangisini seçersen seç iki hafta değiştirmeden dene. Teknik değiştirmek, çalışmamanın en sofistike biçimi olabilir.
+
+## Sık sorulan sorular
+
+**52/17 kuralı nedir?**
+52 dakika kesintisiz çalışıp 17 dakika mola vermeye dayanan bir düzendir. 2014'te zaman takip uygulaması DeskTime'ın en verimli kullanıcılarının ortalamasından türetildi; bilimsel bir deney değil, kullanım verisine dayalı bir gözlemdir.
+
+**Flowtime tekniği nedir?**
+Zorunlu sayaç olmadan, dikkatin dağılana kadar çalışıp başlangıç ve bitiş saatini kaydettiğin, sonra çalıştığın süreyle orantılı mola verdiğin bir yöntemdir. Pomodoro'nun akışı bölme sorununu çözmek için 2016'da Zoë Read-Bivens tarafından önerildi.
+
+**Pomodoro mu Flowtime mı daha iyi?**
+Başlamakta zorlanıyorsan ve işin parçalara bölünebiliyorsa Pomodoro; akışa girince bölünmek istemediğin yaratıcı işlerde Flowtime daha iyi çalışır. Çoğu kişi Pomodoro ile başlayıp deneyim kazandıkça Flowtime'a geçer veya ikisini birlikte kullanır.
+
+**90 dakika kuralı ne demek?**
+Kleitman'ın ultradiyen ritim araştırmasından türetilen, 90 dakika çalışıp 20 dakika dinlenmeye dayanan düzendir. Derin ve uzun iş için uygundur ama günde en fazla 3-4 blok yapılabilir.
+
+**Pomi ile 52/17 veya 90/20 çalışabilir miyim?**
+Evet. Pomi'de çalışma ve mola sürelerini ayarlardan değiştirebilirsin. Seans hangi uzunlukta olursa olsun tamamlandığında bahçene bitki eklenir ve şehrine puan yazılır.
+
+
+## Kaynaklar
+
+- Cirillo, F. (2018). The Pomodoro Technique. Currency.
+- DeskTime (2014). "The secret of the 10% most productive people? Breaking!" DeskTime blog.
+- Read-Bivens, Z. (2016). "The Flowtime Technique." Medium.
+- Kleitman, N. (1963). Sleep and Wakefulness. University of Chicago Press.
+- Ericsson, K. A., Krampe, R. T. & Tesch-Römer, C. (1993). The role of deliberate practice in the acquisition of expert performance. Psychological Review, 100(3).
+- Newport, C. (2016). Deep Work. Grand Central Publishing.
+
+---
+
+# Günde Kaç Pomodoro Yapmalı? Gerçekçi Hedefler ve Sık Yapılan Hata
+
+URL: https://yakupselimucar.github.io/pomi-legal/blog/gunde-kac-pomodoro-yapmali.html
+Language: tr
+Published: 2026-09-13
+Section: Rehber
+
+Günde kaç pomodoro yapılmalı? Öğrenciler, çalışanlar ve uzaktan çalışanlar için gerçekçi hedefler, 8 pomodoro kuralı, sayıyı kademeli artırma planı ve tükenmişlik işaretleri.
+
+**Kısa cevap:** Kısa cevap: Yeni başlıyorsan günde 4 pomodoro (100 dakika net odak) iyi bir hedef. Alışınca çoğu öğrenci ve çalışan için sürdürülebilir üst sınır 8 ile 12 arası; bu 3,5 ile 5 saat gerçek odak demektir ve tam gün ofis çalışmasının çoğundan fazladır. 16 ve üstü, sınav haftası gibi kısa dönemler dışında tükenmişlik tarifi olur.
+
+## Neden "ne kadar çok o kadar iyi" yanlış?
+
+Pomodoro sayısı bir çıktı değil, girdi ölçüsüdür. Sekiz seans oturup hiçbir soru çözmeden geçirmek mümkün; üç seansta bir konuyu bitirmek de. Yine de sayı işe yarar, çünkü ölçülebilen tek şey odur ve zaman içinde kendinle karşılaştırmanı sağlar.
+
+İkinci sorun, bir pomodoronun 25 değil 30 dakika sürmesidir (mola dâhil). Uzun molalarla birlikte 8 pomodoro yaklaşık 4,5 saat eder. 16 pomodoro ise 9 saat demektir ve o günün içinde yemek, yol, ders ya da toplantı yoktur.
+
+## Kim için kaç pomodoro?
+
+| Durum | Günlük hedef | Net odak | Not
+
+| Yeni başlayan | 3-4 | 75-100 dk | İlk iki hafta sayıyı değil düzenliliği hedefle
+
+| Okula giden öğrenci | 4-6 | 100-150 dk | Ders dışı saatlerde; hafta sonu 8'e çıkabilir
+
+| Sınava hazırlanan (tam gün) | 10-14 | 4-6 saat | İki-üç aylık dönemler için; ara vermeden 6 hafta sürdürme
+
+| Tam zamanlı çalışan | 6-8 | 2,5-3,5 saat | Kalan mesai toplantı, e-posta ve sığ işe gider
+
+| Uzaktan çalışan / serbest | 8-10 | 3,5-4 saat | Kesinti az olduğundan üst sınır biraz yüksek
+
+| Tez, kitap, araştırma | 6-8 (uzun bloklu) | 3-4 saat | 50/10 kullanıyorsan sayı yarıya iner, süre aynı kalır
+
+## 4 saat tavanı
+
+Bu tablodaki üst sınırlar rastgele değil. Anders Ericsson'un 1993'te yayımladığı ve "10.000 saat" tartışmasını başlatan çalışmada en iyi keman öğrencilerinin günde ortalama 4 saatten fazla bilinçli pratik yapmadığı görüldü; daha uzun süreler kaliteyi düşürüyordu. Yazarlar ve matematikçiler üzerine yapılan gözlemler de benzer: derin, dikkat isteyen işte günde 4-5 saat çoğu insan için tavan. Bunun üstü ya sığ işe kayar ya da ertesi güne borç olur.
+
+Bu tavan "toplam çalışma" değil, "yoğun odak" tavanı. Okuma, tekrar ve düzenleme gibi daha hafif işler bunun üstüne eklenebilir.
+
+## Sayıyı nasıl artırırsın?
+
+- Önce düzenlilik. İki hafta boyunca her gün 3 pomodoro. Günü kaçırmamak, 8 yapmaktan önemli.
+
+- Haftada bir seans ekle. 3'ten 4'e, 4'ten 5'e. Sıçrama yapma; sıçrama ertesi gün sıfıra düşürür.
+
+- Sabah bloğunu koru. İlk 4 pomodoroyu günün en erken boş saatine koy. Öğleden sonra eklenenler bonus.
+
+- Kesintileri say. Cirillo'nun orijinal yönteminde her kesinti işaretlenir. Kesinti sayısı düşmeden seans sayısı artmaz.
+
+- Sayıyı görünür tut. Kâğıtta çetele, takvimde X ya da Pomi'de bahçe. Görünür ilerleme, sayıyı artırmanın en ucuz yolu.
+
+## Ne zaman durmalı?
+
+Şu üç işaret ertesi güne zarar verdiğinin sinyali: aynı paragrafı üç kez okumak, molada telefona uzanma sıklığının artması ve seans sonunda ne yaptığını hatırlayamamak. Böyle bir günde 6. pomodoroyu zorlamak yerine yürüyüşe çıkmak, ertesi günkü 8 pomodoroyu kurtarır.
+
+## Günlük yerine haftalık düşün
+
+Günlük hedef, kötü bir günün seni "başarısız" hissettirmesine yol açar. Haftalık hedef daha bağışlayıcı: haftada 30 pomodoro, günde 4 ile 8 arasında dalgalanabilir. Pomi'nin haftalık istatistik ekranı ve haftalık lig tam bu mantıkla çalışır; seni bugünle değil, haftanla değerlendirir.
+
+## Sık sorulan sorular
+
+**Günde kaç pomodoro yapılmalı?**
+Yeni başlayanlar için 3-4, alışkın kullanıcılar için 8-12 pomodoro gerçekçi bir aralıktır. 12 pomodoro yaklaşık 5 saat net odak demektir ve derin iş için günlük tavana yakındır.
+
+**8 pomodoro kaç saat eder?**
+Molalar dâhil yaklaşık 4,5 saat. Net odak süresi 8 × 25 = 200 dakika, yani 3 saat 20 dakikadır.
+
+**Günde 16 pomodoro yapmak mümkün mü?**
+Kısa dönemler için mümkün ama sürdürülebilir değil. 16 pomodoro molalarla 9 saat demektir. Sınav haftası gibi istisnalar dışında 12'nin üstü çoğu kişide ertesi gün verim düşüşüne yol açar.
+
+**Kaç saat ders çalışmalıyım?**
+Okula giden bir öğrenci için ders dışında 2-2,5 saat (4-6 pomodoro) net odak yeterlidir. Tam gün sınava hazırlananlar için 4-6 saat net odak üst sınırdır; kalan zaman tekrar ve hafif işe ayrılabilir.
+
+**Pomodoro sayısını nasıl takip ederim?**
+Kâğıt çetele en basit yol. Uygulama kullanıyorsan Pomi her tamamlanan seansı bahçene bitki olarak ekler ve haftalık istatistikte toplamı gösterir; böylece sayıya bakmadan da ilerlemeni görürsün.
+
+
+## Kaynaklar
+
+- Ericsson, K. A., Krampe, R. T. & Tesch-Römer, C. (1993). The role of deliberate practice in the acquisition of expert performance. Psychological Review, 100(3).
+- Cirillo, F. (2018). The Pomodoro Technique. Currency.
+- Newport, C. (2016). Deep Work. Grand Central Publishing.
+
+---
+
+# Pomodoro Molasında Ne Yapmalı? 5 Dakikayı İyi Kullanmanın 12 Yolu
+
+URL: https://yakupselimucar.github.io/pomi-legal/blog/pomodoro-molasinda-ne-yapmali.html
+Language: tr
+Published: 2026-09-13
+Section: Rehber
+
+Pomodoro molasında ne yapılır? 5 dakikalık kısa mola ve 15-30 dakikalık uzun mola için 12 öneri, molada yapılmaması gerekenler ve telefonun neden en kötü mola olduğu.
+
+**Kısa cevap:** Kısa cevap: Molada yapılacak en iyi şey, seansta yapmadığın şeydir: ayağa kalk, ekrandan uzaklaş, gözünü uzağa çevir, su iç. En kötü mola, sosyal medyaya bakmaktır; 5 dakika 20 olur ve dikkat sıfırlanır. Uzun molada dışarı çık, bir şey ye ya da kısa bir şekerleme yap.
+
+## Mola neden bu kadar önemli?
+
+Dikkat sabit bir kaynak değil, dalgalanan bir şey. Illinois Üniversitesi'nden Ariga ve Lleras'ın 2011 deneyinde, 50 dakikalık tekdüze bir görev sırasında kısa ve seyrek aralar veren katılımcıların performansı korundu; aralıksız çalışanlarınki belirgin biçimde düştü. Mola, dinlenmek için değil, sonraki 25 dakikayı ilk 25 dakika kadar verimli kılmak için var.
+
+İyi bir molanın üç özelliği var: fiziksel olarak farklı (oturduysan kalk), bilişsel olarak hafif (yeni bilgi yükleme) ve zamanla sınırlı (sayaç molada da çalışsın).
+
+## 5 dakikalık kısa mola: 8 öneri
+
+- Ayağa kalk ve gerin. Boyun, omuz, bel. Oturma pozisyonunu kırmak tek başına yeter.
+
+- 20-20-20 kuralı. 20 saniye boyunca 6 metre uzaktaki bir noktaya bak. Göz yorgunluğunu azaltır; ekran başında çalışanlar için en önemlisi bu.
+
+- Su iç. Bardağı masadan uzak tut ki gitmek zorunda kal.
+
+- Pencereyi aç, iki derin nefes. Odanın havası 4 seansta belirgin ağırlaşır.
+
+- Küçük bir fiziksel iş. Bulaşığı makineye koy, masayı topla. Zihni boşaltır, üstelik gün sonunda ev toplanmış olur.
+
+- Bir sonraki seansı yaz. Tek cümle: "Sonraki 25 dakikada X." Molayı bitirince karar vermek için zaman kaybetmezsin.
+
+- Gözlerini kapat. 2 dakika, hiçbir şey yapmadan. Sıkıcı gelir; tam da bu yüzden işe yarar.
+
+- Bir kişiyle iki cümle konuş. Aynı evde biri varsa "nasıl gidiyor?" yeter. Odada arkadaşlarınla çalışıyorsan mola, sohbetin tek yeri.
+
+## 15-30 dakikalık uzun mola: 4 öneri
+
+- Dışarı çık. 10 dakikalık yürüyüş, sonraki bloğun kalitesini en çok artıran şey. Hava kötüyse merdiven.
+
+- Bir şey ye. Meyve, kuruyemiş, yoğurt. Ağır yemek uzun molayı uyku molasına çevirir.
+
+- Kısa şekerleme. 10-20 dakika, alarm kurarak. 30'u geçerse uyku ataleti başlar ve sonraki seans gider.
+
+- Duş veya yüz yıkama. Öğleden sonraki çöküşü toparlamanın en hızlı yolu.
+
+## Molada yapılmaması gerekenler
+
+| Yapma | Neden | Yerine
+
+| Sosyal medya | 5 dakika 20 olur; akış, dikkat kaynaklarını yeniden yükler, boşaltmaz | Telefonu başka odada bırak
+
+| E-posta ve mesaj kontrolü | Cevap gerektiren bir şey görürsen sonraki seans o mesajı düşünerek geçer | Uzun molada, sınırlı süreyle bak
+
+| Yeni bir konu okumak | Bilişsel yük eklersin, mola dinlendirmez | Göz kapatma veya yürüyüş
+
+| "Şunu da bitireyim" demek | Molayı atlamak birkaç turdan sonra çöküşe götürür | Kaldığın yeri not et, kalk
+
+| Video başlatmak | Videonun süresi molanın süresini belirler, tersi değil | Müzik olabilir; tek parça
+
+## Telefon neden en kötü mola?
+
+Sorun sadece sürenin uzaması değil. Texas Üniversitesi'nden Ward ve arkadaşlarının 2017 çalışmasında telefonun sessizde bile masada durması çalışma belleği performansını düşürdü; katılımcılar başka odaya bıraktığında fark kapandı. Molada telefona bakmak, sonraki seansa "yarım kalmış bildirim" hissiyle girmek demektir. Telefonu bırakmanın yollarını ayrı bir yazıda topladık.
+
+## Pomi'de mola
+
+Pomi'de mola sayacı otomatik başlar, süresini ayarlardan değiştirebilirsin. Seans tamamlandığında bahçene eklenen bitkiyi görmek, molaya girerken küçük bir "bitirdim" hissi verir; sonraki seansa dönmeyi kolaylaştıran da bu his. Odada arkadaşlarınla çalışıyorsan herkesin kendi sayacı olduğu için molaların çakışmak zorunda değil; biri molada, diğeri seansta olabilir.
+
+## Sık sorulan sorular
+
+**Pomodoro molası kaç dakika?**
+Kısa mola 5 dakika, dört pomodoro sonundaki uzun mola 15 ile 30 dakika arasıdır. 50/10 gibi uzun döngülerde kısa mola 10 dakikaya çıkar.
+
+**Pomodoro molasında telefona bakabilir miyim?**
+Önerilmez. Sosyal medya 5 dakikayı kolayca 20 dakikaya çıkarır ve dikkat kaynaklarını dinlendirmek yerine yeniden yükler. Telefona bakman gerekiyorsa uzun molada, süreyi sınırlayarak bak.
+
+**Molada uyumak iyi fikir mi?**
+Uzun molada 10-20 dakikalık şekerleme faydalıdır, ama alarm kur. 30 dakikayı geçen uyku, uyku ataletine yol açar ve sonraki seansı bozar. Kısa 5 dakikalık molada uyumaya çalışma.
+
+**Molada yemek yiyebilir miyim?**
+Kısa molada hafif atıştırma (meyve, kuruyemiş) uygun. Ana öğünü uzun molaya ya da blok sonuna bırak; ağır yemek sonraki seansta uyku getirir.
+
+**Molayı atlamak zararlı mı?**
+Bir kez atlamak sorun değil ama alışkanlık hâline gelirse birkaç tur sonra dikkat belirgin biçimde düşer. Akıştaysan bir pomodoro daha yap, ama ardından molayı mutlaka ver.
+
+
+## Kaynaklar
+
+- Ariga, A. & Lleras, A. (2011). Brief and rare mental "breaks" keep you focused: Deactivation and reactivation of task goals preempt vigilance decrements. Cognition, 118(3).
+- Ward, A. F., Duke, K., Gneezy, A. & Bos, M. W. (2017). Brain Drain: The mere presence of one's own smartphone reduces available cognitive capacity. Journal of the Association for Consumer Research, 2(2).
+- Cirillo, F. (2018). The Pomodoro Technique. Currency.
+
+---
+
+# Erteleme Alışkanlığını Yenmek: Neden Erteliyoruz ve Bugün Ne Yapabiliriz?
+
+URL: https://yakupselimucar.github.io/pomi-legal/blog/erteleme-aliskanligini-yenmek.html
+Language: tr
+Published: 2026-09-13
+Section: Temel bilgi
+
+Erteleme neden olur, nasıl yenilir? Araştırmalara göre ertelemenin duygusal kökeni, 2 dakika kuralı, uygulama niyetleri, Pomodoro ve birlikte çalışma ile bugün uygulanabilecek 7 yöntem.
+
+**Kısa cevap:** Kısa cevap: Ertelemek tembellik değil, hoş olmayan bir duygudan (sıkıntı, kaygı, yetersizlik hissi) kısa vadede kaçmaktır. Bu yüzden çözüm, duyguyu küçültmekten geçer: görevi 2 dakikada başlanacak kadar küçült, ne zaman nerede yapacağını önceden yaz, 25 dakikalık bir sayaç kur ve mümkünse başkalarının yanında çalış. İlk 5 dakika geçince duygunun yarısı gider.
+
+## Erteleme nedir, ne değildir?
+
+Erteleme, daha kötü sonuçlanacağını bile bile bir işi gönüllü olarak geciktirmektir. Kritik kelime "bile bile": bilgi eksikliği yok, plan eksikliği çoğu zaman yok. Piers Steel'in 2007'de 691 çalışmayı tarayan meta-analizine göre üniversite öğrencilerinin yüzde 80 ile 95'i düzenli erteliyor ve yaklaşık yarısı bunu sorun olarak görüyor. Yani ertelemek istisna değil, varsayılan durum.
+
+Steel'in bulgularına göre ertelemeyi en güçlü yordayan şeyler görevin sevimsizliği, ödülün uzaklığı, kişinin dürtüselliği ve başarabileceğine inancının azlığı. Zaman yönetimi becerisi bu listede en altta.
+
+## Asıl mekanizma: kısa vadeli duygu onarımı
+
+Fuschia Sirois ve Timothy Pychyl'in 2013'te öne sürdüğü çerçeve bugün alanın ana modeli: erteleme, şu anki kötü hissi düzeltmek için gelecekteki kendini feda etmektir. Ders kitabını açmak sıkıntı, kaygı ya da "yapamayacağım" hissi yaratır; telefona uzanmak bu hissi anında dindirir. Beyin bu döngüyü öğrenir. Sonuç suçluluk, suçluluk daha fazla kaçınma.
+
+Bu modelin pratik sonucu şu: "Kendine kız, disiplinli ol" yaklaşımı kötü hissi büyüttüğü için ertelemeyi artırır. Aynı ekibin öğrencilerle yaptığı çalışmada ilk sınavdan önce ertelediği için kendini affedenler, ikinci sınavda daha az erteledi.
+
+## Bugün uygulanabilecek 7 yöntem
+
+### 1. Görevi 2 dakikaya küçült
+
+David Allen'ın kuralı biraz farklı bir amaç için: "Konuya çalış" yerine "kitabı aç, ilk başlığı oku." İki dakikalık işin yarattığı duygu küçük olduğu için kaçınma da küçük olur. Başladıktan sonra devam etmek, başlamaktan çok daha kolay.
+
+### 2. Ne zaman, nerede, ne: uygulama niyeti yaz
+
+Peter Gollwitzer'in araştırmalarında "hedefim X" diyenlere kıyasla "Y durumunda Z yapacağım" biçiminde plan yazanlar hedefe iki-üç kat daha sık ulaştı. Cümle şöyle: "Yarın 09:00'da mutfak masasında matematik soru bankası sayfa 40'ı açacağım." Karar anını sabah 9'a değil, bu akşama taşımış olursun.
+
+### 3. 25 dakikalık sayaç kur
+
+Pomodoro'nun erteleme üzerinde iyi çalışmasının nedeni, bitişin baştan belli olması. "Üç saat çalışacağım" belirsiz ve ürkütücü; "25 dakika, sonra kalkacağım" katlanılabilir. Sayaç başladığında en zor kısım, yani başlamak, geride kalmıştır. Uygulama için Pomodoro rehberine bak.
+
+### 4. Ortamı önceden kur
+
+Ertelenen işin başlangıç maliyetini sıfıra indir: kitap açık, defter yanında, telefon başka odada, su masada. Bir akşam önce hazırlanan masa, sabah verilecek beş küçük kararı ortadan kaldırır.
+
+### 5. Başkalarının yanında çalış
+
+Kütüphane, kafe ya da çevrimiçi bir odak odası. Bir başkasının çalıştığını görmek başlama eşiğini düşürür; buna body doubling deniyor. Pomi'de arkadaşlarınla bir oda açıp herkesin kendi sayacıyla girmesi bu etkiyi evden sağlar. Mekanizmayı study with me yazısında anlattık.
+
+### 6. İlerlemeyi görünür kıl
+
+Ertelemenin bir nedeni ödülün uzaklığı. Aradaki mesafeyi küçük, görünür ödüllerle doldur: takvimde çarpı, çetele, tamamlanan seans başına bahçeye eklenen bir bitki. Sistemin kendisi önemli değil; önemli olan bugün yaptığın işin bugün bir iz bırakması.
+
+### 7. Kendini affet, sonra 2 dakikaya dön
+
+Bu bir yumuşaklık önerisi değil, araştırma bulgusu. Ertelediğin için kendine kızdığın her dakika, ertelemenin beslendiği duyguyu büyütür. "Dün olmadı, şimdi kitabı açıyorum" cümlesi döngüyü kırar.
+
+## Ne zaman daha fazlası gerekir?
+
+Erteleme her alanı kapsıyorsa, aylardır sürüyor ve uyku, ilişkiler ya da sağlıkla ilgili işleri de içine alıyorsa, altında dikkat eksikliği, depresyon ya da kaygı bozukluğu olabilir. Bu durumda yukarıdaki yöntemler yardımcı olur ama yeterli olmaz; bir uzmanla konuşmak en kısa yol.
+
+## Tek cümlelik özet
+
+Erteleme duyguyla ilgili olduğu için çözüm de duyguyla ilgili: görevi küçült, kararı önceden ver, süreyi sınırla, yalnız kalma, kendini affet. Bunların hepsi 25 dakikalık tek bir seansa sığar.
+
+## Sık sorulan sorular
+
+**Neden sürekli erteliyorum?**
+Araştırmalara göre erteleme, görevin yarattığı hoş olmayan duygudan (sıkıntı, kaygı, yetersizlik hissi) kısa vadede kaçmaktır. Tembellik ya da zaman yönetimi sorunu değil, duygu düzenleme sorunudur. Bu yüzden kendini eleştirmek ertelemeyi artırır.
+
+**Ertelemeyi yenmenin en hızlı yolu nedir?**
+Görevi 2 dakikada başlanacak kadar küçültmek ve 25 dakikalık bir sayaç kurmak. Başlamak en zor kısımdır; sayaç başladıktan sonra devam etmek görece kolaydır.
+
+**2 dakika kuralı nedir?**
+Bir işe başlamayı 2 dakikada yapılabilecek en küçük adıma indirmektir: "kitabı aç, ilk paragrafı oku" gibi. Küçük adım küçük duygu yaratır, kaçınma azalır.
+
+**Pomodoro erteleme için işe yarar mı?**
+Evet, özellikle başlayamama sorununda. Sürenin sınırlı olması başlama direncini düşürür, mola zorunluluğu da tükenmeyi önler. Uzun vadede birlikte çalışma ve görünür ilerlemeyle desteklenmesi gerekir.
+
+**Erteleme bir hastalık mı?**
+Tek başına değil; öğrencilerin büyük çoğunluğu düzenli erteler. Ancak her alanı kapsıyor, aylardır sürüyor ve günlük hayatı bozuyorsa dikkat eksikliği, depresyon veya kaygı bozukluğuyla ilişkili olabilir; bu durumda bir uzmana danışmak gerekir.
+
+
+## Kaynaklar
+
+- Steel, P. (2007). The nature of procrastination: A meta-analytic and theoretical review of quintessential self-regulatory failure. Psychological Bulletin, 133(1).
+- Sirois, F. & Pychyl, T. (2013). Procrastination and the priority of short-term mood regulation: Consequences for future self. Social and Personality Psychology Compass, 7(2).
+- Wohl, M. J. A., Pychyl, T. A. & Bennett, S. H. (2010). I forgive myself, now I can study: How self-forgiveness for procrastinating can reduce future procrastination. Personality and Individual Differences, 48(7).
+- Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7).
+- Allen, D. (2001). Getting Things Done. Viking.
+
+---
+
+# Odaklanmak İçin En İyi Sesler: Yağmur, Kafe, Beyaz Gürültü ve Müzik Karşılaştırması
+
+URL: https://yakupselimucar.github.io/pomi-legal/blog/odaklanmak-icin-en-iyi-sesler.html
+Language: tr
+Published: 2026-09-13
+Section: Rehber
+
+Ders çalışırken ve çalışırken odaklanmak için en iyi sesler: yağmur, kafe ambiyansı, beyaz/pembe/kahverengi gürültü, sözsüz müzik ve lo-fi karşılaştırması. Araştırmalara göre hangi ses hangi iş için uygun.
+
+**Kısa cevap:** Kısa cevap: Okuma ve yazma gibi dil işlerinde sözlü müzik zarar verir; sözsüz ve tekdüze sesler (yağmur, kahverengi gürültü, düşük sesli kafe uğultusu) nötr ya da faydalı. Tekrar ve soru çözme gibi mekanik işlerde sevdiğin müzik motivasyonu artırabilir. Genel kural: ses değişmiyorsa arka planda kalır, değişiyorsa dikkati çeker.
+
+## Ses neden işe yarıyor (ya da yaramıyor)?
+
+Dikkat, çevredeki değişimlere tepki verir. Sessiz bir odada kapının gıcırtısı, komşunun sesi ya da uzaktaki bir korna her seferinde dikkati koparır. Sabit bir arka plan sesi bu değişimleri örter; buna maskeleme denir. Yağmurun işe yaramasının nedeni büyülü bir frekans değil, öngörülebilir olması.
+
+Öte yandan ses bir bilgi taşıyorsa, örneğin şarkı sözü ya da anlaşılır konuşma, beynin dil işleyen bölgeleri onu ister istemez işler. Bu yüzden aynı ses bir işte yardımcı, başka bir işte engel olabilir.
+
+## Ses türleri ve hangi işe uyduğu
+
+| Ses | Okuma / yazma | Soru çözme / tekrar | Yaratıcı iş | Not
+
+| Tam sessizlik | İyi (ortam sessizse) | İyi | Orta | Gürültülü evde en kötü seçenek olabilir
+
+| Yağmur / doğa | Çok iyi | İyi | İyi | Tekdüze, bilgi taşımaz; en güvenli seçim
+
+| Kafe uğultusu | İyi (konuşma anlaşılmıyorsa) | İyi | Çok iyi | Orta düzey gürültü yaratıcılığı artırabilir
+
+| Beyaz gürültü | İyi | İyi | Orta | Tiz; bazı kişilere rahatsız gelir
+
+| Pembe / kahverengi gürültü | Çok iyi | İyi | Orta | Daha bas, uzun süre dinlemeye uygun
+
+| Sözsüz müzik / lo-fi | Orta | İyi | İyi | Tempo ve dinamik değişimi az olan parçalar
+
+| Sözlü müzik | Kötü | Orta | Orta | Okuduğunu anlamayı ölçülebilir biçimde düşürür
+
+| Podcast / video | Çok kötü | Kötü | Kötü | İkisi de dil işler; birinden biri kaybeder
+
+## Araştırmalar ne diyor?
+
+- Sözlü müzik ve okuma: Perham ve Currie'nin 2014 çalışmasında sevilen sözlü müzik dinleyen katılımcılar okuduğunu anlama testinde sessizlik ve sözsüz müziğe göre belirgin düşük puan aldı. Şarkıyı sevmek durumu iyileştirmedi.
+
+- Orta düzey gürültü ve yaratıcılık: Mehta, Zhu ve Cheema'nın 2012 çalışması yaklaşık 70 desibellik ambiyans gürültüsünün (kalabalık kafe düzeyi) yaratıcı problem çözmeyi sessizliğe göre artırdığını, 85 desibelin ise düşürdüğünü buldu. Kafe sesi efsanesinin dayanağı bu.
+
+- Beyaz gürültü ve dikkat: Söderlund ve arkadaşlarının 2007 çalışmasında beyaz gürültü, dikkat sorunu olan çocukların bellek performansını artırırken dikkat sorunu olmayanlarda hafif düşürdü. Sesin faydası kişiye göre değişiyor.
+
+- Maskeleme: Açık ofis araştırmaları, anlaşılır konuşmanın en bozucu ses olduğunu tutarlı biçimde gösteriyor. Sabit arka plan sesi bu konuşmaları örttüğünde performans toparlıyor.
+
+## Beyaz, pembe, kahverengi: fark ne?
+
+Üçü de rastgele gürültü; fark, enerjinin frekanslara nasıl dağıldığında. Beyaz gürültü tüm frekanslarda eşit güçte, kulağa tiz ve "radyo cızırtısı" gibi gelir. Pembe gürültü tizleri kısar, sağanak yağmura benzer. Kahverengi gürültü daha da bas, uzaktan gelen şelale ya da uçak kabini sesi gibidir. Uzun seanslar için çoğu insan pembe ya da kahverengiyi daha az yorucu bulur; deneyip karar vermek en doğrusu.
+
+## Sesi doğru kullanmanın 5 kuralı
+
+- Sesi seansla başlat, molayla bitir. Ses zamanla "çalışma zamanı" sinyaline dönüşür; Pavlov burada senin lehine çalışır.
+
+- Ses düzeyini düşük tut. Amaç ortamı örtmek, ortamı bastırmak değil. Konuşma sesinin altında kalsın.
+
+- Çalma listesi kurcalama. Her parça seçimi bir karar, her karar dikkat harcar. Tek uzun ses ya da karıştırılmış bir ambiyans seç.
+
+- İşe göre değiştir. Okurken yağmur, soru çözerken lo-fi, beyin fırtınasında kafe.
+
+- Kulaklık her zaman gerekmez. Hoparlörden düşük sesli yağmur, kulak yorgunluğu yapmadan aynı maskelemeyi sağlar.
+
+## Pomi'de odak sesleri
+
+Pomi'de yağmur, kafe, orman gibi sesler var ve her birinin seviyesini ayrı ayrı ayarlayıp karıştırabilirsin: hafif yağmur üstüne uzak kafe uğultusu gibi. Sesler sayaçla birlikte çalışır, seans bitince durur; ayrı bir uygulama açıp çalma listesi aramana gerek kalmaz. Ses için başka araçlara bakıyorsan odaklanma araçları rehberinde alternatifler var.
+
+## Sık sorulan sorular
+
+**Ders çalışırken müzik dinlemek zararlı mı?**
+Sözlü müzik, okuma ve yazma gibi dil gerektiren işlerde anlamayı ölçülebilir biçimde düşürür. Sözsüz ve tekdüze müzik ya da doğa sesleri çoğu kişi için nötr veya faydalıdır. Soru çözme gibi mekanik işlerde sevdiğin müzik motivasyonu artırabilir.
+
+**Odaklanmak için en iyi ses hangisi?**
+Tek bir cevap yok, ama en güvenli seçenekler tekdüze ve bilgi taşımayan seslerdir: yağmur, kahverengi gürültü, anlaşılmayan kafe uğultusu. Bu sesler ortamdaki ani değişimleri maskeler ve dikkatin kopmasını azaltır.
+
+**Beyaz gürültü ile kahverengi gürültü arasındaki fark nedir?**
+İkisi de rastgele gürültüdür; beyaz gürültü tüm frekanslarda eşit güçtedir ve tiz duyulur, kahverengi gürültü bas frekanslarda yoğunlaşır ve şelale ya da uçak kabini gibi duyulur. Uzun süre dinlemek için çoğu kişi kahverengi veya pembe gürültüyü daha rahat bulur.
+
+**Kafe sesi neden odaklanmaya yardımcı oluyor?**
+Orta düzeyde (yaklaşık 70 desibel) sabit bir uğultu hem ortamdaki ani sesleri maskeler hem de araştırmalara göre yaratıcı düşünmeyi hafifçe artırır. Konuşmalar anlaşılır hâle gelirse etki tersine döner.
+
+**Lo-fi müzik çalışırken iyi mi?**
+Genellikle evet: sözsüz, tekrarlı ve dinamik değişimi az olduğu için arka planda kalır. Okuma ağırlıklı işlerde yine de yağmur veya gürültü gibi tamamen bilgisiz sesler daha güvenlidir.
+
+
+## Kaynaklar
+
+- Perham, N. & Currie, H. (2014). Does listening to preferred music improve reading comprehension performance? Applied Cognitive Psychology, 28(2).
+- Mehta, R., Zhu, R. & Cheema, A. (2012). Is noise always bad? Exploring the effects of ambient noise on creative cognition. Journal of Consumer Research, 39(4).
+- Söderlund, G., Sikström, S. & Smart, A. (2007). Listen to the noise: Noise is beneficial for cognitive performance in ADHD. Journal of Child Psychology and Psychiatry, 48(8).
+- Haapakangas, A., Hongisto, V. et al. (2014). Effects of five speech masking sounds on performance and acoustic satisfaction. Acta Acustica united with Acustica, 100(2).
+
+---
+
+# Evden Çalışırken Odaklanmak: Uzaktan Çalışanlar İçin Pomodoro Düzeni
+
+URL: https://yakupselimucar.github.io/pomi-legal/blog/evden-calisirken-odaklanma.html
+Language: tr
+Published: 2026-09-13
+Section: Rehber
+
+Evden çalışırken nasıl odaklanılır? Uzaktan çalışanlar için Pomodoro tabanlı gün planı, kesinti yönetimi, bildirim ayarları, iş-ev sınırı ve yalnızlıkla başa çıkma önerileri.
+
+**Kısa cevap:** Kısa cevap: Evde odaklanmanın üç ayağı var: zaman sınırı (Pomodoro ya da 52/17 ile bloklar), mekân sınırı (yalnızca iş için kullanılan bir köşe) ve kesinti sınırı (bildirimler kapalı, ev halkıyla anlaşılmış saatler). Güne sabit bir başlangıç ritüeli ve sabit bir bitiş saatiyle çerçeve çiz; çerçeve olmayınca iş güne yayılır ve hiçbir saat tam iş olmaz.
+
+## Evde asıl sorun ne?
+
+Uzaktan çalışanların şikâyeti genellikle "odaklanamıyorum" diye başlar ama biraz kazınca üç farklı sorun çıkar: başlayamamak (sabah bir türlü masaya oturamamak), bölünmek (mesaj, kapı, çamaşır makinesi) ve bitirememek (akşam 9'da hâlâ e-posta). Çözümler farklı olduğu için hangisinden çektiğini bilmek gerekir.
+
+Gloria Mark'ın bilgi işçileri üzerine yaptığı çalışmalar, bir kesintiden sonra asıl işe dönmenin ortalama 23 dakika sürdüğünü gösteriyor. Evde kesinti kaynakları ofisten farklı ama daha az değil; üstelik hiçbiri "toplantıdayım" tabelasını görmüyor.
+
+## Örnek gün düzeni
+
+Aşağıdaki plan 8 saatlik bir gün için; saatler senin ritmine göre kayabilir. Önemli olan blokların varlığı ve sırası.
+
+| Saat | Blok | Ne
+
+| 08:30 | Başlangıç ritüeli (15 dk) | Kahve, günün 3 işi kâğıda, telefon başka odaya
+
+| 08:45-10:45 | Derin iş 1 (4 pomodoro) | Günün en zor işi. Mesajlaşma kapalı
+
+| 10:45-11:15 | Uzun mola + iletişim | Dışarı çık, dönünce mesaj ve e-posta
+
+| 11:15-12:45 | Derin iş 2 (3 pomodoro) | İkinci öncelikli iş
+
+| 12:45-13:45 | Öğle | Masadan uzakta, ekransız
+
+| 13:45-15:30 | Toplantı ve sığ iş | Enerjinin düştüğü saat; işbirliği gerektiren işler buraya
+
+| 15:30-17:00 | Derin iş 3 (3 pomodoro) | Bitirme, düzenleme, yarına hazırlık
+
+| 17:00 | Kapanış ritüeli (10 dk) | Yarının 3 işi, bilgisayar kapalı, masa toplu
+
+Toplam 10 pomodoro, yani 4 saatten biraz fazla derin iş. Bu, ofis günlerinin çoğundan fazla; günde kaç pomodoro yazısında nedenini anlattık. 25 dakika kısa geliyorsa aynı iskeleti 52/17 veya 90/20 ile de kurabilirsin.
+
+## Başlamak için: ritüel ve mekân
+
+- Sabit başlangıç. Her gün aynı saatte aynı üç hareket: kahve, kâğıda üç iş, sayaç. Ritüel, karar vermeyi ortadan kaldırır; karar vermemek başlamanın en kolay hâli.
+
+- Yalnızca iş için bir köşe. Ayrı oda şart değil; masanın belirli bir tarafı, belirli bir sandalye. Orada başka şey yapma. Birkaç haftada beden "buraya oturunca çalışılır" bağlantısını kurar.
+
+- Giyin. Pijama değil, dışarı çıkabileceğin bir şey. Küçük ama etkili bir sınır.
+
+## Kesintiyle başa çıkmak
+
+- Bildirimleri seansta kapat. Telefon başka odada, bilgisayarda odak modu. Mesajlaşma uygulamasını 25 dakika kapatmak kimseyi öldürmez; acil olan arar.
+
+- İletişim pencereleri. Mesaj ve e-postaya günde 3 sabit saatte bak (örnekte 10:45, 13:45, 17:00). Ekibe bunu söyle; beklenti netleşince kaygı azalır.
+
+- Ev halkıyla anlaşma. "Kapı kapalıysa toplantıdayım" gibi tek ve basit bir işaret. Çocuklu evlerde sayaç görünür bir yerde dursun; "sayaç bitince geliyorum" çocuklar için anlaşılır bir söz.
+
+- Kesinti defteri. Seansta aklına gelen "çamaşırı asmalıyım" gibi işleri kâğıda yaz, molada yap. Cirillo'nun orijinal yöntemindeki bu kural, evde ofistekinden daha değerli.
+
+## Bitirmek için: kapanış saati
+
+Evde en çok ihmal edilen sınır bu. Bitiş saati yoksa iş akşama sızar, akşam dinlendirmez, ertesi sabah başlamak zorlaşır ve döngü kapanır. Sabit bir kapanış ritüeli kur: yarının üç işini yaz, açık sekmeleri kapat, bilgisayarı kapat, masayı topla. Cal Newport bunu "kapanış cümlesi" ile bitirmeyi önerir; sesli söylemek tuhaf ama işe yarıyor.
+
+## Yalnızlık ve motivasyon
+
+Ofisin görünmeyen faydası, çevrende çalışan insanların varlığı. Evde bunu iki yolla telafi edebilirsin: haftada bir-iki gün kütüphane ya da ortak çalışma alanı, ya da çevrimiçi bir odak odası. Pomi'de ekip arkadaşlarınla ya da benzer saatlerde çalışan tanıdıklarınla oda açıp herkesin kendi sayacıyla girmesi, sessiz bir ofis hissi verir; kamera ya da mikrofon gerekmez. Arka plan sesi için de ayrı uygulamaya gerek kalmaz; hangi sesin hangi işe uyduğunu ayrıca yazdık.
+
+## Haftalık kontrol listesi
+
+- Bu hafta kaç derin iş bloğu yaptım? (Hedef: günde 2-3)
+
+- Bitiş saatine kaç gün uydum?
+
+- En sık kesinti kaynağı neydi, önümüzdeki hafta onun için tek bir önlem ne?
+
+## Sık sorulan sorular
+
+**Evden çalışırken neden odaklanamıyorum?**
+Genellikle üç farklı sorundan biri: başlayamamak (ritüel ve sabit mekân eksikliği), bölünmek (bildirimler ve ev halkı) ya da bitirememek (kapanış saati yokluğu). Hangisinden çektiğini belirleyip ona özel önlem almak, genel "daha disiplinli olma" çabasından daha etkilidir.
+
+**Evden çalışırken Pomodoro işe yarar mı?**
+Evet, özellikle başlamak ve kesintileri yönetmek için. 25 dakikalık bloklar başlama direncini düşürür; seans sırasında aklına gelen ev işlerini not edip molada yapmak bölünmeyi azaltır. 25 dakika kısa geliyorsa 52/17 de aynı iskelette çalışır.
+
+**Evde ayrı çalışma odam yoksa ne yapmalıyım?**
+Ayrı oda şart değil. Yalnızca iş için kullanılan bir masa köşesi ya da sandalye yeterlidir; orada başka bir şey yapmamak birkaç haftada mekân-iş bağlantısını kurar. Gün sonunda iş malzemelerini kaldırmak da sınırı güçlendirir.
+
+**Uzaktan çalışırken günde kaç saat derin iş yapabilirim?**
+Çoğu kişi için 4-5 saat net odak üst sınırdır; bu 8-10 pomodoroya denk gelir. Kalan mesai toplantı, iletişim ve hafif işlere gider. Ofiste bu sayı genellikle daha düşüktür.
+
+**Evde çalışırken yalnızlık hissiyle nasıl başa çıkarım?**
+Haftada bir-iki gün kütüphane ya da ortak çalışma alanı, kalan günlerde çevrimiçi odak odaları yardımcı olur. Pomi'de tanıdıklarınla oda açıp herkesin kendi sayacıyla çalışması, kamera ve mikrofon olmadan sessiz bir ofis hissi verir.
+
+
+## Kaynaklar
+
+- Mark, G., Gudith, D. & Klocke, U. (2008). The cost of interrupted work: More speed and stress. CHI 2008.
+- Newport, C. (2016). Deep Work. Grand Central Publishing.
+- Cirillo, F. (2018). The Pomodoro Technique. Currency.
+
+---
+
+# Sınava Hazırlanırken Pomodoro: YKS, LGS, KPSS ve Finaller İçin Çalışma Planı
+
+URL: https://yakupselimucar.github.io/pomi-legal/blog/sinava-hazirlanirken-pomodoro.html
+Language: tr
+Published: 2026-09-13
+Section: Öğrenciler
+
+YKS, LGS, KPSS, ALES ve üniversite finalleri için Pomodoro tabanlı çalışma planı. Konu, soru, tekrar ve deneme için farklı döngüler, haftalık örnek program, son hafta stratejisi ve sık hatalar.
+
+**Kısa cevap:** Kısa cevap: Pomodoro'yu konu çalışma ve tekrarda 25/5, soru çözmede 40/8 gibi biraz uzun bloklarla kullan; deneme sınavında kullanma, gerçek süreyle çöz. Günde 8-12 pomodoroyu üç bloğa dağıt, her bloğun sonuna 10 dakikalık tekrar koy ve haftada bir günü tamamen boş bırak. Sınav yaklaştıkça yeni konu azalır, tekrar ve soru artar.
+
+## Sınav hazırlığında Pomodoro neden işe yarıyor?
+
+Sınav hazırlığı, günlük değil aylık bir iş. Aylık işlerde en büyük düşman yorgunluk değil, tükenmişlik ve sürdürememe. Pomodoro'nun burada iki katkısı var: mola zorunluluğu tükenmeyi geciktirir; sayılabilir seanslar, "bugün yeterince çalıştım mı?" sorusuna somut cevap verir ve o cevap kaygıyı düşürür.
+
+Ama sınav hazırlığı tek tip iş değil. Konu öğrenmek, soru çözmek, tekrar etmek ve deneme çözmek farklı zihinsel işler ve aynı döngüye sığmazlar.
+
+## İş türüne göre döngü
+
+| İş | Döngü | Neden
+
+| Yeni konu öğrenme | 25 / 5 | Yeni bilgi yorucudur; kısa bloklar dikkati taze tutar
+
+| Soru çözme | 40 / 8 veya 50 / 10 | Ritme girmek 10 dakika alır; 25 dakikada ritim bölünür
+
+| Tekrar (aktif hatırlama) | 25 / 5 | Yoğun ve kısa; tek konuya bir seans yeter
+
+| Deneme sınavı | Pomodoro yok | Gerçek sınav süresi ve koşulları esas; mola olmadan dayanmayı da çalışmalısın
+
+| Deneme analizi | 25 / 5 | Yanlışları konu konu işlemek dikkat ister; parçalara böl
+
+Bir kural: her pomodoronun sonunda 2 dakika, her bloğun sonunda 10 dakika kitabı kapatıp az önce çalıştığını hatırlamaya çalış. Bu küçük tekrar, aynı süreyi okumaya harcamaktan çok daha fazla kalıcılık sağlar; nedenini çalışma teknikleri yazısında anlattık.
+
+## Günlük iskelet: üç blok
+
+Tam gün çalışan bir aday için gün üç bloktan oluşur. Okula ya da işe gidiyorsan bir ya da iki bloğu al, kalanı hafta sonuna taşı.
+
+- Sabah bloğu (4 pomodoro): En zor ders, en yeni konu. Zihin en tazeyken en pahalı işi yap.
+
+- Öğleden sonra bloğu (3-4 pomodoro, uzun döngü): Soru çözme. Öğle sonrası düşüşünde yeni konu öğrenmeye çalışmak verimsiz, soru çözmek ritim tutturur.
+
+- Akşam bloğu (2-3 pomodoro): Günün tekrarı ve zayıf dersin küçük bir dilimi. Uyumadan önceki tekrar, ertesi güne en çok taşınan bilgidir.
+
+Toplam 9-11 pomodoro. Bunun üstü ilk haftalarda heyecanla mümkün görünür ama altıncı haftada bedelini ödersin. Sayının nereden geldiğini günde kaç pomodoro yazısında açıkladık.
+
+## Haftalık örnek plan
+
+| Gün | Sabah | Öğleden sonra | Akşam
+
+| Pazartesi | Konu A (4) | Soru A (3 uzun) | Tekrar (2)
+
+| Salı | Konu B (4) | Soru B (3 uzun) | Tekrar + zayıf ders (3)
+
+| Çarşamba | Konu A devam (4) | Karışık soru (3 uzun) | Tekrar (2)
+
+| Perşembe | Konu C (4) | Soru C (3 uzun) | Tekrar + zayıf ders (3)
+
+| Cuma | Haftanın tekrarı (4) | Karışık soru (3 uzun) | Boş
+
+| Cumartesi | Deneme (gerçek süre) | Deneme analizi (3) | Boş
+
+| Pazar | Tamamen boş. Bu bir lüks değil, planın parçası.
+
+Cuma sabahki tekrar bloğu haftanın en değerli 100 dakikası: Pazartesi öğrendiğini Cuma hatırlamaya çalışmak, aralıklı tekrarın en ucuz hâli. Pazar boşluğu ise sürdürülebilirliğin sigortası; boş gün olmayan programlar üçüncü haftada çöker.
+
+## Deneme sınavı ve Pomodoro
+
+Deneme, öğrenme aracı değil ölçüm aracıdır ve ölçüm, gerçek koşullarda yapılır: aynı süre, aynı saat, mola yok, telefon yok. 135 dakikalık bir oturumda dikkati sürdürmek de bir beceri ve Pomodoro ile çalışan bir adayın bunu ayrıca çalışması gerekir. Sınavdan önceki son ayda haftada iki deneme gerçek süreyle çözülmeli; denemenin analizi ise ertesi gün, Pomodoro ile ve konu konu yapılmalı.
+
+## Son hafta ne değişir?
+
+- Yeni konu yok. Son hafta öğrenilen bilgi sınavda en kırılgan bilgidir. Zamanı tekrara ver.
+
+- Seans sayısını düşür, uykuyu artır. 10 pomodoro yerine 6-7; gecede 8 saat. Uykusuz geçen son gece, bir haftalık çalışmayı götürür.
+
+- Sınav saatine göre çalış. Sınav sabah 10'daysa bir hafta boyunca sabah 10'da zor iş yap; beden saatini sınava ayarla.
+
+- Son gün: 2-3 hafif pomodoro. Formül kartları, özet notlar. Öğleden sonra kapat.
+
+## Sınav adaylarının 5 Pomodoro hatası
+
+- Sayacı hedef sanmak. 12 pomodoro oturmak, 12 pomodoro öğrenmek değildir. Her seansın başında "bu seans bitince neyi bileceğim?" sorusunu yaz.
+
+- Molada soru çözümü videosu izlemek. Bu mola değil, seanstır. Mola ekransız.
+
+- Zayıf dersi akşama atmak ve sürekli ertelemek. Zayıf dersi haftada iki sabah bloğuna yerleştir; akşam yalnızca küçük dilim.
+
+- Tek başına çalışmak. Aynı sınava hazırlanan iki-üç arkadaşla sabit saatte bir odada buluşmak, randevu etkisi yaratır ve kaçırılan sabahları azaltır. Pomi'de odada herkes kendi sayacıyla çalışır; konu farklı olsa da sorun olmaz.
+
+- Boş günü feda etmek. "Bu hafta çok geride kaldım" diyerek Pazar çalışmak, ertesi haftanın Salı gününü götürür.
+
+## Pomi'yi sınav hazırlığında kullanmak
+
+Her seansı bir göreve bağlayabildiğin için hafta sonunda hangi derse kaç seans gittiğini görürsün; zayıf dersin gerçekten ihmal edilip edilmediği tahmin değil, sayı olur. Bahçe, aylık maratonun görünür kaydına dönüşür ve haftalık lig, aynı sınava hazırlanan arkadaşlarla tatlı bir rekabet katmanı ekler. Sayaç uygulama kapalıyken ve internet olmadan da çalışır; ders çalışırken telefonu başka odaya bırakmak en iyisi, nasıl yapacağını ayrıca yazdık.
+
+## Sık sorulan sorular
+
+**YKS'ye hazırlanırken Pomodoro kullanılır mı?**
+Evet, konu çalışma ve tekrar için 25/5, soru çözme için 40/8 veya 50/10 uygundur. Deneme sınavlarında ise kullanılmamalı; deneme gerçek sınav süresiyle ve molasız çözülmelidir.
+
+**Sınava hazırlanırken günde kaç pomodoro yapmalıyım?**
+Tam gün çalışan bir aday için 9-12 pomodoro, üç bloğa dağıtılmış hâlde gerçekçi bir hedeftir. Okula veya işe giden biri için 4-6 pomodoro, hafta sonu 8-10 uygundur.
+
+**Soru çözerken 25 dakika kısa geliyor, ne yapmalıyım?**
+Soru çözme için 40/8 veya 50/10 döngüsü kullan. Ritme girmek yaklaşık 10 dakika aldığından 25 dakikalık bloklar soru çözümünde verimi düşürür. Pomi'de süreleri ayarlardan değiştirebilirsin.
+
+**Deneme sınavını Pomodoro ile çözebilir miyim?**
+Hayır. Deneme, gerçek sınav koşullarını ölçmek içindir: aynı süre, mola yok, telefon yok. Uzun süre dikkat sürdürmeyi de çalışman gerekir. Denemenin analizini ertesi gün Pomodoro ile yapabilirsin.
+
+**Sınavdan önceki son hafta nasıl çalışmalıyım?**
+Yeni konu öğrenme, tekrar ve özet kartlarına odaklan. Seans sayısını 6-7'ye düşür, uykuyu 8 saate çıkar ve zor işi sınav saatinde yaparak beden saatini sınava ayarla. Son gün öğleden sonra çalışmayı bırak.
+
+
+## Kaynaklar
+
+- Dunlosky, J., Rawson, K. A., Marsh, E. J., Nathan, M. J. & Willingham, D. T. (2013). Improving students' learning with effective learning techniques. Psychological Science in the Public Interest, 14(1).
+- Cepeda, N. J., Pashler, H., Vul, E., Wixted, J. T. & Rohrer, D. (2006). Distributed practice in verbal recall tasks: A review and quantitative synthesis. Psychological Bulletin, 132(3).
+- Cirillo, F. (2018). The Pomodoro Technique. Currency.
+
+---
+
+# Ders Çalışırken Telefonu Bırakmanın 9 Yolu (Uygulama Silmeden)
+
+URL: https://yakupselimucar.github.io/pomi-legal/blog/ders-calisirken-telefonu-birakmak.html
+Language: tr
+Published: 2026-09-13
+Section: Öğrenciler
+
+Ders çalışırken telefona bakmayı nasıl bırakırım? Telefonun mevcudiyet etkisi araştırması, başka odaya koyma, gri ton, odak modu, bildirim ayarları, mola kuralı ve Pomodoro ile 9 pratik yöntem.
+
+**Kısa cevap:** Kısa cevap: İradeye güvenme, mesafeye güven. Telefonu başka odaya koy; olmuyorsa çantaya, ters çevirip. Bildirimleri seans boyunca kapat, ekranı gri tona al, sosyal medyayı ana ekrandan kaldır. Telefona bakmayı yasaklamak yerine molaya taşı ve süresini sayaçla sınırla. Bunları bir kez ayarlarsan her gün karar vermek zorunda kalmazsın.
+
+## Sorun bakmak değil, orada olması
+
+Texas Üniversitesi'nden Adrian Ward ve ekibinin 2017'de yaklaşık 800 kişiyle yaptığı deneyde katılımcılar telefonlarını üç yerden birine koydu: masaya, cebe ya da başka odaya. Telefonlar sessizdi, kimse bakmadı. Yine de telefonu masada olanların çalışma belleği ve akıcı zekâ testlerindeki puanı başka odada olanlardan belirgin biçimde düşüktü. Araştırmacılar buna "beyin göçü" adını verdi: telefonu görmezden gelmek, dikkatin bir kısmını sürekli harcar.
+
+Bu yüzden "bakmayacağım" kararı yetmez. Telefon görüş alanındaysa maliyet zaten ödeniyor. Çözüm, iradeyi değil mesafeyi kullanmak.
+
+## 9 yöntem, kolaydan zora
+
+### 1. Başka odaya koy
+
+Tek başına en etkili yöntem. Kalkıp gitmek zorunda olmak, bakma dürtüsünün çoğunu öldürür. Odada başka biri varsa ona ver; teslim etmek, kilitlemekten daha bağlayıcı.
+
+### 2. Görüş alanından çıkar
+
+Başka oda mümkün değilse: çantaya, çekmeceye, en azından ters çevirip arkana. Ward'ın deneyinde cepteki telefon bile masadakinden iyiydi.
+
+### 3. Seans boyunca bildirim yok
+
+iPhone'da Odaklanma modu, Android'de Rahatsız Etmeyin. Bir kez kur, 25 dakikalık seansta otomatik açılsın. Acil arama için bir-iki kişiyi istisna yapabilirsin; mesajlaşma uygulamalarını yapma.
+
+### 4. Ekranı gri tona al
+
+Renk, uygulamaların en güçlü çekim aracı. Erişilebilirlik ayarlarından gri tonu açmak telefonu sıkıcı bir cihaza çevirir. Ders saatlerinde otomatik açılacak şekilde ayarla.
+
+### 5. Sosyal medyayı ana ekrandan kaldır
+
+Silmene gerek yok. İkinci-üçüncü sayfaya, bir klasörün içine taşı. Aramak zorunda kalmak, "bir bakayım" refleksini kırar; çoğu açılış refleks, karar değil.
+
+### 6. Bakmayı yasaklama, molaya taşı
+
+Yasak, isteği büyütür. Kural şu olsun: seansta yok, molada var, sayaçla. 5 dakikalık molanın 3 dakikası telefona gidebilir; sayaç çalınca bırakılır. Bu, 25 dakikayı daha katlanılır kılar. Molada ne yapılacağını ayrıca yazdık.
+
+### 7. Sayacı telefonda değil, görünür yerde tut
+
+Sayaç telefondaysa telefonu masaya koymak için mükemmel bahanen olur. Ya mutfak zamanlayıcısı kullan, ya sayaç uygulaması çalışırken telefonu ters çevirip uzağa koy. Pomi'nin sayacı ekran kapalıyken ve uygulama arka plandayken saymaya devam eder; başlat, ters çevir, uzaklaştır.
+
+### 8. Kesinti defteri
+
+Seansta "şunu aratayım", "ona yazayım" dürtüsü geldiğinde kâğıda yaz. Yazınca dürtü çoğu zaman söner; sönmezse molada yaparsın. Cirillo'nun orijinal yöntemindeki en az bilinen, en işe yarayan kural.
+
+### 9. Nedenini yaz, telefonun arkasına yapıştır
+
+Basit görünür ama işe yarıyor: "Haziran'da tıp." Telefonu elime alınca gördüğüm tek cümle. Ara sıra yeterli.
+
+## Engelleyici uygulamalar ne kadar işe yarar?
+
+Forest, Flora, Opal ve benzeri uygulamalar telefonu bırakmayı oyuna çevirir: uygulamadan çıkarsan ağaç kurur ya da uygulamalar kilitlenir. İki durumda iyi çalışır: telefon başka odaya konulamıyorsa (yurt, otobüs, tek oda) ve oyunlaştırma seni motive ediyorsa. Çoğu kullanıcı için başka odaya koymak hem ücretsiz hem daha etkili. Seçenekleri Forest alternatifleri yazısında karşılaştırdık.
+
+## Pomi'nin yaklaşımı
+
+Pomi telefonu kilitlemez; sayacı başlatıp telefonu uzaklaştırman için tasarlandı. Seans bitince bahçene eklenen bitki ve şehrine yazılan puan, "telefona bakmadan 25 dakika" işinin görünür karşılığı. Arkadaşlarınla aynı odadaysan, herkesin kendi sayacı çalışırken telefona uzanmak biraz daha zor; sosyal baskı burada senin lehine.
+
+## İki dakikada kurulum
+
+- Odak modu oluştur, ders saatlerinde otomatik açılsın.
+
+- Gri ton kısayolunu ayarla.
+
+- Sosyal medyayı bir klasöre taşı.
+
+- Kâğıt ve kalemi masaya koy (kesinti defteri).
+
+- Bir sonraki seansta telefonu başka odaya bırak. İlk gün tuhaf, üçüncü gün normal.
+
+## Sık sorulan sorular
+
+**Telefon masada dururken ders çalışmak neden zor?**
+Araştırmalar telefonun sessiz ve kapalı bile olsa görüş alanında durmasının çalışma belleği performansını düşürdüğünü gösteriyor. Görmezden gelmek dikkatin bir kısmını sürekli harcar. Bu yüzden en etkili çözüm telefonu başka odaya koymaktır.
+
+**Ders çalışırken telefonu tamamen kapatmalı mıyım?**
+Kapatmak yerine başka odaya koymak genellikle yeterli ve daha sürdürülebilir. Acil aramalar için odak modunda bir-iki kişiyi istisna yapabilirsin; mesajlaşma uygulamaları istisna olmamalı.
+
+**Telefon engelleyici uygulamalar işe yarıyor mu?**
+Telefonu başka odaya koyamadığın durumlarda ve oyunlaştırma seni motive ediyorsa evet. Çoğu kişi için fiziksel mesafe hem ücretsiz hem daha etkilidir. Forest, Flora ve Opal bu kategorinin bilinen örnekleridir.
+
+**Pomodoro sayacı telefondaysa ne yapmalıyım?**
+Sayacı başlatıp telefonu ters çevirerek uzağa koy. Pomi gibi uygulamalar ekran kapalıyken ve arka planda saymaya devam eder. Alternatif olarak mutfak zamanlayıcısı ya da saat kullanabilirsin.
+
+**Molada telefona bakabilir miyim?**
+Evet, ama sayaçla. 5 dakikalık molanın en fazla 3 dakikası telefona gidebilir; sayaç çalınca bırakılmalı. Seansta yasak, molada sınırlı izin kuralı yasağı sürdürülebilir kılar.
+
+
+## Kaynaklar
+
+- Ward, A. F., Duke, K., Gneezy, A. & Bos, M. W. (2017). Brain Drain: The mere presence of one's own smartphone reduces available cognitive capacity. Journal of the Association for Consumer Research, 2(2).
+- Thornton, B., Faires, A., Robbins, M. & Rollins, E. (2014). The mere presence of a cell phone may be distracting. Social Psychology, 45(6).
+- Cirillo, F. (2018). The Pomodoro Technique. Currency.
+
+---
+
+# Verimli Ders Çalışma Teknikleri: Araştırmaların İşe Yaradığını Gösterdiği 7 Yöntem
+
+URL: https://yakupselimucar.github.io/pomi-legal/blog/verimli-ders-calisma-teknikleri.html
+Language: tr
+Published: 2026-09-13
+Section: Öğrenciler
+
+Bilimsel olarak kanıtlanmış ders çalışma teknikleri: aktif hatırlama, aralıklı tekrar, serpiştirme, kendini test etme, Feynman tekniği, Pomodoro ve uyku. Her teknik için araştırma dayanağı ve 25 dakikalık uygulama.
+
+**Kısa cevap:** Kısa cevap: Araştırmaların en güçlü desteklediği iki teknik kendini test etme (aktif hatırlama) ve aralıklı tekrar. Bunlara serpiştirme (konuları karıştırarak çalışma) ve kendi kelimelerinle anlatma eklenince kalıcılık belirgin artar. Tekrar okuma, altını çizme ve özet çıkarma tek başına zayıf. Pomodoro bu tekniklerin kabı: her 25 dakikanın son 3 dakikasını kitap kapalı hatırlamaya ayır.
+
+## Bu listenin dayanağı
+
+2013'te John Dunlosky ve ekibi, öğrencilerin kullandığı en yaygın on çalışma tekniğini yüzlerce araştırma üzerinden değerlendirdi ve her birine "yüksek, orta, düşük fayda" notu verdi. Sonuç rahatsız edici: en çok kullanılan yöntemler (tekrar okuma, altını çizme) düşük aldı; en az kullanılanlar (kendini test etme, aralıklı çalışma) yüksek. Aşağıdaki liste o çalışmayı ve sonrasındaki araştırmaları temel alıyor.
+
+| Teknik | Kanıt gücü | Ne kadar kullanılıyor
+
+| Kendini test etme (aktif hatırlama) | Yüksek | Az
+
+| Aralıklı tekrar | Yüksek | Az
+
+| Serpiştirme | Orta | Çok az
+
+| Kendine açıklama / Feynman | Orta | Az
+
+| Özet çıkarma | Düşük-orta | Yaygın
+
+| Altını çizme | Düşük | Çok yaygın
+
+| Tekrar okuma | Düşük | En yaygın
+
+## 1. Aktif hatırlama: kitabı kapat, hatırla
+
+Ne: Bilgiyi tekrar okumak yerine hafızadan çağırmak. Soru çözmek, kapalı kitapla anlatmak, boş kâğıda yazmak, kendine soru hazırlamak.
+
+Kanıt: Roediger ve Karpicke'nin 2006 deneyinde bir metni dört kez okuyan öğrenciler, bir kez okuyup üç kez hatırlamaya çalışanlara göre bir hafta sonra belirgin biçimde az hatırladı; üstelik okuyanlar daha iyi öğrendiklerini sanıyordu. Tekrar okumanın yarattığı tanıdıklık hissi, bilme hissiyle karıştırılıyor.
+
+25 dakikada: 20 dakika çalış, 3 dakika kitabı kapatıp hatırladıklarını yaz, 2 dakika eksikleri kontrol et. Bu tek değişiklik, çalışma verimini en çok artıran şey.
+
+## 2. Aralıklı tekrar: bir kerede değil, aralıklarla
+
+Ne: Aynı konuyu tek oturumda 3 saat çalışmak yerine 1'er saat üç ayrı güne yaymak. Sonra 3 gün, 1 hafta, 3 hafta sonra kısa tekrarlar.
+
+Kanıt: Cepeda ve arkadaşlarının 2006'da 254 çalışmayı tarayan meta-analizi, aralıklı çalışmanın toplu çalışmaya karşı tutarlı üstünlüğünü gösterdi. Optimum aralık sınava kalan süreye bağlı: sınav bir ay sonraysa tekrarlar arasında yaklaşık bir hafta iyi çalışıyor.
+
+Uygulama: Haftalık plana "Cuma: haftanın tekrarı" bloğu koy. Kartlarla çalışıyorsan Anki gibi aralığı otomatik ayarlayan bir araç kullan.
+
+## 3. Serpiştirme: konuları karıştır
+
+Ne: Aynı türden 30 soru üst üste çözmek yerine (blok çalışma) farklı konulardan soruları karıştırmak.
+
+Kanıt: Rohrer ve Taylor'ın 2007 çalışmasında matematik problemlerini karışık çözen öğrenciler çalışma sırasında daha çok hata yaptı ama bir hafta sonraki testte blok çalışanların yaklaşık iki katı başarı gösterdi. Karıştırmak, "hangi yöntemi kullanacağım?" sorusunu da çalıştırır; sınavda sorulan tam olarak budur.
+
+Uygulama: Soru çözme bloğunda konu başına 10 soru yerine üç konudan karışık 30 soru. Rahatsız edici hissettirmesi normal; zorluk burada işe yarıyor.
+
+## 4. Feynman tekniği: 12 yaşındakine anlat
+
+Ne: Konuyu, hiç bilmeyen birine anlatır gibi kendi kelimelerinle, sade biçimde yaz ya da sesli anlat. Takıldığın yer, bilmediğin yer.
+
+Kanıt: Dunlosky'nin listesinde "kendine açıklama" orta fayda alıyor; asıl gücü, aktif hatırlama ile boşluk tespitini birleştirmesinde. Anlatamadığın şeyi öğrenmemişsindir.
+
+25 dakikada: Bir konuyu 15 dakika çalış, 10 dakika boş kâğıda "arkadaşıma anlatıyorum" diye yaz. Takıldığın cümleleri işaretle; sonraki seansın konusu onlar.
+
+## 5. Pomodoro: tekniklerin kabı
+
+Ne: 25 dakika tek iş, 5 dakika mola. Ayrıntılı rehber burada.
+
+Neden listede: Pomodoro'nun kendisi öğrenme tekniği değil, dikkat tekniği. Ama yukarıdaki dört yöntem dikkat ister ve Pomodoro dikkati parçalara böler. Her seansın son 3 dakikasına aktif hatırlama koyduğunda, seansın kendisi bir öğrenme aracına dönüşür. Pomi'de her seansı bir göreve bağlamak, hangi konuya kaç seans gittiğini görmeni ve aralıklı tekrarı planlamanı kolaylaştırır.
+
+## 6. Uyku: ücretsiz konsolidasyon
+
+Ne: Gecede 7-9 saat. Sınav gecesi dâhil.
+
+Kanıt: Gün içinde öğrenilen bilginin uzun süreli belleğe taşınmasının büyük kısmı uykuda, özellikle derin uyku ve REM evrelerinde gerçekleşir. Walker'ın derlediği çalışmalarda uykusuz geçen gecenin ertesi günkü yeni öğrenme kapasitesini de belirgin düşürdüğü görülüyor. Gece 3'e kadar çalışmak iki kez kaybettirir: öğrendiğin pekişmez, ertesi gün öğrenemezsin.
+
+Uygulama: Günün son seansını uyumadan bir saat önce bitir ve o seansı tekrara ayır; uykudan önceki bilgi en iyi pekişen bilgidir.
+
+## 7. Birlikte çalışma: doğru kullanırsan
+
+Ne: Aynı saatte, aynı odada, herkes kendi işinde. Konuşarak değil.
+
+Kanıt: Sosyal kolaylaştırma, iyi bilinen görevlerde başkalarının varlığının performansı artırdığını 1960'lardan beri gösteriyor. Tekrar ve soru çözme tam bu kategoride. Ayrıntısı study with me yazısında.
+
+Uygulama: Haftada 3 akşam, sabit saat, 4 pomodoro. Fiziksel olarak bir araya gelemiyorsanız Pomi'de bir oda; herkes kendi sayacıyla girer, konuşma molaya kalır.
+
+## Hepsini tek haftaya sığdırmak
+
+- Her seans: son 3 dakika kitap kapalı hatırlama (aktif hatırlama).
+
+- Her soru bloğu: konular karışık (serpiştirme).
+
+- Her gün: uyumadan önce 1 tekrar seansı (aralıklı tekrar + uyku).
+
+- Her hafta: Cuma sabahı haftanın tekrarı, bir konuyu boş kâğıda anlatma (Feynman).
+
+- Haftada 3 akşam: arkadaşlarla oda (birlikte çalışma).
+
+Sınav hazırlığında bunların gün ve haftaya nasıl dağıldığını sınav planı yazısında tablo hâlinde verdik.
+
+## Sık sorulan sorular
+
+**En etkili ders çalışma tekniği hangisi?**
+Araştırmaların en güçlü desteklediği teknik kendini test etme, yani aktif hatırlamadır: bilgiyi tekrar okumak yerine kapalı kitapla hafızadan çağırmak. İkinci sırada aralıklı tekrar gelir. Bu ikisi birlikte kullanıldığında kalıcılık en yüksek olur.
+
+**Tekrar okumak ve altını çizmek neden işe yaramıyor?**
+İkisi de pasif ve tanıdıklık hissi yaratır; metin tanıdık geldikçe öğrendiğini sanırsın ama sınavda çağıramazsın. Deneylerde dört kez okuyanlar, bir kez okuyup üç kez hatırlamaya çalışanlardan daha az hatırladı.
+
+**Aralıklı tekrar nasıl yapılır?**
+Aynı konuyu tek oturumda saatlerce çalışmak yerine birkaç güne yay, sonra 3 gün, 1 hafta ve 3 hafta sonra kısa tekrarlar yap. Sınav bir ay sonraysa tekrarlar arasında yaklaşık bir hafta iyi çalışır. Kart uygulamaları aralığı otomatik ayarlar.
+
+**Feynman tekniği nedir?**
+Bir konuyu hiç bilmeyen birine anlatır gibi sade kelimelerle yazmak ya da sesli anlatmaktır. Takıldığın yer öğrenmediğin yerdir; sonraki çalışma oraya odaklanır. Aktif hatırlama ile eksik tespitini birleştirir.
+
+**Pomodoro öğrenmeyi artırır mı?**
+Tek başına bir öğrenme tekniği değil, dikkat tekniğidir. Ancak her 25 dakikalık seansın son 3 dakikasını kapalı kitapla hatırlamaya ayırırsan seans aktif hatırlama aracına dönüşür. Pomi'de seansları göreve bağlamak, hangi konuya ne kadar zaman gittiğini görmeni sağlar.
+
+
+## Kaynaklar
+
+- Dunlosky, J., Rawson, K. A., Marsh, E. J., Nathan, M. J. & Willingham, D. T. (2013). Improving students' learning with effective learning techniques: Promising directions from cognitive and educational psychology. Psychological Science in the Public Interest, 14(1).
+- Roediger, H. L. & Karpicke, J. D. (2006). Test-enhanced learning: Taking memory tests improves long-term retention. Psychological Science, 17(3).
+- Cepeda, N. J., Pashler, H., Vul, E., Wixted, J. T. & Rohrer, D. (2006). Distributed practice in verbal recall tasks: A review and quantitative synthesis. Psychological Bulletin, 132(3).
+- Rohrer, D. & Taylor, K. (2007). The shuffling of mathematics problems improves learning. Instructional Science, 35(6).
+- Walker, M. (2017). Why We Sleep. Scribner.
+- Zajonc, R. B. (1965). Social facilitation. Science, 149(3681).
+
+---
+
+# Forest Alternatifi Arayanlara: Ücretsiz 6 Odak Uygulaması (2026)
+
+URL: https://yakupselimucar.github.io/pomi-legal/blog/forest-alternatifi-ucretsiz-uygulamalar.html
+Language: tr
+Published: 2026-09-13
+Section: Karşılaştırma
+
+Forest uygulamasına ücretsiz alternatifler: Pomi, Flora, Focus To-Do, Study Bunny, Focus Plant ve Pomofocus. Ağaç dikme mekaniği, telefon kilitleme, birlikte çalışma ve reklam karşılaştırması.
+
+**Kısa cevap:** Kısa cevap: Forest'ın birebir ücretsiz karşılığı Flora: aynı ağaç mekaniği, arkadaşla ortak seans. Ağaç yerine biriken bir bahçe, arkadaşlarla oda ve şehir yarışı istiyorsan Pomi. Görev listesi öncelikse Focus To-Do. Bilgisayardaysan Pomofocus. Hiçbirinde iOS için ön ödeme yok.
+
+## Forest'ı önce hakkıyla anlatalım
+
+Forest, odak uygulamaları kategorisini büyüten uygulama. Mekaniği zekice: seansı başlatınca bir fidan dikersin, süre boyunca uygulamadan çıkarsan fidan kurur. Ağaçlar birikir, orman olur; ayrıca toplanan sanal paralarla gerçek ağaç diktiren bir program var. Tarayıcı eklentisiyle bilgisayarda da çalışır.
+
+İnsanların alternatif aramasının üç nedeni var: iOS'ta ücretli (tek seferlik), Android'de ücretsiz sürüm reklamlı ve mekanik tek boyutlu; ağaç kurma korkusu ilk aylarda çalışıyor, sonra alışılıyor. Bir de "biri çıkınca herkesin ağacı kurusun" tarzı grup seansı, bazı arkadaş gruplarında gerginlik yaratıyor.
+
+## Karşılaştırma
+
+| Uygulama | Mekanik | Ücretsiz sürüm | Reklam | Telefon kilidi | Birlikte çalışma | Platform
+
+| Forest (referans) | Ağaç dik, çıkarsan kurur | Android'de var, iOS'ta yok | Android ücretsizde var | Var (uygulama izni) | Ortak ağaç, biri bozarsa herkes kaybeder | iOS, Android, tarayıcı
+
+| Pomi | Seans başına bahçeye bitki; fetih haritası ve lig | Evet, tam sayaç | Yok | Yok (mesafe önerir) | Odalar, herkes kendi sayacıyla | iOS, Android
+
+| Flora | Ağaç dik, çıkarsan kurur | Evet | Yok | Var | Ortak ağaç, biri bozarsa herkes kaybeder | iOS, Android
+
+| Focus To-Do | Sayaç + görev yöneticisi | Evet | Yok | Kısmi | Yok | iOS, Android, masaüstü, web
+
+| Study Bunny | Tavşan besle, para biriktir | Evet | Var | Yok | Yok | iOS, Android
+
+| Focus Plant | Yağmur damlası biriktir, bitki yetiştir | Evet | Var | Var | Sınırlı | iOS, Android
+
+| Pomofocus | Sade web sayacı | Evet | Var | Yok | Yok | Web
+
+Eylül 2026 mağaza sayfalarına göre. Ücret ve özellikler değişebilir; indirmeden önce mağazayı kontrol et.
+
+## Uygulamalar tek tek
+
+### 1. Flora En yakın ikame
+
+Forest'ın mekaniğini ücretsiz ve reklamsız sunar. Fidan dikersin, çıkarsan kurur; arkadaşınla ortak seans başlatabilirsin. İstersen "bozarsam bağış yapacağım" diye para koyabildiğin bir mod da var. Forest'tan tek istediğin şey ağaç ve kilitse, arama burada biter.
+
+Eksik
+İstatistikler yüzeysel; görev yönetimi yok; grup seansında biri bozarsa herkes kaybeder.
+
+### 2. Pomi Birlikte çalışma Reklamsız
+
+Ağaç yerine bahçe: tamamlanan her seans piksel bahçene yeni bir bitki ekler ve koleksiyon zamanla büyür. Forest'tan iki temel farkı var. Birincisi, odalarda herkes kendi sayacını çalıştırır; arkadaşın mola verince senin seansın bozulmaz, gerginlik yok. İkincisi, fetih haritası: odak dakikaların şehrine puan yazar, 81 şehir 7 günlük sezonlarda bölge kazanmak için yarışır. Görevler, karıştırılabilir odak sesleri ve haftalık lig de var.
+
+Kime uygun
+Arkadaşlarıyla çalışan öğrenciler; "ağacım kurumasın" baskısından çok "bahçem büyüsün" motivasyonuyla çalışanlar
+
+Eksik
+Telefonu kilitlemez (bilinçli tercih); web ve masaüstü sürümü yok.
+
+İndir
+App Store · Google Play
+
+### 3. Focus To-Do Görev odaklı
+
+Oyunlaştırma yok; onun yerine tam bir görev yöneticisi ve tüm cihazlarda senkron. Forest'ı "beni takip etmek için" kullanıyorsan ve ağaçlar umurunda değilse daha iyi bir araç. Ücretsiz sürüm reklamsız ve geniş.
+
+Eksik
+Arayüz kalabalık; motivasyon katmanı yok.
+
+### 4. Study Bunny Karakter
+
+Çalıştıkça beslediğin bir tavşan, para birimi ve dükkân. Lise öğrencileri arasında popüler. Sevimli ve ücretsiz ama reklam yoğun ve tasarım eski.
+
+Eksik
+Reklamlar; sosyal özellik yok.
+
+### 5. Focus Plant Ağaç mekaniği
+
+Forest'a görsel olarak en çok benzeyen alternatif: odaklandıkça yağmur damlası biriktirir, damlalarla bitki yetiştirirsin. Telefon kilidi var. Ücretsiz sürüm reklamlı.
+
+Eksik
+Reklam; birlikte çalışma sınırlı.
+
+### 6. Pomofocus Web
+
+Kurulum yok, hesap yok, tarayıcıda açılan sade sayaç. Bilgisayar başında çalışıyorsan ve Forest'ın tarayıcı eklentisi yerine bir şey arıyorsan yeterli.
+
+Eksik
+Mobil uygulama yok; sekme kapanınca sayaç durur; reklam var.
+
+## Telefon kilidi gerçekten gerekli mi?
+
+Forest'ın çekiciliği, uygulamadan çıkınca cezalandırması. Bu, telefonu başka odaya koyamadığın yerlerde (yurt, otobüs, tek odalı ev) işe yarıyor. Ama araştırmalar telefonun kilitli hâlde bile masada durmasının dikkati düşürdüğünü gösteriyor; kilit, mesafenin yerini tutmuyor. Pomi bu yüzden kilitlemek yerine "sayacı başlat, telefonu uzaklaştır" yaklaşımını seçti. Ayrıntılar telefonu bırakma yazısında.
+
+## Hangisini seçmeli?
+
+- Forest'ı ücretsiz istiyorum: Flora.
+
+- Arkadaşlarımla çalışıyorum, gerginlik istemiyorum: Pomi.
+
+- Görev listem önemli: Focus To-Do.
+
+- Bilgisayardayım: Pomofocus.
+
+- Sevimli karakter istiyorum: Study Bunny veya Pomi'nin bitki koleksiyonu.
+
+Daha geniş bir karşılaştırma için 2026'nın en iyi Pomodoro uygulamaları yazısına bak. Oyunlaştırmanın gerçekten işe yarayıp yaramadığını da ayrıca tartıştık.
+
+## Sık sorulan sorular
+
+**Forest'ın ücretsiz alternatifi var mı?**
+Evet. Flora aynı ağaç dikme ve telefon kilitleme mekaniğini ücretsiz ve reklamsız sunar. Pomi de ücretsiz ve reklamsızdır; ağaç yerine seans başına bahçeye bitki ekler ve arkadaşlarla oda ile şehir yarışı özellikleri vardır.
+
+**Forest iOS'ta neden ücretli?**
+Geliştirici iOS'ta tek seferlik satın alma modelini tercih etti; Android'de reklam destekli ücretsiz sürüm vardır. Ön ödeme istemiyorsan Flora veya Pomi ücretsiz başlangıç sunar.
+
+**Flora ile Forest arasındaki fark nedir?**
+Mekanik neredeyse aynı: fidan dik, çıkarsan kurur, arkadaşla ortak seans. Flora ücretsiz ve reklamsızdır; Forest'ın tarayıcı eklentisi ve gerçek ağaç dikme programı gibi ekstraları Flora'da yoktur.
+
+**Telefonu kilitlemeyen bir odak uygulaması işe yarar mı?**
+Evet, çünkü araştırmalar telefonun kilitli bile olsa görüş alanında durmasının dikkati düşürdüğünü gösteriyor. Sayacı başlatıp telefonu başka odaya koymak, kilitten daha etkilidir. Pomi bu yaklaşımla tasarlandı.
+
+**Forest'ta olup Pomi'de olmayan ne var?**
+Telefon kilidi, tarayıcı eklentisi ve gerçek ağaç dikme programı. Pomi'de olup Forest'ta olmayanlar: herkesin kendi sayacıyla çalıştığı odalar, 81 şehrin yarıştığı fetih haritası, haftalık lig ve karıştırılabilir odak sesleri.
+
+
+---
+
+# Pomi Nasıl Kullanılır? Bahçe, Odalar, Fetih Haritası ve Lig İçin Başlangıç Rehberi
+
+URL: https://yakupselimucar.github.io/pomi-legal/blog/pomi-nasil-kullanilir.html
+Language: tr
+Published: 2026-09-13
+Section: Pomi
+
+Pomi kullanım rehberi: ilk Pomodoro seansını başlatma, görev ekleme, piksel bahçe ve bitki koleksiyonu, davet koduyla oda kurma, fetih haritası, haftalık lig, odak sesleri, süre ayarları ve Pomi Pro.
+
+**Kısa cevap:** Kısa cevap: Pomi'de akış üç adım: görev seç, sayacı başlat, 25 dakika odaklan. Seans bitince bahçene bir bitki eklenir ve odak dakikaların şehrinin fetih haritası puanına yazılır. Arkadaşlarınla çalışmak için bir oda aç, 6 haneli kodu paylaş; odada herkes kendi sayacıyla çalışır. Sayaç ücretsiz, reklamsız ve çevrimdışı çalışır.
+
+## İlk seans: üç adım
+
+- Görev ekle. Görevler sekmesine bugün ne yapacağını yaz: "Türev soru bankası 40-48" gibi somut bir şey. Her seans bir göreve bağlanır; gün sonunda hangi işe kaç seans gittiğini buradan görürsün.
+
+- Sayacı başlat. Varsayılan döngü 25 dakika çalışma, 5 dakika mola. Retro piksel sayaç çalışırken tek işe odaklan. Telefonu ters çevirip uzaklaştırabilirsin; sayaç ekran kapalıyken ve uygulama arka plandayken saymaya devam eder.
+
+- Seansı tamamla. Süre dolunca bahçene yeni bir bitki eklenir, odak dakikaların şehrinin puanına yazılır. Mola sayacı otomatik başlar.
+
+Seansı yarıda bırakırsan bitki eklenmez. Ceza yok, kurumuş ağaç yok; sadece o seans sayılmaz. Tekniğin kendisi hakkında bilgi için Pomodoro rehberine bak.
+
+## Piksel bahçe ve koleksiyon
+
+Bahçe, odak geçmişinin görsel kaydı. Her tamamlanan seans bir bitki; bitkilerin türleri, büyüme aşamaları ve nadirlik dereceleri var. Odaklandıkça yeni türler açılır ve koleksiyon ekranında hangilerini bulduğunu, hangilerinin eksik olduğunu görürsün. Bahçeye baktığında geçen ayın çalışmasını tek bakışta okuyabilmen, sayının kendisinden daha motive edici oluyor.
+
+## Odalar: arkadaşlarınla, herkes kendi sayacıyla
+
+Odalar sekmesinden yeni bir oda oluşturduğunda uygulama 6 haneli bir davet kodu üretir. Kodu arkadaşlarına gönder; onlar da Odalar sekmesinden kodu girip katılır. Odada herkesin ismini ve sayaç durumunu görürsün.
+
+Önemli tasarım kararı: ortak sayaç yok. Herkes kendi seansını kendi istediği anda başlatır ve bitirir. Sen 25 dakikalık seansın ortasındayken arkadaşın mola verebilir; senin seansın etkilenmez. Kamera, mikrofon ve sohbet de yok; oda "birlikte sessizce çalışıyoruz" hissini vermek için var. Bunun neden işe yaradığını study with me yazısında anlattık.
+
+İyi bir oda düzeni için: sabit saat belirleyin ("her akşam 20:00"), herkes görevini önceden yazsın, konuşma molaya kalsın.
+
+## Fetih haritası
+
+Pomi'yi diğer sayaçlardan ayıran özellik. Profilinde şehrini seçersin; tamamladığın her seansın dakikaları şehrinin puanına eklenir. Puan biriktikçe haritadaki bölgeler şehrinin rengine döner. Bölgeler gün içinde el değiştirir, bir bölgeyi bugün alırsın, yarın rakip şehir geri alır. Sezonlar 7 gün sürer; sezon sonunda en çok bölgeyi tutan şehir kazanır. Türkiye'nin 81 şehri yarışır. Tek başına çalışırken bile bir takımın parçası olduğunu hissettiren mekanizma bu; ayrıntılar fetih haritası yazısında.
+
+## Haftalık lig
+
+Lig, bireysel sıralama: haftalık odak sürene göre diğer kullanıcılarla aynı ligde yarışırsın, hafta sonunda sıralamaya göre yükselir ya da düşersin. Şehrinin genel sıralamadaki yerini de görürsün. Ligin amacı seni bugünle değil haftanla değerlendirmek; kötü bir gün haftayı bozmaz.
+
+## Odak sesleri
+
+Yağmur, kafe, orman gibi sesleri seans sırasında açabilir ve her birinin seviyesini ayrı ayrı ayarlayıp karıştırabilirsin: hafif yağmur üstüne uzak kafe uğultusu gibi. Sesler sayaçla birlikte durur. Hangi sesin hangi işe uyduğunu sesler yazısında açıkladık.
+
+## Ayarlar: süreler ve tema
+
+| Ayar | Ne yapar | Öneri
+
+| Çalışma süresi | Seans uzunluğu | Başlangıç 25; soru çözümünde 40-50
+
+| Kısa mola | Seanslar arası mola | 5; uzun seanslarda 8-10
+
+| Uzun mola | Dört seans sonrası mola | 15-30
+
+| Karanlık mod | Gece kullanımı için koyu tema | Akşam seanslarında
+
+| Şehir | Fetih haritasında puanların gideceği şehir | Bir kez seç, arkadaşlarınla aynı şehirde ol
+
+## İstatistikler
+
+Haftalık odak saati grafiği, tamamlanan seans sayısı ve göreve göre dağılım. "Bu hafta zayıf derse gerçekten zaman ayırdım mı?" sorusunun cevabı tahmin değil, sayı olur. Gerçekçi haftalık hedefler için günde kaç pomodoro yazısına bak.
+
+## Ücretsiz ve Pomi Pro
+
+Sayaç, bahçe, görevler, odalar ve fetih haritası ücretsiz sürümde var ve reklam yok. Pomi Pro isteğe bağlı bir abonelik; ek özellikler ve kişiselleştirme sunar. Aboneliği mağaza hesabından yönetir, istediğin zaman iptal edersin. Satın alma geri yükleme ve hesap silme gibi konular destek sayfasında.
+
+## Çevrimdışı ve arka plan
+
+Sayaç ve bahçe internet olmadan çalışır; odalar, fetih haritası ve lig için bağlantı gerekir. Çevrimdışı tamamlanan seanslar bağlantı gelince şehrine yazılır. Sayaç uygulama kapalıyken de saymaya devam eder; bildirim izni verirsen seans ve mola bitişini haber alırsın.
+
+## İlk hafta için 5 ipucu
+
+- İlk üç gün sadece sayaç ve görev; odaya ve haritaya sonra bak.
+
+- Günde 3-4 seans hedefle, sayıyı haftada bir artır.
+
+- Şehrini seç ve aynı şehirden bir arkadaşını davet et; harita o zaman anlam kazanıyor.
+
+- Akşam sabit saatte bir oda aç; kodu bir kez paylaş, oda kalıcı.
+
+- Pazar akşamı istatistiğe bak, gelecek haftanın tek hedefini yaz.
+
+## Sık sorulan sorular
+
+**Pomi ücretsiz mi?**
+Evet. Sayaç, bahçe, görevler, odalar ve fetih haritası ücretsizdir ve reklam yoktur. Pomi Pro isteğe bağlı bir aboneliktir; ek özellikler sunar ve istediğin zaman iptal edilebilir.
+
+**Pomi'de oda nasıl kurulur?**
+Odalar sekmesinden yeni oda oluştur; uygulama 6 haneli bir davet kodu verir. Kodu arkadaşlarına gönder, onlar da Odalar sekmesinden kodu girerek katılır. Odada herkes kendi sayacıyla çalışır.
+
+**Pomi çevrimdışı çalışır mı?**
+Sayaç ve bahçe internet olmadan çalışır. Odalar, fetih haritası ve lig için bağlantı gerekir; çevrimdışı tamamlanan seanslar bağlantı gelince şehrine yazılır.
+
+**Seansı yarıda bırakırsam ne olur?**
+Bitki eklenmez ve o seans sayılmaz. Ceza ya da kuruyan ağaç yoktur; bir sonraki seansa temiz başlarsın.
+
+**Pomi'de çalışma süresi değiştirilebilir mi?**
+Evet. Ayarlardan çalışma, kısa mola ve uzun mola sürelerini değiştirebilirsin; 15/3, 25/5, 50/10 gibi döngüler kurulabilir. Seans hangi uzunlukta olursa olsun tamamlandığında bahçeye bitki eklenir.
+
+**Pomi hangi cihazlarda var?**
+iPhone, iPad (iOS 15 ve üzeri) ve Android. Web ve masaüstü sürümü şu an yok.
+
+
+---
+
+# Pomi Fetih Haritası Nasıl Çalışır? 81 Şehir, 7 Günlük Sezonlar ve Bölge Savaşları
+
+URL: https://yakupselimucar.github.io/pomi-legal/blog/pomi-fetih-haritasi-nasil-calisir.html
+Language: tr
+Published: 2026-09-13
+Section: Pomi
+
+Pomi fetih haritası rehberi: odak dakikalarının şehir puanına dönüşmesi, bölgelerin el değiştirmesi, 7 günlük sezonlar, 81 şehrin yarışı, şehir seçimi ve arkadaşlarla birlikte bölge kazanma taktikleri.
+
+**Kısa cevap:** Kısa cevap: Tamamladığın her seansın dakikaları şehrinin puanına eklenir. Puan biriktikçe haritadaki bölgeler şehrinin rengine döner; rakip şehirler daha çok odaklanırsa bölgeyi geri alır. Sezon 7 gün sürer, sonunda en çok bölgeyi tutan şehir kazanır ve harita sıfırlanır. Türkiye'nin 81 şehri yarışır. Tek seans bile fark yaratır.
+
+## Neden bir harita?
+
+Bireysel oyunlaştırma (bahçe, seri, rozet) bir noktadan sonra doygunluğa ulaşır: yüzüncü bitki, birincisi kadar heyecan vermez. Takım hedefleri farklı çalışır. "Bugün çalışmazsam şehrim bölge kaybeder" düşüncesi, "bugün çalışmazsam bahçeme bitki eklenmez"den daha güçlü bir itki; çünkü sonuç yalnızca seni değil, aynı rengi taşıyan herkesi etkiliyor. Fetih haritası, tek başına çalışan birine takım hissi vermek için tasarlandı.
+
+## Kurallar
+
+- Şehir seçimi. Profilinde bir şehir seçersin; Türkiye'nin 81 ili arasından. Puanların o şehre yazılır.
+
+- Puan. Tamamlanan her seansın odak dakikaları şehrinin puanına eklenir. Yarıda bırakılan seans puan getirmez.
+
+- Bölgeler. Harita bölgelere ayrılmıştır. Puan biriktikçe bölgeler şehrinin rengine döner; rakip şehirler daha çok puan toplarsa bölge el değiştirir.
+
+- Canlı. Bölgeler gün içinde el değiştirir ve haritayı anlık izlersin. Şehrinin sırasını, elindeki bölge sayısını ve o an odaklanan "savunucu" sayısını görürsün.
+
+- Sezon. Her sezon 7 gün sürer. Sezon sonunda en çok bölgeyi tutan şehir kazanır, sonra yeni sezon temiz haritayla başlar.
+
+## Büyük şehir her zaman kazanmaz mı?
+
+En sık gelen soru. Nüfusu yüksek şehirlerin doğal avantajı var, ama yarışta belirleyici olan toplam kullanıcı sayısı değil, o hafta gerçekten odaklanan kişi sayısı ve dakikası. Küçük ama düzenli çalışan bir grup, kalabalık ama dağınık bir şehri bölge bazında geçebiliyor. Sezonların 7 gün olmasının nedeni de bu: her Pazartesi herkes sıfırdan başlar, geçmiş birikim kimseyi taşımaz.
+
+## Şehrin için daha çok bölge kazanmanın yolları
+
+- Aynı şehirden arkadaşlarınla oda kur. Odada herkes kendi sayacıyla çalışır ama puanlar aynı şehre gider. Üç kişilik düzenli bir oda, bir haftada belirgin fark yaratır.
+
+- Düzenlilik, yoğunluktan değerli. Pazartesi 10 seans, sonra sessizlik yerine her gün 3 seans; bölgeler gün içinde el değiştirdiği için sürekli varlık önemli.
+
+- Sezon sonunu takip et. Son gün en çok bölgeyi kimin tuttuğu sayılır; haftanın son akşamındaki seanslar sembolik olarak en değerli seanslar.
+
+- Seansı tamamla. Yarım seans puan getirmez. Emin olmadığın bir zaman diliminde 25 yerine 15 dakikalık seans ayarla, tamamla.
+
+## Rekabet herkes için mi?
+
+Hayır ve bu sorun değil. Harita, seni zorlamadan arka planda çalışır: bakmazsan yok gibidir, bakarsan bir takımın parçası olduğunu hatırlatır. Oyunlaştırmanın kimde nasıl işlediğini ayrı bir yazıda tartıştık. Bireysel ilerlemeyi görmek için bahçe ve istatistikler, takım hissi için oda ve harita; hangisi seni çalıştırıyorsa ona bak.
+
+## Sık sorulan pratik konular
+
+- Şehir değiştirebilir miyim? Evet, ayarlardan. Puanların yeni şehre bir sonraki seanstan itibaren yazılır.
+
+- Yurt dışındayım. Bağlı hissettiğin şehri seç; konum kontrolü yok.
+
+- Çevrimdışı seanslar sayılıyor mu? Evet, bağlantı gelince şehrine yazılır.
+
+- Kişisel veri paylaşılıyor mu? Haritada bireysel bilgi görünmez; yalnızca şehir toplamları ve o an odaklanan kişi sayısı gösterilir. Ayrıntı için gizlilik politikası.
+
+Uygulamanın geri kalanı için başlangıç rehberine bak.
+
+## Sık sorulan sorular
+
+**Pomi fetih haritası nedir?**
+Odak dakikalarının şehrinin puanına yazıldığı, puan biriktikçe haritadaki bölgelerin şehrinin rengine döndüğü bir takım yarışıdır. Türkiye'nin 81 şehri 7 günlük sezonlarda en çok bölgeyi tutmak için yarışır.
+
+**Fetih haritasında sezon ne kadar sürer?**
+7 gün. Sezon sonunda en çok bölgeyi tutan şehir kazanır ve yeni sezon temiz haritayla başlar; geçmiş birikim yeni sezona taşınmaz.
+
+**Yarım bırakılan seans şehrime puan yazar mı?**
+Hayır. Yalnızca tamamlanan seansların dakikaları şehir puanına eklenir. Emin olmadığın zamanlarda daha kısa bir seans ayarlayıp tamamlamak daha iyidir.
+
+**Büyük şehirler her zaman kazanır mı?**
+Hayır. Belirleyici olan toplam kullanıcı değil, o hafta gerçekten odaklanan kişi ve dakika sayısıdır. Düzenli çalışan küçük bir grup, bölge bazında kalabalık şehirleri geçebilir; sezonların kısa olması da bunu destekler.
+
+**Fetih haritasında şehrimi değiştirebilir miyim?**
+Evet, ayarlardan şehir değiştirebilirsin. Puanların bir sonraki seanstan itibaren yeni şehre yazılır. Konum kontrolü yoktur; bağlı hissettiğin şehri seçebilirsin.
+
+
+---
+
+# Odak Uygulamalarında Oyunlaştırma İşe Yarıyor mu? Ağaçlar, Bahçeler ve Ligler Üzerine Dürüst Bir Bakış
+
+URL: https://yakupselimucar.github.io/pomi-legal/blog/odak-uygulamalarinda-oyunlastirma-ise-yarar-mi.html
+Language: tr
+Published: 2026-09-13
+Section: Temel bilgi
+
+Odak ve verimlilik uygulamalarında oyunlaştırma işe yarar mı? Araştırma bulguları, ceza ve ödül mekanikleri, seri (streak) tuzağı, öz belirleme kuramı, takım hedefleri ve Pomi'nin tasarım kararları.
+
+**Kısa cevap:** Kısa cevap: Evet ama koşullu. Araştırmalar oyunlaştırmanın kısa vadede katılımı artırdığını, uzun vadede etkinin mekaniğe ve kişiye bağlı olduğunu gösteriyor. İyi çalışanlar: görünür ilerleme, anlamlı geri bildirim, takım hedefleri. Kötü çalışanlar: ceza korkusu, kırılınca her şeyi sıfırlayan seriler ve işin kendisiyle ilgisiz ödüller. Oyunlaştırma, yapılan işi sevdiremiyorsa yalnızca başlangıcı kolaylaştırır; bu da az şey değil.
+
+## Araştırma ne diyor?
+
+Hamari, Koivisto ve Sarsa'nın 2014'te yaptığı ve alanın en çok atıf alan derlemesi olan çalışma, 24 deneysel araştırmayı taradı. Sonuç: oyunlaştırma çoğunlukla olumlu etki yaratıyor, ama etki bağlama ve kullanıcıya güçlü biçimde bağlı ve çoğu çalışma kısa süreli. "Yenilik etkisi" diye bir sorun var: yeni bir mekanik ilk haftalarda çalışır, alışınca etkisi azalır.
+
+Daha derin açıklama, Deci ve Ryan'ın öz belirleme kuramından geliyor. İnsanlar üç şeye ihtiyaç duyar: yetkinlik (ilerlediğimi görmek), özerklik (kendi seçimim olması) ve ilişkililik (başkalarıyla bağ). Bu üçünü besleyen oyunlaştırma içsel motivasyonu destekler; dışarıdan bastıran (ceza, baskı, yapay yarış) uzun vadede onu zayıflatabilir.
+
+## Mekanik mekanik: ne çalışıyor, ne çalışmıyor?
+
+| Mekanik | Örnek | Kısa vade | Uzun vade | Risk
+
+| Ceza / kayıp | Uygulamadan çıkınca ağaç kurur | Güçlü | Zayıflar | Kaygı; uygulamayı bırakma
+
+| Biriken koleksiyon | Her seans bir bitki, bahçe büyür | Orta | İyi | Doygunluk (100. bitki)
+
+| Seri (streak) | "37 gündür çalışıyorsun" | Güçlü | İkiye ayrılır | Bir gün kaçınca her şeyi bırakma
+
+| Puan ve seviye | XP, rütbe | Orta | Zayıf | İşle ilgisiz; anlamını yitirir
+
+| Takım hedefi | Şehrin için bölge kazanma | Orta | İyi | Katkım görünmezse kopma
+
+| Sosyal varlık | Arkadaşlarla aynı odada çalışma | İyi | İyi | Karşılaştırma baskısı
+
+| Bilgilendirici geri bildirim | Haftalık odak grafiği | Zayıf | İyi | Yok denecek kadar az
+
+### Ceza neden ilk aylarda çalışıp sonra sönüyor?
+
+Kayıptan kaçınma güçlü bir dürtü; kuruyan ağaç fikri tam bunu kullanır. Ama ceza, işi yapmanın nedenini "ağaç kurumasın"a indirger. Öz belirleme kuramı bunun içsel motivasyonu bastırdığını öngörüyor ve pratikte de görülen şu: kullanıcı ya cezayı önemsemez hâle gelir ya da uygulamayı siler. Ceza, başlamayı kolaylaştıran bir ilk itki olabilir; sürdüren şey olamaz.
+
+### Seri tuzağı
+
+Seriler, kaçırılan tek günü felakete çevirir. Alışkanlık araştırmalarında bir günü kaçırmanın alışkanlık oluşumuna ölçülebilir zarar vermediği görülüyor (Lally ve arkadaşları, 2010); ama seri mekaniği bunu tam tersi gibi hissettirir ve "nasılsa bozuldu" diyerek bırakmayı kolaylaştırır. Seri kullanılacaksa haftalık olmalı ve bir kaçak gün affedilmeli.
+
+### Takım hedefleri neden dayanıklı?
+
+İlişkililik ihtiyacını besler ve çabanın anlamını kişiden büyük bir şeye bağlar. "Bugün çalışmazsam şehrim bölge kaybeder" düşüncesi, bireysel puandan daha uzun ömürlü. Koşul: katkının görünür olması. Katkısını göremeyen kullanıcı takımdan kopar.
+
+## Pomi'de neyi neden yaptık, neyi yapmadık
+
+Bir odak uygulaması geliştirirken bu araştırmaya bakıp şu kararları verdik; katılmayabilirsin ama gerekçe şeffaf olsun:
+
+- Ceza yok. Yarım seansta bitki eklenmez ama hiçbir şey kurumaz, ölmez, sıfırlanmaz. Kaygı üzerine kurulu bir motivasyon istemedik.
+
+- Biriken koleksiyon var. Bahçe, doygunluğu geciktirmek için tür, aşama ve nadirlik katmanlarıyla tasarlandı; 100. bitki farklı bir tür olabilir.
+
+- Günlük seri yok, haftalık lig var. Lig haftayla değerlendirir; kötü bir gün haftayı bozmaz.
+
+- Takım hedefi: fetih haritası. Odak dakikaların şehrine puan yazar, 81 şehir 7 günlük sezonlarda yarışır. Katkı görünür: haritaya baktığında şehrinin rengini ve o an odaklanan kişi sayısını görürsün. Kuralları ayrı yazıda.
+
+- Sosyal varlık, sosyal baskı değil. Odalarda herkes kendi sayacıyla çalışır; kimse kimsenin seansını bozamaz, kimse kimseyi "ağacı kuruttu" diye suçlayamaz.
+
+- Sıkıcı ama etkili olan da var. Haftalık istatistik grafiği hiç oyun değil, ama uzun vadede en çok işe yarayan geri bildirim o.
+
+## Kim için işe yarar, kim için yaramaz?
+
+Oyunlaştırma en çok başlamakta zorlananlar ve ilerlemesini göremediği için bırakanlar için işe yarar. İşi zaten seven ve düzenli yapan biri için gereksiz, hatta dikkat dağıtıcı olabilir; o kişi sade bir sayaçla mutlu olur. Sen hangisisin bilmiyorsan iki hafta oyunlaştırmalı bir uygulama, iki hafta sade sayaç dene ve haftalık toplamlara bak. Sayı karar versin.
+
+## Özet
+
+Oyunlaştırma sihirli değil; iyi tasarlandığında başlamayı kolaylaştırır, ilerlemeyi görünür kılar ve yalnız çalışan birine takım hissi verir. Kötü tasarlandığında kaygı üretir ve birkaç haftada silinir. Fark, mekaniğin işin kendisine ve insanın temel ihtiyaçlarına ne kadar bağlandığında.
+
+## Sık sorulan sorular
+
+**Oyunlaştırma gerçekten verimliliği artırıyor mu?**
+Araştırmalar kısa vadede katılımı artırdığını, uzun vadede etkinin mekaniğe ve kişiye bağlı olduğunu gösteriyor. Görünür ilerleme, anlamlı geri bildirim ve takım hedefleri kalıcı çalışıyor; ceza ve yapay puanlar birkaç haftada sönüyor.
+
+**Forest'taki ağaç kurma mekaniği neden işe yarıyor?**
+Kayıptan kaçınma dürtüsünü kullanır ve ilk aylarda güçlüdür. Ancak ceza temelli motivasyon zamanla zayıflar; kullanıcı ya cezayı önemsemez hâle gelir ya da uygulamayı bırakır. Başlatıcı olarak iyi, sürdürücü olarak zayıftır.
+
+**Streak yani seri mekaniği zararlı mı?**
+Kişiye göre değişir. Bazıları için güçlü bir itki, ama kaçırılan tek günü felakete çevirdiği için bırakmayı da kolaylaştırır. Araştırmalar bir günü kaçırmanın alışkanlığa zarar vermediğini gösteriyor; seri kullanılacaksa haftalık ve affedici olmalı.
+
+**Pomi neden ceza kullanmıyor?**
+Kaygı üzerine kurulu motivasyonun uzun vadede içsel motivasyonu zayıflattığını gösteren araştırmalara dayanarak. Yarım seansta bitki eklenmez ama hiçbir şey kurumaz ya da sıfırlanmaz; ilerleme bahçe, haftalık lig ve fetih haritasıyla görünür kılınır.
+
+**Oyunlaştırma kimin için uygun değil?**
+İşi zaten seven ve düzenli yapan kişiler için gereksiz, hatta dikkat dağıtıcı olabilir. Böyle biri sade bir sayaçla daha iyi çalışır. Emin değilsen iki hafta oyunlaştırmalı, iki hafta sade sayaç deneyip haftalık toplamları karşılaştır.
+
+
+## Kaynaklar
+
+- Hamari, J., Koivisto, J. & Sarsa, H. (2014). Does gamification work? A literature review of empirical studies on gamification. Proceedings of the 47th Hawaii International Conference on System Sciences.
+- Deci, E. L. & Ryan, R. M. (2000). The "what" and "why" of goal pursuits: Human needs and the self-determination of behavior. Psychological Inquiry, 11(4).
+- Deci, E. L., Koestner, R. & Ryan, R. M. (1999). A meta-analytic review of experiments examining the effects of extrinsic rewards on intrinsic motivation. Psychological Bulletin, 125(6).
+- Lally, P., van Jaarsveld, C. H. M., Potts, H. W. W. & Wardle, J. (2010). How are habits formed: Modelling habit formation in the real world. European Journal of Social Psychology, 40(6).
+
+---
+
+# What Is the Pomodoro Technique and How Do You Use It? (Step-by-Step Guide)
+
+URL: https://yakupselimucar.github.io/pomi-legal/blog/what-is-the-pomodoro-technique.html
+Language: en
+Published: 2026-09-13
+Section: Basics
+
+What is the Pomodoro Technique and how does it work? The 25/5 cycle, the long-break rule, Francesco Cirillo's original method, common mistakes and how students and remote workers can adapt the timings.
+
+**Short answer:** Short answer: The Pomodoro Technique splits work into 25-minute blocks of uninterrupted focus followed by 5-minute breaks. After four blocks you take a longer break of 15 to 30 minutes. Francesco Cirillo developed it in the late 1980s and named it after the tomato-shaped kitchen timer he used; pomodoro is Italian for tomato.
+
+## What is the Pomodoro Technique?
+
+In the late 1980s, university student Francesco Cirillo could not get himself to study. He grabbed a tomato-shaped mechanical kitchen timer and asked himself whether he could focus for just ten minutes. The method settled into 25-minute blocks over time and became one of the most widely used time management techniques in the world.
+
+The core idea fits in one sentence: manage attention, not time. Twenty-five minutes is short enough to start without resistance and has a clear end, so you stop before you burn out.
+
+## How to use the Pomodoro Technique in 6 steps
+
+- Pick one task. Make it concrete: not "study maths" but "derivative problem set, pages 40 to 48".
+
+- Set a timer for 25 minutes. A kitchen timer, your phone, or a Pomodoro app such as Pomi.
+
+- Work on that task only until the timer rings. Write down anything else that pops into your head and come back to it later.
+
+- Stop when the timer rings. Even mid-sentence. This is the hardest and most important rule.
+
+- Take a 5-minute break. Away from screens: drink water, walk, look out of the window.
+
+- After four pomodoros, take a 15 to 30 minute break. Then start the cycle again.
+
+## Why does it work?
+
+- It lowers the cost of starting. "Three hours of studying" is intimidating; "25 minutes" is not. Once the timer is running, the hardest part is behind you.
+
+- It makes time visible. Once you know a page of problems takes two pomodoros, planning becomes realistic.
+
+- It forces breaks. Attention comes in waves, not a straight line. Regular short breaks reduce the mid-afternoon crash.
+
+- It measures interruptions. Count how many times a pomodoro gets broken and you see the real size of your distractions.
+
+## The 5 most common mistakes
+
+- Checking your phone during the break. Five minutes becomes twenty and your attention resets. Keep breaks screen-free.
+
+- Working through the bell. "I'm in flow" turns into exhaustion two hours later. Start another pomodoro if you like, but do not skip the break.
+
+- Choosing a task that is too big. "Write my thesis" does not fit in one pomodoro. Break it into pieces that finish in one sitting.
+
+- Changing the durations constantly. Run the classic 25/5 for two weeks first, then adapt.
+
+- Relying on the timer alone. If notifications are on while the timer runs, the phone wins, not the timer. Turn on focus mode.
+
+## Adapting the durations
+
+25/5 is a starting point, not a sacred rule. Common variants:
+
+| Cycle | Who it suits
+
+| 15 / 3 | People who struggle to start, ADHD, the first week
+
+| 25 / 5 | The classic. Studying, problem sets, email
+
+| 50 / 10 | Work that needs a warm-up: coding, writing, deep reading
+
+| 90 / 20 | Close to the ultradian rhythm. Experienced users, long dives into one task
+
+In Pomi you can change the work and break lengths in settings; whichever duration you pick, the plant in your garden grows when the session completes. We compared these cycles against Flowtime and 52/17 in a separate article.
+
+## A note for students
+
+Do not use Pomodoro for practice exams; sit those under real exam timing. Use it for learning new material, reviewing and working through problem sets. If your friends study at the same time, opening a room in Pomi where everyone runs their own timer noticeably raises motivation; we explain why in the study with me article.
+
+## Frequently asked questions
+
+**How long is a pomodoro?**
+The classic cycle is 25 minutes of work and a 5-minute break. After four cycles you take a longer break of 15 to 30 minutes. The durations can be adapted, for example to 15/3 or 50/10.
+
+**Who invented the Pomodoro Technique?**
+Francesco Cirillo, in the late 1980s while he was a university student. The name comes from the tomato-shaped kitchen timer he used; pomodoro is Italian for tomato.
+
+**What should I do during a Pomodoro break?**
+Stay away from screens: drink water, stand up, walk a few steps, look out of the window. A social media break stretches 5 minutes into 20 and resets your focus.
+
+**Is the Pomodoro Technique right for everyone?**
+It suits most work, but long creative tasks that need flow may do better with 50/10 or 90/20 blocks. It should not be used for exam simulations, which need real exam timing.
+
+**Do I need an app for Pomodoro?**
+No, a kitchen timer is enough. An app makes a difference if you want to log sessions, see statistics and study together with friends. Pomi offers those for free and without ads.
+
+
+## Sources
+
+- Cirillo, F. (2018). The Pomodoro Technique. Currency.
+- Ariga, A. & Lleras, A. (2011). Brief and rare mental "breaks" keep you focused. Cognition, 118(3).
+
+---
+
+# Study With Me: Why Studying Together Works, and How to Do It Remotely
+
+URL: https://yakupselimucar.github.io/pomi-legal/blog/study-with-me-how-to-study-together.html
+Language: en
+Published: 2026-09-13
+Section: Guide
+
+What is study with me and why does it work? Body doubling and social facilitation explained, YouTube vs Discord vs apps compared, and how to study together remotely with Pomi rooms where everyone runs their own timer.
+
+**Short answer:** Short answer: Seeing other people work strengthens your brain's "this is work time" signal; psychologists call it body doubling and social facilitation. The easiest way to get it at home is to join a focus room with friends at the same time, each running their own timer. No camera or microphone needed.
+
+## What is "study with me"?
+
+"Study with me" started on YouTube as a video genre: someone films themselves studying, and viewers study alongside. The videos run for hours with no talking, usually with a Pomodoro timer and rain sounds, and rack up millions of views. During the pandemic the format moved to 24/7 "silent library" voice channels on Discord, and from there to apps designed specifically for it.
+
+## Why does it work?
+
+- Body doubling. Starting and continuing a task is easier when someone else is working nearby. The effect is well documented in people with ADHD, but it works for almost everyone.
+
+- Social facilitation. Robert Zajonc showed in 1965 that the presence of others improves performance on simple, well-practised tasks. Reviewing and solving problem sets fall squarely in that category.
+
+- The appointment effect. "We meet in the room at 9" is far more binding than "I'll study at some point".
+
+- Normalisation. When everyone around you is working, working becomes the default, and excuses to procrastinate shrink.
+
+## Three ways: YouTube, Discord, app
+
+| Method | Pros | Cons
+
+| YouTube video | Zero setup; pick any length and atmosphere | One-way, nobody sees you; recommendations distract
+
+| Discord server | Real people, live, large communities | Chat distracts; camera pressure; setup and moderation overhead
+
+| Focus app (Pomi) | Private room with friends, everyone on their own timer, progress logged, on your phone | Requires installing an app; community smaller than Discord
+
+## How Pomi rooms work
+
+You create a room in Pomi and the app gives you a 6-character invite code. Send it to your friends and they join. In the room you see everyone's name and timer status, but each person starts their own timer. There is no shared countdown: when someone finishes their 25 minutes and takes a break, everyone else's session keeps running. That removes the tension of "if one person leaves, everyone's tree dies" designs.
+
+Every completed session adds a plant to your own garden and scores points for your city on the conquest map. Friends from the same city working in the same room are literally working together to win regions for their city.
+
+No camera, no microphone, no chat. The room exists to give the feeling of "we are quietly working together", not to talk.
+
+## 5 rules for a good study-with-me session
+
+- Set a time and share it. "Tonight at 8, room code ABC123." The appointment effect starts here.
+
+- Everyone writes their task in advance. Deciding what to study after joining burns the first pomodoro.
+
+- Talk during breaks, not sessions. Fit the chat into the 5 minutes.
+
+- Aim for at least 4 pomodoros. One session is not worth setting up a room; two hours makes a real study block.
+
+- Share your numbers at the end. "I did 6 sessions today" is the strongest reason to come back tomorrow.
+
+If you have not chosen a timer yet, see the Pomodoro app comparison; for the technique itself, the Pomodoro guide.
+
+## Frequently asked questions
+
+**What does study with me mean?**
+It means someone streams or records themselves studying while viewers study at the same time. The format has since moved to Discord rooms and to apps like Pomi that let friends work in the same room, each on their own timer.
+
+**What is body doubling?**
+The effect where having another person present while you work makes it easier to start and keep going. It is especially strong in people with ADHD and works in virtual rooms too.
+
+**Is there a shared timer in Pomi rooms?**
+No. Everyone in a room starts and stops their own timer. When one person takes a break, nobody else's session is affected. The room exists to create the feeling of working together.
+
+**How do I join a Pomi room?**
+The person who created the room shares a 6-character invite code. Enter it in the Rooms tab and you are in. No camera or microphone is required.
+
+
+## Sources
+
+- Zajonc, R. B. (1965). Social facilitation. Science, 149(3681).
+
+---
+
+# Pomodoro vs 52/17 vs Flowtime: An Honest Comparison of Focus Techniques
+
+URL: https://yakupselimucar.github.io/pomi-legal/blog/pomodoro-vs-flowtime-vs-52-17.html
+Language: en
+Published: 2026-09-13
+Section: Comparison
+
+Pomodoro vs 52/17 vs Flowtime vs 90-minute ultradian blocks vs time blocking. The origin, strengths, weaknesses and ideal work type for each focus technique, plus how to combine them.
+
+**Short answer:** Short answer: If starting is your problem and the work splits into pieces, use Pomodoro (25/5). If you spend long days at a computer, try 52/17. If being interrupted mid-flow drives you mad, use Flowtime. For coding, writing and research that need a warm-up, 90/20. If your calendar is busy, put time blocking on top of any of them. They are not mutually exclusive; most people run two at once.
+
+## Why the technique matters
+
+Every focus technique addresses the same two problems: failing to start and failing to keep going. They differ in how. Pomodoro makes starting easy with short, hard limits; Flowtime removes the limits to protect flow; 52/17 and 90/20 move the limit closer to the body's natural rhythm. The right one depends on which problem hurts you more.
+
+## Five techniques in one table
+
+| Technique | Cycle | Origin | Best for | Weak spot
+
+| Pomodoro | 25 min work / 5 min break, long break after 4 | Francesco Cirillo, late 1980s | Studying, problem sets, email, tasks you dislike | The bell interrupts flow
+
+| 52/17 | 52 min work / 17 min break | DeskTime usage data, 2014 | Office and computer work | 52 minutes is long for beginners
+
+| Flowtime | Work until you lose focus, log it, break proportionally | Zoë Read-Bivens, 2016 | Creative work, coding, writing | Needs discipline; falls apart without logging
+
+| 90/20 (ultradian) | 90 min work / 20 min break | Kleitman's sleep-cycle research | Deep reading, thesis, design | Only 3-4 blocks a day; fragile under interruption
+
+| Time blocking | A calendar slot for every task | Popularised by Cal Newport | Days full of meetings and mixed tasks | Says nothing about what happens inside the block
+
+## Pomodoro: 25 / 5
+
+Simple and strict: 25 minutes on one task, 5 minutes off, a 15 to 30 minute break after four rounds. You stop when the bell rings, even mid-sentence. The full method is in our Pomodoro guide.
+
+- Strength: The lowest barrier to starting. Even on your least motivated day, 25 minutes is acceptable. Counting interruptions shows you the real size of your distractions.
+
+- Weakness: The bell rings at minute 20 just as you enter flow. Cirillo does this on purpose ("the break is sacred"), but for programmers and writers the rule can be expensive.
+
+- For: Students, procrastinators, people with ADHD, anyone whose work splits into small pieces.
+
+## 52/17: what the data said
+
+In 2014 the time-tracking app DeskTime published that its most productive 10 percent of users worked for an average of 52 minutes and then broke for 17. It is not a controlled experiment, just an observation from usage data, but the numbers make a sensible middle ground for office workers. The break is long enough that you actually leave the screen.
+
+- Strength: Enough time to warm up, enough break to really rest.
+
+- Weakness: 52 uninterrupted minutes is hard if you are not used to it. If the 17 minutes go to social media the technique loses its point.
+
+- For: Full-day computer workers, people who find Pomodoro too choppy.
+
+## Flowtime: no timer, but a log
+
+Proposed by Zoë Read-Bivens in 2016, Flowtime removes Pomodoro's most criticised rule: the forced interruption. You pick a task, note the start time, work until your attention drifts or you tire, and note the end time. The break is proportional to the work: 5 minutes for 25, 8 for 50, 15 for 90.
+
+- Strength: Protects flow. Over time the log reveals your real focus span; most people discover they peak around 35 to 45 minutes.
+
+- Weakness: Without an external limit it is easy to fall into "just a bit more". Stop logging and the technique evaporates.
+
+- For: Experienced focusers, programmers, writers, designers.
+
+## 90/20: the ultradian rhythm
+
+Sleep researcher Nathaniel Kleitman proposed that the 90-minute cycles of sleep continue as a rest-activity wave through the waking day. 90/20 tries to fit work to that wave. Anders Ericsson's study of expert violinists points the same way: the best students practised in blocks of roughly 90 minutes and rarely more than 4 hours a day in total.
+
+- Strength: Allows a genuine dive into deep work.
+
+- Weakness: At most 3 to 4 blocks a day. Finding 90 uninterrupted minutes in an open office or a busy home is hard.
+
+- For: Thesis writers, researchers, anyone who can protect their mornings.
+
+## Time blocking: the calendar technique
+
+This is a planning method rather than a rhythm. At the start of the day, or the night before, you give every task a slot in your calendar: 9:00 to 10:30 report, 10:30 to 11:00 email, 11:00 to 12:30 code. It says nothing about what happens inside the block, so it pairs with Pomodoro or 52/17. On a meeting-heavy day it is the most realistic technique because it makes the gaps between meetings visible.
+
+## Combining techniques
+
+In practice people rarely stick to one. Three combinations that work:
+
+- Block + Pomodoro: A 2-hour "study" block on the calendar with 4 pomodoros inside. The safest setup for students.
+
+- Warm up with Pomodoro, continue with Flowtime: Start the day with one 25; if you are in flow, switch the timer off and log the time. For reluctant mornings.
+
+- 90/20 in the morning, 25/5 in the afternoon: Deep work while the mind is fresh, short rounds when energy drops.
+
+Pomi lets you set work and break lengths freely, so the same app runs 25/5, 52/17 or 90/20; the plant in your garden grows whenever a session completes. How many rounds a day is realistic is covered in a separate article.
+
+## How to choose: three questions
+
+- Is my real problem starting? If yes, Pomodoro. Short limits break starting resistance.
+
+- Does being interrupted in flow make me angry? If yes, Flowtime or 90/20.
+
+- Is my day full of meetings and interruptions? If yes, time blocking first, Pomodoro in the gaps.
+
+Whichever you pick, run it unchanged for two weeks. Switching techniques can be the most sophisticated form of not working.
+
+## Frequently asked questions
+
+**What is the 52/17 rule?**
+A schedule of 52 minutes of uninterrupted work followed by a 17-minute break. It was derived in 2014 from the average behaviour of the most productive users of the time-tracking app DeskTime; it is an observation from usage data rather than a controlled experiment.
+
+**What is the Flowtime technique?**
+A method with no forced timer: you work until your attention drifts, log the start and end times, then take a break proportional to the time worked. Zoë Read-Bivens proposed it in 2016 to fix Pomodoro's problem of interrupting flow.
+
+**Is Pomodoro or Flowtime better?**
+Pomodoro is better if you struggle to start and your work splits into pieces; Flowtime is better for creative work where interruptions are costly. Many people start with Pomodoro and move to Flowtime as they gain experience, or use both.
+
+**What is the 90-minute rule?**
+A schedule of 90 minutes of work and 20 minutes of rest, derived from Kleitman's research on ultradian rhythms. It suits deep, long work, but you can only do three or four blocks a day.
+
+**Can I run 52/17 or 90/20 in Pomi?**
+Yes. Work and break durations are adjustable in Pomi's settings. Whatever the length, a completed session adds a plant to your garden and scores points for your city.
+
+
+## Sources
+
+- Cirillo, F. (2018). The Pomodoro Technique. Currency.
+- DeskTime (2014). "The secret of the 10% most productive people? Breaking!" DeskTime blog.
+- Read-Bivens, Z. (2016). "The Flowtime Technique." Medium.
+- Kleitman, N. (1963). Sleep and Wakefulness. University of Chicago Press.
+- Ericsson, K. A., Krampe, R. T. & Tesch-Römer, C. (1993). The role of deliberate practice in the acquisition of expert performance. Psychological Review, 100(3).
+- Newport, C. (2016). Deep Work. Grand Central Publishing.
+
+---
+
+# How Many Pomodoros a Day? Realistic Targets and the Mistake Everyone Makes
+
+URL: https://yakupselimucar.github.io/pomi-legal/blog/how-many-pomodoros-a-day.html
+Language: en
+Published: 2026-09-13
+Section: Guide
+
+How many pomodoros should you do per day? Realistic targets for students, full-time workers and remote workers, the 4-hour deep-work ceiling, a plan to raise your count gradually, and burnout warning signs.
+
+**Short answer:** Short answer: If you are new, 4 pomodoros a day (100 minutes of net focus) is a good target. Once it is a habit, the sustainable ceiling for most students and workers is 8 to 12, which is 3.5 to 5 hours of real focus and more than most full office days contain. Sixteen or more is a recipe for burnout outside short bursts like exam week.
+
+## Why "more is better" is wrong
+
+A pomodoro count measures input, not output. You can sit through eight sessions and solve nothing, or finish a topic in three. The number is still useful, because it is the one thing you can measure and compare with yourself over time.
+
+The second problem: a pomodoro is not 25 minutes but 30, once you include the break. With long breaks, 8 pomodoros take about 4.5 hours. Sixteen means 9 hours, with no room for meals, commuting, classes or meetings.
+
+## How many for whom?
+
+| Situation | Daily target | Net focus | Note
+
+| Beginner | 3-4 | 75-100 min | For the first two weeks, aim for consistency, not count
+
+| Student attending classes | 4-6 | 100-150 min | Outside class hours; up to 8 at weekends
+
+| Full-time exam prep | 10-14 | 4-6 hours | For two to three month stretches; do not sustain 6 weeks without a rest day
+
+| Full-time employee | 6-8 | 2.5-3.5 hours | The rest of the day goes to meetings, email and shallow work
+
+| Remote / freelance | 8-10 | 3.5-4 hours | Fewer interruptions, so the ceiling is slightly higher
+
+| Thesis, book, research | 6-8 (long blocks) | 3-4 hours | With 50/10 the count halves, the time stays the same
+
+## The 4-hour ceiling
+
+The upper limits in that table are not arbitrary. In the 1993 study that started the "10,000 hours" debate, Anders Ericsson found that the best violin students practised deliberately for no more than about 4 hours a day; longer sessions lowered quality. Observations of writers and mathematicians point the same way: in deep, attention-demanding work, 4 to 5 hours a day is the ceiling for most people. Beyond it, work either slides into shallow tasks or becomes a debt paid the next day.
+
+This is a ceiling for intense focus, not total work. Reading, review and editing can sit on top of it.
+
+## How to raise your count
+
+- Consistency first. Three pomodoros every day for two weeks. Not missing a day matters more than hitting eight.
+
+- Add one session a week. From 3 to 4, from 4 to 5. No jumps; a jump today means zero tomorrow.
+
+- Protect the morning block. Put the first four pomodoros in the earliest free hours. Anything added in the afternoon is a bonus.
+
+- Count interruptions. Cirillo's original method marks every interruption. The session count will not rise until the interruption count falls.
+
+- Keep the count visible. A tally on paper, an X on a calendar, or the garden in Pomi. Visible progress is the cheapest way to raise the number.
+
+## When to stop
+
+Three signs you are borrowing from tomorrow: reading the same paragraph three times, reaching for your phone more often in breaks, and not remembering what you did at the end of a session. On a day like that, a walk instead of the sixth pomodoro saves the eight you will do tomorrow.
+
+## Think weekly, not daily
+
+A daily target makes one bad day feel like failure. A weekly target is more forgiving: 30 pomodoros a week can be 4 one day and 8 the next. Pomi's weekly statistics and weekly league work on exactly this logic; they judge your week, not your day.
+
+## Frequently asked questions
+
+**How many pomodoros should I do a day?**
+Three to four for beginners, eight to twelve for experienced users. Twelve pomodoros is about 5 hours of net focus, which is close to the daily ceiling for deep work.
+
+**How many hours is 8 pomodoros?**
+About 4.5 hours including breaks. The net focus time is 8 × 25 = 200 minutes, or 3 hours and 20 minutes.
+
+**Is it possible to do 16 pomodoros a day?**
+Possible for short periods, not sustainable. Sixteen pomodoros with breaks is 9 hours. Outside exceptions like exam week, more than 12 usually causes a productivity drop the next day.
+
+**How many hours should I study a day?**
+For a student attending classes, 2 to 2.5 hours of net focus outside class (4 to 6 pomodoros) is enough. For full-time exam preparation, 4 to 6 hours of net focus is the upper limit, with the rest of the time going to review and lighter work.
+
+**How do I track my pomodoro count?**
+A paper tally is the simplest. If you use an app, Pomi adds a plant to your garden for every completed session and shows the total in weekly statistics, so you can see progress without counting.
+
+
+## Sources
+
+- Ericsson, K. A., Krampe, R. T. & Tesch-Römer, C. (1993). The role of deliberate practice in the acquisition of expert performance. Psychological Review, 100(3).
+- Cirillo, F. (2018). The Pomodoro Technique. Currency.
+- Newport, C. (2016). Deep Work. Grand Central Publishing.
+
+---
+
+# How to Stop Procrastinating: Why We Do It and What Actually Works Today
+
+URL: https://yakupselimucar.github.io/pomi-legal/blog/how-to-stop-procrastinating.html
+Language: en
+Published: 2026-09-13
+Section: Basics
+
+Why do we procrastinate and how do we stop? The emotional root of procrastination according to research, the 2-minute rule, implementation intentions, Pomodoro and studying together: 7 methods you can use today.
+
+**Short answer:** Short answer: Procrastination is not laziness; it is a short-term escape from an unpleasant feeling such as boredom, anxiety or self-doubt. So the fix is to shrink the feeling: make the task small enough to start in 2 minutes, write down when and where you will do it, set a 25-minute timer, and if possible work near other people. Once the first 5 minutes pass, half the feeling is gone.
+
+## What procrastination is, and is not
+
+Procrastination is voluntarily delaying a task even though you expect to be worse off for it. The key phrase is "even though you expect": there is no lack of information, and usually no lack of a plan. Piers Steel's 2007 meta-analysis of 691 studies found that 80 to 95 percent of university students procrastinate regularly and about half consider it a problem. Procrastination is the default, not the exception.
+
+Steel found the strongest predictors of procrastination to be how unpleasant the task is, how distant the reward is, the person's impulsiveness, and low confidence in being able to do it. Time management skill sits near the bottom of the list.
+
+## The real mechanism: short-term mood repair
+
+The framework proposed by Fuschia Sirois and Timothy Pychyl in 2013 is now the field's main model: procrastination is sacrificing your future self to fix how you feel right now. Opening the textbook creates boredom, anxiety or a sense of "I can't do this"; reaching for the phone relieves that instantly. The brain learns the loop. Guilt follows, and guilt drives more avoidance.
+
+The practical consequence: "get angry at yourself and be disciplined" increases procrastination because it inflates the bad feeling. In a study by the same group, students who forgave themselves for procrastinating before a first exam procrastinated less before the second.
+
+## 7 methods you can use today
+
+### 1. Shrink the task to 2 minutes
+
+David Allen's rule, repurposed: instead of "study the chapter", "open the book and read the first heading". A two-minute task creates a small feeling, so the avoidance is small too. Continuing is far easier than starting.
+
+### 2. Write an implementation intention: when, where, what
+
+Peter Gollwitzer's research found that people who wrote plans in the form "in situation Y I will do Z" reached their goals two to three times more often than people who just set a goal. The sentence looks like this: "Tomorrow at 9:00, at the kitchen table, I will open maths problem set page 40." You move the decision from 9 a.m. tomorrow to tonight.
+
+### 3. Set a 25-minute timer
+
+Pomodoro works well against procrastination because the end is known in advance. "I'll study for three hours" is vague and frightening; "25 minutes, then I get up" is bearable. Once the timer starts, the hardest part, starting, is over. See the Pomodoro guide.
+
+### 4. Set up the environment in advance
+
+Reduce the start-up cost of the avoided task to zero: book open, notebook next to it, phone in another room, water on the desk. A desk prepared the night before removes five small decisions in the morning.
+
+### 5. Work near other people
+
+A library, a café, or an online focus room. Seeing someone else work lowers the starting threshold; it is called body doubling. Opening a room in Pomi with friends, each on their own timer, gives you that effect at home. The mechanism is explained in the study with me article.
+
+### 6. Make progress visible
+
+One cause of procrastination is that the reward is far away. Fill the gap with small, visible rewards: an X on the calendar, a tally, a plant added to a garden for every finished session. The system does not matter; what matters is that today's work leaves a mark today.
+
+### 7. Forgive yourself, then go back to the 2 minutes
+
+This is a research finding, not a call to go easy. Every minute you spend angry at yourself for procrastinating feeds the feeling that procrastination runs on. "Yesterday didn't happen; I'm opening the book now" breaks the loop.
+
+## When you need more than this
+
+If procrastination covers every area of life, has lasted months and includes sleep, relationships or health, it may sit on top of ADHD, depression or an anxiety disorder. The methods above still help but will not be enough on their own; talking to a professional is the shortest route.
+
+## One-sentence summary
+
+Because procrastination is about feelings, so is the fix: make the task small, decide in advance, limit the time, do not stay alone, and forgive yourself. All of it fits inside one 25-minute session.
+
+## Frequently asked questions
+
+**Why do I keep procrastinating?**
+Research shows procrastination is a short-term escape from the unpleasant feeling a task creates, such as boredom, anxiety or self-doubt. It is an emotion regulation problem rather than laziness or poor time management, which is why criticising yourself makes it worse.
+
+**What is the fastest way to stop procrastinating?**
+Shrink the task until it can be started in 2 minutes and set a 25-minute timer. Starting is the hardest part; continuing once the timer runs is comparatively easy.
+
+**What is the 2-minute rule?**
+Reducing the start of a task to the smallest step that takes two minutes, such as "open the book and read the first paragraph". A small step creates a small feeling, so there is less to avoid.
+
+**Does the Pomodoro Technique help with procrastination?**
+Yes, especially with the problem of starting. The fixed, short duration lowers starting resistance, and the mandatory breaks prevent burnout. Over the long run it works best combined with studying near others and visible progress.
+
+**Is procrastination a disorder?**
+Not on its own; the large majority of students procrastinate regularly. If it covers every area of life, has lasted months and disrupts daily functioning, it may be linked to ADHD, depression or anxiety, and it is worth consulting a professional.
+
+
+## Sources
+
+- Steel, P. (2007). The nature of procrastination: A meta-analytic and theoretical review of quintessential self-regulatory failure. Psychological Bulletin, 133(1).
+- Sirois, F. & Pychyl, T. (2013). Procrastination and the priority of short-term mood regulation: Consequences for future self. Social and Personality Psychology Compass, 7(2).
+- Wohl, M. J. A., Pychyl, T. A. & Bennett, S. H. (2010). I forgive myself, now I can study. Personality and Individual Differences, 48(7).
+- Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7).
+- Allen, D. (2001). Getting Things Done. Viking.
+
+---
+
+# The Best Background Sounds for Studying: Rain, Café, White Noise and Music Compared
+
+URL: https://yakupselimucar.github.io/pomi-legal/blog/best-background-sounds-for-studying.html
+Language: en
+Published: 2026-09-13
+Section: Guide
+
+The best background sounds for studying and working: rain, café ambience, white, pink and brown noise, instrumental music and lo-fi compared. What research says about which sound suits which task.
+
+**Short answer:** Short answer: For reading and writing, music with lyrics hurts; wordless, steady sounds (rain, brown noise, a low café murmur) are neutral or helpful. For mechanical work such as review and problem sets, music you like can boost motivation. The general rule: if the sound does not change, it stays in the background; if it changes, it pulls attention.
+
+## Why sound works (or doesn't)
+
+Attention responds to change. In a quiet room, a creaking door, a neighbour's voice or a distant horn pulls you out every time. A steady background sound covers those changes; this is called masking. Rain works not because of a magic frequency but because it is predictable.
+
+On the other hand, if the sound carries information, such as lyrics or intelligible speech, the language areas of your brain process it whether you want them to or not. That is why the same sound can help in one task and hurt in another.
+
+## Sound types and the work they suit
+
+| Sound | Reading / writing | Problem sets / review | Creative work | Note
+
+| Total silence | Good (if the room is quiet) | Good | Fair | Can be the worst option in a noisy home
+
+| Rain / nature | Very good | Good | Good | Steady, carries no information; the safest choice
+
+| Café murmur | Good (if speech is unintelligible) | Good | Very good | Moderate noise can boost creativity
+
+| White noise | Good | Good | Fair | Hissy; some people find it irritating
+
+| Pink / brown noise | Very good | Good | Fair | Deeper, easier to listen to for long sessions
+
+| Instrumental / lo-fi | Fair | Good | Good | Pick tracks with little change in tempo and dynamics
+
+| Music with lyrics | Bad | Fair | Fair | Measurably lowers reading comprehension
+
+| Podcast / video | Very bad | Bad | Bad | Both compete for language processing; one loses
+
+## What the research says
+
+- Lyrics and reading: In Perham and Currie's 2014 study, participants listening to lyrical music they liked scored clearly lower on reading comprehension than those in silence or with instrumental music. Liking the song did not help.
+
+- Moderate noise and creativity: Mehta, Zhu and Cheema (2012) found that ambient noise around 70 decibels, roughly a busy café, improved creative problem solving compared with silence, while 85 decibels made it worse. This is the basis of the coffee-shop myth, and it is partly true.
+
+- White noise and attention: Söderlund and colleagues (2007) found white noise improved memory performance in children with attention difficulties but slightly reduced it in children without. The benefit depends on the person.
+
+- Masking: Open-office research consistently shows intelligible speech to be the most disruptive sound. When a steady background sound covers it, performance recovers.
+
+## White, pink, brown: what's the difference?
+
+All three are random noise; the difference is how energy is spread across frequencies. White noise has equal power at every frequency and sounds hissy, like radio static. Pink noise turns down the highs and sounds like heavy rain. Brown noise goes deeper still, like a distant waterfall or an aircraft cabin. For long sessions most people find pink or brown less tiring; try each and decide.
+
+## 5 rules for using sound well
+
+- Start the sound with the session, stop it with the break. Over time the sound becomes a "work time" signal; Pavlov works in your favour here.
+
+- Keep the volume low. The goal is to cover the environment, not to drown it. Stay below conversation level.
+
+- Do not fiddle with playlists. Every track choice is a decision and every decision costs attention. Pick one long sound or a mixed ambience.
+
+- Change the sound with the task. Rain for reading, lo-fi for problem sets, café for brainstorming.
+
+- Headphones are not always needed. Quiet rain from a speaker gives the same masking without ear fatigue.
+
+## Focus sounds in Pomi
+
+Pomi includes rain, café, forest and other sounds, and you can set each one's level separately and mix them: light rain over a distant café murmur, for example. The sounds run with the timer and stop when the session ends, so you never open another app to hunt for a playlist. For other tools, see the focus apps guide.
+
+## Frequently asked questions
+
+**Is listening to music while studying bad?**
+Music with lyrics measurably reduces comprehension in language-heavy tasks such as reading and writing. Instrumental, steady music or nature sounds are neutral or helpful for most people. For mechanical tasks such as problem sets, music you enjoy can improve motivation.
+
+**What is the best sound for concentration?**
+There is no single answer, but the safest options are steady sounds that carry no information: rain, brown noise, an unintelligible café murmur. They mask sudden changes in the environment and reduce attention breaks.
+
+**What is the difference between white noise and brown noise?**
+Both are random noise. White noise has equal power at all frequencies and sounds hissy; brown noise concentrates energy in low frequencies and sounds like a waterfall or an aircraft cabin. Most people find brown or pink noise more comfortable for long listening.
+
+**Why does café noise help some people focus?**
+A moderate, steady murmur of around 70 decibels masks sudden sounds and, according to research, slightly improves creative thinking. If the conversations become intelligible, the effect reverses.
+
+**Is lo-fi music good for studying?**
+Usually yes: it is wordless, repetitive and has little dynamic change, so it stays in the background. For reading-heavy work, completely information-free sounds such as rain or noise are still safer.
+
+
+## Sources
+
+- Perham, N. & Currie, H. (2014). Does listening to preferred music improve reading comprehension performance? Applied Cognitive Psychology, 28(2).
+- Mehta, R., Zhu, R. & Cheema, A. (2012). Is noise always bad? Exploring the effects of ambient noise on creative cognition. Journal of Consumer Research, 39(4).
+- Söderlund, G., Sikström, S. & Smart, A. (2007). Listen to the noise: Noise is beneficial for cognitive performance in ADHD. Journal of Child Psychology and Psychiatry, 48(8).
+- Haapakangas, A., Hongisto, V. et al. (2014). Effects of five speech masking sounds on performance and acoustic satisfaction. Acta Acustica united with Acustica, 100(2).
+
+---
+
+# How to Stop Checking Your Phone While Studying: 9 Ways That Don't Need Willpower
+
+URL: https://yakupselimucar.github.io/pomi-legal/blog/how-to-stop-checking-your-phone-while-studying.html
+Language: en
+Published: 2026-09-13
+Section: Students
+
+How to stop checking your phone while studying: the mere-presence research, putting the phone in another room, greyscale, focus mode, notification settings, the break rule and Pomodoro. Nine practical methods.
+
+**Short answer:** Short answer: Trust distance, not willpower. Put the phone in another room; if you can't, in a bag, face down. Silence notifications for the whole session, switch the screen to greyscale, move social apps off the home screen. Instead of banning the phone, move it to the break and cap it with a timer. Set these up once and you stop having to decide every day.
+
+## The problem is not looking; it is the phone being there
+
+In a 2017 experiment with about 800 participants, Adrian Ward and colleagues at the University of Texas had people put their phones in one of three places: on the desk, in a pocket or bag, or in another room. All phones were silenced and nobody touched them. Even so, people whose phones were on the desk scored measurably lower on working memory and fluid intelligence tests than those whose phones were in another room. The researchers called it "brain drain": ignoring the phone costs attention continuously.
+
+So deciding "I won't look" is not enough. If the phone is in view, the cost is already being paid. The fix is distance, not willpower.
+
+## 9 methods, easiest first
+
+### 1. Put it in another room
+
+The single most effective method. Having to get up and walk kills most of the urge. If someone else is home, hand it to them; handing over is more binding than locking.
+
+### 2. Get it out of sight
+
+If another room is not possible: in a bag, a drawer, or at least face down behind you. In Ward's experiment even a phone in a pocket beat one on the desk.
+
+### 3. No notifications for the whole session
+
+Focus mode on iPhone, Do Not Disturb on Android. Set it up once so it switches on automatically for your 25-minute sessions. You can allow calls from one or two people for emergencies; do not allow messaging apps.
+
+### 4. Switch to greyscale
+
+Colour is the strongest pull apps have. Turning on greyscale in accessibility settings makes the phone a boring device. Schedule it to switch on during study hours.
+
+### 5. Move social apps off the home screen
+
+No need to delete them. Move them to the second or third page inside a folder. Having to search for them breaks the "just a quick look" reflex; most opens are reflex, not decision.
+
+### 6. Don't ban the phone; move it to the break
+
+Bans grow desire. Make the rule: none during the session, allowed in the break, with a timer. Three of the five break minutes can go to the phone; when the timer rings, it goes down. This makes the 25 minutes more bearable.
+
+### 7. Keep the timer somewhere other than the phone screen
+
+If the timer lives on the phone, you have a perfect excuse to keep the phone on the desk. Use a kitchen timer, or start the app and turn the phone face down at a distance. Pomi's timer keeps counting with the screen off and the app in the background: start it, flip it, move it away.
+
+### 8. An interruption notebook
+
+When the urge to "quickly search this" or "message them" arrives mid-session, write it on paper. Writing it down usually dissolves the urge; if not, do it in the break. The least known and most useful rule in Cirillo's original method.
+
+### 9. Write your reason and stick it to the back of the phone
+
+It looks simple, but it works: "Med school in June." The one sentence you see when you pick the phone up. Occasionally that is enough.
+
+## How useful are blocking apps?
+
+Forest, Flora, Opal and similar apps gamify putting the phone down: leave the app and the tree dies, or apps lock. They work well in two situations: when the phone cannot go to another room (dorm, bus, studio flat) and when gamification motivates you. For most people, another room is both free and more effective. We compared the options in the Forest alternatives article.
+
+## Pomi's approach
+
+Pomi does not lock your phone; it is designed for you to start the timer and move the phone away. The plant added to your garden and the points scored for your city when the session ends are the visible reward for "25 minutes without looking". If you are in a room with friends, reaching for the phone while everyone's timers are running feels a little harder; social pressure works in your favour there.
+
+## A two-minute setup
+
+- Create a focus mode that switches on automatically during study hours.
+
+- Set up a greyscale shortcut.
+
+- Move social apps into a folder.
+
+- Put paper and a pen on the desk (interruption notebook).
+
+- Next session, leave the phone in another room. Strange on day one, normal by day three.
+
+## Frequently asked questions
+
+**Why is it hard to study with my phone on the desk?**
+Research shows that a phone in view lowers working memory performance even when it is silent and face down. Ignoring it costs attention continuously. That is why the most effective fix is putting the phone in another room.
+
+**Should I turn my phone off completely while studying?**
+Putting it in another room is usually enough and easier to sustain than switching it off. In focus mode you can allow calls from one or two people for emergencies; messaging apps should not be exceptions.
+
+**Do phone blocking apps work?**
+Yes when you cannot move the phone to another room, or when gamification motivates you. For most people, physical distance is both free and more effective. Forest, Flora and Opal are the best-known examples of this category.
+
+**What if my Pomodoro timer is on my phone?**
+Start the timer, then turn the phone face down and move it away. Apps like Pomi keep counting with the screen off and in the background. A kitchen timer or a watch works too.
+
+**Can I check my phone during the break?**
+Yes, with a timer. At most three of the five break minutes should go to the phone, and it goes down when the timer rings. A ban during sessions plus limited permission in breaks keeps the rule sustainable.
+
+
+## Sources
+
+- Ward, A. F., Duke, K., Gneezy, A. & Bos, M. W. (2017). Brain Drain: The mere presence of one's own smartphone reduces available cognitive capacity. Journal of the Association for Consumer Research, 2(2).
+- Thornton, B., Faires, A., Robbins, M. & Rollins, E. (2014). The mere presence of a cell phone may be distracting. Social Psychology, 45(6).
+- Cirillo, F. (2018). The Pomodoro Technique. Currency.
+
+---
+
+# Evidence-Based Study Techniques: 7 Methods Research Shows Actually Work
+
+URL: https://yakupselimucar.github.io/pomi-legal/blog/evidence-based-study-techniques.html
+Language: en
+Published: 2026-09-13
+Section: Students
+
+Scientifically proven study techniques: active recall, spaced repetition, interleaving, self-testing, the Feynman technique, Pomodoro and sleep. The research behind each one and how to apply it in 25 minutes.
+
+**Short answer:** Short answer: The two techniques with the strongest evidence are self-testing (active recall) and spaced repetition. Add interleaving (mixing topics) and explaining in your own words and retention climbs noticeably. Re-reading, highlighting and summarising are weak on their own. Pomodoro is the container: spend the last 3 minutes of every 25 recalling with the book closed.
+
+## Where this list comes from
+
+In 2013 John Dunlosky and colleagues evaluated the ten most common study techniques across hundreds of studies and rated each one high, moderate or low utility. The result is uncomfortable: the most used methods (re-reading, highlighting) scored low; the least used (self-testing, spacing) scored high. The list below is based on that review and the research since.
+
+| Technique | Strength of evidence | How often students use it
+
+| Self-testing (active recall) | High | Rarely
+
+| Spaced repetition | High | Rarely
+
+| Interleaving | Moderate | Very rarely
+
+| Self-explanation / Feynman | Moderate | Rarely
+
+| Summarising | Low to moderate | Common
+
+| Highlighting | Low | Very common
+
+| Re-reading | Low | Most common
+
+## 1. Active recall: close the book and remember
+
+What: Pulling information out of memory instead of reading it again. Solving problems, explaining with the book closed, writing on a blank page, writing your own questions.
+
+Evidence: In Roediger and Karpicke's 2006 experiment, students who read a passage four times remembered clearly less a week later than students who read it once and tried to recall it three times; and the re-readers believed they had learned more. The familiarity that re-reading creates gets mistaken for knowing.
+
+In 25 minutes: Study for 20, close the book and write what you remember for 3, check the gaps for 2. This single change raises study efficiency more than anything else.
+
+## 2. Spaced repetition: not all at once
+
+What: Spreading three hours on a topic across three days instead of one sitting, then short reviews after 3 days, 1 week, 3 weeks.
+
+Evidence: Cepeda and colleagues' 2006 meta-analysis of 254 studies showed a consistent advantage of spaced over massed practice. The best gap depends on how far away the test is: for an exam a month out, about a week between reviews works well.
+
+Apply: Put a "Friday: review the week" block in your weekly plan. If you use flashcards, use a tool such as Anki that sets the gaps automatically.
+
+## 3. Interleaving: mix the topics
+
+What: Mixing problems from different topics instead of solving 30 of the same kind in a row (blocked practice).
+
+Evidence: In Rohrer and Taylor's 2007 study, students who solved maths problems in mixed order made more errors during practice but scored roughly twice as high on a test a week later than students who practised in blocks. Mixing also trains the question "which method do I use here?", which is exactly what exams ask.
+
+Apply: In a problem-solving block, 30 mixed problems from three topics instead of 10 per topic. It feels uncomfortable; the difficulty is what works.
+
+## 4. The Feynman technique: explain it to a 12-year-old
+
+What: Write or say the topic in plain language, in your own words, as if to someone who knows nothing. Where you get stuck is what you do not know.
+
+Evidence: "Self-explanation" earns moderate utility in Dunlosky's review; its real power is combining active recall with gap detection. What you cannot explain, you have not learned.
+
+In 25 minutes: Study a topic for 15, then write "I'm explaining this to a friend" on a blank page for 10. Mark the sentences where you stall; they are the topic of your next session.
+
+## 5. Pomodoro: the container
+
+What: 25 minutes on one task, 5 minutes off. The full guide is here.
+
+Why it is on the list: Pomodoro is not a learning technique; it is an attention technique. But the four methods above demand attention, and Pomodoro slices attention into pieces. Put active recall in the last 3 minutes of every session and the session itself becomes a learning tool. In Pomi, linking each session to a task lets you see how many sessions each topic got, which makes spacing easier to plan.
+
+## 6. Sleep: free consolidation
+
+What: 7 to 9 hours a night, including the night before the exam.
+
+Evidence: Most of the transfer of the day's learning into long-term memory happens during sleep, particularly in deep sleep and REM. The studies collected by Walker show that a sleepless night also cuts the next day's capacity to learn new material. Studying until 3 a.m. loses twice: what you studied does not consolidate, and you cannot learn tomorrow.
+
+Apply: Finish your last session an hour before bed and make it a review session; what comes right before sleep consolidates best.
+
+## 7. Studying together, if you do it right
+
+What: Same time, same room, everyone on their own work. Not talking.
+
+Evidence: Social facilitation research has shown since the 1960s that the presence of others improves performance on well-practised tasks. Review and problem sets are exactly that. Details in the study with me article.
+
+Apply: Three evenings a week, fixed time, 4 pomodoros. If you cannot meet in person, a room in Pomi: everyone joins on their own timer and talk waits for the break.
+
+## Fitting it all into one week
+
+- Every session: last 3 minutes recalling with the book closed (active recall).
+
+- Every problem block: topics mixed (interleaving).
+
+- Every day: one review session before bed (spacing + sleep).
+
+- Every week: Friday morning review of the week and one topic explained on a blank page (Feynman).
+
+- Three evenings a week: a room with friends (studying together).
+
+How many sessions a day is realistic for all this is covered in how many pomodoros a day.
+
+## Frequently asked questions
+
+**What is the most effective study technique?**
+The technique with the strongest research support is self-testing, also called active recall: retrieving information from memory with the book closed instead of re-reading. Spaced repetition comes second. Used together they produce the highest retention.
+
+**Why don't re-reading and highlighting work?**
+Both are passive and create a feeling of familiarity; the more familiar the text feels, the more you think you know it, but you cannot retrieve it in an exam. In experiments, students who read four times remembered less than those who read once and recalled three times.
+
+**How do I do spaced repetition?**
+Spread a topic across several days instead of one long sitting, then review briefly after 3 days, 1 week and 3 weeks. For an exam a month away, about a week between reviews works well. Flashcard apps set the gaps automatically.
+
+**What is the Feynman technique?**
+Writing or saying a topic in plain words as if explaining it to someone who knows nothing. Where you get stuck is what you have not learned, and the next session focuses there. It combines active recall with finding gaps.
+
+**Does the Pomodoro Technique improve learning?**
+On its own it is an attention technique, not a learning technique. But if you spend the last 3 minutes of every 25-minute session recalling with the book closed, the session becomes an active recall tool. In Pomi, linking sessions to tasks shows how much time each topic received.
+
+
+## Sources
+
+- Dunlosky, J., Rawson, K. A., Marsh, E. J., Nathan, M. J. & Willingham, D. T. (2013). Improving students' learning with effective learning techniques. Psychological Science in the Public Interest, 14(1).
+- Roediger, H. L. & Karpicke, J. D. (2006). Test-enhanced learning: Taking memory tests improves long-term retention. Psychological Science, 17(3).
+- Cepeda, N. J., Pashler, H., Vul, E., Wixted, J. T. & Rohrer, D. (2006). Distributed practice in verbal recall tasks: A review and quantitative synthesis. Psychological Bulletin, 132(3).
+- Rohrer, D. & Taylor, K. (2007). The shuffling of mathematics problems improves learning. Instructional Science, 35(6).
+- Walker, M. (2017). Why We Sleep. Scribner.
+- Zajonc, R. B. (1965). Social facilitation. Science, 149(3681).
+
+---
+
+# 6 Free Forest App Alternatives for Focus (2026)
+
+URL: https://yakupselimucar.github.io/pomi-legal/blog/forest-app-alternatives.html
+Language: en
+Published: 2026-09-13
+Section: Comparison
+
+Free alternatives to the Forest app: Pomi, Flora, Focus To-Do, Study Bunny, Focus Plant and Pomofocus compared on tree-planting mechanics, phone locking, studying together and ads.
+
+**Short answer:** Short answer: Forest's closest free equivalent is Flora: the same tree mechanic, shared sessions with a friend. If you want a growing garden instead of trees, rooms with friends and a city competition, Pomi. If a task list matters most, Focus To-Do. On a computer, Pomofocus. None of them charge up front on iOS.
+
+## Giving Forest its due first
+
+Forest is the app that grew the focus-app category. The mechanic is clever: start a session and you plant a sapling; leave the app during the session and it withers. Trees accumulate into a forest, and virtual coins can fund real tree planting. A browser extension covers the computer.
+
+People look for alternatives for three reasons: it is paid on iOS (one-time), the free Android version has ads, and the mechanic is one-dimensional; the fear of killing a tree works for the first months, then you get used to it. Group planting, where one person leaving kills everyone's tree, also creates friction in some friend groups.
+
+## Comparison
+
+| App | Mechanic | Free tier | Ads | Phone lock | Study together | Platforms
+
+| Forest (reference) | Plant a tree; leave and it dies | Android yes, iOS no | In Android free tier | Yes (app permission) | Group tree; one break kills it for all | iOS, Android, browser
+
+| Pomi | A plant per session in a garden; conquest map and league | Yes, full timer | None | No (encourages distance) | Rooms, everyone on their own timer | iOS, Android
+
+| Flora | Plant a tree; leave and it dies | Yes | None | Yes | Shared tree; one break kills it for all | iOS, Android
+
+| Focus To-Do | Timer + task manager | Yes | None | Partial | No | iOS, Android, desktop, web
+
+| Study Bunny | Feed a bunny, earn coins | Yes | Yes | No | No | iOS, Android
+
+| Focus Plant | Collect raindrops, grow plants | Yes | Yes | Yes | Limited | iOS, Android
+
+| Pomofocus | Plain web timer | Yes | Yes | No | No | Web
+
+Based on store listings as of September 2026. Prices and features change; check the store before downloading.
+
+## The apps, one by one
+
+### 1. Flora Closest substitute
+
+Forest's mechanic, free and without ads. Plant a sapling, leave and it dies; start a shared session with a friend. There is also an optional mode where you pledge money to charity if you break the session. If all you want from Forest is the tree and the lock, the search ends here.
+
+Missing
+Shallow statistics; no task management; in group sessions one person's break kills the tree for everyone.
+
+### 2. Pomi Study together No ads
+
+A garden instead of trees: every completed session adds a new plant to your pixel garden and the collection grows over time. Two core differences from Forest. First, in rooms everyone runs their own timer; when your friend takes a break your session is untouched, so there is no friction. Second, the conquest map: your focus minutes score points for your city, and 81 cities compete for regions in 7-day seasons. Tasks, mixable focus sounds and a weekly league round it out.
+
+Best for
+Students who study with friends; people motivated more by "let my garden grow" than by "don't let my tree die"
+
+Missing
+Does not lock the phone (deliberately); no web or desktop version.
+
+Get it
+App Store · Google Play
+
+### 3. Focus To-Do Task-focused
+
+No gamification; instead a full task manager and sync across all devices. If you used Forest "to keep track of myself" and never cared about the trees, this is a better tool. The free tier is ad-free and generous.
+
+Missing
+Busy interface; no motivation layer.
+
+### 4. Study Bunny Character
+
+A bunny you feed by studying, coins and a shop. Popular with high-school students. Cute and free, but ad-heavy and dated.
+
+Missing
+Ads; no social features.
+
+### 5. Focus Plant Tree mechanic
+
+Visually the closest alternative to Forest: focusing collects raindrops, raindrops grow plants. Has a phone lock. The free tier shows ads.
+
+Missing
+Ads; limited co-working.
+
+### 6. Pomofocus Web
+
+No install, no account, a plain timer in the browser. If you work at a computer and want a replacement for Forest's browser extension, it does the job.
+
+Missing
+No mobile app; the timer stops when the tab closes; ads.
+
+## Do you actually need a phone lock?
+
+Forest's appeal is that it punishes you for leaving the app. That helps where you cannot put the phone in another room (dorm, bus, studio flat). But research shows that a phone lying on the desk lowers attention even when it is locked; a lock does not replace distance. That is why Pomi chose "start the timer, move the phone away" over locking. Details in the phone article.
+
+## Which one?
+
+- I want Forest for free: Flora.
+
+- I study with friends and don't want friction: Pomi.
+
+- My task list matters: Focus To-Do.
+
+- I'm at a computer: Pomofocus.
+
+- I want a cute character: Study Bunny, or Pomi's plant collection.
+
+For a broader comparison see the best Pomodoro apps in 2026. Whether gamification works at all is discussed in a separate article.
+
+## Frequently asked questions
+
+**Is there a free alternative to Forest?**
+Yes. Flora offers the same tree-planting and phone-locking mechanic free and without ads. Pomi is also free and ad-free; instead of trees it adds a plant to your garden per session and adds rooms with friends and a city competition.
+
+**Why is Forest paid on iOS?**
+The developer chose a one-time purchase model on iOS, with an ad-supported free version on Android. If you do not want to pay up front, Flora and Pomi offer free starts.
+
+**What is the difference between Flora and Forest?**
+The mechanic is nearly identical: plant a sapling, leave and it dies, shared sessions with a friend. Flora is free and ad-free; Forest's browser extension and real-tree programme are not in Flora.
+
+**Does a focus app that doesn't lock the phone work?**
+Yes, because research shows a phone in view lowers attention even when locked. Starting the timer and putting the phone in another room is more effective than a lock. Pomi is designed around that approach.
+
+**What does Forest have that Pomi doesn't?**
+A phone lock, a browser extension and a real-tree planting programme. What Pomi has that Forest doesn't: rooms where everyone runs their own timer, a conquest map where 81 cities compete, a weekly league and mixable focus sounds.
+
+
+---
+
+# How to Use Pomi: A Beginner's Guide to the Garden, Rooms, Conquest Map and League
+
+URL: https://yakupselimucar.github.io/pomi-legal/blog/how-to-use-pomi.html
+Language: en
+Published: 2026-09-13
+Section: Pomi
+
+Pomi user guide: starting your first Pomodoro session, adding tasks, the pixel garden and plant collection, creating a room with an invite code, the conquest map, the weekly league, focus sounds, timer settings and Pomi Pro.
+
+**Short answer:** Short answer: Pomi's flow is three steps: pick a task, start the timer, focus for 25 minutes. When the session ends a plant is added to your garden and your focus minutes score points for your city on the conquest map. To work with friends, open a room and share the 6-character code; everyone in the room runs their own timer. The timer is free, ad-free and works offline.
+
+## Your first session: three steps
+
+- Add a task. In the Tasks tab, write something concrete: "derivative problem set 40-48". Every session is linked to a task, so at the end of the day you can see how many sessions each piece of work received.
+
+- Start the timer. The default cycle is 25 minutes of work and a 5-minute break. While the retro pixel timer runs, do one thing. You can turn the phone face down and move it away; the timer keeps counting with the screen off and the app in the background.
+
+- Complete the session. When time is up, a new plant joins your garden and your focus minutes are added to your city's score. The break timer starts automatically.
+
+If you abandon a session, no plant is added. No penalty, no withered tree; the session simply does not count. For the technique itself, see the Pomodoro guide.
+
+## The pixel garden and collection
+
+The garden is a visual record of your focus history. Every completed session is a plant; plants come in species, growth stages and rarities. New species unlock as you focus, and the collection screen shows which ones you have found and which are missing. Reading last month's work at a glance from the garden tends to motivate more than the raw number does.
+
+## Rooms: with friends, each on your own timer
+
+When you create a room from the Rooms tab, the app generates a 6-character invite code. Send it to your friends; they enter it in the Rooms tab to join. In the room you see everyone's name and timer status.
+
+An important design decision: there is no shared timer. Everyone starts and ends their own session whenever they like. You can be mid-session while a friend takes a break; your session is unaffected. There is no camera, microphone or chat either; the room exists to create the feeling of "we are quietly working together". Why that works is explained in the study with me article.
+
+For a good room routine: fix a time ("every evening at 8"), have everyone write their task in advance, and save talking for the break.
+
+## The conquest map
+
+The feature that sets Pomi apart from other timers. You pick your city in your profile; the minutes of every session you complete are added to your city's score. As the score grows, regions on the map turn your city's colour. Regions change hands through the day: you take one today, a rival city takes it back tomorrow. Seasons last 7 days; at the end of a season the city holding the most regions wins. Turkey's 81 cities compete. It is the mechanism that makes you feel part of a team even when you study alone.
+
+## The weekly league
+
+The league is an individual ranking: you compete with other users in the same league on weekly focus time, and at the end of the week you move up or down depending on your position. You also see where your city stands overall. The league's purpose is to judge your week rather than your day; one bad day does not ruin the week.
+
+## Focus sounds
+
+You can turn on rain, café, forest and other sounds during a session, adjust each one's level separately and mix them: light rain over a distant café murmur, say. The sounds stop with the timer. Which sound suits which work is covered in the background sounds article.
+
+## Settings: durations and theme
+
+| Setting | What it does | Suggestion
+
+| Work duration | Session length | Start with 25; 40-50 for problem sets
+
+| Short break | Break between sessions | 5; 8-10 for long sessions
+
+| Long break | Break after four sessions | 15-30
+
+| Dark mode | Dark theme for night use | For evening sessions
+
+| City | Where your conquest map points go | Pick once; be in the same city as your friends
+
+## Statistics
+
+A weekly focus-hours chart, completed session count and a breakdown by task. "Did I really give time to my weak subject this week?" becomes a number rather than a guess. For realistic weekly targets see how many pomodoros a day.
+
+## Free and Pomi Pro
+
+The timer, garden, tasks, rooms and conquest map are in the free version, and there are no ads. Pomi Pro is an optional subscription with extra features and personalisation. You manage it through your store account and can cancel any time. Restoring purchases and deleting your account are covered on the support page.
+
+## Offline and background
+
+The timer and garden work without internet; rooms, the conquest map and the league need a connection. Sessions completed offline are credited to your city when the connection returns. The timer keeps counting when the app is closed; allow notifications and you will be told when a session or break ends.
+
+## 5 tips for the first week
+
+- For the first three days, just the timer and tasks; look at rooms and the map later.
+
+- Aim for 3 to 4 sessions a day and raise the count once a week.
+
+- Pick your city and invite one friend from the same city; the map makes sense from then on.
+
+- Open a room at a fixed time each evening; share the code once, the room persists.
+
+- Check the statistics on Sunday evening and write one target for next week.
+
+## Frequently asked questions
+
+**Is Pomi free?**
+Yes. The timer, garden, tasks, rooms and conquest map are free, with no ads. Pomi Pro is an optional subscription with extra features and can be cancelled at any time.
+
+**How do I create a room in Pomi?**
+Create a new room from the Rooms tab; the app gives you a 6-character invite code. Send it to your friends, who join by entering the code in their Rooms tab. Everyone in the room runs their own timer.
+
+**Does Pomi work offline?**
+The timer and garden work without internet. Rooms, the conquest map and the league need a connection; sessions completed offline are credited to your city when you reconnect.
+
+**What happens if I abandon a session?**
+No plant is added and the session does not count. There is no penalty or withered tree; you start the next session clean.
+
+**Can I change the work duration in Pomi?**
+Yes. Work, short-break and long-break durations are adjustable in settings; cycles like 15/3, 25/5 or 50/10 all work. A completed session adds a plant to the garden regardless of length.
+
+**Which devices is Pomi available on?**
+iPhone and iPad (iOS 15 or later) and Android. There is no web or desktop version at the moment.
+
+
+---
+
+# Does Gamification Actually Help You Focus? An Honest Look at Trees, Gardens and Leagues
+
+URL: https://yakupselimucar.github.io/pomi-legal/blog/does-gamification-help-you-focus.html
+Language: en
+Published: 2026-09-13
+Section: Basics
+
+Does gamification work in focus and productivity apps? Research findings, punishment vs reward mechanics, the streak trap, self-determination theory, team goals and the design decisions behind Pomi.
+
+**Short answer:** Short answer: Yes, with conditions. Research shows gamification raises engagement in the short term, while long-term effects depend on the mechanic and the person. What works: visible progress, meaningful feedback, team goals. What fails: fear of punishment, streaks that reset everything, and rewards unrelated to the work. If gamification cannot make you like the work, it only makes starting easier; that is still worth a lot.
+
+## What the research says
+
+The most cited review in the field, by Hamari, Koivisto and Sarsa in 2014, examined 24 empirical studies. The conclusion: gamification mostly produces positive effects, but the effect depends strongly on context and user, and most studies were short. There is a "novelty effect" problem: a new mechanic works in the first weeks and fades once you are used to it.
+
+The deeper explanation comes from Deci and Ryan's self-determination theory. People need three things: competence (seeing progress), autonomy (it being my choice) and relatedness (connection with others). Gamification that feeds those three supports intrinsic motivation; gamification that pushes from outside (punishment, pressure, artificial competition) can weaken it over time.
+
+## Mechanic by mechanic: what works, what doesn't
+
+| Mechanic | Example | Short term | Long term | Risk
+
+| Punishment / loss | Tree dies if you leave the app | Strong | Fades | Anxiety; quitting the app
+
+| Growing collection | A plant per session, garden grows | Moderate | Good | Saturation (the 100th plant)
+
+| Streak | "37 days in a row" | Strong | Splits people | Missing one day and quitting
+
+| Points and levels | XP, ranks | Moderate | Weak | Unrelated to the work; loses meaning
+
+| Team goal | Winning regions for your city | Moderate | Good | Disengagement if my contribution is invisible
+
+| Social presence | Working in a room with friends | Good | Good | Comparison pressure
+
+| Informative feedback | Weekly focus chart | Weak | Good | Almost none
+
+### Why punishment works for months and then fades
+
+Loss aversion is a powerful drive; the dying tree uses exactly that. But punishment reduces the reason for doing the work to "don't let the tree die". Self-determination theory predicts this crowds out intrinsic motivation, and in practice that is what happens: the user either stops caring about the punishment or deletes the app. Punishment can be a first push that makes starting easier; it cannot be what sustains you.
+
+### The streak trap
+
+Streaks turn one missed day into a catastrophe. Habit research finds that missing a single day does no measurable harm to habit formation (Lally and colleagues, 2010), yet the streak mechanic makes it feel like the opposite, and "it's broken anyway" makes quitting easy. If streaks are used at all, they should be weekly and forgive one missed day.
+
+### Why team goals are durable
+
+They feed the need for relatedness and tie your effort to something larger than yourself. "If I don't work today my city loses a region" lasts longer than an individual score. The condition: the contribution must be visible. A user who cannot see their contribution drifts away from the team.
+
+## What we built in Pomi, what we didn't, and why
+
+Building a focus app, we looked at this research and made the following calls. You may disagree, but the reasoning should be transparent:
+
+- No punishment. An abandoned session adds no plant, but nothing withers, dies or resets. We did not want motivation built on anxiety.
+
+- A growing collection. The garden has species, stages and rarity layers to delay saturation; the 100th plant can be a new species.
+
+- No daily streak; a weekly league instead. The league judges the week; one bad day does not ruin it.
+
+- A team goal: the conquest map. Your focus minutes score for your city and 81 cities compete in 7-day seasons. The contribution is visible: you see your city's colour on the map and how many people are focusing right now.
+
+- Social presence, not social pressure. In rooms everyone runs their own timer; nobody can break anyone else's session, and nobody gets blamed for killing a tree.
+
+- The boring but effective part too. The weekly statistics chart is not a game at all, and over the long run it is the most useful feedback in the app.
+
+## Who it works for, and who it doesn't
+
+Gamification helps most for people who struggle to start and people who quit because they cannot see progress. For someone who already enjoys the work and does it regularly, it is unnecessary and can even distract; that person is happier with a plain timer. If you do not know which you are, try two weeks with a gamified app and two weeks with a plain timer, then compare the weekly totals. Let the number decide.
+
+## Summary
+
+Gamification is not magic. Done well, it makes starting easier, makes progress visible and gives someone working alone a sense of team. Done badly, it produces anxiety and gets deleted within weeks. The difference lies in how closely the mechanic is tied to the work itself and to basic human needs.
+
+## Frequently asked questions
+
+**Does gamification really improve productivity?**
+Research shows it increases engagement in the short term, while long-term effects depend on the mechanic and the person. Visible progress, meaningful feedback and team goals hold up; punishment and artificial points fade within weeks.
+
+**Why does the dying tree in Forest work?**
+It uses loss aversion and is strong for the first months. But punishment-based motivation weakens over time; users either stop caring about the penalty or quit the app. It is a good starter and a weak sustainer.
+
+**Are streaks harmful?**
+It depends on the person. For some they are a strong push, but because they turn one missed day into a catastrophe they also make quitting easy. Research shows missing one day does not harm habit formation; if streaks are used they should be weekly and forgiving.
+
+**Why doesn't Pomi use punishment?**
+Because research suggests anxiety-based motivation crowds out intrinsic motivation over time. An abandoned session adds no plant, but nothing withers or resets; progress is made visible through the garden, the weekly league and the conquest map instead.
+
+**Who is gamification not suitable for?**
+People who already enjoy the work and do it regularly; for them it is unnecessary and can distract. Such a person does better with a plain timer. If unsure, compare two weeks with a gamified app against two weeks with a plain timer using weekly totals.
+
+
+## Sources
+
+- Hamari, J., Koivisto, J. & Sarsa, H. (2014). Does gamification work? A literature review of empirical studies on gamification. Proceedings of the 47th Hawaii International Conference on System Sciences.
+- Deci, E. L. & Ryan, R. M. (2000). The "what" and "why" of goal pursuits: Human needs and the self-determination of behavior. Psychological Inquiry, 11(4).
+- Deci, E. L., Koestner, R. & Ryan, R. M. (1999). A meta-analytic review of experiments examining the effects of extrinsic rewards on intrinsic motivation. Psychological Bulletin, 125(6).
+- Lally, P., van Jaarsveld, C. H. M., Potts, H. W. W. & Wardle, J. (2010). How are habits formed: Modelling habit formation in the real world. European Journal of Social Psychology, 40(6).
