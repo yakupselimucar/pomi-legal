@@ -2,6 +2,9 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8" />
+  <!-- Sayfa e-postadaki tek kullanımlık giriş kodunu taşır: betik/bağlantı
+       kaynakları yalnız gerekenlerle sınırlı (kod veya şifre başka yere gidemez). -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src data:; connect-src https://ndkewpwpojjhqbeqtzth.supabase.co; base-uri 'none'; form-action 'none'" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title data-i18n="title">Pomi · Yeni şifre belirle</title>
   <meta name="theme-color" content="#FDFAF2" />
@@ -138,6 +141,8 @@
     <div data-view="form">
       <h1 data-i18n="formHeading">Yeni şifre belirle</h1>
       <form id="form" novalidate>
+        <!-- Şifre yöneticisi yeni şifreyi doğru hesaba kaydetsin diye (gizli). -->
+        <input id="username" type="email" autocomplete="username" hidden readonly />
         <label><span data-i18n="password">Yeni şifre</span>
           <input id="password" type="password" autocomplete="new-password" minlength="6" required />
         </label>
@@ -151,7 +156,7 @@
 
     <div data-view="done">
       <h1 data-i18n="doneHeading">Şifren güncellendi 🎉</h1>
-      <p class="lede" data-i18n="doneLede">Pomi'de e-postan ve yeni şifrenle giriş yapabilirsin. Bu sayfayı kapatabilirsin.</p>
+      <p class="lede" data-i18n="doneLede">Güvenliğin için tüm cihazlarda oturumun kapatıldı. Pomi'de e-postan ve yeni şifrenle tekrar giriş yapabilirsin; ilerlemen korunur.</p>
       <div class="actions">
         <a class="btn btn-primary" id="open" href="io.pomi.app://login-callback" data-i18n="open">Pomi'yi aç</a>
       </div>
@@ -168,7 +173,8 @@
     </div>
   </main>
 
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.116.0/dist/umd/supabase.js"></script>
+<!-- integrity: CDN dosyası değiştirilirse tarayıcı betiği çalıştırmaz. -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.116.0/dist/umd/supabase.js" integrity="sha384-iLddHTLokph6Omwoyid4XKxHaWa6w41BnoEj0q5oOrzmYPpHIKt1wyjReA7s//pP" crossorigin="anonymous"></script>
 <script>
   (function () {
     // Publishable anahtar uygulamadakiyle aynı; istemcide taşınması güvenlidir.
@@ -192,7 +198,7 @@
         weak: 'Bu şifre çok zayıf, daha güçlü bir şifre dene.',
         network: 'Bir sorun oluştu. İnternet bağlantını kontrol edip tekrar dene.',
         doneHeading: 'Şifren güncellendi 🎉',
-        doneLede: "Pomi'de e-postan ve yeni şifrenle giriş yapabilirsin. Bu sayfayı kapatabilirsin.",
+        doneLede: "Güvenliğin için tüm cihazlarda oturumun kapatıldı. Pomi'de e-postan ve yeni şifrenle tekrar giriş yapabilirsin; ilerlemen korunur.",
         open: "Pomi'yi aç",
         expiredHeading: 'Bağlantının süresi dolmuş',
         expiredLede: 'Bu bağlantı artık geçerli değil ya da daha önce kullanılmış. Pomi\'nin giriş ekranında "Şifremi unuttum" ile yeni bir bağlantı isteyebilirsin.'
@@ -213,7 +219,7 @@
         weak: 'This password is too weak, try a stronger one.',
         network: 'Something went wrong. Check your connection and try again.',
         doneHeading: 'Password updated 🎉',
-        doneLede: 'You can now sign in to Pomi with your email and new password. You can close this page.',
+        doneLede: 'For your security, you've been signed out on all devices. Sign in to Pomi again with your email and new password; your progress is kept.',
         open: 'Open Pomi',
         expiredHeading: 'This link has expired',
         expiredLede: 'This link is no longer valid or has already been used. Use "Forgot password" on the Pomi sign-in screen to get a new one.'
@@ -223,6 +229,11 @@
 
     var tokenHash = new URLSearchParams(location.search).get('token_hash') || '';
     // Token adres çubuğunda/geçmişte kalmasın; değişkende tutuluyor.
+    // Sayfa yenilenirse kod kaybolmasın: yalnız bu sekmenin deposunda tutulur.
+    try {
+      if (tokenHash) sessionStorage.setItem('pomi-token', tokenHash);
+      else tokenHash = sessionStorage.getItem('pomi-token') || '';
+    } catch (e) { /* özel mod */ }
     if (history.replaceState) history.replaceState(null, '', location.pathname);
 
     function setState(s) { document.body.setAttribute('data-state', s); }
@@ -257,6 +268,8 @@
           setState('expired');
           return;
         }
+        var user = r.data && r.data.user;
+        document.getElementById('username').value = (user && user.email) || '';
         setState('form');
         document.getElementById('password').focus();
       });
@@ -285,9 +298,15 @@
               ? (setState('expired'), '') : d.network;
           return;
         }
-        // Yalnız bu tarayıcı oturumu kapanır; uygulamadaki oturumlara dokunulmaz.
-        client.auth.signOut({ scope: 'local' });
-        setState('done');
+        // Şifre değişti: hesabın TÜM oturumları kapatılır (diğer telefonlar
+        // dahil) — hesabı ele geçirmiş biri varsa dışarıda kalır. Uygulamada
+        // oturum yalnız düşer; yerel ilerleme silinmez, aynı hesapla girince
+        // senkron kaldığı yerden sürer. Çıkış başarısız olsa da şifre değişmiştir.
+        busy(saveBtn, true, 'save');
+        Promise.resolve(client.auth.signOut({ scope: 'global' })).catch(function () {}).then(function () {
+          busy(saveBtn, false, 'save');
+          setState('done');
+        });
       });
     });
 
