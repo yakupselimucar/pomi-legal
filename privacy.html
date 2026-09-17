@@ -127,6 +127,7 @@
     }
     p, li { font-size: 0.97rem; color: var(--ink); }
     p + p { margin-top: 0.6rem; }
+    ul + p { margin-top: 0.6rem; }
     ul { padding-left: 0; list-style: none; margin-top: 0.6rem; }
     li {
       position: relative;
@@ -169,17 +170,21 @@
         <div class="name">POMI</div>
       </div>
       <h1 data-i18n-key="privacy-heading">Gizlilik Politikası</h1>
-      <div class="updated" data-i18n-key="privacy-updated">Son güncelleme · 2 Eylül 2026</div>
+      <div class="updated" data-i18n-key="privacy-updated">Son güncelleme · 15 Eylül 2026</div>
     </header>
 
     <section>
       <h2><span class="num">1</span><span data-i18n-key="privacy-s1-title">Toplanan Bilgiler</span></h2>
       <p data-i18n-key="privacy-s1-intro">Pomi aşağıdaki bilgileri toplayabilir:</p>
       <ul>
-        <li data-i18n-key="privacy-s1-li1">Hesap oluşturma için e-posta adresi (isteğe bağlı)</li>
+        <li data-i18n-key="privacy-s1-li1">Hesap oluşturma ve giriş için e-posta adresi</li>
         <li data-i18n-key="privacy-s1-li2">Apple veya Google ile oturum açma bilgileri (OAuth) — Google ile giriş yapıldığında yalnızca <strong>ad, e-posta adresi ve profil fotoğrafı</strong> talep edilir; başka hiçbir Google verisine erişilmez</li>
-        <li data-i18n-key="privacy-s1-li3">Uygulama içi ilerleme verileri (pomodoro sayısı, bahçe durumu)</li>
-        <li data-i18n-key="privacy-s1-li4">Satın alım doğrulama verileri (App Store aracılığıyla)</li>
+        <li data-i18n-key="privacy-s1-li3">Uygulama içi ilerleme verileri (odak seansları ve süreleri, bahçe durumu, uygulama içi coin)</li>
+        <li data-i18n-key="privacy-s1-li4">Kullanıcı adınız ve seçtiğiniz il — sıralamalarda, odalarda ve Bölge Savaşları'nda diğer kullanıcılara görünür</li>
+        <li data-i18n-key="privacy-s1-li5">Oda sohbeti içerikleri: gönderdiğiniz mesajlar, yanıtlar ve tepkiler; yaptığınız şikayetler ve engellediğiniz kullanıcılar</li>
+        <li data-i18n-key="privacy-s1-li6">Topluluk güvenliği kayıtları: topluluk kurallarını kabul tarihiniz, hesabınız hakkında yapılan şikayetler, varsa yasak süresi ve gerekçesi, odadan çıkarılma kaydı (ayrıntılar 6. bölümde)</li>
+        <li data-i18n-key="privacy-s1-li7">Satın alım doğrulama verileri (App Store veya Google Play aracılığıyla)</li>
+        <li data-i18n-key="privacy-s1-li8">Kullanım ve teknik veriler: uygulama içi olaylar (ör. ekran açılışı, seans tamamlama), cihaz modeli, işletim sistemi ve uygulama sürümü, çökme raporları, bildirim jetonu ve Android'de reklam kimliği (<strong>yalnızca analiz amacıyla</strong>; uygulamada reklam gösterilmez)</li>
       </ul>
     </section>
 
@@ -189,18 +194,24 @@
       <ul>
         <li data-i18n-key="privacy-s2-li1">Hesabınızı oluşturmak ve yönetmek</li>
         <li data-i18n-key="privacy-s2-li2">İlerlemenizi cihazlar arasında senkronize etmek</li>
-        <li data-i18n-key="privacy-s2-li3">Pro aboneliğinizi doğrulamak</li>
-        <li data-i18n-key="privacy-s2-li4">Uygulama performansını iyileştirmek</li>
+        <li data-i18n-key="privacy-s2-li3">Grup odalarını, sıralamaları, oda sohbetini ve bildirimleri çalıştırmak</li>
+        <li data-i18n-key="privacy-s2-li4">Topluluğu korumak: uygunsuz içeriği filtrelemek, şikayetleri incelemek ve kuralları ihlal eden hesapları kısıtlamak</li>
+        <li data-i18n-key="privacy-s2-li5">Pro aboneliğinizi doğrulamak</li>
+        <li data-i18n-key="privacy-s2-li6">Uygulama performansını iyileştirmek ve hataları gidermek</li>
       </ul>
     </section>
 
     <section>
       <h2><span class="num">3</span><span data-i18n-key="privacy-s3-title">Veri Paylaşımı</span></h2>
-      <p data-i18n-key="privacy-s3-intro">Kişisel verileriniz üçüncü taraflarla <strong>satılmaz veya kiralanmaz</strong>. Yalnızca şu hizmet sağlayıcılarla paylaşılır:</p>
+      <p data-i18n-key="privacy-s3-intro">Kişisel verileriniz üçüncü taraflarla <strong>satılmaz veya kiralanmaz</strong>. Yalnızca şu hizmet sağlayıcılarla, hizmetin gerektirdiği ölçüde paylaşılır:</p>
       <ul>
-        <li data-i18n-key="privacy-s3-li1"><strong>Supabase</strong> — güvenli veri depolama ve kimlik doğrulama</li>
-        <li data-i18n-key="privacy-s3-li2"><strong>Apple App Store</strong> — satın alım işlemleri</li>
+        <li data-i18n-key="privacy-s3-li1"><strong>Supabase</strong> — güvenli veri depolama, kimlik doğrulama ve oda sohbeti</li>
+        <li data-i18n-key="privacy-s3-li2"><strong>Google Firebase</strong> — kullanım istatistikleri (Analytics), çökme raporları (Crashlytics) ve bildirim iletimi (Cloud Messaging)</li>
+        <li data-i18n-key="privacy-s3-li3"><strong>Adapty</strong> — abonelik durumunun doğrulanması</li>
+        <li data-i18n-key="privacy-s3-li4"><strong>Apple App Store ve Google Play</strong> — satın alım işlemleri</li>
+        <li data-i18n-key="privacy-s3-li5"><strong>Telegram</strong> — yalnızca Pomi yöneticisine "yeni şikayet var" uyarısı; bu uyarı mesaj içeriği, kullanıcı adı veya kimlik bilgisi <strong>içermez</strong></li>
       </ul>
+      <p data-i18n-key="privacy-s3-outro">Kullanıcı adınız, odak istatistikleriniz ve oda sohbetindeki mesajlarınız, özelliğin doğası gereği ilgili diğer kullanıcılara görünür. Hizmet sağlayıcıların sunucuları yurt dışında bulunabilir; aktarım şifreli bağlantılarla yapılır. Hukuki bir yükümlülük olduğunda veriler yetkili makamlarla paylaşılabilir.</p>
     </section>
 
     <section>
@@ -221,23 +232,37 @@
     </section>
 
     <section>
-      <h2><span class="num">6</span><span data-i18n-key="privacy-s6-title">Veri Saklama Süresi</span></h2>
-      <p data-i18n-key="privacy-s6-content">Verileriniz hesabınız aktif olduğu sürece saklanır. Hesabınızı sildiğinizde tüm kişisel verileriniz <strong>30 gün içinde</strong> kalıcı olarak silinir. Silme talepleriniz de aynı sürede işleme alınır.</p>
+      <h2><span class="num">6</span><span data-i18n-key="privacy-s6-title">Oda Sohbeti ve Topluluk Güvenliği</span></h2>
+      <p data-i18n-key="privacy-s6-intro">Oda sohbeti yalnızca katıldığınız odanın üyelerine açıktır. Topluluğu korumak için verileriniz şöyle işlenir:</p>
+      <ul>
+        <li data-i18n-key="privacy-s6-li1">Mesajlarınız, tepkileriniz ve kullanıcı adınız yalnızca o odanın üyelerine görünür; odadan ayrılan üye sohbet geçmişini de göremez.</li>
+        <li data-i18n-key="privacy-s6-li2">Mesajlar gönderilmeden önce sunucuda otomatik bir kelime filtresinden geçer; uygunsuz ifade içeren mesaj gönderilmez. Mesaj içerikleri yapay zekâ ile analiz edilmez ve reklam amacıyla kullanılmaz.</li>
+        <li data-i18n-key="privacy-s6-li3">Bir mesajı şikayet ettiğinizde, şikayet edilen mesajın bir kopyası şikayetle birlikte saklanır ve <strong>Pomi yöneticileri</strong> tarafından incelenir. Yönetici doğru karar verebilmek için mesajın öncesindeki ve sonrasındaki sohbeti de görebilir. Şikayet edenin kimliği şikayet edilen kişiyle paylaşılmaz; oda kurucuları şikayetleri görmez.</li>
+        <li data-i18n-key="privacy-s6-li4">Topluluk kurallarını kabul ettiğiniz tarih, engellediğiniz kullanıcılar, hesabınız hakkında verilen yasak kararları (süre ve gerekçe) ve oda kurucusunun sizi odadan çıkarması kaydedilir. Yasak gerekçesi uygulamada size gösterilir.</li>
+        <li data-i18n-key="privacy-s6-li5">Saklama süreleri: sohbet mesajları ve tepkiler <strong>30 gün</strong>, şikayet kayıtları <strong>90 gün</strong>, odadan çıkarma kayıtları <strong>2 gün</strong>, yönetici işlem kayıtları <strong>1 yıl</strong>. Yasak kaydı, yasak sürdüğü ve hesabınız var olduğu sürece tutulur.</li>
+        <li data-i18n-key="privacy-s6-li6">Hesabınızı sildiğinizde mesajlarınız, tepkileriniz ve topluluk kayıtlarınız silinir. Hakkınızda yapılmış şikayetlerdeki mesaj kopyaları, hesabınızla bağlantısı kaldırılarak 90 günlük süre dolana dek saklanabilir; bu, kötüye kullanımın incelenebilmesi için gereklidir.</li>
+        <li data-i18n-key="privacy-s6-li7">Yöneticiye gönderilen şikayet uyarıları (Telegram) mesaj içeriği, kullanıcı adı veya kimlik bilgisi içermez; inceleme yalnızca yetkili ve iki adımlı doğrulamayla korunan bir yönetim panelinden yapılır.</li>
+      </ul>
     </section>
 
     <section>
-      <h2><span class="num">7</span><span data-i18n-key="privacy-s7-title">Çocukların Gizliliği</span></h2>
-      <p data-i18n-key="privacy-s7-content">Pomi, 13 yaş altı kullanıcılardan bilerek kişisel veri toplamaz. Bu tür bir durum fark edilirse ilgili veriler derhal silinir.</p>
+      <h2><span class="num">7</span><span data-i18n-key="privacy-s7-title">Veri Saklama Süresi</span></h2>
+      <p data-i18n-key="privacy-s7-content">Verileriniz hesabınız aktif olduğu sürece saklanır. Hesabınızı sildiğinizde kişisel verileriniz <strong>30 gün içinde</strong> kalıcı olarak silinir; oda sohbeti ve topluluk güvenliği kayıtlarına ilişkin süreler 6. bölümde açıklanmıştır. Silme talepleriniz de aynı sürede işleme alınır.</p>
     </section>
 
     <section>
-      <h2><span class="num">8</span><span data-i18n-key="privacy-s8-title">Haklarınız</span></h2>
-      <p data-i18n-key="privacy-s8-content">Hesabınızı ve verilerinizi istediğiniz zaman uygulama ayarlarından silebilirsiniz. Silme işlemi 30 gün içinde tamamlanır. Ek talepler için aşağıdaki adresten iletişime geçebilirsiniz.</p>
+      <h2><span class="num">8</span><span data-i18n-key="privacy-s8-title">Çocukların Gizliliği</span></h2>
+      <p data-i18n-key="privacy-s8-content">Pomi 13 yaşından küçükler için tasarlanmamıştır ve 13 yaş altı kullanıcılardan bilerek kişisel veri toplamaz. Bu tür bir durum fark edilirse ilgili hesap ve veriler derhal silinir.</p>
     </section>
 
     <section>
-      <h2><span class="num">9</span><span data-i18n-key="privacy-s9-title">İletişim</span></h2>
-      <p data-i18n-key="privacy-s9-content">Sorularınız için: <a href="mailto:yakupselimucar@hotmail.com">yakupselimucar@hotmail.com</a></p>
+      <h2><span class="num">9</span><span data-i18n-key="privacy-s9-title">Haklarınız</span></h2>
+      <p data-i18n-key="privacy-s9-content">Hesabınızı ve verilerinizi istediğiniz zaman uygulama ayarlarından silebilirsiniz. Silme işlemi 30 gün içinde tamamlanır. Kişisel verilerinize erişme, düzeltilmesini veya silinmesini isteme ve işlenmesine itiraz etme haklarınızı (KVKK md. 11 ve ilgili mevzuat) kullanmak ya da bir yasak kararına itiraz etmek için aşağıdaki adresten iletişime geçebilirsiniz.</p>
+    </section>
+
+    <section>
+      <h2><span class="num">10</span><span data-i18n-key="privacy-s10-title">İletişim</span></h2>
+      <p data-i18n-key="privacy-s10-content">Sorularınız için: <a href="mailto:yakupselimucar@hotmail.com">yakupselimucar@hotmail.com</a></p>
     </section>
 
     <footer>
@@ -251,23 +276,33 @@
       tr: {
         'privacy-title': 'Gizlilik Politikası — Pomi',
         'privacy-heading': 'Gizlilik Politikası',
-        'privacy-updated': 'Son güncelleme · 2 Eylül 2026',
+        'privacy-updated': 'Son güncelleme · 15 Eylül 2026',
         'privacy-s1-title': 'Toplanan Bilgiler',
         'privacy-s1-intro': 'Pomi aşağıdaki bilgileri toplayabilir:',
-        'privacy-s1-li1': 'Hesap oluşturma için e-posta adresi (isteğe bağlı)',
+        'privacy-s1-li1': 'Hesap oluşturma ve giriş için e-posta adresi',
         'privacy-s1-li2': 'Apple veya Google ile oturum açma bilgileri (OAuth) — Google ile giriş yapıldığında yalnızca <strong>ad, e-posta adresi ve profil fotoğrafı</strong> talep edilir; başka hiçbir Google verisine erişilmez',
-        'privacy-s1-li3': 'Uygulama içi ilerleme verileri (pomodoro sayısı, bahçe durumu)',
-        'privacy-s1-li4': 'Satın alım doğrulama verileri (App Store aracılığıyla)',
+        'privacy-s1-li3': 'Uygulama içi ilerleme verileri (odak seansları ve süreleri, bahçe durumu, uygulama içi coin)',
+        'privacy-s1-li4': 'Kullanıcı adınız ve seçtiğiniz il — sıralamalarda, odalarda ve Bölge Savaşları\'nda diğer kullanıcılara görünür',
+        'privacy-s1-li5': 'Oda sohbeti içerikleri: gönderdiğiniz mesajlar, yanıtlar ve tepkiler; yaptığınız şikayetler ve engellediğiniz kullanıcılar',
+        'privacy-s1-li6': 'Topluluk güvenliği kayıtları: topluluk kurallarını kabul tarihiniz, hesabınız hakkında yapılan şikayetler, varsa yasak süresi ve gerekçesi, odadan çıkarılma kaydı (ayrıntılar 6. bölümde)',
+        'privacy-s1-li7': 'Satın alım doğrulama verileri (App Store veya Google Play aracılığıyla)',
+        'privacy-s1-li8': 'Kullanım ve teknik veriler: uygulama içi olaylar (ör. ekran açılışı, seans tamamlama), cihaz modeli, işletim sistemi ve uygulama sürümü, çökme raporları, bildirim jetonu ve Android\'de reklam kimliği (<strong>yalnızca analiz amacıyla</strong>; uygulamada reklam gösterilmez)',
         'privacy-s2-title': 'Bilgilerin Kullanımı',
         'privacy-s2-intro': 'Toplanan bilgiler yalnızca şu amaçlarla kullanılır:',
         'privacy-s2-li1': 'Hesabınızı oluşturmak ve yönetmek',
         'privacy-s2-li2': 'İlerlemenizi cihazlar arasında senkronize etmek',
-        'privacy-s2-li3': 'Pro aboneliğinizi doğrulamak',
-        'privacy-s2-li4': 'Uygulama performansını iyileştirmek',
+        'privacy-s2-li3': 'Grup odalarını, sıralamaları, oda sohbetini ve bildirimleri çalıştırmak',
+        'privacy-s2-li4': 'Topluluğu korumak: uygunsuz içeriği filtrelemek, şikayetleri incelemek ve kuralları ihlal eden hesapları kısıtlamak',
+        'privacy-s2-li5': 'Pro aboneliğinizi doğrulamak',
+        'privacy-s2-li6': 'Uygulama performansını iyileştirmek ve hataları gidermek',
         'privacy-s3-title': 'Veri Paylaşımı',
-        'privacy-s3-intro': 'Kişisel verileriniz üçüncü taraflarla <strong>satılmaz veya kiralanmaz</strong>. Yalnızca şu hizmet sağlayıcılarla paylaşılır:',
-        'privacy-s3-li1': '<strong>Supabase</strong> — güvenli veri depolama ve kimlik doğrulama',
-        'privacy-s3-li2': '<strong>Apple App Store</strong> — satın alım işlemleri',
+        'privacy-s3-intro': 'Kişisel verileriniz üçüncü taraflarla <strong>satılmaz veya kiralanmaz</strong>. Yalnızca şu hizmet sağlayıcılarla, hizmetin gerektirdiği ölçüde paylaşılır:',
+        'privacy-s3-li1': '<strong>Supabase</strong> — güvenli veri depolama, kimlik doğrulama ve oda sohbeti',
+        'privacy-s3-li2': '<strong>Google Firebase</strong> — kullanım istatistikleri (Analytics), çökme raporları (Crashlytics) ve bildirim iletimi (Cloud Messaging)',
+        'privacy-s3-li3': '<strong>Adapty</strong> — abonelik durumunun doğrulanması',
+        'privacy-s3-li4': '<strong>Apple App Store ve Google Play</strong> — satın alım işlemleri',
+        'privacy-s3-li5': '<strong>Telegram</strong> — yalnızca Pomi yöneticisine "yeni şikayet var" uyarısı; bu uyarı mesaj içeriği, kullanıcı adı veya kimlik bilgisi <strong>içermez</strong>',
+        'privacy-s3-outro': 'Kullanıcı adınız, odak istatistikleriniz ve oda sohbetindeki mesajlarınız, özelliğin doğası gereği ilgili diğer kullanıcılara görünür. Hizmet sağlayıcıların sunucuları yurt dışında bulunabilir; aktarım şifreli bağlantılarla yapılır. Hukuki bir yükümlülük olduğunda veriler yetkili makamlarla paylaşılabilir.',
         'privacy-s4-title': 'Veri Güvenliği',
         'privacy-s4-content': 'Tüm veriler şifrelenmiş bağlantılar (HTTPS/TLS) üzerinden iletilir ve güvenli sunucularda saklanır. Şifreleriniz hiçbir zaman düz metin olarak tutulmaz.',
         'privacy-s5-title': 'Sosyal Medya Paylaşımları',
@@ -277,37 +312,56 @@
         'privacy-s5-li3': 'Sosyal medyada Pomi hakkında herkese açık paylaştığınız içerikleri tanıtım amacıyla kullanabiliriz; bu konudaki kurallar ve lisans, Kullanım Şartları\'nın "Kullanıcı İçeriği ve Sosyal Medya Paylaşımları" bölümünde açıklanmıştır.',
         'privacy-s5-li4': 'Üçüncü taraf sosyal medya platformları kendi gizlilik politikalarına tabidir; bu platformlardaki veri işleme uygulamalarından Pomi sorumlu değildir.',
         'privacy-s5-li5': 'Pomi, tanıtım materyallerinde kullanacağı uygulama görsellerinde kullanıcı adı, e-posta adresi, oda/davet kodu gibi sizi tanımlayabilecek bilgileri <strong>bulanıklaştırır, kırpar veya örnek (demo) verilerle değiştirir</strong>. Bu nedenle bu kullanım kişisel veri işleme kapsamına girmez ve ayrıca onayınız gerekmez.',
-        'privacy-s6-title': 'Veri Saklama Süresi',
-        'privacy-s6-content': 'Verileriniz hesabınız aktif olduğu sürece saklanır. Hesabınızı sildiğinizde tüm kişisel verileriniz <strong>30 gün içinde</strong> kalıcı olarak silinir. Silme talepleriniz de aynı sürede işleme alınır.',
-        'privacy-s7-title': 'Çocukların Gizliliği',
-        'privacy-s7-content': 'Pomi, 13 yaş altı kullanıcılardan bilerek kişisel veri toplamaz. Bu tür bir durum fark edilirse ilgili veriler derhal silinir.',
-        'privacy-s8-title': 'Haklarınız',
-        'privacy-s8-content': 'Hesabınızı ve verilerinizi istediğiniz zaman uygulama ayarlarından silebilirsiniz. Silme işlemi 30 gün içinde tamamlanır. Ek talepler için aşağıdaki adresten iletişime geçebilirsiniz.',
-        'privacy-s9-title': 'İletişim',
-        'privacy-s9-content': 'Sorularınız için: <a href="mailto:yakupselimucar@hotmail.com">yakupselimucar@hotmail.com</a>',
+        'privacy-s6-title': 'Oda Sohbeti ve Topluluk Güvenliği',
+        'privacy-s6-intro': 'Oda sohbeti yalnızca katıldığınız odanın üyelerine açıktır. Topluluğu korumak için verileriniz şöyle işlenir:',
+        'privacy-s6-li1': 'Mesajlarınız, tepkileriniz ve kullanıcı adınız yalnızca o odanın üyelerine görünür; odadan ayrılan üye sohbet geçmişini de göremez.',
+        'privacy-s6-li2': 'Mesajlar gönderilmeden önce sunucuda otomatik bir kelime filtresinden geçer; uygunsuz ifade içeren mesaj gönderilmez. Mesaj içerikleri yapay zekâ ile analiz edilmez ve reklam amacıyla kullanılmaz.',
+        'privacy-s6-li3': 'Bir mesajı şikayet ettiğinizde, şikayet edilen mesajın bir kopyası şikayetle birlikte saklanır ve <strong>Pomi yöneticileri</strong> tarafından incelenir. Yönetici doğru karar verebilmek için mesajın öncesindeki ve sonrasındaki sohbeti de görebilir. Şikayet edenin kimliği şikayet edilen kişiyle paylaşılmaz; oda kurucuları şikayetleri görmez.',
+        'privacy-s6-li4': 'Topluluk kurallarını kabul ettiğiniz tarih, engellediğiniz kullanıcılar, hesabınız hakkında verilen yasak kararları (süre ve gerekçe) ve oda kurucusunun sizi odadan çıkarması kaydedilir. Yasak gerekçesi uygulamada size gösterilir.',
+        'privacy-s6-li5': 'Saklama süreleri: sohbet mesajları ve tepkiler <strong>30 gün</strong>, şikayet kayıtları <strong>90 gün</strong>, odadan çıkarma kayıtları <strong>2 gün</strong>, yönetici işlem kayıtları <strong>1 yıl</strong>. Yasak kaydı, yasak sürdüğü ve hesabınız var olduğu sürece tutulur.',
+        'privacy-s6-li6': 'Hesabınızı sildiğinizde mesajlarınız, tepkileriniz ve topluluk kayıtlarınız silinir. Hakkınızda yapılmış şikayetlerdeki mesaj kopyaları, hesabınızla bağlantısı kaldırılarak 90 günlük süre dolana dek saklanabilir; bu, kötüye kullanımın incelenebilmesi için gereklidir.',
+        'privacy-s6-li7': 'Yöneticiye gönderilen şikayet uyarıları (Telegram) mesaj içeriği, kullanıcı adı veya kimlik bilgisi içermez; inceleme yalnızca yetkili ve iki adımlı doğrulamayla korunan bir yönetim panelinden yapılır.',
+        'privacy-s7-title': 'Veri Saklama Süresi',
+        'privacy-s7-content': 'Verileriniz hesabınız aktif olduğu sürece saklanır. Hesabınızı sildiğinizde kişisel verileriniz <strong>30 gün içinde</strong> kalıcı olarak silinir; oda sohbeti ve topluluk güvenliği kayıtlarına ilişkin süreler 6. bölümde açıklanmıştır. Silme talepleriniz de aynı sürede işleme alınır.',
+        'privacy-s8-title': 'Çocukların Gizliliği',
+        'privacy-s8-content': 'Pomi 13 yaşından küçükler için tasarlanmamıştır ve 13 yaş altı kullanıcılardan bilerek kişisel veri toplamaz. Bu tür bir durum fark edilirse ilgili hesap ve veriler derhal silinir.',
+        'privacy-s9-title': 'Haklarınız',
+        'privacy-s9-content': 'Hesabınızı ve verilerinizi istediğiniz zaman uygulama ayarlarından silebilirsiniz. Silme işlemi 30 gün içinde tamamlanır. Kişisel verilerinize erişme, düzeltilmesini veya silinmesini isteme ve işlenmesine itiraz etme haklarınızı (KVKK md. 11 ve ilgili mevzuat) kullanmak ya da bir yasak kararına itiraz etmek için aşağıdaki adresten iletişime geçebilirsiniz.',
+        'privacy-s10-title': 'İletişim',
+        'privacy-s10-content': 'Sorularınız için: <a href="mailto:yakupselimucar@hotmail.com">yakupselimucar@hotmail.com</a>',
         'copyright': '© 2026 Pomi — Tüm hakları saklıdır.',
         'terms-link': 'Kullanım Şartları →',
       },
       en: {
         'privacy-title': 'Privacy Policy — Pomi',
         'privacy-heading': 'Privacy Policy',
-        'privacy-updated': 'Last updated · September 2, 2026',
+        'privacy-updated': 'Last updated · September 15, 2026',
         'privacy-s1-title': 'Information We Collect',
         'privacy-s1-intro': 'Pomi may collect the following information:',
-        'privacy-s1-li1': 'Email address for account creation (optional)',
+        'privacy-s1-li1': 'Email address for account creation and sign-in',
         'privacy-s1-li2': 'Sign-in information via Apple or Google (OAuth) — When signing in with Google, we only request <strong>name, email address, and profile picture</strong>; we do not access any other Google data',
-        'privacy-s1-li3': 'In-app progress data (pomodoro count, garden status)',
-        'privacy-s1-li4': 'Purchase verification data (via App Store)',
+        'privacy-s1-li3': 'In-app progress data (focus sessions and durations, garden status, in-app coins)',
+        'privacy-s1-li4': 'Your username and the province you select — visible to other users in leaderboards, rooms, and Region Wars',
+        'privacy-s1-li5': 'Room chat content: messages, replies, and reactions you send; reports you file and users you block',
+        'privacy-s1-li6': 'Community safety records: the date you accepted the community rules, reports filed about your account, any ban duration and reason, and room removal records (details in Section 6)',
+        'privacy-s1-li7': 'Purchase verification data (via the App Store or Google Play)',
+        'privacy-s1-li8': 'Usage and technical data: in-app events (e.g., screen views, session completion), device model, operating system and app version, crash reports, push notification token, and on Android the advertising ID (<strong>for analytics only</strong>; the app shows no ads)',
         'privacy-s2-title': 'How We Use Information',
         'privacy-s2-intro': 'Collected information is used only for the following purposes:',
         'privacy-s2-li1': 'Create and manage your account',
         'privacy-s2-li2': 'Synchronize your progress across devices',
-        'privacy-s2-li3': 'Verify your Pro subscription',
-        'privacy-s2-li4': 'Improve app performance',
+        'privacy-s2-li3': 'Operate group rooms, leaderboards, room chat, and notifications',
+        'privacy-s2-li4': 'Keep the community safe: filter inappropriate content, review reports, and restrict accounts that break the rules',
+        'privacy-s2-li5': 'Verify your Pro subscription',
+        'privacy-s2-li6': 'Improve app performance and fix bugs',
         'privacy-s3-title': 'Data Sharing',
-        'privacy-s3-intro': 'Your personal data is <strong>never sold or rented</strong> to third parties. We only share it with the following service providers:',
-        'privacy-s3-li1': '<strong>Supabase</strong> — secure data storage and authentication',
-        'privacy-s3-li2': '<strong>Apple App Store</strong> — purchase transactions',
+        'privacy-s3-intro': 'Your personal data is <strong>never sold or rented</strong> to third parties. We only share it with the following service providers, to the extent needed to provide the service:',
+        'privacy-s3-li1': '<strong>Supabase</strong> — secure data storage, authentication, and room chat',
+        'privacy-s3-li2': '<strong>Google Firebase</strong> — usage statistics (Analytics), crash reports (Crashlytics), and notification delivery (Cloud Messaging)',
+        'privacy-s3-li3': '<strong>Adapty</strong> — subscription status verification',
+        'privacy-s3-li4': '<strong>Apple App Store and Google Play</strong> — purchase transactions',
+        'privacy-s3-li5': '<strong>Telegram</strong> — only a "new report" alert to the Pomi administrator; the alert <strong>does not contain</strong> message content, usernames, or any identifiers',
+        'privacy-s3-outro': 'By the nature of these features, your username, focus statistics, and room chat messages are visible to the relevant other users. Service providers\' servers may be located abroad; transfers are made over encrypted connections. Data may be disclosed to competent authorities where required by law.',
         'privacy-s4-title': 'Data Security',
         'privacy-s4-content': 'All data is transmitted over encrypted connections (HTTPS/TLS) and stored on secure servers. Your passwords are never stored in plain text.',
         'privacy-s5-title': 'Social Media Sharing',
@@ -317,14 +371,23 @@
         'privacy-s5-li3': 'We may use content you publicly share about Pomi on social media for promotional purposes; the rules and license for this are described in the "User Content and Social Media Sharing" section of the Terms of Use.',
         'privacy-s5-li4': 'Third-party social media platforms are subject to their own privacy policies. Pomi is not responsible for these platforms\' data processing practices.',
         'privacy-s5-li5': 'In app visuals used for promotional materials, information that could identify you — username, email address, room/invite code, etc. — is <strong>blurred, cropped, or replaced with sample (demo) data</strong>. Accordingly, this use does not constitute processing of personal data and does not require your separate consent.',
-        'privacy-s6-title': 'Data Retention',
-        'privacy-s6-content': 'Your data is retained for as long as your account is active. When you delete your account, all personal data is permanently deleted within <strong>30 days</strong>. Deletion requests are processed within the same timeframe.',
-        'privacy-s7-title': 'Children\'s Privacy',
-        'privacy-s7-content': 'Pomi does not knowingly collect personal data from users under 13 years old. If we become aware of such data, it will be deleted immediately.',
-        'privacy-s8-title': 'Your Rights',
-        'privacy-s8-content': 'You can delete your account and data at any time from the app settings. Deletion is completed within 30 days. For additional requests, please contact us at the address below.',
-        'privacy-s9-title': 'Contact Us',
-        'privacy-s9-content': 'For questions: <a href="mailto:yakupselimucar@hotmail.com">yakupselimucar@hotmail.com</a>',
+        'privacy-s6-title': 'Room Chat and Community Safety',
+        'privacy-s6-intro': 'Room chat is open only to members of the room you joined. To keep the community safe, your data is processed as follows:',
+        'privacy-s6-li1': 'Your messages, reactions, and username are visible only to members of that room; members who leave a room can no longer see its chat history.',
+        'privacy-s6-li2': 'Messages pass through an automatic word filter on our servers before they are sent; messages containing inappropriate language are not delivered. Message content is not analyzed by AI and is not used for advertising.',
+        'privacy-s6-li3': 'When you report a message, a copy of the reported message is stored with the report and reviewed by <strong>Pomi administrators</strong>. To make a fair decision, the administrator may also view the conversation before and after the message. The reporter\'s identity is not shared with the reported person; room owners do not see reports.',
+        'privacy-s6-li4': 'We record the date you accepted the community rules, the users you block, ban decisions made about your account (duration and reason), and removals from a room by its owner. The ban reason is shown to you in the app.',
+        'privacy-s6-li5': 'Retention: chat messages and reactions <strong>30 days</strong>, report records <strong>90 days</strong>, room removal records <strong>2 days</strong>, administrator action logs <strong>1 year</strong>. A ban record is kept while the ban lasts and your account exists.',
+        'privacy-s6-li6': 'When you delete your account, your messages, reactions, and community records are deleted. Copies of messages in reports filed about you may be kept, with the link to your account removed, until the 90-day period ends; this is necessary to investigate abuse.',
+        'privacy-s6-li7': 'Report alerts sent to the administrator (Telegram) contain no message content, usernames, or identifiers; reviews are carried out only through an authorized admin panel protected by two-factor authentication.',
+        'privacy-s7-title': 'Data Retention',
+        'privacy-s7-content': 'Your data is retained for as long as your account is active. When you delete your account, your personal data is permanently deleted within <strong>30 days</strong>; retention periods for room chat and community safety records are described in Section 6. Deletion requests are processed within the same timeframe.',
+        'privacy-s8-title': 'Children\'s Privacy',
+        'privacy-s8-content': 'Pomi is not designed for children under 13 and does not knowingly collect personal data from users under 13. If we become aware of such a case, the account and related data will be deleted immediately.',
+        'privacy-s9-title': 'Your Rights',
+        'privacy-s9-content': 'You can delete your account and data at any time from the app settings. Deletion is completed within 30 days. To exercise your rights to access, correct, or delete your personal data or to object to its processing (including under Turkish data protection law, KVKK Art. 11), or to appeal a ban decision, please contact us at the address below.',
+        'privacy-s10-title': 'Contact Us',
+        'privacy-s10-content': 'For questions: <a href="mailto:yakupselimucar@hotmail.com">yakupselimucar@hotmail.com</a>',
         'copyright': '© 2026 Pomi — All rights reserved.',
         'terms-link': 'Terms of Use →',
       }
@@ -337,11 +400,7 @@
       document.querySelectorAll('[data-i18n-key]').forEach(el => {
         const key = el.getAttribute('data-i18n-key');
         if (translations[lang][key]) {
-          if (el.tagName === 'A') {
-            el.innerHTML = translations[lang][key];
-          } else {
-            el.innerHTML = translations[lang][key];
-          }
+          el.innerHTML = translations[lang][key];
         }
       });
 

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="title">Pomi · E-postanı doğrula</title>
+  <meta name="theme-color" content="#FDFAF2" />
+  <meta name="robots" content="noindex" />
+  <!-- Token adres çubuğunda; başka sitelere Referer ile sızmasın. -->
+  <meta name="referrer" content="no-referrer" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' shape-rendering='crispEdges'><rect width='16' height='16' rx='3' fill='%23FBF4E4'/><rect x='7' y='2' width='2' height='2' fill='%2346C39A'/><rect x='5' y='3' width='6' height='2' fill='%2346C39A'/><rect x='3' y='5' width='10' height='8' fill='%2327223D'/><rect x='4' y='6' width='8' height='6' fill='%23E8455B'/><rect x='5' y='7' width='2' height='1' fill='%23FF7A8C'/><rect x='6' y='9' width='1' height='1' fill='%2327223D'/><rect x='9' y='9' width='1' height='1' fill='%2327223D'/></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet" />
+  <style>
+    /* Palet oda.html / index.html ile birebir aynı. */
+    :root {
+      --bg: #FDFAF2;
+      --cream: #FBF4E4;
+      --paper: #FFFFFF;
+      --ink: #27223D;
+      --ink-soft: #635C7D;
+      --line: rgba(39, 34, 61, 0.10);
+      --cherry: #FF5B6E;
+      --cherry-deep: #E8455B;
+      --tint-mint: #ECF8F4;
+      --tint-cherry: #FFF0F1;
+      --r-lg: 24px;
+      --r-md: 16px;
+      --shadow: 0 30px 70px -44px rgba(39, 34, 61, 0.45), 0 2px 4px -2px rgba(39, 34, 61, 0.05);
+      --ease: cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { color-scheme: light; }
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: clamp(1.15rem, 5vw, 2.5rem);
+      background: var(--bg);
+      color: var(--ink);
+      font-family: 'DM Sans', -apple-system, system-ui, sans-serif;
+      font-size: 17px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    :focus-visible { outline: 2px solid var(--cherry); outline-offset: 3px; border-radius: 8px; }
+    .card {
+      width: 100%;
+      max-width: 420px;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: var(--r-lg);
+      box-shadow: var(--shadow);
+      padding: clamp(1.75rem, 6vw, 2.5rem) clamp(1.35rem, 5vw, 2rem);
+      text-align: center;
+    }
+    .mark { width: 64px; height: 64px; margin: 0 auto 1.15rem; display: block; }
+    h1 { font-size: 1.5rem; font-weight: 700; letter-spacing: -0.02em; line-height: 1.15; }
+    .lede { margin-top: 0.55rem; color: var(--ink-soft); font-size: 0.98rem; }
+    .actions { margin-top: 1.5rem; display: grid; gap: 0.6rem; }
+    .btn {
+      display: block;
+      width: 100%;
+      border: 0;
+      cursor: pointer;
+      padding: 0.95rem 1.1rem;
+      border-radius: var(--r-md);
+      font: inherit;
+      font-weight: 600;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: transform 0.18s var(--ease), opacity 0.18s var(--ease);
+    }
+    .btn:active { transform: translateY(1px); }
+    .btn[disabled] { opacity: 0.6; cursor: progress; }
+    .btn-primary { background: var(--cherry); color: #fff; box-shadow: 0 14px 28px -18px var(--cherry-deep); }
+    .btn-ghost { background: var(--cream); color: var(--ink); font-size: 0.94rem; }
+    .note {
+      margin-top: 1.1rem;
+      padding: 0.85rem 1rem;
+      border-radius: var(--r-md);
+      font-size: 0.9rem;
+    }
+    .note.ok { background: var(--tint-mint); }
+    .note.err { background: var(--tint-cherry); }
+    .langs { margin-top: 1.6rem; display: flex; justify-content: center; gap: 0.35rem; }
+    .lang {
+      border: 0; background: none; cursor: pointer; padding: 0.3rem 0.6rem;
+      border-radius: 999px; font: inherit; font-size: 0.8rem; font-weight: 600;
+      color: var(--ink-soft);
+    }
+    .lang[aria-pressed="true"] { background: var(--cream); color: var(--ink); }
+
+    /* Tek sayfa, dört hâl: body[data-state] hangisinin görüneceğini seçer. */
+    [data-view] { display: none; }
+    body[data-state="ready"] [data-view="ready"],
+    body[data-state="done"] [data-view="done"],
+    body[data-state="expired"] [data-view="expired"],
+    body[data-state="missing"] [data-view="expired"],
+    body[data-state="error"] [data-view="ready"] { display: block; }
+    body:not([data-state="error"]) .note.err { display: none; }
+  </style>
+</head>
+<body data-state="ready">
+  <main class="card" aria-live="polite">
+    <svg class="mark" viewBox="0 0 16 16" shape-rendering="crispEdges" role="img" aria-label="Pomi">
+      <rect width="16" height="16" rx="3" fill="#FBF4E4"/>
+      <rect x="7" y="2" width="2" height="2" fill="#46C39A"/>
+      <rect x="5" y="3" width="6" height="2" fill="#46C39A"/>
+      <rect x="3" y="5" width="10" height="8" fill="#27223D"/>
+      <rect x="4" y="6" width="8" height="6" fill="#E8455B"/>
+      <rect x="5" y="7" width="2" height="1" fill="#FF7A8C"/>
+      <rect x="6" y="9" width="1" height="1" fill="#27223D"/>
+      <rect x="9" y="9" width="1" height="1" fill="#27223D"/>
+    </svg>
+
+    <div data-view="ready">
+      <h1 data-i18n="heading">E-postanı doğrula</h1>
+      <p class="lede" data-i18n="lede">Tek dokunuş kaldı. Doğruladıktan sonra coin ödülün Pomi'yi açtığında hesabına eklenir.</p>
+      <div class="actions">
+        <!-- Açılışta otomatik doğrulama YOK: e-posta tarayıcıları bağlantıyı
+             önceden açıp token'ı kullanıcıdan önce tüketirdi. -->
+        <button class="btn btn-primary" id="verify" type="button" data-i18n="verify">E-postamı doğrula</button>
+      </div>
+      <p class="note err" data-i18n="error">Bir sorun oluştu. İnternet bağlantını kontrol edip tekrar dene.</p>
+    </div>
+
+    <div data-view="done">
+      <h1 data-i18n="doneHeading">E-postan doğrulandı 🎉</h1>
+      <p class="lede" data-i18n="doneLede">Pomi'yi açtığında coin ödülün hesabına eklenecek. Bu sayfayı kapatabilirsin.</p>
+      <div class="actions">
+        <a class="btn btn-primary" id="open" href="io.pomi.app://login-callback" data-i18n="open">Pomi'yi aç</a>
+      </div>
+    </div>
+
+    <div data-view="expired">
+      <h1 data-i18n="expiredHeading">Bağlantının süresi dolmuş</h1>
+      <p class="lede" data-i18n="expiredLede">Bu bağlantı artık geçerli değil ya da daha önce kullanılmış. Pomi'de Profil ekranından yeni bir doğrulama e-postası isteyebilirsin.</p>
+    </div>
+
+    <div class="langs">
+      <button class="lang" type="button" data-lang="tr">Türkçe</button>
+      <button class="lang" type="button" data-lang="en">English</button>
+    </div>
+  </main>
+
+<script>
+  (function () {
+    var ENDPOINT = 'https://ndkewpwpojjhqbeqtzth.supabase.co/functions/v1/verify-email';
+
+    var DICT = {
+      tr: {
+        title: 'Pomi · E-postanı doğrula',
+        heading: 'E-postanı doğrula',
+        lede: "Tek dokunuş kaldı. Doğruladıktan sonra coin ödülün Pomi'yi açtığında hesabına eklenir.",
+        verify: 'E-postamı doğrula',
+        verifying: 'Doğrulanıyor…',
+        error: 'Bir sorun oluştu. İnternet bağlantını kontrol edip tekrar dene.',
+        doneHeading: 'E-postan doğrulandı 🎉',
+        doneLede: "Pomi'yi açtığında coin ödülün hesabına eklenecek. Bu sayfayı kapatabilirsin.",
+        open: "Pomi'yi aç",
+        expiredHeading: 'Bağlantının süresi dolmuş',
+        expiredLede: "Bu bağlantı artık geçerli değil ya da daha önce kullanılmış. Pomi'de Profil ekranından yeni bir doğrulama e-postası isteyebilirsin."
+      },
+      en: {
+        title: 'Pomi · Verify your email',
+        heading: 'Verify your email',
+        lede: "One tap left. After verifying, your coin reward is added when you open Pomi.",
+        verify: 'Verify my email',
+        verifying: 'Verifying…',
+        error: 'Something went wrong. Check your connection and try again.',
+        doneHeading: 'Email verified 🎉',
+        doneLede: 'Your coin reward will be added the next time you open Pomi. You can close this page.',
+        open: 'Open Pomi',
+        expiredHeading: 'This link has expired',
+        expiredLede: 'This link is no longer valid or has already been used. Request a new verification email from the Profile screen in Pomi.'
+      }
+    };
+    var lang = 'tr';
+
+    var params = new URLSearchParams(location.search);
+    var tokenHash = params.get('token_hash') || '';
+    // Token adres çubuğunda/geçmişte kalmasın; değişkende tutuluyor.
+    if (history.replaceState) history.replaceState(null, '', location.pathname);
+
+    function setState(s) { document.body.setAttribute('data-state', s); }
+    if (!tokenHash) setState('missing');
+
+    // "Pomi'yi aç" yalnız telefonda anlamlı; bilgisayarda gizlenir.
+    if (!/Android|iPhone|iPad|iPod/i.test(navigator.userAgent) &&
+        !(navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1)) {
+      document.getElementById('open').style.display = 'none';
+    }
+
+    var button = document.getElementById('verify');
+    button.addEventListener('click', function () {
+      button.disabled = true;
+      button.textContent = DICT[lang].verifying;
+      fetch(ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ token_hash: tokenHash })
+      }).then(function (res) {
+        if (res.ok) return setState('done');
+        if (res.status === 410 || res.status === 400) return setState('expired');
+        throw new Error('status ' + res.status);
+      }).catch(function () {
+        setState('error');
+      }).then(function () {
+        button.disabled = false;
+        button.textContent = DICT[lang].verify;
+      });
+    });
+
+    function apply(next) {
+      lang = DICT[next] ? next : 'tr';
+      var d = DICT[lang];
+      document.documentElement.lang = lang;
+      document.title = d.title;
+      document.querySelectorAll('[data-i18n]').forEach(function (el) {
+        var value = d[el.getAttribute('data-i18n')];
+        if (value != null) el.textContent = value;
+      });
+      if (button.disabled) button.textContent = d.verifying;
+      document.querySelectorAll('.lang').forEach(function (btn) {
+        btn.setAttribute('aria-pressed', String(btn.getAttribute('data-lang') === lang));
+      });
+      try { localStorage.setItem('pomi-lang', lang); } catch (e) { /* özel mod */ }
+    }
+
+    var stored = null;
+    try { stored = localStorage.getItem('pomi-lang'); } catch (e) { /* özel mod */ }
+    document.querySelectorAll('.lang').forEach(function (btn) {
+      btn.addEventListener('click', function () { apply(btn.getAttribute('data-lang')); });
+    });
+    apply(stored || ((navigator.language || 'tr').slice(0, 2) === 'tr' ? 'tr' : 'en'));
+  })();
+</script>
+</body>
+</html>
