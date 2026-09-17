@@ -2,6 +2,9 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8" />
+  <!-- Sayfa e-postadaki tek kullanımlık giriş kodunu taşır: betik/bağlantı
+       kaynakları yalnız gerekenlerle sınırlı (kod veya şifre başka yere gidemez). -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src data:; connect-src https://ndkewpwpojjhqbeqtzth.supabase.co; base-uri 'none'; form-action 'none'" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title data-i18n="title">Pomi · E-postanı doğrula</title>
   <meta name="theme-color" content="#FDFAF2" />
@@ -137,7 +140,7 @@
 
     <div data-view="expired">
       <h1 data-i18n="expiredHeading">Bağlantının süresi dolmuş</h1>
-      <p class="lede" data-i18n="expiredLede">Bu bağlantı artık geçerli değil ya da daha önce kullanılmış. Pomi'de Profil ekranından yeni bir doğrulama e-postası isteyebilirsin.</p>
+      <p class="lede" data-i18n="expiredLede">Bu bağlantı artık geçerli değil ya da daha önce kullanılmış. Az önce doğruladıysan Pomi'yi açman yeterli; değilse Profil ekranından yeni bir doğrulama e-postası isteyebilirsin.</p>
     </div>
 
     <div class="langs">
@@ -162,7 +165,7 @@
         doneLede: "Pomi'yi açtığında coin ödülün hesabına eklenecek. Bu sayfayı kapatabilirsin.",
         open: "Pomi'yi aç",
         expiredHeading: 'Bağlantının süresi dolmuş',
-        expiredLede: "Bu bağlantı artık geçerli değil ya da daha önce kullanılmış. Pomi'de Profil ekranından yeni bir doğrulama e-postası isteyebilirsin."
+        expiredLede: "Bu bağlantı artık geçerli değil ya da daha önce kullanılmış. Az önce doğruladıysan Pomi'yi açman yeterli; değilse Profil ekranından yeni bir doğrulama e-postası isteyebilirsin."
       },
       en: {
         title: 'Pomi · Verify your email',
@@ -175,7 +178,7 @@
         doneLede: 'Your coin reward will be added the next time you open Pomi. You can close this page.',
         open: 'Open Pomi',
         expiredHeading: 'This link has expired',
-        expiredLede: 'This link is no longer valid or has already been used. Request a new verification email from the Profile screen in Pomi.'
+        expiredLede: 'This link is no longer valid or has already been used. If you just verified, simply open Pomi; otherwise request a new verification email from the Profile screen.'
       }
     };
     var lang = 'tr';
@@ -183,6 +186,11 @@
     var params = new URLSearchParams(location.search);
     var tokenHash = params.get('token_hash') || '';
     // Token adres çubuğunda/geçmişte kalmasın; değişkende tutuluyor.
+    // Sayfa yenilenirse kod kaybolmasın: yalnız bu sekmenin deposunda tutulur.
+    try {
+      if (tokenHash) sessionStorage.setItem('pomi-token', tokenHash);
+      else tokenHash = sessionStorage.getItem('pomi-token') || '';
+    } catch (e) { /* özel mod */ }
     if (history.replaceState) history.replaceState(null, '', location.pathname);
 
     function setState(s) { document.body.setAttribute('data-state', s); }
