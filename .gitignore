@@ -1,3 +1,7 @@
 __pycache__/
 *.pyc
 .DS_Store
+
+# Stratejik dosyalar — public repoda görünmesin
+.github/outreach/
+.github/GEO-YOL-HARITASI.md
