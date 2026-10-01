@@ -3,7 +3,7 @@
 
 IOS = "https://apps.apple.com/tr/app/id6784132034"
 ANDROID = "https://play.google.com/store/apps/details?id=com.yakupselimucar.pomi"
-SITE = "https://yakupselimucar.github.io/pomi-legal/"
+SITE = "https://pomifocus.com/"
 D = "2026-09-13"
 DH = "September 13, 2026"
 RFC = "Sun, 13 Sep 2026 11:30:00 +0300"

@@ -23,7 +23,7 @@ POSTS = posts.POSTS + posts_technique.POSTS + posts_students.POSTS + posts_produ
 
 ROOT = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))
 OUT = os.path.join(ROOT, "blog")
-SITE = "https://yakupselimucar.github.io/pomi-legal/"
+SITE = "https://pomifocus.com/"
 BLOG = SITE + "blog/"
 LOGO = "https://play-lh.googleusercontent.com/WaWFwXR226D_Io_QAYJtJhSvobvVXbsYmC8AEDGRghM6rWmKqVafH-0lv7LazRdnB2Cbn-OiwHuM6Y1K05TnFQ=s512"
 IOS = "https://apps.apple.com/tr/app/id6784132034"
@@ -357,7 +357,7 @@ def to_text(fragment):
 
 def llms_full(all_posts):
     parts = ["# Pomi Blog — full text\n",
-             "> Full text of every article on the Pomi blog (https://yakupselimucar.github.io/pomi-legal/blog/). "
+             "> Full text of every article on the Pomi blog (https://pomifocus.com/blog/). "
              "Pomi is a free, ad-free pixel-art Pomodoro and study app for iOS and Android by Yakup Selim Uçar. "
              "Turkish articles are primary; English versions are marked. Each article ends with its FAQ.\n"]
     for q in all_posts:

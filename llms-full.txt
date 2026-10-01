@@ -1,12 +1,12 @@
 # Pomi Blog — full text
-> Full text of every article on the Pomi blog (https://yakupselimucar.github.io/pomi-legal/blog/). Pomi is a free, ad-free pixel-art Pomodoro and study app for iOS and Android by Yakup Selim Uçar. Turkish articles are primary; English versions are marked. Each article ends with its FAQ.
+> Full text of every article on the Pomi blog (https://pomifocus.com/blog/). Pomi is a free, ad-free pixel-art Pomodoro and study app for iOS and Android by Yakup Selim Uçar. Turkish articles are primary; English versions are marked. Each article ends with its FAQ.
 
 
 ---
 
 # 2026'nın En İyi Pomodoro Uygulamaları (iOS ve Android)
 
-URL: https://yakupselimucar.github.io/pomi-legal/blog/en-iyi-pomodoro-uygulamalari-2026.html
+URL: https://pomifocus.com/blog/en-iyi-pomodoro-uygulamalari-2026.html
 Language: tr
 Published: 2026-09-13
 Section: Karşılaştırma
@@ -177,7 +177,7 @@ Flora aynı ağaç dikme mekaniğini ücretsiz sunar. Pomi de ücretsizdir; ağa
 
 # The Best Pomodoro Apps in 2026 (iOS and Android)
 
-URL: https://yakupselimucar.github.io/pomi-legal/blog/best-pomodoro-apps-2026.html
+URL: https://pomifocus.com/blog/best-pomodoro-apps-2026.html
 Language: en
 Published: 2026-09-13
 Section: Comparison
@@ -348,7 +348,7 @@ Flora offers the same tree-planting mechanic for free. Pomi is also free; instea
 
 # Öğrenciler İçin En İyi Odaklanma Araçları (2026)
 
-URL: https://yakupselimucar.github.io/pomi-legal/blog/ogrenciler-icin-en-iyi-odaklanma-araclari.html
+URL: https://pomifocus.com/blog/ogrenciler-icin-en-iyi-odaklanma-araclari.html
 Language: tr
 Published: 2026-09-13
 Section: Öğrenciler
@@ -439,7 +439,7 @@ Evet. Pomi'de bir oda oluşturup 6 haneli davet kodunu paylaşırsın; herkes ay
 
 # The Best Focus Apps for Students (2026)
 
-URL: https://yakupselimucar.github.io/pomi-legal/blog/best-focus-apps-for-students.html
+URL: https://pomifocus.com/blog/best-focus-apps-for-students.html
 Language: en
 Published: 2026-09-13
 Section: Students
@@ -528,7 +528,7 @@ Yes. In Pomi you create a room and share a 6-character invite code; everyone is 
 
 # Pomodoro Tekniği Nedir? Nasıl Uygulanır? (Adım Adım Rehber)
 
-URL: https://yakupselimucar.github.io/pomi-legal/blog/pomodoro-teknigi-nedir.html
+URL: https://pomifocus.com/blog/pomodoro-teknigi-nedir.html
 Language: tr
 Published: 2026-09-13
 Section: Temel bilgi
@@ -621,7 +621,7 @@ Hayır, mutfak zamanlayıcısı yeter. Uygulama, seansları kaydetmek, istatisti
 
 # Study With Me: Arkadaşlarınla Birlikte Ders Çalışmak Neden İşe Yarar?
 
-URL: https://yakupselimucar.github.io/pomi-legal/blog/study-with-me-birlikte-ders-calisma.html
+URL: https://pomifocus.com/blog/study-with-me-birlikte-ders-calisma.html
 Language: tr
 Published: 2026-09-13
 Section: Rehber
@@ -695,7 +695,7 @@ Oda oluşturan kişi 6 haneli davet kodunu paylaşır. Uygulamada Odalar sekmesi
 
 # Pomodoro mu, 52/17 mi, Flowtime mı? Odak Tekniklerinin Dürüst Karşılaştırması
 
-URL: https://yakupselimucar.github.io/pomi-legal/blog/pomodoro-mu-flowtime-mi-52-17-odak-teknikleri.html
+URL: https://pomifocus.com/blog/pomodoro-mu-flowtime-mi-52-17-odak-teknikleri.html
 Language: tr
 Published: 2026-09-13
 Section: Karşılaştırma
@@ -819,7 +819,7 @@ Evet. Pomi'de çalışma ve mola sürelerini ayarlardan değiştirebilirsin. Sea
 
 # Günde Kaç Pomodoro Yapmalı? Gerçekçi Hedefler ve Sık Yapılan Hata
 
-URL: https://yakupselimucar.github.io/pomi-legal/blog/gunde-kac-pomodoro-yapmali.html
+URL: https://pomifocus.com/blog/gunde-kac-pomodoro-yapmali.html
 Language: tr
 Published: 2026-09-13
 Section: Rehber
@@ -904,7 +904,7 @@ Kâğıt çetele en basit yol. Uygulama kullanıyorsan Pomi her tamamlanan seans
 
 # Pomodoro Molasında Ne Yapmalı? 5 Dakikayı İyi Kullanmanın 12 Yolu
 
-URL: https://yakupselimucar.github.io/pomi-legal/blog/pomodoro-molasinda-ne-yapmali.html
+URL: https://pomifocus.com/blog/pomodoro-molasinda-ne-yapmali.html
 Language: tr
 Published: 2026-09-13
 Section: Rehber
@@ -997,7 +997,7 @@ Bir kez atlamak sorun değil ama alışkanlık hâline gelirse birkaç tur sonra
 
 # Erteleme Alışkanlığını Yenmek: Neden Erteliyoruz ve Bugün Ne Yapabiliriz?
 
-URL: https://yakupselimucar.github.io/pomi-legal/blog/erteleme-aliskanligini-yenmek.html
+URL: https://pomifocus.com/blog/erteleme-aliskanligini-yenmek.html
 Language: tr
 Published: 2026-09-13
 Section: Temel bilgi
@@ -1086,7 +1086,7 @@ Tek başına değil; öğrencilerin büyük çoğunluğu düzenli erteler. Ancak
 
 # Odaklanmak İçin En İyi Sesler: Yağmur, Kafe, Beyaz Gürültü ve Müzik Karşılaştırması
 
-URL: https://yakupselimucar.github.io/pomi-legal/blog/odaklanmak-icin-en-iyi-sesler.html
+URL: https://pomifocus.com/blog/odaklanmak-icin-en-iyi-sesler.html
 Language: tr
 Published: 2026-09-13
 Section: Rehber
@@ -1180,7 +1180,7 @@ Genellikle evet: sözsüz, tekrarlı ve dinamik değişimi az olduğu için arka
 
 # Evden Çalışırken Odaklanmak: Uzaktan Çalışanlar İçin Pomodoro Düzeni
 
-URL: https://yakupselimucar.github.io/pomi-legal/blog/evden-calisirken-odaklanma.html
+URL: https://pomifocus.com/blog/evden-calisirken-odaklanma.html
 Language: tr
 Published: 2026-09-13
 Section: Rehber
@@ -1281,7 +1281,7 @@ Haftada bir-iki gün kütüphane ya da ortak çalışma alanı, kalan günlerde 
 
 # Sınava Hazırlanırken Pomodoro: YKS, LGS, KPSS ve Finaller İçin Çalışma Planı
 
-URL: https://yakupselimucar.github.io/pomi-legal/blog/sinava-hazirlanirken-pomodoro.html
+URL: https://pomifocus.com/blog/sinava-hazirlanirken-pomodoro.html
 Language: tr
 Published: 2026-09-13
 Section: Öğrenciler
@@ -1402,7 +1402,7 @@ Yeni konu öğrenme, tekrar ve özet kartlarına odaklan. Seans sayısını 6-7'
 
 # Ders Çalışırken Telefonu Bırakmanın 9 Yolu (Uygulama Silmeden)
 
-URL: https://yakupselimucar.github.io/pomi-legal/blog/ders-calisirken-telefonu-birakmak.html
+URL: https://pomifocus.com/blog/ders-calisirken-telefonu-birakmak.html
 Language: tr
 Published: 2026-09-13
 Section: Öğrenciler
@@ -1503,7 +1503,7 @@ Evet, ama sayaçla. 5 dakikalık molanın en fazla 3 dakikası telefona gidebili
 
 # Verimli Ders Çalışma Teknikleri: Araştırmaların İşe Yaradığını Gösterdiği 7 Yöntem
 
-URL: https://yakupselimucar.github.io/pomi-legal/blog/verimli-ders-calisma-teknikleri.html
+URL: https://pomifocus.com/blog/verimli-ders-calisma-teknikleri.html
 Language: tr
 Published: 2026-09-13
 Section: Öğrenciler
@@ -1631,7 +1631,7 @@ Tek başına bir öğrenme tekniği değil, dikkat tekniğidir. Ancak her 25 dak
 
 # Forest Alternatifi Arayanlara: Ücretsiz 6 Odak Uygulaması (2026)
 
-URL: https://yakupselimucar.github.io/pomi-legal/blog/forest-alternatifi-ucretsiz-uygulamalar.html
+URL: https://pomifocus.com/blog/forest-alternatifi-ucretsiz-uygulamalar.html
 Language: tr
 Published: 2026-09-13
 Section: Karşılaştırma
@@ -1756,7 +1756,7 @@ Telefon kilidi, tarayıcı eklentisi ve gerçek ağaç dikme programı. Pomi'de 
 
 # Pomi Nasıl Kullanılır? Bahçe, Odalar, Fetih Haritası ve Lig İçin Başlangıç Rehberi
 
-URL: https://yakupselimucar.github.io/pomi-legal/blog/pomi-nasil-kullanilir.html
+URL: https://pomifocus.com/blog/pomi-nasil-kullanilir.html
 Language: tr
 Published: 2026-09-13
 Section: Pomi
@@ -1862,7 +1862,7 @@ iPhone, iPad (iOS 15 ve üzeri) ve Android. Web ve masaüstü sürümü şu an y
 
 # Pomi Fetih Haritası Nasıl Çalışır? 81 Şehir, 7 Günlük Sezonlar ve Bölge Savaşları
 
-URL: https://yakupselimucar.github.io/pomi-legal/blog/pomi-fetih-haritasi-nasil-calisir.html
+URL: https://pomifocus.com/blog/pomi-fetih-haritasi-nasil-calisir.html
 Language: tr
 Published: 2026-09-13
 Section: Pomi
@@ -1939,7 +1939,7 @@ Evet, ayarlardan şehir değiştirebilirsin. Puanların bir sonraki seanstan iti
 
 # Odak Uygulamalarında Oyunlaştırma İşe Yarıyor mu? Ağaçlar, Bahçeler ve Ligler Üzerine Dürüst Bir Bakış
 
-URL: https://yakupselimucar.github.io/pomi-legal/blog/odak-uygulamalarinda-oyunlastirma-ise-yarar-mi.html
+URL: https://pomifocus.com/blog/odak-uygulamalarinda-oyunlastirma-ise-yarar-mi.html
 Language: tr
 Published: 2026-09-13
 Section: Temel bilgi
@@ -2037,7 +2037,7 @@ Kaygı üzerine kurulu motivasyonun uzun vadede içsel motivasyonu zayıflattı�
 
 # What Is the Pomodoro Technique and How Do You Use It? (Step-by-Step Guide)
 
-URL: https://yakupselimucar.github.io/pomi-legal/blog/what-is-the-pomodoro-technique.html
+URL: https://pomifocus.com/blog/what-is-the-pomodoro-technique.html
 Language: en
 Published: 2026-09-13
 Section: Basics
@@ -2135,7 +2135,7 @@ No, a kitchen timer is enough. An app makes a difference if you want to log sess
 
 # Study With Me: Why Studying Together Works, and How to Do It Remotely
 
-URL: https://yakupselimucar.github.io/pomi-legal/blog/study-with-me-how-to-study-together.html
+URL: https://pomifocus.com/blog/study-with-me-how-to-study-together.html
 Language: en
 Published: 2026-09-13
 Section: Guide
@@ -2213,7 +2213,7 @@ The person who created the room shares a 6-character invite code. Enter it in th
 
 # Pomodoro vs 52/17 vs Flowtime: An Honest Comparison of Focus Techniques
 
-URL: https://yakupselimucar.github.io/pomi-legal/blog/pomodoro-vs-flowtime-vs-52-17.html
+URL: https://pomifocus.com/blog/pomodoro-vs-flowtime-vs-52-17.html
 Language: en
 Published: 2026-09-13
 Section: Comparison
@@ -2337,7 +2337,7 @@ Yes. Work and break durations are adjustable in Pomi's settings. Whatever the le
 
 # How Many Pomodoros a Day? Realistic Targets and the Mistake Everyone Makes
 
-URL: https://yakupselimucar.github.io/pomi-legal/blog/how-many-pomodoros-a-day.html
+URL: https://pomifocus.com/blog/how-many-pomodoros-a-day.html
 Language: en
 Published: 2026-09-13
 Section: Guide
@@ -2422,7 +2422,7 @@ A paper tally is the simplest. If you use an app, Pomi adds a plant to your gard
 
 # How to Stop Procrastinating: Why We Do It and What Actually Works Today
 
-URL: https://yakupselimucar.github.io/pomi-legal/blog/how-to-stop-procrastinating.html
+URL: https://pomifocus.com/blog/how-to-stop-procrastinating.html
 Language: en
 Published: 2026-09-13
 Section: Basics
@@ -2511,7 +2511,7 @@ Not on its own; the large majority of students procrastinate regularly. If it co
 
 # The Best Background Sounds for Studying: Rain, Café, White Noise and Music Compared
 
-URL: https://yakupselimucar.github.io/pomi-legal/blog/best-background-sounds-for-studying.html
+URL: https://pomifocus.com/blog/best-background-sounds-for-studying.html
 Language: en
 Published: 2026-09-13
 Section: Guide
@@ -2605,7 +2605,7 @@ Usually yes: it is wordless, repetitive and has little dynamic change, so it sta
 
 # How to Stop Checking Your Phone While Studying: 9 Ways That Don't Need Willpower
 
-URL: https://yakupselimucar.github.io/pomi-legal/blog/how-to-stop-checking-your-phone-while-studying.html
+URL: https://pomifocus.com/blog/how-to-stop-checking-your-phone-while-studying.html
 Language: en
 Published: 2026-09-13
 Section: Students
@@ -2706,7 +2706,7 @@ Yes, with a timer. At most three of the five break minutes should go to the phon
 
 # Evidence-Based Study Techniques: 7 Methods Research Shows Actually Work
 
-URL: https://yakupselimucar.github.io/pomi-legal/blog/evidence-based-study-techniques.html
+URL: https://pomifocus.com/blog/evidence-based-study-techniques.html
 Language: en
 Published: 2026-09-13
 Section: Students
@@ -2834,7 +2834,7 @@ On its own it is an attention technique, not a learning technique. But if you sp
 
 # 6 Free Forest App Alternatives for Focus (2026)
 
-URL: https://yakupselimucar.github.io/pomi-legal/blog/forest-app-alternatives.html
+URL: https://pomifocus.com/blog/forest-app-alternatives.html
 Language: en
 Published: 2026-09-13
 Section: Comparison
@@ -2959,7 +2959,7 @@ A phone lock, a browser extension and a real-tree planting programme. What Pomi 
 
 # How to Use Pomi: A Beginner's Guide to the Garden, Rooms, Conquest Map and League
 
-URL: https://yakupselimucar.github.io/pomi-legal/blog/how-to-use-pomi.html
+URL: https://pomifocus.com/blog/how-to-use-pomi.html
 Language: en
 Published: 2026-09-13
 Section: Pomi
@@ -3065,7 +3065,7 @@ iPhone and iPad (iOS 15 or later) and Android. There is no web or desktop versio
 
 # Does Gamification Actually Help You Focus? An Honest Look at Trees, Gardens and Leagues
 
-URL: https://yakupselimucar.github.io/pomi-legal/blog/does-gamification-help-you-focus.html
+URL: https://pomifocus.com/blog/does-gamification-help-you-focus.html
 Language: en
 Published: 2026-09-13
 Section: Basics

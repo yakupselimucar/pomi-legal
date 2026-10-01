@@ -11,7 +11,7 @@ Focus for 25 minutes, grow a plant in your pixel garden.
 &nbsp;
 <a href="https://play.google.com/store/apps/details?id=com.yakupselimucar.pomi"><img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get Pomi on Google Play" height="70" /></a>
 
-[Website](https://yakupselimucar.github.io/pomi-legal/) · [Support & FAQ](https://yakupselimucar.github.io/pomi-legal/support.html) · [Privacy](https://yakupselimucar.github.io/pomi-legal/privacy.html) · [Terms](https://yakupselimucar.github.io/pomi-legal/terms.html)
+[Website](https://pomifocus.com/) · [Support & FAQ](https://pomifocus.com/support.html) · [Privacy](https://pomifocus.com/privacy.html) · [Terms](https://pomifocus.com/terms.html)
 
 **[English](#english)** · **[Türkçe](#türkçe)**
 
@@ -82,21 +82,21 @@ Your progress is tied to your account. Sign in again with the same email, Apple 
 **How do I delete my account?**<br />
 You can delete your account and all of your data from the in-app settings. If you need help, email [yakupselimucar@hotmail.com](mailto:yakupselimucar@hotmail.com).
 
-More answers: [Support & FAQ](https://yakupselimucar.github.io/pomi-legal/support.html)
+More answers: [Support & FAQ](https://pomifocus.com/support.html)
 
 ### Links
 
-- [Website](https://yakupselimucar.github.io/pomi-legal/)
+- [Website](https://pomifocus.com/)
 - [Download on the App Store](https://apps.apple.com/tr/app/id6784132034) (iPhone, iPad)
 - [Get it on Google Play](https://play.google.com/store/apps/details?id=com.yakupselimucar.pomi) (Android)
-- [Support & FAQ](https://yakupselimucar.github.io/pomi-legal/support.html)
-- [Privacy Policy](https://yakupselimucar.github.io/pomi-legal/privacy.html)
-- [Terms of Use](https://yakupselimucar.github.io/pomi-legal/terms.html)
-- [llms.txt](https://yakupselimucar.github.io/pomi-legal/llms.txt) (plain-text summary for AI assistants)
+- [Support & FAQ](https://pomifocus.com/support.html)
+- [Privacy Policy](https://pomifocus.com/privacy.html)
+- [Terms of Use](https://pomifocus.com/terms.html)
+- [llms.txt](https://pomifocus.com/llms.txt) (plain-text summary for AI assistants)
 
 ### About this repository
 
-This repository contains the source of Pomi's official website, served with GitHub Pages at [yakupselimucar.github.io/pomi-legal](https://yakupselimucar.github.io/pomi-legal/). It does not contain the app's source code.
+This repository contains the source of Pomi's official website, served with GitHub Pages at [pomifocus.com](https://pomifocus.com/). It does not contain the app's source code.
 
 | File | Purpose |
 | --- | --- |
@@ -173,21 +173,21 @@ iPhone'da Ayarlar → [Adın] → Abonelikler yolunu izle, Pomi'yi seç ve abone
 **Hesabımı nasıl silerim?**<br />
 Uygulama içi ayarlardan hesabını ve tüm verilerini silebilirsin. Yardıma ihtiyacın olursa [yakupselimucar@hotmail.com](mailto:yakupselimucar@hotmail.com) adresine yaz.
 
-Diğer sorular için: [Destek ve SSS](https://yakupselimucar.github.io/pomi-legal/support.html)
+Diğer sorular için: [Destek ve SSS](https://pomifocus.com/support.html)
 
 ### Bağlantılar
 
-- [Web sitesi](https://yakupselimucar.github.io/pomi-legal/)
+- [Web sitesi](https://pomifocus.com/)
 - [App Store'dan indir](https://apps.apple.com/tr/app/id6784132034) (iPhone, iPad)
 - [Google Play'den indir](https://play.google.com/store/apps/details?id=com.yakupselimucar.pomi) (Android)
-- [Destek ve SSS](https://yakupselimucar.github.io/pomi-legal/support.html)
-- [Gizlilik Politikası](https://yakupselimucar.github.io/pomi-legal/privacy.html)
-- [Kullanım Koşulları](https://yakupselimucar.github.io/pomi-legal/terms.html)
-- [llms.txt](https://yakupselimucar.github.io/pomi-legal/llms.txt) (yapay zeka asistanları için düz metin özet)
+- [Destek ve SSS](https://pomifocus.com/support.html)
+- [Gizlilik Politikası](https://pomifocus.com/privacy.html)
+- [Kullanım Koşulları](https://pomifocus.com/terms.html)
+- [llms.txt](https://pomifocus.com/llms.txt) (yapay zeka asistanları için düz metin özet)
 
 ### Bu depo hakkında
 
-Bu depo, Pomi'nin resmi web sitesinin kaynak dosyalarını içerir. Site GitHub Pages ile [yakupselimucar.github.io/pomi-legal](https://yakupselimucar.github.io/pomi-legal/) adresinde yayınlanır. Uygulamanın kaynak kodu bu depoda yer almaz.
+Bu depo, Pomi'nin resmi web sitesinin kaynak dosyalarını içerir. Site GitHub Pages ile [pomifocus.com](https://pomifocus.com/) adresinde yayınlanır. Uygulamanın kaynak kodu bu depoda yer almaz.
 
 | Dosya | Amacı |
 | --- | --- |
