@@ -60,7 +60,7 @@ Students, people preparing for exams, professionals who want to focus better, an
 - **Age rating:** 12+
 - **First release:** July 5, 2026
 - **Developer:** Yakup Selim Uçar
-- **Support:** [yakupselimucar@hotmail.com](mailto:yakupselimucar@hotmail.com)
+- **Support:** [support@pomifocus.com](mailto:support@pomifocus.com)
 
 ### FAQ
 
@@ -80,7 +80,7 @@ On iPhone, go to Settings → [your name] → Subscriptions, select Pomi and can
 Your progress is tied to your account. Sign in again with the same email, Apple or Google account, and your garden and statistics come back.
 
 **How do I delete my account?**<br />
-You can delete your account and all of your data from the in-app settings. If you need help, email [yakupselimucar@hotmail.com](mailto:yakupselimucar@hotmail.com).
+You can delete your account and all of your data from the in-app settings. If you need help, email [support@pomifocus.com](mailto:support@pomifocus.com).
 
 More answers: [Support & FAQ](https://pomifocus.com/support.html)
 
@@ -151,7 +151,7 @@ Pomi, iPhone, iPad ve Android için ücretsiz, retro piksel temalı bir **Pomodo
 - **Yaş sınırı:** 12+
 - **İlk yayın:** 5 Temmuz 2026
 - **Geliştirici:** Yakup Selim Uçar
-- **Destek:** [yakupselimucar@hotmail.com](mailto:yakupselimucar@hotmail.com)
+- **Destek:** [support@pomifocus.com](mailto:support@pomifocus.com)
 
 ### Sıkça sorulan sorular
 
@@ -171,7 +171,7 @@ iPhone'da Ayarlar → [Adın] → Abonelikler yolunu izle, Pomi'yi seç ve abone
 İlerlemen hesabına bağlıdır. Aynı e-posta, Apple veya Google hesabıyla tekrar giriş yaptığında bahçen ve istatistiklerin geri gelir.
 
 **Hesabımı nasıl silerim?**<br />
-Uygulama içi ayarlardan hesabını ve tüm verilerini silebilirsin. Yardıma ihtiyacın olursa [yakupselimucar@hotmail.com](mailto:yakupselimucar@hotmail.com) adresine yaz.
+Uygulama içi ayarlardan hesabını ve tüm verilerini silebilirsin. Yardıma ihtiyacın olursa [support@pomifocus.com](mailto:support@pomifocus.com) adresine yaz.
 
 Diğer sorular için: [Destek ve SSS](https://pomifocus.com/support.html)
 

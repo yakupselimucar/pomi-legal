@@ -14,7 +14,7 @@ Pomi, odaklanmayı oyuna dönüştüren ücretsiz, retro piksel temalı bir Pomo
 - Age rating: 12+
 - First release: 2026-07-05
 - Developer: Yakup Selim Uçar
-- Support: yakupselimucar@hotmail.com
+- Support: support@pomifocus.com
 
 ## Features
 

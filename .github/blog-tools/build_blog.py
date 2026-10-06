@@ -39,8 +39,8 @@ T = {
              tldr="Kısa cevap", faq="Sık sorulan sorular", related="Bunları da oku", sources="Kaynaklar",
              cta_h="Pomi'yi ücretsiz dene", cta_p="Reklamsız, çevrimdışı çalışır. iPhone, iPad ve Android'de.",
              ios="App Store", android="Google Play",
-             disclosure="Şeffaflık notu: Bu yazı Pomi'nin geliştiricisi tarafından yazıldı. Diğer uygulamalarla ilgili bilgiler yazının yayımlandığı tarihte herkese açık mağaza sayfalarına dayanır; fiyat ve özellikler değişebilir. Bir hata görürsen <a href=\"mailto:yakupselimucar@hotmail.com\">yaz</a>, düzeltelim.",
-             copyright="© 2026 Pomi. Tüm hakları saklıdır.", privacy="Gizlilik", terms="Şartlar",
+             disclosure="Şeffaflık notu: Bu yazı Pomi'nin geliştiricisi tarafından yazıldı. Diğer uygulamalarla ilgili bilgiler yazının yayımlandığı tarihte herkese açık mağaza sayfalarına dayanır; fiyat ve özellikler değişebilir. Bir hata görürsen <a href=\"mailto:support@pomifocus.com\">yaz</a>, düzeltelim.",
+             copyright="© 2026 Pomi — Yakup Selim Uçar tarafından geliştirildi · Konya, Türkiye", privacy="Gizlilik", terms="Şartlar",
              other_lang="Read in English", blog_title="Pomi Blog · Odak, Pomodoro ve birlikte çalışma",
              blog_desc="Pomodoro tekniği, odaklanma araçları ve öğrenciler için verimlilik rehberleri. Pomi ekibinden kısa, kaynaklı yazılar.",
              blog_h1="Odak üzerine <span class=\"accent\">kısa yazılar</span>",
@@ -51,8 +51,8 @@ T = {
              tldr="Short answer", faq="Frequently asked questions", related="Keep reading", sources="Sources",
              cta_h="Try Pomi for free", cta_p="No ads, works offline. On iPhone, iPad and Android.",
              ios="App Store", android="Google Play",
-             disclosure="Transparency note: This article was written by the developer of Pomi. Information about other apps is based on their public store listings at the time of publishing; prices and features may change. Spotted a mistake? <a href=\"mailto:yakupselimucar@hotmail.com\">Email us</a> and we will fix it.",
-             copyright="© 2026 Pomi. All rights reserved.", privacy="Privacy", terms="Terms",
+             disclosure="Transparency note: This article was written by the developer of Pomi. Information about other apps is based on their public store listings at the time of publishing; prices and features may change. Spotted a mistake? <a href=\"mailto:support@pomifocus.com\">Email us</a> and we will fix it.",
+             copyright="© 2026 Pomi — developed by Yakup Selim Uçar · Konya, Türkiye", privacy="Privacy", terms="Terms",
              other_lang="Türkçe oku", blog_title="Pomi Blog · Focus, Pomodoro and studying together",
              blog_desc="Guides on the Pomodoro technique, focus apps and productivity for students. Short, sourced articles from the Pomi team.",
              blog_h1="Short reads on <span class=\"accent\">focus</span>",
@@ -94,7 +94,9 @@ def footer(lang):
         <a href="../support.html">{t['support']}</a>
         <a href="../about.html">{t['maker']}</a>
         <a href="feed.xml">{t['rss']}</a>
-        <a href="mailto:yakupselimucar@hotmail.com">yakupselimucar@hotmail.com</a>
+        <a href="mailto:support@pomifocus.com">support@pomifocus.com</a>
+        <a href="https://www.linkedin.com/company/pomifocus" rel="noopener">LinkedIn</a>
+        <a href="https://apps.apple.com/tr/app/id6784132034" rel="noopener">App Store</a>
       </span>
     </div>
   </footer>
@@ -322,7 +324,7 @@ def feed(all_posts):
 </rss>
 """
 
-STATIC_PAGES = [("", "2026-09-13"), ("about.html", "2026-09-13"), ("support.html", "2026-09-12"), ("privacy.html", "2026-09-12"), ("terms.html", "2026-09-12")]
+STATIC_PAGES = [("", "2026-10-07"), ("about.html", "2026-10-07"), ("support.html", "2026-10-07"), ("privacy.html", "2026-10-07"), ("terms.html", "2026-10-07")]
 
 def sitemap(all_posts):
     latest = max(q.get("modified", q["date"]) for q in all_posts)
