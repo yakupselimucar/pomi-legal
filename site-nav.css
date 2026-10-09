@@ -1,0 +1,58 @@
+/* ═══════════════════════════════════════════════════════════════
+   Pomi üst bar — kendi stiliyle gelen sayfalar için (destek, gizlilik, şartlar).
+   index.html ve blog/blog.css'teki .nav ile birebir aynı görünür; sayfalar
+   arasında geçerken bar değişmesin diye. Bu sayfaların genel `a`, `header`
+   kuralları bara sızmasın diye her şey .site-nav altında kapsanır.
+   ═══════════════════════════════════════════════════════════════ */
+.site-nav {
+  position: sticky; top: 0; z-index: 50;
+  margin: 0; text-align: left;
+  background: rgba(253, 250, 242, 0.82);
+  backdrop-filter: saturate(180%) blur(14px);
+  -webkit-backdrop-filter: saturate(180%) blur(14px);
+  border-bottom: 1px solid rgba(39, 34, 61, 0.06);
+  font-family: 'DM Sans', -apple-system, system-ui, sans-serif;
+  font-size: 17px; line-height: 1.6;
+}
+.site-nav .wrap {
+  width: 100%; max-width: 1140px; margin: 0 auto;
+  padding: 0 clamp(1.15rem, 4vw, 2.5rem);
+  display: flex; align-items: center; gap: 1.25rem; height: 72px;
+}
+.site-nav a { background: none; padding: 0; font-weight: 500; }
+.site-nav .brand { display: flex; align-items: center; gap: 0.6rem; text-decoration: none; margin-right: auto; color: #27223D; }
+.site-nav .brand svg { width: 34px; height: 34px; }
+.site-nav .brand span {
+  font-family: 'Pixelify Sans', monospace; font-size: 1.35rem;
+  font-weight: 700; letter-spacing: 0.04em;
+}
+.site-nav .nav-links { display: flex; gap: 1.6rem; }
+.site-nav .nav-links a {
+  text-decoration: none; font-size: 0.95rem;
+  color: #635C7D; transition: color 0.2s ease;
+}
+.site-nav .nav-links a:hover,
+.site-nav .nav-links a[aria-current="page"] { color: #27223D; }
+.site-nav .lang { display: inline-flex; background: rgba(39, 34, 61, 0.05); border-radius: 999px; padding: 3px; }
+.site-nav .lang-btn {
+  border: 0; background: transparent; cursor: pointer; box-shadow: none;
+  font-family: inherit; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.04em;
+  color: #635C7D; padding: 0.35rem 0.7rem; border-radius: 999px;
+  transition: all 0.2s ease;
+}
+.site-nav .lang-btn:hover { transform: none; box-shadow: none; color: #27223D; }
+.site-nav .lang-btn.active { background: #FFFFFF; color: #27223D; box-shadow: 0 1px 3px rgba(39, 34, 61, 0.12); }
+.site-nav .btn-get {
+  display: inline-flex; align-items: center; text-decoration: none;
+  font-weight: 600; font-size: 0.9rem; padding: 0.6rem 1.05rem; border-radius: 999px;
+  background: #27223D; color: #FBF4E4;
+  box-shadow: 0 14px 26px -18px rgba(39, 34, 61, 0.9);
+  transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.site-nav .btn-get:hover { transform: translateY(-2px); background: #27223D; }
+@media (max-width: 720px) {
+  .site-nav .nav-links { display: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .site-nav .btn-get, .site-nav .lang-btn { transition: none; }
+}

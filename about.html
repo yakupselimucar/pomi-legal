@@ -67,131 +67,217 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="blog/blog.css" />
+  <script>try{if(localStorage.getItem('pomi-lang')==='en')document.documentElement.lang='en'}catch(e){}</script>
   <style>
-    .maker { display: grid; grid-template-columns: 120px 1fr; gap: 1.6rem; align-items: center; }
-    .maker .avatar { width: 120px; height: 120px; border-radius: 28px; background: var(--cream); border: 1px solid var(--line); display: grid; place-items: center; box-shadow: var(--shadow); }
-    .maker .avatar svg { width: 84px; height: 84px; }
-    .facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 0.8rem; list-style: none; padding: 0; }
-    .facts li { background: var(--paper); border: 1px solid var(--line); border-radius: var(--r-md); padding: 0.9rem 1.1rem; }
-    .facts .k { display: block; font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); margin-bottom: 0.25rem; }
+    /* Dil: <html lang> neyse diğer dildeki bloklar gizlenir (ana sayfadaki TR/EN ile aynı tercih). */
+    html[lang="en"] [data-l="tr"], html[lang="tr"] [data-l="en"] { display: none !important; }
+
+    .maker-hero { position: relative; padding: clamp(2.5rem, 6vw, 4.5rem) 0 1.5rem; }
+    .maker-hero::before {
+      content: ""; position: absolute; inset: -40% -10% 10%; z-index: -1; pointer-events: none;
+      background:
+        radial-gradient(40% 46% at 12% 30%, rgba(255, 91, 110, 0.12), transparent 70%),
+        radial-gradient(36% 40% at 88% 10%, rgba(47, 185, 155, 0.12), transparent 70%);
+    }
+    .maker { display: grid; grid-template-columns: 132px 1fr; gap: 2rem; align-items: center; margin-top: 1.2rem; }
+    .maker .avatar {
+      width: 132px; height: 132px; border-radius: 32px; background: var(--cream);
+      border: 1px solid var(--line); display: grid; place-items: center; box-shadow: var(--shadow);
+    }
+    .maker .avatar svg { width: 92px; height: 92px; }
+    .maker h1 { font-size: clamp(2.2rem, 1.4rem + 3.5vw, 3.6rem); margin-bottom: 0.8rem; }
+    .maker p { color: var(--ink-soft); max-width: 58ch; font-size: 1.08rem; }
+
+    .facts { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; list-style: none; margin-top: 2rem; }
+    .facts li { background: var(--paper); border: 1px solid var(--line); border-radius: var(--r-md); padding: 1.1rem 1.3rem; }
+    .facts .k { display: block; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-soft); margin-bottom: 0.3rem; }
     .facts .v { font-weight: 600; color: var(--ink); }
-    .links { display: flex; flex-wrap: wrap; gap: 0.6rem; list-style: none; padding: 0; }
-    .links a { display: inline-flex; align-items: center; gap: 0.45rem; text-decoration: none; padding: 0.55rem 1rem; border-radius: 999px; border: 1px solid var(--line); background: var(--paper); font-weight: 600; font-size: 0.92rem; transition: border-color 0.2s ease, transform 0.25s var(--ease); }
-    .links a:hover { border-color: var(--cherry); transform: translateY(-2px); }
-    .en { border-top: 1px solid var(--line-soft); margin-top: 3rem; padding-top: 2rem; }
-    @media (max-width: 560px) { .maker { grid-template-columns: 1fr; } }
+
+    .story { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem 3rem; }
+    .story h2 { font-size: clamp(1.4rem, 1.2rem + 0.8vw, 1.75rem); margin: 0 0 0.9rem; }
+    .story p, .story li { color: var(--ink-2); }
+    .story p + p { margin-top: 1rem; }
+    .story ul { padding-left: 1.2rem; }
+    .story li + li { margin-top: 0.55rem; }
+    .story strong { color: var(--ink); }
+    .story a { text-decoration-color: rgba(39,34,61,0.3); text-underline-offset: 3px; }
+    .story a:hover { text-decoration-color: var(--cherry); }
+    .section-lead { color: var(--ink-soft); max-width: 62ch; margin-top: 0.4rem; }
+
+    .about-h { font-size: clamp(1.4rem, 1.2rem + 0.8vw, 1.75rem) !important; }
+    .links { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.8rem; list-style: none; margin-top: 1.2rem; }
+    .links a {
+      display: flex; align-items: center; gap: 0.8rem; text-decoration: none;
+      padding: 0.85rem 1rem; border-radius: var(--r-md); border: 1px solid var(--line);
+      background: var(--paper); font-weight: 600; font-size: 0.95rem; color: var(--ink);
+      transition: border-color 0.2s ease, transform 0.25s var(--ease), box-shadow 0.25s var(--ease);
+    }
+    .links a:hover { border-color: rgba(39,34,61,0.18); transform: translateY(-2px); box-shadow: var(--shadow); }
+    .links .ic {
+      width: 38px; height: 38px; border-radius: 11px; flex-shrink: 0;
+      display: grid; place-items: center; background: var(--c, var(--ink)); color: #fff;
+    }
+    .links .ic svg { width: 20px; height: 20px; }
+    .links small { display: block; font-weight: 500; font-size: 0.8rem; color: var(--ink-soft); }
+    .about-note { margin-top: 1.4rem; max-width: 760px; }
+
+    @media (max-width: 940px) {
+      .facts { grid-template-columns: repeat(2, 1fr); }
+      .story { grid-template-columns: 1fr; gap: 2.4rem; }
+      .links { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 560px) {
+      .maker { grid-template-columns: 1fr; gap: 1.2rem; }
+      .facts, .links { grid-template-columns: 1fr; }
+    }
+    @media (prefers-reduced-motion: reduce) { .links a { transition: none; } }
   </style>
 </head>
 <body>
-  <a class="skip" href="#main">İçeriğe geç</a>
+  <a class="skip" href="#main"><span data-l="tr">İçeriğe geç</span><span data-l="en">Skip to content</span></a>
   <header class="nav">
     <div class="wrap">
       <a class="brand" href="./" aria-label="Pomi"><svg viewBox="0 0 16 16" shape-rendering="crispEdges" aria-hidden="true"><rect x="4" y="5" width="8.03" height="1.03" fill="#27223D"/><rect x="3" y="6" width="10.03" height="1.03" fill="#27223D"/><rect x="2" y="7" width="12.03" height="1.03" fill="#27223D"/><rect x="2" y="8" width="12.03" height="1.03" fill="#27223D"/><rect x="2" y="9" width="12.03" height="1.03" fill="#27223D"/><rect x="2" y="10" width="12.03" height="1.03" fill="#27223D"/><rect x="3" y="11" width="10.03" height="1.03" fill="#27223D"/><rect x="4" y="12" width="8.03" height="1.03" fill="#27223D"/><rect x="4" y="4" width="7.03" height="1.03" fill="#27223D"/><rect x="4" y="13" width="7.03" height="1.03" fill="#27223D"/><rect x="5" y="5" width="6.03" height="1.03" fill="#E8455B"/><rect x="4" y="6" width="8.03" height="1.03" fill="#E8455B"/><rect x="3" y="7" width="10.03" height="1.03" fill="#E8455B"/><rect x="3" y="8" width="10.03" height="1.03" fill="#E8455B"/><rect x="3" y="9" width="10.03" height="1.03" fill="#E8455B"/><rect x="3" y="10" width="10.03" height="1.03" fill="#E8455B"/><rect x="4" y="11" width="8.03" height="1.03" fill="#E8455B"/><rect x="5" y="12" width="6.03" height="1.03" fill="#E8455B"/><rect x="9" y="11" width="3.03" height="1.03" fill="#C0344A"/><rect x="8" y="12" width="2.03" height="1.03" fill="#C0344A"/><rect x="5" y="6" width="2.03" height="1.03" fill="#FF7A8C"/><rect x="4" y="7" width="1.03" height="1.03" fill="#FF7A8C"/><rect x="7" y="2" width="1.03" height="1.03" fill="#46C39A"/><rect x="8" y="2" width="1.03" height="1.03" fill="#46C39A"/><rect x="6" y="3" width="1.03" height="1.03" fill="#46C39A"/><rect x="7" y="3" width="1.03" height="1.03" fill="#46C39A"/><rect x="8" y="3" width="1.03" height="1.03" fill="#46C39A"/><rect x="9" y="3" width="1.03" height="1.03" fill="#46C39A"/><rect x="7" y="4" width="1.03" height="1.03" fill="#2E9B78"/><rect x="8" y="4" width="1.03" height="1.03" fill="#2E9B78"/><rect x="5" y="4" width="1.03" height="1.03" fill="#46C39A"/><rect x="10" y="4" width="1.03" height="1.03" fill="#46C39A"/><rect x="6" y="8" width="1.03" height="1.03" fill="#27223D"/><rect x="9" y="8" width="1.03" height="1.03" fill="#27223D"/><rect x="6" y="8" width="0.53" height="0.53" fill="#FFFFFF"/><rect x="9" y="8" width="0.53" height="0.53" fill="#FFFFFF"/><rect x="4" y="9" width="1.03" height="1.03" fill="#FFC2CE"/><rect x="11" y="9" width="1.03" height="1.03" fill="#FFC2CE"/><rect x="7" y="10" width="1.03" height="1.03" fill="#27223D"/><rect x="8" y="10" width="1.03" height="1.03" fill="#27223D"/><rect x="6" y="9" width="0.63" height="0.63" fill="#27223D"/><rect x="9.4" y="9" width="0.63" height="0.63" fill="#27223D"/></svg><span>Pomi</span></a>
       <nav class="nav-links" aria-label="Bölümler">
-        <a href="./">Ana sayfa</a>
-        <a href="blog/">Blog</a>
-        <a href="about.html" aria-current="page">Yapımcı</a>
-        <a href="support.html">Destek</a>
+        <a href="./#how"><span data-l="tr">Nasıl çalışır</span><span data-l="en">How it works</span></a>
+        <a href="./#features"><span data-l="tr">Özellikler</span><span data-l="en">Features</span></a>
+        <a href="./#conquest"><span data-l="tr">Fetih</span><span data-l="en">Conquest</span></a>
+        <a href="./#collection"><span data-l="tr">Koleksiyon</span><span data-l="en">Collection</span></a>
+        <a href="blog/" data-href-en="blog/en.html">Blog</a>
+        <a href="about.html" aria-current="page"><span data-l="tr">Yapımcı</span><span data-l="en">Maker</span></a>
+        <a href="support.html"><span data-l="tr">Destek</span><span data-l="en">Support</span></a>
       </nav>
-      <a class="btn btn-primary btn-sm" href="./#get">İndir</a>
+      <div class="lang" role="group" aria-label="Dil / Language">
+        <button class="lang-btn" data-lang="tr" type="button">TR</button>
+        <button class="lang-btn" data-lang="en" type="button">EN</button>
+      </div>
+      <a class="btn btn-primary btn-sm" href="./#get"><span data-l="tr">İndir</span><span data-l="en">Get the app</span></a>
     </div>
   </header>
 
   <main id="main">
-    <header class="article-head">
+    <section class="maker-hero">
       <div class="wrap">
-        <ol class="breadcrumb" aria-label="Breadcrumb">
-          <li><a href="./">Pomi</a></li>
-          <li aria-current="page">Yapımcı</li>
-        </ol>
-        <p class="kicker">Yapımcı</p>
+        <p class="kicker"><span data-l="tr">Yapımcı</span><span data-l="en">The maker</span></p>
         <div class="maker">
-          <div class="avatar" aria-hidden="true"><svg viewBox="0 0 16 16" shape-rendering="crispEdges"><rect x="4" y="5" width="8.03" height="1.03" fill="#27223D"/><rect x="3" y="6" width="10.03" height="1.03" fill="#27223D"/><rect x="2" y="7" width="12.03" height="1.03" fill="#27223D"/><rect x="2" y="8" width="12.03" height="1.03" fill="#27223D"/><rect x="2" y="9" width="12.03" height="1.03" fill="#27223D"/><rect x="2" y="10" width="12.03" height="1.03" fill="#27223D"/><rect x="3" y="11" width="10.03" height="1.03" fill="#27223D"/><rect x="4" y="12" width="8.03" height="1.03" fill="#27223D"/><rect x="4" y="4" width="7.03" height="1.03" fill="#27223D"/><rect x="4" y="13" width="7.03" height="1.03" fill="#27223D"/><rect x="5" y="5" width="6.03" height="1.03" fill="#E8455B"/><rect x="4" y="6" width="8.03" height="1.03" fill="#E8455B"/><rect x="3" y="7" width="10.03" height="1.03" fill="#E8455B"/><rect x="3" y="8" width="10.03" height="1.03" fill="#E8455B"/><rect x="3" y="9" width="10.03" height="1.03" fill="#E8455B"/><rect x="3" y="10" width="10.03" height="1.03" fill="#E8455B"/><rect x="4" y="11" width="8.03" height="1.03" fill="#E8455B"/><rect x="5" y="12" width="6.03" height="1.03" fill="#E8455B"/><rect x="9" y="11" width="3.03" height="1.03" fill="#C0344A"/><rect x="8" y="12" width="2.03" height="1.03" fill="#C0344A"/><rect x="5" y="6" width="2.03" height="1.03" fill="#FF7A8C"/><rect x="4" y="7" width="1.03" height="1.03" fill="#FF7A8C"/><rect x="7" y="2" width="1.03" height="1.03" fill="#46C39A"/><rect x="8" y="2" width="1.03" height="1.03" fill="#46C39A"/><rect x="6" y="3" width="1.03" height="1.03" fill="#46C39A"/><rect x="7" y="3" width="1.03" height="1.03" fill="#46C39A"/><rect x="8" y="3" width="1.03" height="1.03" fill="#46C39A"/><rect x="9" y="3" width="1.03" height="1.03" fill="#46C39A"/><rect x="7" y="4" width="1.03" height="1.03" fill="#2E9B78"/><rect x="8" y="4" width="1.03" height="1.03" fill="#2E9B78"/><rect x="5" y="4" width="1.03" height="1.03" fill="#46C39A"/><rect x="10" y="4" width="1.03" height="1.03" fill="#46C39A"/><rect x="6" y="8" width="1.03" height="1.03" fill="#27223D"/><rect x="9" y="8" width="1.03" height="1.03" fill="#27223D"/><rect x="6" y="8" width="0.53" height="0.53" fill="#FFFFFF"/><rect x="9" y="8" width="0.53" height="0.53" fill="#FFFFFF"/><rect x="4" y="9" width="1.03" height="1.03" fill="#FFC2CE"/><rect x="11" y="9" width="1.03" height="1.03" fill="#FFC2CE"/><rect x="7" y="10" width="1.03" height="1.03" fill="#27223D"/><rect x="8" y="10" width="1.03" height="1.03" fill="#27223D"/><rect x="6" y="9" width="0.63" height="0.63" fill="#27223D"/><rect x="9.4" y="9" width="0.63" height="0.63" fill="#27223D"/></svg></div>
+          <div class="avatar" aria-hidden="true"><svg viewBox="0 0 16 16" shape-rendering="crispEdges" aria-hidden="true"><rect x="4" y="5" width="8.03" height="1.03" fill="#27223D"/><rect x="3" y="6" width="10.03" height="1.03" fill="#27223D"/><rect x="2" y="7" width="12.03" height="1.03" fill="#27223D"/><rect x="2" y="8" width="12.03" height="1.03" fill="#27223D"/><rect x="2" y="9" width="12.03" height="1.03" fill="#27223D"/><rect x="2" y="10" width="12.03" height="1.03" fill="#27223D"/><rect x="3" y="11" width="10.03" height="1.03" fill="#27223D"/><rect x="4" y="12" width="8.03" height="1.03" fill="#27223D"/><rect x="4" y="4" width="7.03" height="1.03" fill="#27223D"/><rect x="4" y="13" width="7.03" height="1.03" fill="#27223D"/><rect x="5" y="5" width="6.03" height="1.03" fill="#E8455B"/><rect x="4" y="6" width="8.03" height="1.03" fill="#E8455B"/><rect x="3" y="7" width="10.03" height="1.03" fill="#E8455B"/><rect x="3" y="8" width="10.03" height="1.03" fill="#E8455B"/><rect x="3" y="9" width="10.03" height="1.03" fill="#E8455B"/><rect x="3" y="10" width="10.03" height="1.03" fill="#E8455B"/><rect x="4" y="11" width="8.03" height="1.03" fill="#E8455B"/><rect x="5" y="12" width="6.03" height="1.03" fill="#E8455B"/><rect x="9" y="11" width="3.03" height="1.03" fill="#C0344A"/><rect x="8" y="12" width="2.03" height="1.03" fill="#C0344A"/><rect x="5" y="6" width="2.03" height="1.03" fill="#FF7A8C"/><rect x="4" y="7" width="1.03" height="1.03" fill="#FF7A8C"/><rect x="7" y="2" width="1.03" height="1.03" fill="#46C39A"/><rect x="8" y="2" width="1.03" height="1.03" fill="#46C39A"/><rect x="6" y="3" width="1.03" height="1.03" fill="#46C39A"/><rect x="7" y="3" width="1.03" height="1.03" fill="#46C39A"/><rect x="8" y="3" width="1.03" height="1.03" fill="#46C39A"/><rect x="9" y="3" width="1.03" height="1.03" fill="#46C39A"/><rect x="7" y="4" width="1.03" height="1.03" fill="#2E9B78"/><rect x="8" y="4" width="1.03" height="1.03" fill="#2E9B78"/><rect x="5" y="4" width="1.03" height="1.03" fill="#46C39A"/><rect x="10" y="4" width="1.03" height="1.03" fill="#46C39A"/><rect x="6" y="8" width="1.03" height="1.03" fill="#27223D"/><rect x="9" y="8" width="1.03" height="1.03" fill="#27223D"/><rect x="6" y="8" width="0.53" height="0.53" fill="#FFFFFF"/><rect x="9" y="8" width="0.53" height="0.53" fill="#FFFFFF"/><rect x="4" y="9" width="1.03" height="1.03" fill="#FFC2CE"/><rect x="11" y="9" width="1.03" height="1.03" fill="#FFC2CE"/><rect x="7" y="10" width="1.03" height="1.03" fill="#27223D"/><rect x="8" y="10" width="1.03" height="1.03" fill="#27223D"/><rect x="6" y="9" width="0.63" height="0.63" fill="#27223D"/><rect x="9.4" y="9" width="0.63" height="0.63" fill="#27223D"/></svg></div>
           <div>
-            <h1>Merhaba, ben <span class="accent">Yakup Selim Uçar</span>.</h1>
-            <p class="lead">Pomi'yi tek başıma geliştiriyorum. Odaklanmayı zorlaştıran şeyin disiplin eksikliği değil, geri bildirim eksikliği olduğunu düşünüyorum; Pomi bu düşüncenin uygulaması.</p>
+            <h1><span data-l="tr">Merhaba, ben</span><span data-l="en">Hi, I'm</span> <span class="accent">Yakup Selim Uçar</span>.</h1>
+            <p data-l="tr">Pomi'yi tek başıma geliştiriyorum. Odaklanmayı zorlaştıran şeyin disiplin eksikliği değil, geri bildirim eksikliği olduğunu düşünüyorum; Pomi bu düşüncenin uygulaması.</p>
+            <p data-l="en">I build Pomi on my own. I think what makes focus hard isn't a lack of discipline but a lack of feedback; Pomi is that idea turned into an app.</p>
           </div>
         </div>
+        <ul class="facts" aria-label="Kısa bilgiler">
+          <li><span class="k"><span data-l="tr">Rol</span><span data-l="en">Role</span></span><span class="v"><span data-l="tr">Tasarım, geliştirme, destek: hepsi</span><span data-l="en">Design, code, support: all of it</span></span></li>
+          <li><span class="k"><span data-l="tr">Konum</span><span data-l="en">Location</span></span><span class="v">Konya, Türkiye</span></li>
+          <li><span class="k"><span data-l="tr">Araçlar</span><span data-l="en">Tools</span></span><span class="v">Flutter, Dart, Supabase</span></li>
+          <li><span class="k"><span data-l="tr">Pomi'nin ilk sürümü</span><span data-l="en">First release</span></span><span class="v"><span data-l="tr">5 Temmuz 2026</span><span data-l="en">5 July 2026</span></span></li>
+        </ul>
       </div>
-    </header>
+    </section>
 
-    <article class="article-body">
-      <ul class="facts" aria-label="Kısa bilgiler">
-        <li><span class="k">Rol</span><span class="v">Tasarım, geliştirme, destek: hepsi</span></li>
-        <li><span class="k">Konum</span><span class="v">Konya, Türkiye</span></li>
-        <li><span class="k">Araçlar</span><span class="v">Flutter, Dart, Supabase</span></li>
-        <li><span class="k">Pomi'nin ilk sürümü</span><span class="v">5 Temmuz 2026</span></li>
-      </ul>
+    <section class="wrap post-section">
+      <div class="story">
+        <div>
+          <h2 id="neden"><span data-l="tr">Pomi'yi neden yaptım?</span><span data-l="en">Why I built Pomi</span></h2>
+          <div data-l="tr">
+            <p>Sınav dönemlerinde arkadaşlarımla aynı saatte çalışmanın tek başına çalışmaktan çok daha kolay olduğunu fark etmiştim. Kütüphane kapanınca ya da herkes farklı şehirdeyken bu his kayboluyordu. Piyasadaki uygulamalar ya beni cezalandırıyordu (ağaç kurur) ya da sadece sayıyordu. İstediğim şey basitti: arkadaşlarımın çalıştığını görmek, ama kimsenin sayacına bağlı olmamak; ve günün sonunda ne yaptığımı bir bakışta görebilmek.</p>
+            <p>Pomi buradan çıktı. Her tamamlanan seans bahçeye bir bitki ekler, odalarda herkes kendi sayacıyla çalışır, odak dakikaları şehrine puan yazar ve 81 şehir haftalık sezonlarda yarışır. Ceza yok, reklam yok, ortak sayaç yok.</p>
+          </div>
+          <div data-l="en">
+            <p>During exam seasons I noticed that studying at the same time as my friends was far easier than studying alone. When the library closed, or when everyone was in a different city, that feeling disappeared. The apps out there either punished me (the tree dies) or just counted. What I wanted was simple: to see my friends studying without depending on anyone else's timer, and to see what I'd done at a glance at the end of the day.</p>
+            <p>That's where Pomi came from. Every completed session adds a plant to your garden, everyone in a room runs their own timer, your focus minutes score points for your city, and 81 cities compete in weekly seasons. No punishment, no ads, no shared timer.</p>
+          </div>
+        </div>
+        <div>
+          <h2 id="nasil"><span data-l="tr">Nasıl geliştiriyorum?</span><span data-l="en">How I build it</span></h2>
+          <ul data-l="tr">
+            <li><strong>Tek kişi.</strong> Tasarımdan mağaza metnine, destek e-postalarından bu bloga kadar her şeyi ben yapıyorum. Bir hata bildirdiğinde doğrudan geliştiriciye ulaşıyorsun.</li>
+            <li><strong>Araştırmaya dayalı kararlar.</strong> Ceza mekaniği kullanmamak, günlük seri yerine haftalık lig koymak gibi kararlar motivasyon ve öğrenme araştırmalarına dayanıyor; gerekçelerini <a href="blog/odak-uygulamalarinda-oyunlastirma-ise-yarar-mi.html">blogda açıkça yazdım</a>.</li>
+            <li><strong>Şeffaflık.</strong> Blogdaki karşılaştırma yazılarında rakip uygulamaların artılarını da yazıyorum; her yazının sonunda kimin yazdığı ve bilgilerin hangi tarihe ait olduğu belirtiliyor.</li>
+            <li><strong>Gizlilik.</strong> Fetih haritasında bireysel veri görünmez, odalarda kamera ve mikrofon yoktur. Ayrıntılar <a href="privacy.html">gizlilik politikasında</a>.</li>
+          </ul>
+          <ul data-l="en">
+            <li><strong>One person.</strong> From design to store copy, from support emails to the blog, I do all of it. When you report a bug, you reach the developer directly.</li>
+            <li><strong>Research-based decisions.</strong> Choices like having no punishment mechanics and using a weekly league instead of daily streaks are grounded in motivation and learning research; I explain the reasoning <a href="blog/does-gamification-help-you-focus.html">on the blog</a>.</li>
+            <li><strong>Transparency.</strong> Comparison articles also list the strengths of competing apps; every article says who wrote it and when the information was checked.</li>
+            <li><strong>Privacy.</strong> The conquest map never shows individual data, and rooms have no camera or microphone. Details are in the <a href="privacy.html">privacy policy</a>.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-      <h2 id="neden">Pomi'yi neden yaptım?</h2>
-      <p>Sınav dönemlerinde arkadaşlarımla aynı saatte çalışmanın tek başına çalışmaktan çok daha kolay olduğunu fark etmiştim. Kütüphane kapanınca ya da herkes farklı şehirdeyken bu his kayboluyordu. Piyasadaki uygulamalar ya beni cezalandırıyordu (ağaç kurur) ya da sadece sayıyordu. İstediğim şey basitti: arkadaşlarımın çalıştığını görmek, ama kimsenin sayacına bağlı olmamak; ve günün sonunda ne yaptığımı bir bakışta görebilmek.</p>
-      <p>Pomi buradan çıktı. Her tamamlanan seans bahçeye bir bitki ekler, odalarda herkes kendi sayacıyla çalışır, odak dakikaları şehrine puan yazar ve 81 şehir haftalık sezonlarda yarışır. Ceza yok, reklam yok, ortak sayaç yok.</p>
-
-      <h2 id="nasil">Nasıl geliştiriyorum?</h2>
-      <ul>
-        <li><strong>Tek kişi.</strong> Tasarımdan mağaza metnine, destek e-postalarından bu bloga kadar her şeyi ben yapıyorum. Bir hata bildirdiğinde doğrudan geliştiriciye ulaşıyorsun.</li>
-        <li><strong>Araştırmaya dayalı kararlar.</strong> Ceza mekaniği kullanmamak, günlük seri yerine haftalık lig koymak gibi kararlar motivasyon ve öğrenme araştırmalarına dayanıyor; gerekçelerini <a href="blog/odak-uygulamalarinda-oyunlastirma-ise-yarar-mi.html">blogda açıkça yazdım</a>.</li>
-        <li><strong>Şeffaflık.</strong> Blogdaki karşılaştırma yazılarında rakip uygulamaların artılarını da yazıyorum; her yazının sonunda kimin yazdığı ve bilgilerin hangi tarihe ait olduğu belirtiliyor.</li>
-        <li><strong>Gizlilik.</strong> Fetih haritasında bireysel veri görünmez, odalarda kamera ve mikrofon yoktur. Ayrıntılar <a href="privacy.html">gizlilik politikasında</a>.</li>
-      </ul>
-
-      <h2 id="yazdiklarim">Ne hakkında yazıyorum?</h2>
-      <p>Pomodoro tekniği, odaklanma, öğrenme bilimi ve oyunlaştırma. Türkçe yazılar ana dil, çoğunun İngilizce çifti var. <a href="blog/">Blogun tamamı burada</a>; başlamak için üç öneri:</p>
-      <ul class="post-list" style="margin-top:0.8rem">
+    <section class="wrap post-section">
+      <h2 class="section-h about-h" id="yazdiklarim"><span data-l="tr">Ne hakkında yazıyorum?</span><span data-l="en">What I write about</span></h2>
+      <p class="section-lead" data-l="tr">Pomodoro tekniği, odaklanma, öğrenme bilimi ve oyunlaştırma. Türkçe yazılar ana dil, çoğunun İngilizce çifti var. Başlamak için üç öneri ya da <a href="blog/">blogun tamamı</a>.</p>
+      <p class="section-lead" data-l="en">The Pomodoro technique, focus, learning science and gamification. Three places to start, or <a href="blog/en.html">the whole blog</a>.</p>
+      <ul class="post-grid" data-l="tr">
         <li><a class="post-card" href="blog/pomodoro-teknigi-nedir.html"><span class="kicker">Temel bilgi</span><h3>Pomodoro Tekniği Nedir? Nasıl Uygulanır?</h3></a></li>
         <li><a class="post-card" href="blog/study-with-me-birlikte-ders-calisma.html"><span class="kicker">Rehber</span><h3>Study With Me: Birlikte Ders Çalışmak Neden İşe Yarar?</h3></a></li>
         <li><a class="post-card" href="blog/en-iyi-pomodoro-uygulamalari-2026.html"><span class="kicker">Karşılaştırma</span><h3>2026'nın En İyi Pomodoro Uygulamaları</h3></a></li>
       </ul>
-
-      <h2 id="yayinci">Yayıncı</h2>
-      <p>Pomi, App Store ve Google Play'de Pomi'nin kurucusu <strong>Yakup Selim Uçar</strong>'ın geliştirici hesabıyla yayımlanır.</p>
-      <p>
-        <a href="https://www.linkedin.com/in/yakup-selim-ucar/" rel="me noopener">Kurucu LinkedIn'de</a> ·
-        <a href="https://www.linkedin.com/company/pomifocus" rel="noopener">Pomi LinkedIn'de</a>
-      </p>
-
-      <h2 id="iletisim">İletişim</h2>
-      <p>Hata bildirimi, özellik isteği, basın sorusu ya da sadece merhaba demek için. Genellikle 48 saat içinde yanıt veriyorum.</p>
-      <ul class="links">
-        <li><a href="mailto:support@pomifocus.com">✉️ support@pomifocus.com</a></li>
-        <li><a href="https://github.com/yakupselimucar" rel="me noopener">GitHub</a></li>
-        <li><a href="https://www.linkedin.com/in/yakup-selim-ucar/" rel="me noopener">LinkedIn</a></li>
-        <li><a href="https://www.linkedin.com/company/pomifocus" rel="noopener">Pomi LinkedIn</a></li>
-        <li><a href="https://www.threads.com/@yakupselim_ucar" rel="me noopener">Threads</a></li>
-        <li><a href="https://www.instagram.com/yakupselim_ucar/" rel="me noopener">Instagram</a></li>
-        <li><a href="https://medium.com/@yakupselimucar" rel="me noopener">Medium</a></li>
-        <li><a href="https://apps.apple.com/tr/app/id6784132034" rel="noopener">App Store</a></li>
-        <li><a href="https://play.google.com/store/apps/details?id=com.yakupselimucar.pomi" rel="noopener">Google Play</a></li>
+      <ul class="post-grid" data-l="en">
+        <li><a class="post-card" href="blog/what-is-the-pomodoro-technique.html"><span class="kicker">Basics</span><h3>What Is the Pomodoro Technique?</h3></a></li>
+        <li><a class="post-card" href="blog/study-with-me-how-to-study-together.html"><span class="kicker">Guide</span><h3>Study With Me: How to Study Together</h3></a></li>
+        <li><a class="post-card" href="blog/best-pomodoro-apps-2026.html"><span class="kicker">Comparison</span><h3>The Best Pomodoro Apps in 2026</h3></a></li>
       </ul>
-      <p class="note">Basın için hazır bilgi kartı ve logo dosyaları e-postayla gönderilir. Pomi hakkında yazarken lütfen odalar için "herkes kendi sayacıyla" ifadesini kullanın; ortak sayaç yoktur.</p>
+    </section>
 
-      <section class="en" lang="en" id="en">
-        <p class="kicker">In English</p>
-        <h2 style="margin-top:0.6rem">About the maker</h2>
-        <p>I'm Yakup Selim Uçar, the solo developer behind Pomi, a free, ad-free Pomodoro and study app for iOS and Android. Pomi turns every completed focus session into a plant in a pixel garden, lets friends study together in rooms where everyone runs their own timer, and scores focus minutes for your city on a conquest map where 81 cities compete in 7-day seasons. I build it with Flutter, make design decisions based on motivation and learning research, and write about focus on the <a href="blog/en.html">English blog</a>. Bug reports, feature requests and press questions: <a href="mailto:support@pomifocus.com">support@pomifocus.com</a>.</p>
-        <p>Pomi is published on the App Store and Google Play under the developer
-        account of <strong>Yakup Selim Uçar</strong>, founder of Pomi.</p>
-        <p>
-          <a href="https://www.linkedin.com/in/yakup-selim-ucar/" rel="me noopener">Founder on LinkedIn</a> ·
-          <a href="https://www.linkedin.com/company/pomifocus" rel="noopener">Pomi on LinkedIn</a>
-        </p>
-      </section>
-    </article>
+    <section class="wrap post-section">
+      <h2 class="section-h about-h" id="iletisim"><span data-l="tr">İletişim</span><span data-l="en">Get in touch</span></h2>
+      <p class="section-lead" data-l="tr">Hata bildirimi, özellik isteği, basın sorusu ya da sadece merhaba demek için. Genellikle 48 saat içinde yanıt veriyorum.</p>
+      <p class="section-lead" data-l="en">Bug reports, feature requests, press questions or just to say hi. I usually reply within 48 hours.</p>
+      <ul class="links">
+        <li><a href="mailto:support@pomifocus.com" style="--c:#E8455B"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="m3 6.5 9 6.5 9-6.5"/></svg></span><span><span data-l="tr">E-posta</span><span data-l="en">Email</span><small>support@pomifocus.com</small></span></a></li>
+        <li><a href="https://github.com/yakupselimucar" rel="me noopener" style="--c:#24292F"><span class="ic"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2 0-.3-.5-1.5.2-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.6 18.3 5 18.3 5c.7 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3"/></svg></span><span>GitHub<small>@yakupselimucar</small></span></a></li>
+        <li><a href="https://www.linkedin.com/in/yakup-selim-ucar/" rel="me noopener" style="--c:#0A66C2"><span class="ic"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05a3.74 3.74 0 0 1 3.37-1.85c3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13Zm1.78 13.02H3.56V9h3.56v11.45Z"/></svg></span><span>LinkedIn<small><span data-l="tr">Kurucu</span><span data-l="en">Founder</span></small></span></a></li>
+        <li><a href="https://www.linkedin.com/company/pomifocus" rel="noopener" style="--c:#0A66C2"><span class="ic"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05a3.74 3.74 0 0 1 3.37-1.85c3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13Zm1.78 13.02H3.56V9h3.56v11.45Z"/></svg></span><span>LinkedIn<small><span data-l="tr">Pomi sayfası</span><span data-l="en">Pomi page</span></small></span></a></li>
+        <li><a href="https://www.threads.com/@yakupselim_ucar" rel="me noopener" style="--c:#101010"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-3.9 7.9"/></svg></span><span>Threads<small>@yakupselim_ucar</small></span></a></li>
+        <li><a href="https://www.instagram.com/yakupselim_ucar/" rel="me noopener" style="--c:#D62976"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor"/></svg></span><span>Instagram<small>@yakupselim_ucar</small></span></a></li>
+        <li><a href="https://medium.com/@yakupselimucar" rel="me noopener" style="--c:#121212"><span class="ic"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.54 12a6.8 6.8 0 0 1-6.77 6.82A6.8 6.8 0 0 1 0 12a6.8 6.8 0 0 1 6.77-6.82A6.8 6.8 0 0 1 13.54 12Zm7.42 0c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12Z"/></svg></span><span>Medium<small>@yakupselimucar</small></span></a></li>
+        <li><a href="https://apps.apple.com/tr/app/id6784132034" rel="noopener" style="--c:#27223D"><span class="ic"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.15 6.9c-.95 0-2.42-1.08-3.96-1.04-2.04.03-3.91 1.18-4.96 3.01-2.12 3.68-.55 9.1 1.52 12.09 1.01 1.45 2.2 3.09 3.79 3.04 1.52-.07 2.09-.99 3.93-.99 1.83 0 2.35.99 3.96.95 1.64-.03 2.68-1.48 3.68-2.95 1.15-1.69 1.63-3.33 1.66-3.42-.04-.01-3.18-1.22-3.22-4.86-.03-3.04 2.48-4.49 2.6-4.56-1.43-2.09-3.63-2.32-4.39-2.38-2-.16-3.68 1.09-4.61 1.09Zm3.38-3.07c.84-1.01 1.4-2.43 1.25-3.83-1.21.05-2.67.8-3.54 1.82-.78.9-1.45 2.34-1.27 3.71 1.34.1 2.72-.69 3.56-1.7"/></svg></span><span>App Store<small>iPhone &amp; iPad</small></span></a></li>
+        <li><a href="https://play.google.com/store/apps/details?id=com.yakupselimucar.pomi" rel="noopener" style="--c:#01875F"><span class="ic"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.2 2.1 13.6 12l-9.4 9.9c-.4-.2-.7-.7-.7-1.3V3.4c0-.6.3-1.1.7-1.3Zm10.6 11.2 2.4 2.5-10.4 6 8-8.5Zm3.9-4.5 2.9 1.7c.9.5.9 1.8 0 2.3l-2.9 1.7-2.7-2.5 2.7-3.2ZM6.8 2.2l10.4 6-2.4 2.5-8-8.5Z"/></svg></span><span>Google Play<small>Android</small></span></a></li>
+      </ul>
+      <p class="note about-note" data-l="tr">Pomi, App Store ve Google Play'de kurucusu <strong>Yakup Selim Uçar</strong>'ın geliştirici hesabıyla yayımlanır. Basın için hazır bilgi kartı ve logo dosyaları e-postayla gönderilir. Pomi hakkında yazarken lütfen odalar için "herkes kendi sayacıyla" ifadesini kullanın; ortak sayaç yoktur.</p>
+      <p class="note about-note" data-l="en">Pomi is published on the App Store and Google Play under the developer account of its founder, <strong>Yakup Selim Uçar</strong>. A press kit and logo files are available by email. When writing about Pomi, please describe rooms as "everyone runs their own timer"; there is no shared timer.</p>
+    </section>
   </main>
 
   <footer class="site">
     <div class="wrap">
-      <span>© 2026 Pomi — Yakup Selim Uçar tarafından geliştirildi · Konya, Türkiye</span>
+      <span><span data-l="tr">© 2026 Pomi — Yakup Selim Uçar tarafından geliştirildi · Konya, Türkiye</span><span data-l="en">© 2026 Pomi — developed by Yakup Selim Uçar · Konya, Türkiye</span></span>
       <span class="fl">
-        <a href="privacy.html">Gizlilik</a>
-        <a href="terms.html">Şartlar</a>
-        <a href="support.html">Destek</a>
-        <a href="blog/">Blog</a>
+        <a href="privacy.html"><span data-l="tr">Gizlilik</span><span data-l="en">Privacy</span></a>
+        <a href="terms.html"><span data-l="tr">Şartlar</span><span data-l="en">Terms</span></a>
+        <a href="support.html"><span data-l="tr">Destek</span><span data-l="en">Support</span></a>
+        <a href="blog/" data-href-en="blog/en.html">Blog</a>
         <a href="mailto:support@pomifocus.com">support@pomifocus.com</a>
         <a href="https://www.linkedin.com/company/pomifocus" rel="noopener">LinkedIn</a>
         <a href="https://apps.apple.com/tr/app/id6784132034" rel="noopener">App Store</a>
       </span>
     </div>
   </footer>
+
+  <script>
+    const TITLES = {
+      tr: 'Yapımcı · Yakup Selim Uçar — Pomi',
+      en: 'The maker · Yakup Selim Uçar — Pomi',
+    };
+    function setLanguage(lang) {
+      if (lang !== 'en') lang = 'tr';
+      document.documentElement.lang = lang;
+      document.title = TITLES[lang];
+      try { localStorage.setItem('pomi-lang', lang); } catch (e) {}
+      document.querySelectorAll('.lang-btn').forEach(btn =>
+        btn.classList.toggle('active', btn.getAttribute('data-lang') === lang));
+      document.querySelectorAll('[data-href-en]').forEach(a => {
+        if (!a.dataset.hrefTr) a.dataset.hrefTr = a.getAttribute('href');
+        a.setAttribute('href', lang === 'en' ? a.dataset.hrefEn : a.dataset.hrefTr);
+      });
+    }
+    document.querySelectorAll('.lang-btn').forEach(btn =>
+      btn.addEventListener('click', () => setLanguage(btn.getAttribute('data-lang'))));
+    setLanguage(document.documentElement.lang);
+  </script>
 </body>
 </html>

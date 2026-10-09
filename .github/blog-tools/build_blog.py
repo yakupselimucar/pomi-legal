@@ -35,6 +35,7 @@ FAVICON = "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0
 
 T = {
   "tr": dict(skip="İçeriğe geç", home="Ana sayfa", blog="Blog", support="Destek", get="İndir",
+             nav_how="Nasıl çalışır", nav_features="Özellikler", nav_conquest="Fetih", nav_collection="Koleksiyon",
              nav_aria="Bölümler", by="Yazan", updated="Güncellendi", read="dk okuma",
              tldr="Kısa cevap", faq="Sık sorulan sorular", related="Bunları da oku", sources="Kaynaklar",
              cta_h="Pomi'yi ücretsiz dene", cta_p="Reklamsız, çevrimdışı çalışır. iPhone, iPad ve Android'de.",
@@ -46,7 +47,8 @@ T = {
              blog_h1="Odak üzerine <span class=\"accent\">kısa yazılar</span>",
              blog_lead="Pomodoro tekniği, odaklanma uygulamaları ve birlikte ders çalışma üzerine rehberler. Süslü sözler yok; denenmiş yöntemler ve dürüst karşılaştırmalar.",
              count="yazı", rss="RSS", all_posts="Tüm yazılar", maker="Yapımcı"),
-  "en": dict(skip="Skip to content", home="Home", blog="Blog", support="Support", get="Download",
+  "en": dict(skip="Skip to content", home="Home", blog="Blog", support="Support", get="Get the app",
+             nav_how="How it works", nav_features="Features", nav_conquest="Conquest", nav_collection="Collection",
              nav_aria="Sections", by="By", updated="Updated", read="min read",
              tldr="Short answer", faq="Frequently asked questions", related="Keep reading", sources="Sources",
              cta_h="Try Pomi for free", cta_p="No ads, works offline. On iPhone, iPad and Android.",
@@ -66,18 +68,37 @@ SECTION_ORDER = {
   "en": ["Basics", "Guide", "Comparison", "Students", "Pomi"],
 }
 
-def nav(lang, current):
+def nav(lang, current, alt_href=None):
+    """Ana sayfayla (index.html) birebir aynı üst bar.
+
+    Neden: blogdan ana sayfaya geçerken bar'ın değişmesi ayrı bir siteye
+    gidilmiş hissi veriyordu. Bölüm linkleri ../#… ile ana sayfaya döner.
+    alt_href: dil düğmesinin gideceği karşı dildeki sayfa.
+    """
     t = T[lang]
+    other = "en" if lang == "tr" else "tr"
+    if alt_href is None:
+        alt_href = "en.html" if lang == "tr" else "./"
+    pill = {lang: f'<a class="lang-btn active" href="#" aria-current="true">{lang.upper()}</a>',
+            other: f'<a class="lang-btn" href="{alt_href}" hreflang="{other}" '
+                   f'onclick="try{{localStorage.setItem(\'pomi-lang\',\'{other}\')}}catch(e){{}}">{other.upper()}</a>'}
     return f"""  <a class="skip" href="#main">{t['skip']}</a>
   <header class="nav">
     <div class="wrap">
       <a class="brand" href="../" aria-label="Pomi">{BRAND_SVG}<span>Pomi</span></a>
       <nav class="nav-links" aria-label="{t['nav_aria']}">
-        <a href="../">{t['home']}</a>
+        <a href="../#how">{t['nav_how']}</a>
+        <a href="../#features">{t['nav_features']}</a>
+        <a href="../#conquest">{t['nav_conquest']}</a>
+        <a href="../#collection">{t['nav_collection']}</a>
         <a href="./{'' if lang=='tr' else 'en.html'}"{' aria-current="page"' if current=='blog' else ''}>{t['blog']}</a>
         <a href="../about.html">{t['maker']}</a>
         <a href="../support.html">{t['support']}</a>
       </nav>
+      <div class="lang" role="group" aria-label="Dil / Language">
+        {pill['tr']}
+        {pill['en']}
+      </div>
       <a class="btn btn-primary btn-sm" href="../#get">{t['get']}</a>
     </div>
   </header>
@@ -202,9 +223,10 @@ def post_page(p, all_posts):
         src_html = f'<h2 id="kaynaklar">{t["sources"]}</h2>\n<ol class="sources">\n' + "\n".join(f"  <li>{s}</li>" for s in p["sources"]) + "\n</ol>\n"
 
     rel_html = "".join("    " + card(q, t) + "\n" for q in pick_related(p, all_posts))
-    lang_link = f'<a href="{alt["slug"]}.html" hreflang="{alt["lang"]}">{t["other_lang"]}</a>' if alt else ""
+    lang_link = (f'<a href="{alt["slug"]}.html" hreflang="{alt["lang"]}" '
+                 f'onclick="try{{localStorage.setItem(\'pomi-lang\',\'{alt["lang"]}\')}}catch(e){{}}">{t["other_lang"]}</a>') if alt else ""
     body = f"""<body>
-{nav(lang, 'blog')}
+{nav(lang, 'blog', f"{alt['slug']}.html" if alt else None)}
   <main id="main">
     <header class="article-head">
       <div class="wrap">
@@ -261,7 +283,8 @@ def post_page(p, all_posts):
 def index_page(lang, all_posts):
     t = T[lang]
     url = BLOG if lang == "tr" else BLOG + "en.html"
-    other = BLOG + "en.html" if lang == "tr" else BLOG
+    # Göreli: mutlak adres yerelde canlı siteye atlayıp eski sürümü gösteriyordu.
+    other = "en.html" if lang == "tr" else "./"
     posts_l = [q for q in all_posts if q["lang"] == lang]
     extra = f'  <meta property="og:type" content="website" />\n  <link rel="alternate" hreflang="tr" href="{BLOG}" />\n  <link rel="alternate" hreflang="en" href="{BLOG}en.html" />\n  <link rel="alternate" hreflang="x-default" href="{BLOG}en.html" />\n'
     graph = [person(), {
@@ -290,7 +313,7 @@ def index_page(lang, all_posts):
   <main id="main">
     <section class="blog-hero">
       <div class="wrap">
-        <p class="kicker">Pomi Blog <span class="lang-switch"><a href="{other}" hreflang="{'en' if lang=='tr' else 'tr'}">{t['other_lang']}</a></span></p>
+        <p class="kicker">Pomi Blog <span class="lang-switch"><a href="{other}" hreflang="{'en' if lang=='tr' else 'tr'}" onclick="try{{localStorage.setItem('pomi-lang','{'en' if lang=='tr' else 'tr'}')}}catch(e){{}}">{t['other_lang']}</a></span></p>
         <h1>{t['blog_h1']}</h1>
         <p>{t['blog_lead']}</p>
         <nav class="topics" aria-label="{t['nav_aria']}">{toc} <span class="total">{len(posts_l)} {t['count']}</span></nav>
