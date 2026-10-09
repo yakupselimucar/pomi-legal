@@ -41,11 +41,29 @@
       });
       if (utm.length) STORES.android += '&referrer=' + encodeURIComponent(utm.join('&'));
 
+      // Threads/Instagram gibi uygulama içi tarayıcılar web Play linkini kendileri
+      // açıp oradan uygulamaya atar. `intent://` doğrudan Play Store uygulamasını açar;
+      // açamayan tarayıcı `browser_fallback_url` ile web mağazaya düşer.
+      var playQuery = STORES.android.split('?')[1];
+      STORES.androidIntent = 'intent://details?' + playQuery +
+        '#Intent;scheme=market;package=com.android.vending;S.browser_fallback_url=' +
+        encodeURIComponent(STORES.android) + ';end';
+
       window.POMI_STORES = STORES;
       document.documentElement.setAttribute('data-platform', platform);
 
+      if (platform === 'desktop' || params.get('r') === '0') return;
       // `replace`: geri tuşu kişiyi tekrar bu sayfaya, oradan da yine mağazaya atmasın.
-      if (platform !== 'desktop' && params.get('r') !== '0') location.replace(STORES[platform]);
+      if (platform === 'ios') {
+        location.replace(STORES.ios);
+        return;
+      }
+      location.replace(STORES.androidIntent);
+      // Chrome kullanıcı dokunuşu olmadan intent'i sessizce engelleyebilir;
+      // sayfa hâlâ görünürse web mağazaya geç.
+      setTimeout(function () {
+        if (!document.hidden) location.replace(STORES.android);
+      }, 1500);
     })();
   </script>
 
@@ -223,7 +241,13 @@
       });
       // Masaüstünde açılan web mağaza sayfası seçilen dilde gelsin.
       if (stores.ios) document.getElementById('ios').href = stores.ios + '?l=' + lang;
-      if (stores.android) document.getElementById('android').href = stores.android + '&hl=' + lang;
+      if (stores.android) {
+        // Android'de buton da Play Store uygulamasını açsın; masaüstünde web sayfası.
+        var onAndroid = document.documentElement.getAttribute('data-platform') === 'android';
+        document.getElementById('android').href = onAndroid && stores.androidIntent
+          ? stores.androidIntent
+          : stores.android + '&hl=' + lang;
+      }
       document.querySelectorAll('.lang').forEach(function (btn) {
         btn.setAttribute('aria-pressed', String(btn.getAttribute('data-lang') === lang));
       });
