@@ -59,6 +59,11 @@
         return;
       }
       location.replace(STORES.androidIntent);
+      // Threads ("Barcelona"), Instagram ve Facebook'un uygulama içi tarayıcısı
+      // intent'i bir onay bandıyla sorar; kişi bandı okurken web mağazaya atmayalım.
+      // Bant kapatılırsa sayfadaki buton aynı intent'i açar.
+      var inApp = /Barcelona|Instagram|FBAN|FBAV|FB_IAB|; wv\)/i.test(ua);
+      if (inApp) return;
       // Chrome kullanıcı dokunuşu olmadan intent'i sessizce engelleyebilir;
       // sayfa hâlâ görünürse web mağazaya geç.
       setTimeout(function () {
