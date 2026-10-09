@@ -431,6 +431,8 @@
     /* ── Bölüm başlıkları ── */
     section { position: relative; }
     .band { padding: clamp(3.5rem, 8vw, 6.5rem) 0; }
+    /* Üst padding'i sıfırlanmış bölümler sabit nav'ın altında kalmasın diye */
+    #features, #conquest, #collection { scroll-margin-top: calc(72px + 2rem); }
     .band-head { max-width: 44ch; margin-bottom: clamp(2rem, 4vw, 3rem); }
     .band-head h2 {
       font-size: clamp(1.85rem, 1.3rem + 2.2vw, 2.9rem);
