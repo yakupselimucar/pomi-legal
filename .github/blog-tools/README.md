@@ -31,3 +31,13 @@ Elle düzenlenmiş HTML'ler betik çalışınca ezilir; içerik değişikliği h
 - Rakip uygulamalar için fiyat ve puan gibi değişken sayılar verme; "Eylül 2026 mağaza sayfalarına göre" notu yeterli.
 - Her yazıda "Kısa cevap" kutusu + SSS zorunlu (yapay zeka özetleri için).
 - Araştırma atıfı yapılıyorsa `sources` alanına yazar/yıl/başlık ekle.
+
+## Portekizce ana sayfa (`build_pt.py`)
+
+`pt/index.html`, `index.html` içindeki `pt: { ... }` sözlüğünden üretilen statik pt-BR kopyadır (hreflang ile ana sayfaya bağlı; sitemap'te `pt/`).
+
+```
+python3 .github/blog-tools/build_pt.py
+```
+
+`index.html`'de metin ya da yapı değişince bu betiği de çalıştır; elle düzenlenen `pt/index.html` ezilir.

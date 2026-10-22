@@ -206,11 +206,15 @@
     <div class="langs">
       <button class="lang" type="button" data-lang="tr">Türkçe</button>
       <button class="lang" type="button" data-lang="en">English</button>
+      <button class="lang" type="button" data-lang="pt">Português</button>
     </div>
   </main>
 
 <script>
   (function () {
+    var URL_LANG = '';
+    try { URL_LANG = (new URLSearchParams(location.search).get('lang') || '').slice(0, 2).toLowerCase(); } catch (e) { /* eski tarayıcı */ }
+
     var DICT = {
       tr: {
         title: "Pomi'yi indir",
@@ -229,14 +233,25 @@
         ios: 'Download on the App Store',
         android: 'Get it on Google Play',
         qr: 'Scan with your phone camera to open the right store.'
+      },
+      pt: {
+        title: 'Baixe o Pomi',
+        description: 'Baixe o Pomi grátis no iPhone, iPad ou Android e foque junto com seus amigos.',
+        heading: 'Baixe o Pomi',
+        lede: 'Foque junto com seus amigos. Grátis no iPhone e no Android.',
+        ios: 'Baixar na App Store',
+        android: 'Disponível no Google Play',
+        qr: 'Aponte a câmera do celular para abrir a loja certa.'
       }
     };
 
     var stores = window.POMI_STORES || {};
+    // Mağaza sayfası dili: Apple `l`, Google Play `hl` farklı kodlar ister.
+    var STORE_LANG = { tr: { l: 'tr', hl: 'tr' }, en: { l: 'en', hl: 'en' }, pt: { l: 'pt-BR', hl: 'pt_BR' } };
 
     function apply(lang) {
       var d = DICT[lang] || DICT.tr;
-      document.documentElement.lang = lang;
+      document.documentElement.lang = lang === 'pt' ? 'pt-BR' : lang;
       document.title = d.title;
       var meta = document.querySelector('meta[name="description"]');
       if (meta) meta.setAttribute('content', d.description);
@@ -245,13 +260,14 @@
         if (value != null) el.textContent = value;
       });
       // Masaüstünde açılan web mağaza sayfası seçilen dilde gelsin.
-      if (stores.ios) document.getElementById('ios').href = stores.ios + '?l=' + lang;
+      var sl = STORE_LANG[lang] || STORE_LANG.tr;
+      if (stores.ios) document.getElementById('ios').href = stores.ios + '?l=' + sl.l;
       if (stores.android) {
         // Android'de buton da Play Store uygulamasını açsın; masaüstünde web sayfası.
         var onAndroid = document.documentElement.getAttribute('data-platform') === 'android';
         document.getElementById('android').href = onAndroid && stores.androidIntent
           ? stores.androidIntent
-          : stores.android + '&hl=' + lang;
+          : stores.android + '&hl=' + sl.hl;
       }
       document.querySelectorAll('.lang').forEach(function (btn) {
         btn.setAttribute('aria-pressed', String(btn.getAttribute('data-lang') === lang));
@@ -259,13 +275,21 @@
       try { localStorage.setItem('pomi-lang', lang); } catch (e) { /* özel mod */ }
     }
 
-    var stored = null;
-    try { stored = localStorage.getItem('pomi-lang'); } catch (e) { /* özel mod */ }
-    var initial = stored || ((navigator.language || 'tr').slice(0, 2) === 'tr' ? 'tr' : 'en');
+    /* Dil tespiti: ?lang= > kayıtlı tercih > tarayıcı (pt ise Portekizce) > tr/en.
+       URL_LANG en başta okunur: sayfa adresi sonradan temizlenebiliyor. */
+    function initialLang() {
+      var stored = null;
+      try { stored = localStorage.getItem('pomi-lang'); } catch (e) { /* özel mod */ }
+      if (DICT[URL_LANG]) return URL_LANG;
+      if (DICT[stored]) return stored;
+      var prefs = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || ''];
+      if (prefs.some(function (l) { return /^pt\b/i.test(l); })) return 'pt';
+      return (navigator.language || 'tr').slice(0, 2) === 'tr' ? 'tr' : 'en';
+    }
     document.querySelectorAll('.lang').forEach(function (btn) {
       btn.addEventListener('click', function () { apply(btn.getAttribute('data-lang')); });
     });
-    apply(DICT[initial] ? initial : 'tr');
+    apply(initialLang());
   })();
 </script>
 </body>

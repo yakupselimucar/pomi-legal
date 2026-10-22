@@ -168,13 +168,14 @@
         <a href="./#features" data-i18n-key="nav-features">Özellikler</a>
         <a href="./#conquest" data-i18n-key="nav-conquest">Fetih</a>
         <a href="./#collection" data-i18n-key="nav-collection">Koleksiyon</a>
-        <a href="blog/" data-i18n-key="nav-blog">Blog</a>
+        <a href="blog/" data-href-en="blog/en.html" data-href-pt="blog/en.html" data-i18n-key="nav-blog">Blog</a>
         <a href="about.html" data-i18n-key="nav-maker">Yapımcı</a>
         <a href="support.html" aria-current="page" data-i18n-key="nav-support">Destek</a>
       </nav>
       <div class="lang" role="group" aria-label="Dil / Language">
         <button class="lang-btn active" data-lang="tr" type="button">TR</button>
         <button class="lang-btn" data-lang="en" type="button">EN</button>
+        <button class="lang-btn" data-lang="pt" type="button">PT</button>
       </div>
       <a class="btn-get" href="./#get" data-i18n-key="nav-get">İndir</a>
     </div>
@@ -225,7 +226,7 @@
       <p>
         <a href="mailto:support@pomifocus.com">support@pomifocus.com</a> ·
         <a href="https://www.linkedin.com/company/pomifocus" rel="noopener">LinkedIn</a> ·
-        <a href="https://apps.apple.com/tr/app/id6784132034" rel="noopener">App Store</a>
+        <a href="https://apps.apple.com/tr/app/id6784132034" data-href-pt="https://apps.apple.com/br/app/id6784132034?l=pt-BR" rel="noopener">App Store</a>
       </p>
       <div class="links">
         <a href="privacy.html"><span data-i18n-key="privacy-footer">Gizlilik</span></a>
@@ -289,18 +290,64 @@
         'copyright': '© 2026 Pomi — developed by Yakup Selim Uçar · Konya, Türkiye',
         'privacy-footer': 'Privacy',
         'terms-footer': 'Terms',
+      },
+      pt: {
+        'nav-how': 'Como funciona',
+        'nav-features': 'Recursos',
+        'nav-conquest': 'Conquista',
+        'nav-collection': 'Coleção',
+        'nav-blog': 'Blog',
+        'nav-maker': 'Criador',
+        'nav-support': 'Suporte',
+        'nav-get': 'Baixar o app',
+        'support-title': 'Suporte — Pomi',
+        'support-heading': 'Suporte',
+        'support-subheading': 'Precisa de ajuda?',
+        'support-lead': 'Você pode falar com a gente para qualquer dúvida, sugestão ou problema. Costumamos responder em até 48 horas.',
+        'support-s1-title': 'Como cancelo minha assinatura?',
+        'support-s1-content': 'No seu iPhone, vá em <strong>Ajustes → [Seu nome] → Assinaturas</strong>, selecione o Pomi e cancele a assinatura. O cancelamento vale a partir do fim do período atual. No Android, abra o Google Play → <strong>Pagamentos e assinaturas → Assinaturas</strong>.',
+        'support-s2-title': 'Não consigo restaurar minha compra',
+        'support-s2-content': 'Toque no botão <strong>"Restaurar compras"</strong> na tela do paywall. Confira se você está conectado com o mesmo Apple ID. Se o problema continuar, envie um e-mail para a gente.',
+        'support-s3-title': 'Perdi meu progresso',
+        'support-s3-content': 'Seu progresso está ligado à sua conta. Quando você entrar de novo com o mesmo e-mail, a conta Apple ou a conta Google, seu jardim e suas estatísticas voltam.',
+        'support-s4-title': 'Pedir reembolso',
+        'support-s4-content': 'Os reembolsos são gerenciados pela Apple. Você pode fazer o pedido em <a href="https://reportaproblem.apple.com" target="_blank">reportaproblem.apple.com</a>.',
+        'support-s5-title': 'Quero excluir minha conta',
+        'support-s5-content': 'Você pode excluir sua conta e todos os seus dados nas configurações do app. Se precisar de ajuda, fale com a gente pelo e-mail acima.',
+        'copyright': '© 2026 Pomi — desenvolvido por Yakup Selim Uçar · Konya, Turquia',
+        'privacy-footer': 'Privacidade',
+        'terms-footer': 'Termos',
       }
     };
 
+    /* Dil tespiti: ?lang= > kayıtlı tercih > tarayıcı dili (pt ise Portekizce) > tr. */
+    function detectLang() {
+      let fromUrl = '', stored = '';
+      try { fromUrl = (new URLSearchParams(location.search).get('lang') || '').slice(0, 2).toLowerCase(); } catch (e) {}
+      try { stored = localStorage.getItem('pomi-lang') || ''; } catch (e) {}
+      if (translations[fromUrl]) return fromUrl;
+      if (translations[stored]) return stored;
+      const prefs = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || ''];
+      return prefs.some(l => /^pt\b/i.test(l)) ? 'pt' : 'tr';
+    }
+
     function setLanguage(lang) {
-      localStorage.setItem('pomi-lang', lang);
-      document.documentElement.lang = lang;
+      if (!translations[lang]) lang = 'tr';
+      try { localStorage.setItem('pomi-lang', lang); } catch (e) {}
+      document.documentElement.lang = lang === 'pt' ? 'pt-BR' : lang;
 
       document.querySelectorAll('[data-i18n-key]').forEach(el => {
         const key = el.getAttribute('data-i18n-key');
         if (translations[lang][key]) {
           el.innerHTML = translations[lang][key];
         }
+      });
+
+      /* Dile göre değişen bağlantılar: yoksa özgün (tr) href kalır */
+      document.querySelectorAll('[data-href-en], [data-href-pt]').forEach(a => {
+        if (!a.dataset.hrefTr) a.dataset.hrefTr = a.getAttribute('href');
+        const alt = lang === 'en' ? a.dataset.hrefEn : lang === 'pt' ? a.dataset.hrefPt : '';
+        a.setAttribute('href', alt || a.dataset.hrefTr);
       });
 
       document.querySelectorAll('.lang-btn').forEach(btn => {
@@ -317,8 +364,7 @@
       });
     });
 
-    const savedLang = localStorage.getItem('pomi-lang') || 'tr';
-    setLanguage(savedLang);
+    setLanguage(detectLang());
   </script>
 </body>
 </html>

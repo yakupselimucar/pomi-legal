@@ -11,6 +11,7 @@ Pomi, odaklanmayı oyuna dönüştüren ücretsiz, retro piksel temalı bir Pomo
 - Platforms: iOS 15.0 or later (iPhone, iPad), Android
 - Price: Free to download, optional "Pomi Pro" subscription, no ads
 - Languages: Turkish, English
+- Website languages: Turkish, English, Brazilian Portuguese (pt-BR: https://pomifocus.com/pt/). In Brazil the conquest map covers Brazil's 27 states (Brazil has its own league, separate from Turkey's 81 cities).
 - Age rating: 12+
 - First release: 2026-07-05
 - Developer: Yakup Selim Uçar

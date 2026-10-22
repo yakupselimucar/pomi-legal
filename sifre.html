@@ -170,6 +170,7 @@
     <div class="langs">
       <button class="lang" type="button" data-lang="tr">Türkçe</button>
       <button class="lang" type="button" data-lang="en">English</button>
+      <button class="lang" type="button" data-lang="pt">Português</button>
     </div>
   </main>
 
@@ -180,6 +181,9 @@
     // Publishable anahtar uygulamadakiyle aynı; istemcide taşınması güvenlidir.
     var URL_ = 'https://ndkewpwpojjhqbeqtzth.supabase.co';
     var KEY = 'sb_publishable_zpkHOczlxtbGDsfnxtlncg_qr7Cic8F';
+
+    var URL_LANG = '';
+    try { URL_LANG = (new URLSearchParams(location.search).get('lang') || '').slice(0, 2).toLowerCase(); } catch (e) { /* eski tarayıcı */ }
 
     var DICT = {
       tr: {
@@ -223,6 +227,27 @@
         open: 'Open Pomi',
         expiredHeading: 'This link has expired',
         expiredLede: 'This link is no longer valid or has already been used. Use "Forgot password" on the Pomi sign-in screen to get a new one.'
+      },
+      pt: {
+        title: 'Pomi · Defina uma nova senha',
+        heading: 'Redefina sua senha',
+        lede: 'Ao continuar, você vai definir sua nova senha nesta página.',
+        start: 'Continuar',
+        wait: 'Aguarde…',
+        formHeading: 'Defina uma nova senha',
+        password: 'Nova senha',
+        confirm: 'Nova senha (repetir)',
+        save: 'Salvar senha',
+        tooShort: 'A senha deve ter pelo menos 6 caracteres.',
+        mismatch: 'As senhas não coincidem.',
+        samePassword: 'A nova senha deve ser diferente da anterior.',
+        weak: 'Esta senha é muito fraca, tente uma mais forte.',
+        network: 'Algo deu errado. Verifique sua conexão e tente de novo.',
+        doneHeading: 'Senha atualizada 🎉',
+        doneLede: 'Por segurança, você foi desconectado de todos os dispositivos. Entre no Pomi de novo com seu e-mail e a nova senha; seu progresso é mantido.',
+        open: 'Abrir o Pomi',
+        expiredHeading: 'Este link expirou',
+        expiredLede: 'Este link não é mais válido ou já foi usado. Use "Esqueci minha senha" na tela de login do Pomi para receber um novo.'
       }
     };
     var lang = 'tr';
@@ -313,7 +338,7 @@
     function apply(next) {
       lang = DICT[next] ? next : 'tr';
       var d = DICT[lang];
-      document.documentElement.lang = lang;
+      document.documentElement.lang = lang === 'pt' ? 'pt-BR' : lang;
       document.title = d.title;
       document.querySelectorAll('[data-i18n]').forEach(function (el) {
         var value = d[el.getAttribute('data-i18n')];
@@ -325,12 +350,21 @@
       try { localStorage.setItem('pomi-lang', lang); } catch (e) { /* özel mod */ }
     }
 
-    var stored = null;
-    try { stored = localStorage.getItem('pomi-lang'); } catch (e) { /* özel mod */ }
+    /* Dil tespiti: ?lang= > kayıtlı tercih > tarayıcı (pt ise Portekizce) > tr/en.
+       URL_LANG en başta okunur: sayfa adresi sonradan temizlenebiliyor. */
+    function initialLang() {
+      var stored = null;
+      try { stored = localStorage.getItem('pomi-lang'); } catch (e) { /* özel mod */ }
+      if (DICT[URL_LANG]) return URL_LANG;
+      if (DICT[stored]) return stored;
+      var prefs = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || ''];
+      if (prefs.some(function (l) { return /^pt\b/i.test(l); })) return 'pt';
+      return (navigator.language || 'tr').slice(0, 2) === 'tr' ? 'tr' : 'en';
+    }
     document.querySelectorAll('.lang').forEach(function (btn) {
       btn.addEventListener('click', function () { apply(btn.getAttribute('data-lang')); });
     });
-    apply(stored || ((navigator.language || 'tr').slice(0, 2) === 'tr' ? 'tr' : 'en'));
+    apply(initialLang());
   })();
 </script>
 </body>

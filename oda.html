@@ -201,11 +201,15 @@
     <div class="langs">
       <button class="lang" type="button" data-lang="tr">Türkçe</button>
       <button class="lang" type="button" data-lang="en">English</button>
+      <button class="lang" type="button" data-lang="pt">Português</button>
     </div>
   </main>
 
 <script>
   (function () {
+    var URL_LANG = '';
+    try { URL_LANG = (new URLSearchParams(location.search).get('lang') || '').slice(0, 2).toLowerCase(); } catch (e) { /* eski tarayıcı */ }
+
     var DICT = {
       tr: {
         title: 'Pomi · Odaya katıl',
@@ -234,6 +238,20 @@
         hint: 'If Pomi is installed, the button opens the room directly.',
         missingHeading: 'Invite code missing',
         missingLede: "This link has no room code. Ask your friend to share the invite again."
+      },
+      pt: {
+        title: 'Pomi · Entrar na sala',
+        description: 'Você foi convidado para uma sala de foco do Pomi. Abra o app e estudem juntos.',
+        heading: 'Você foi convidado para uma sala do Pomi',
+        lede: 'Abra o app, entre na sala e foque junto com seu amigo.',
+        codeLabel: 'Código da sala',
+        open: 'Abrir no Pomi',
+        ios: 'Baixar na App Store',
+        android: 'Disponível no Google Play',
+        fallback: 'O app não abriu? Depois de instalar o Pomi, vá em <strong>Salas → Entrar com código</strong> e digite o código acima.',
+        hint: 'Se o Pomi estiver instalado, o botão abre a sala direto.',
+        missingHeading: 'Código de convite ausente',
+        missingLede: 'Este link não tem código de sala. Peça ao seu amigo para compartilhar o convite de novo.'
       }
     };
 
@@ -268,7 +286,7 @@
 
     function apply(lang) {
       var d = DICT[lang] || DICT.tr;
-      document.documentElement.lang = lang;
+      document.documentElement.lang = lang === 'pt' ? 'pt-BR' : lang;
       document.title = d.title;
       var meta = document.querySelector('meta[name="description"]');
       if (meta) meta.setAttribute('content', d.description);
@@ -282,13 +300,21 @@
       try { localStorage.setItem('pomi-lang', lang); } catch (e) { /* özel mod */ }
     }
 
-    var stored = null;
-    try { stored = localStorage.getItem('pomi-lang'); } catch (e) { /* özel mod */ }
-    var initial = stored || ((navigator.language || 'tr').slice(0, 2) === 'tr' ? 'tr' : 'en');
+    /* Dil tespiti: ?lang= > kayıtlı tercih > tarayıcı (pt ise Portekizce) > tr/en.
+       URL_LANG en başta okunur: sayfa adresi sonradan temizlenebiliyor. */
+    function initialLang() {
+      var stored = null;
+      try { stored = localStorage.getItem('pomi-lang'); } catch (e) { /* özel mod */ }
+      if (DICT[URL_LANG]) return URL_LANG;
+      if (DICT[stored]) return stored;
+      var prefs = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || ''];
+      if (prefs.some(function (l) { return /^pt\b/i.test(l); })) return 'pt';
+      return (navigator.language || 'tr').slice(0, 2) === 'tr' ? 'tr' : 'en';
+    }
     document.querySelectorAll('.lang').forEach(function (btn) {
       btn.addEventListener('click', function () { apply(btn.getAttribute('data-lang')); });
     });
-    apply(DICT[initial] ? initial : 'tr');
+    apply(initialLang());
   })();
 </script>
 </body>

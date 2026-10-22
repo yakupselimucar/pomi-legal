@@ -347,7 +347,7 @@ def feed(all_posts):
 </rss>
 """
 
-STATIC_PAGES = [("", "2026-10-07"), ("about.html", "2026-10-07"), ("support.html", "2026-10-07"), ("privacy.html", "2026-10-07"), ("terms.html", "2026-10-07")]
+STATIC_PAGES = [("", "2026-10-22"), ("about.html", "2026-10-22"), ("support.html", "2026-10-22"), ("privacy.html", "2026-10-22"), ("terms.html", "2026-10-22"), ("pt/", "2026-10-22")]
 
 def sitemap(all_posts):
     latest = max(q.get("modified", q["date"]) for q in all_posts)

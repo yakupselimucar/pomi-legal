@@ -155,13 +155,14 @@
         <a href="./#features" data-i18n-key="nav-features">Özellikler</a>
         <a href="./#conquest" data-i18n-key="nav-conquest">Fetih</a>
         <a href="./#collection" data-i18n-key="nav-collection">Koleksiyon</a>
-        <a href="blog/" data-i18n-key="nav-blog">Blog</a>
+        <a href="blog/" data-href-en="blog/en.html" data-href-pt="blog/en.html" data-i18n-key="nav-blog">Blog</a>
         <a href="about.html" data-i18n-key="nav-maker">Yapımcı</a>
         <a href="support.html" data-i18n-key="nav-support">Destek</a>
       </nav>
       <div class="lang" role="group" aria-label="Dil / Language">
         <button class="lang-btn active" data-lang="tr" type="button">TR</button>
         <button class="lang-btn" data-lang="en" type="button">EN</button>
+        <button class="lang-btn" data-lang="pt" type="button">PT</button>
       </div>
       <a class="btn-get" href="./#get" data-i18n-key="nav-get">İndir</a>
     </div>
@@ -277,7 +278,7 @@
       <p>
         <a href="mailto:support@pomifocus.com">support@pomifocus.com</a> ·
         <a href="https://www.linkedin.com/company/pomifocus" rel="noopener">LinkedIn</a> ·
-        <a href="https://apps.apple.com/tr/app/id6784132034" rel="noopener">App Store</a>
+        <a href="https://apps.apple.com/tr/app/id6784132034" data-href-pt="https://apps.apple.com/br/app/id6784132034?l=pt-BR" rel="noopener">App Store</a>
       </p>
       <div class="links"><a href="terms.html"><span data-i18n-key="terms-link">Kullanım Şartları →</span></a></div>
     </footer>
@@ -424,18 +425,107 @@
         'privacy-s10-content': 'For questions: <a href="mailto:support@pomifocus.com">support@pomifocus.com</a>',
         'copyright': '© 2026 Pomi — developed by Yakup Selim Uçar · Konya, Türkiye',
         'terms-link': 'Terms of Use →',
+      },
+      pt: {
+        'nav-how': 'Como funciona',
+        'nav-features': 'Recursos',
+        'nav-conquest': 'Conquista',
+        'nav-collection': 'Coleção',
+        'nav-blog': 'Blog',
+        'nav-maker': 'Criador',
+        'nav-support': 'Suporte',
+        'nav-get': 'Baixar o app',
+        'privacy-title': 'Política de Privacidade — Pomi',
+        'privacy-heading': 'Política de Privacidade',
+        'privacy-updated': 'Última atualização · 7 de outubro de 2026',
+        'privacy-s1-title': 'Informações que coletamos',
+        'privacy-s1-intro': 'O Pomi pode coletar as seguintes informações:',
+        'privacy-s1-li1': 'Endereço de e-mail para criar a conta e fazer login',
+        'privacy-s1-li2': 'Dados de login via Apple ou Google (OAuth) — ao entrar com o Google, solicitamos apenas <strong>nome, endereço de e-mail e foto de perfil</strong>; não acessamos nenhum outro dado do Google',
+        'privacy-s1-li3': 'Dados de progresso no app (sessões de foco e durações, estado do jardim, moedas do app)',
+        'privacy-s1-li4': 'Seu nome de usuário e o estado (ou a cidade) que você selecionar — visíveis a outros usuários nos rankings, nas salas e nas Batalhas de Regiões',
+        'privacy-s1-li5': 'Conteúdo do chat das salas: mensagens, fotos, respostas e reações que você envia; denúncias que você faz e usuários que você bloqueia',
+        'privacy-s1-li6': 'Registros de segurança da comunidade: a data em que você aceitou as regras da comunidade, denúncias feitas sobre a sua conta, eventual duração e motivo de banimento e registros de remoção de sala (detalhes na Seção 6)',
+        'privacy-s1-li7': 'Dados de verificação de compra (via App Store ou Google Play)',
+        'privacy-s1-li8': 'Dados de uso e técnicos: eventos no app (por exemplo, abertura de telas, conclusão de sessões), modelo do dispositivo, sistema operacional e versão do app, relatórios de falhas, token de notificação e, no Android, o ID de publicidade (<strong>apenas para análise</strong>; o app não exibe anúncios)',
+        'privacy-s2-title': 'Como usamos as informações',
+        'privacy-s2-intro': 'As informações coletadas são usadas apenas para as seguintes finalidades:',
+        'privacy-s2-li1': 'Criar e gerenciar a sua conta',
+        'privacy-s2-li2': 'Sincronizar o seu progresso entre dispositivos',
+        'privacy-s2-li3': 'Operar as salas em grupo, os rankings, o chat das salas e as notificações',
+        'privacy-s2-li4': 'Manter a comunidade segura: filtrar conteúdo inadequado, analisar denúncias e restringir contas que violem as regras',
+        'privacy-s2-li5': 'Verificar a sua assinatura Pro',
+        'privacy-s2-li6': 'Melhorar o desempenho do app e corrigir erros',
+        'privacy-s3-title': 'Compartilhamento de dados',
+        'privacy-s3-intro': 'Seus dados pessoais <strong>nunca são vendidos nem alugados</strong> a terceiros. Eles são compartilhados apenas com os prestadores de serviço abaixo, na medida necessária para prestar o serviço:',
+        'privacy-s3-li1': '<strong>Supabase</strong> — armazenamento seguro de dados, autenticação e chat das salas',
+        'privacy-s3-li2': '<strong>Google Firebase</strong> — estatísticas de uso (Analytics), relatórios de falhas (Crashlytics) e envio de notificações (Cloud Messaging)',
+        'privacy-s3-li3': '<strong>Adapty</strong> — verificação do status da assinatura',
+        'privacy-s3-li4': '<strong>Apple App Store e Google Play</strong> — transações de compra',
+        'privacy-s3-li5': '<strong>Telegram</strong> — apenas um alerta de "nova denúncia" ao administrador do Pomi; o alerta <strong>não contém</strong> o conteúdo da mensagem, nomes de usuário nem qualquer identificador',
+        'privacy-s3-li6': '<strong>Cloudflare</strong> — armazenamento das fotos enviadas no chat das salas (R2)',
+        'privacy-s3-li7': '<strong>OpenAI</strong> — verificação automática de conteúdo inadequado nas fotos enviadas ao chat das salas (apenas a foto; nenhum nome de usuário, conta ou informação da sala é enviado)',
+        'privacy-s3-outro': 'Pela natureza desses recursos, seu nome de usuário, suas estatísticas de foco e as mensagens do chat das salas ficam visíveis aos outros usuários envolvidos. Os servidores dos prestadores de serviço podem estar localizados no exterior; as transferências são feitas por conexões criptografadas. Os dados podem ser fornecidos a autoridades competentes quando a lei exigir.',
+        'privacy-s4-title': 'Segurança dos dados',
+        'privacy-s4-content': 'Todos os dados são transmitidos por conexões criptografadas (HTTPS/TLS) e armazenados em servidores seguros. Suas senhas nunca são guardadas em texto simples.',
+        'privacy-s5-title': 'Compartilhamento em redes sociais',
+        'privacy-s5-intro': 'Quando você usa o recurso de compartilhamento do app:',
+        'privacy-s5-li1': 'O conteúdo gerado (imagem/texto) é passado diretamente, pelo menu de compartilhamento do seu dispositivo, ao app de rede social que você escolher (Threads, Instagram, X, TikTok etc.); o Pomi não coleta nem armazena nenhum dado em seus próprios servidores durante esse compartilhamento.',
+        'privacy-s5-li2': 'As informações que podem aparecer em capturas de tela compartilhadas (nome de usuário, estatísticas, códigos de convite/sala etc.) estão totalmente sob o seu controle; recomendamos revisar o conteúdo antes de compartilhar.',
+        'privacy-s5-li3': 'Podemos usar, para divulgação, o conteúdo que você compartilha publicamente sobre o Pomi nas redes sociais; as regras e a licença para isso estão descritas na seção "Conteúdo do Usuário e Compartilhamento em Redes Sociais" dos Termos de Uso.',
+        'privacy-s5-li4': 'As plataformas de redes sociais de terceiros estão sujeitas às suas próprias políticas de privacidade. O Pomi não se responsabiliza pelas práticas de tratamento de dados dessas plataformas.',
+        'privacy-s5-li5': 'Nas imagens do app usadas em materiais de divulgação, informações que possam identificar você — nome de usuário, e-mail, código de sala/convite etc. — são <strong>desfocadas, cortadas ou substituídas por dados de exemplo (demo)</strong>. Por isso, esse uso não constitui tratamento de dados pessoais e não exige o seu consentimento separado.',
+        'privacy-s6-title': 'Chat das salas e segurança da comunidade',
+        'privacy-s6-intro': 'O chat das salas é aberto apenas aos membros da sala em que você entrou. Para manter a comunidade segura, seus dados são tratados da seguinte forma:',
+        'privacy-s6-li1': 'Suas mensagens, reações e seu nome de usuário ficam visíveis apenas aos membros daquela sala; quem sai de uma sala deixa de ver o histórico do chat.',
+        'privacy-s6-li2': 'As mensagens passam por um filtro automático de palavras em nossos servidores antes de serem enviadas; mensagens com linguagem inadequada não são entregues. O conteúdo das mensagens de texto não é analisado por IA. Já as fotos passam por uma verificação automática de imagem antes de serem publicadas (veja o item 8). O conteúdo do chat não é usado para publicidade.',
+        'privacy-s6-li3': 'Quando você denuncia uma mensagem, uma cópia da mensagem denunciada é armazenada junto com a denúncia e analisada pelos <strong>administradores do Pomi</strong>. Para decidir com justiça, o administrador pode ver também a conversa anterior e posterior à mensagem. A identidade de quem denuncia não é compartilhada com a pessoa denunciada; os donos das salas não veem as denúncias.',
+        'privacy-s6-li4': 'Registramos a data em que você aceitou as regras da comunidade, os usuários que você bloqueia, as decisões de banimento tomadas sobre a sua conta (duração e motivo) e as remoções de sala feitas pelo dono da sala. O motivo do banimento é mostrado a você no app.',
+        'privacy-s6-li5': 'Prazos de retenção: mensagens e reações do chat <strong>30 dias</strong>, registros de denúncias <strong>90 dias</strong>, registros de remoção de sala <strong>2 dias</strong>, registros de ações de administradores <strong>1 ano</strong>. O registro de banimento é mantido enquanto o banimento durar e a sua conta existir.',
+        'privacy-s6-li6': 'Quando você exclui a sua conta, suas mensagens, reações e registros da comunidade são excluídos. Cópias de mensagens em denúncias feitas sobre você podem ser mantidas, sem vínculo com a sua conta, até o fim do prazo de 90 dias; isso é necessário para apurar abusos.',
+        'privacy-s6-li7': 'Os alertas de denúncia enviados ao administrador (Telegram) não contêm o conteúdo da mensagem, nomes de usuário nem identificadores; a análise é feita apenas em um painel administrativo autorizado e protegido por autenticação em dois fatores.',
+        'privacy-s6-li8': 'As fotos que você envia no chat são recodificadas no seu dispositivo; a localização (GPS) e outros dados EXIF são removidos antes de chegarem aos nossos servidores. Antes de ser publicada, a foto é enviada à <strong>OpenAI</strong> (EUA) para uma verificação automática de conteúdo inadequado. Uma foto considerada inadequada não é armazenada nem entregue. Essa verificação serve apenas para decidir se a foto será publicada; nenhuma ação automática é tomada contra a sua conta, e a OpenAI não usa dados da API para treinar seus modelos. Se o serviço de verificação estiver indisponível, a foto pode ser publicada sem a verificação; as denúncias e a análise de administradores valem em qualquer caso. As fotos são excluídas automaticamente após <strong>7 dias</strong>; uma foto removida após denúncias fica inacessível por <strong>30 dias</strong> para análise e depois é excluída.',
+        'privacy-s7-title': 'Prazo de retenção dos dados',
+        'privacy-s7-content': 'Seus dados são mantidos enquanto a sua conta estiver ativa. Quando você exclui a conta, seus dados pessoais são apagados de forma permanente em até <strong>30 dias</strong>; os prazos de retenção do chat das salas e dos registros de segurança da comunidade estão descritos na Seção 6. Os pedidos de exclusão são processados no mesmo prazo.',
+        'privacy-s8-title': 'Privacidade de crianças',
+        'privacy-s8-content': 'O Pomi não foi concebido para crianças menores de 13 anos e não coleta, de forma consciente, dados pessoais de usuários com menos de 13 anos. Se tomarmos conhecimento de algum caso, a conta e os dados relacionados serão excluídos imediatamente.',
+        'privacy-s9-title': 'Seus direitos',
+        'privacy-s9-content': 'Você pode excluir sua conta e seus dados a qualquer momento nas configurações do app. A exclusão é concluída em até 30 dias. Para exercer seus direitos de acesso, correção ou eliminação dos seus dados pessoais, de oposição ao tratamento e demais direitos previstos na Lei Geral de Proteção de Dados (LGPD, Lei nº 13.709/2018, art. 18), ou para recorrer de uma decisão de banimento, entre em contato pelo endereço abaixo.',
+        'privacy-s10-title': 'Fale conosco',
+        'privacy-s10-content': 'Em caso de dúvidas: <a href="mailto:support@pomifocus.com">support@pomifocus.com</a>',
+        'copyright': '© 2026 Pomi — desenvolvido por Yakup Selim Uçar · Konya, Turquia',
+        'terms-link': 'Termos de Uso →',
       }
     };
 
+    /* Dil tespiti: ?lang= > kayıtlı tercih > tarayıcı dili (pt ise Portekizce) > tr. */
+    function detectLang() {
+      let fromUrl = '', stored = '';
+      try { fromUrl = (new URLSearchParams(location.search).get('lang') || '').slice(0, 2).toLowerCase(); } catch (e) {}
+      try { stored = localStorage.getItem('pomi-lang') || ''; } catch (e) {}
+      if (translations[fromUrl]) return fromUrl;
+      if (translations[stored]) return stored;
+      const prefs = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || ''];
+      return prefs.some(l => /^pt\b/i.test(l)) ? 'pt' : 'tr';
+    }
+
     function setLanguage(lang) {
-      localStorage.setItem('pomi-lang', lang);
-      document.documentElement.lang = lang;
+      if (!translations[lang]) lang = 'tr';
+      try { localStorage.setItem('pomi-lang', lang); } catch (e) {}
+      document.documentElement.lang = lang === 'pt' ? 'pt-BR' : lang;
 
       document.querySelectorAll('[data-i18n-key]').forEach(el => {
         const key = el.getAttribute('data-i18n-key');
         if (translations[lang][key]) {
           el.innerHTML = translations[lang][key];
         }
+      });
+
+      /* Dile göre değişen bağlantılar: yoksa özgün (tr) href kalır */
+      document.querySelectorAll('[data-href-en], [data-href-pt]').forEach(a => {
+        if (!a.dataset.hrefTr) a.dataset.hrefTr = a.getAttribute('href');
+        const alt = lang === 'en' ? a.dataset.hrefEn : lang === 'pt' ? a.dataset.hrefPt : '';
+        a.setAttribute('href', alt || a.dataset.hrefTr);
       });
 
       document.querySelectorAll('.lang-btn').forEach(btn => {
@@ -452,8 +542,7 @@
       });
     });
 
-    const savedLang = localStorage.getItem('pomi-lang') || 'tr';
-    setLanguage(savedLang);
+    setLanguage(detectLang());
   </script>
 </body>
 </html>
