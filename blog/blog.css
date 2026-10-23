@@ -277,15 +277,15 @@ footer.site a:hover { color: var(--ink); }
 .timer-modes button:hover { color: var(--ink); }
 .timer-modes button[aria-pressed="true"] { background: var(--paper); color: var(--mode); box-shadow: 0 1px 3px rgba(39, 34, 61, 0.12); }
 .timer-clock {
-  font-family: 'Pixelify Sans', monospace; font-weight: 700; line-height: 1;
-  font-size: clamp(4.5rem, 2.5rem + 10vw, 8.5rem); letter-spacing: 0.02em;
+  font-family: 'DM Sans', -apple-system, system-ui, sans-serif; font-weight: 700; line-height: 1;
+  font-size: clamp(4.5rem, 2.5rem + 10vw, 8.5rem); letter-spacing: -0.02em;
   color: var(--ink); margin: 1.2rem 0 0.4rem; font-variant-numeric: tabular-nums;
 }
 .timer-state { color: var(--mode); font-weight: 600; min-height: 1.65em; }
 .timer-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.6rem; margin-top: 1.2rem; }
 .timer-main { min-width: 9.5rem; justify-content: center; font-size: 1.05rem; background: var(--mode); }
 .timer-garden { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 0.6rem 1rem; margin-top: 1.4rem; font-size: 0.9rem; color: var(--ink-soft); }
-.timer-garden-label #timerCount { font-family: 'Pixelify Sans', monospace; font-weight: 700; color: var(--ink); font-size: 1.05rem; }
+.timer-garden-label #timerCount { font-weight: 700; font-variant-numeric: tabular-nums; color: var(--ink); font-size: 1.05rem; }
 .timer-plants { display: flex; flex-wrap: wrap; gap: 4px; align-items: center; min-height: 22px; }
 .timer-plants svg { width: 22px; height: 22px; }
 .timer-plants span { font-weight: 700; color: var(--ink); margin-left: 0.2rem; }
