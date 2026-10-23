@@ -87,6 +87,8 @@ More answers: [Support & FAQ](https://pomifocus.com/support.html)
 ### Links
 
 - [Website](https://pomifocus.com/)
+- [Free online Pomodoro timer](https://pomifocus.com/pomodoro-timer/) · [Online Pomodoro sayacı](https://pomifocus.com/pomodoro-sayaci/)
+- [Study together online](https://pomifocus.com/study-together/) · [Online kütüphane](https://pomifocus.com/online-kutuphane/)
 - [Download on the App Store](https://apps.apple.com/tr/app/id6784132034) (iPhone, iPad)
 - [Get it on Google Play](https://play.google.com/store/apps/details?id=com.yakupselimucar.pomi) (Android)
 - [Support & FAQ](https://pomifocus.com/support.html)

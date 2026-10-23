@@ -32,12 +32,16 @@ Elle düzenlenmiş HTML'ler betik çalışınca ezilir; içerik değişikliği h
 - Her yazıda "Kısa cevap" kutusu + SSS zorunlu (yapay zeka özetleri için).
 - Araştırma atıfı yapılıyorsa `sources` alanına yazar/yıl/başlık ekle.
 
-## Portekizce ana sayfa (`build_pt.py`)
+## İngilizce ve Portekizce ana sayfa (`build_locales.py`)
 
-`pt/index.html`, `index.html` içindeki `pt: { ... }` sözlüğünden üretilen statik pt-BR kopyadır (hreflang ile ana sayfaya bağlı; sitemap'te `pt/`).
+`en/index.html` ve `pt/index.html`, `index.html` içindeki `en: { ... }` ve `pt: { ... }` sözlüklerinden üretilen statik kopyalardır (hreflang ile ana sayfaya bağlı; sitemap'te `en/`, `pt/`). Google JS ile değişen dili dizine almadığı için "pomodoro timer" gibi İngilizce aramalar ancak `/en/` ile eşleşir.
 
 ```
-python3 .github/blog-tools/build_pt.py
+python3 .github/blog-tools/build_locales.py
 ```
 
-`index.html`'de metin ya da yapı değişince bu betiği de çalıştır; elle düzenlenen `pt/index.html` ezilir.
+`index.html`'de metin ya da yapı değişince bu betiği de çalıştır; elle düzenlenen `en/` ve `pt/` sayfaları ezilir. Yeni bir `data-i18n` anahtarı eklersen üç sözlüğe de ekle (eksikse betik hata verir). Dile göre değişen bağlantılar `data-i18n-href` ile işaretlenir.
+
+## Açılış sayfaları (`landing_content.py`)
+
+`/pomodoro-sayaci/`, `/pomodoro-timer/`, `/online-kutuphane/`, `/study-together/` sayfaları `build_blog.py` tarafından `landing_content.py`'deki içerikten üretilir; sayacın mantığı `assets/timer.js`, stili `blog/blog.css` sonundadır. Hedef aramalar: pomodoro sayacı / pomodoro timer, online kütüphane / birlikte ders çalış / study together online. Odalar davet koduyla açılır, yabancılarla eşleştirme yoktur; oda sohbeti vardır. Bu gerçeklerin dışına çıkma.

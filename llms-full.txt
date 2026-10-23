@@ -535,7 +535,7 @@ Section: Temel bilgi
 
 Pomodoro tekniği nedir, nasıl uygulanır? 25/5 döngüsü, uzun mola kuralı, Francesco Cirillo'nun yöntemi, sık hatalar ve öğrenciler için uyarlama önerileri.
 
-**Kısa cevap:** Kısa cevap: Pomodoro tekniği, işi 25 dakikalık kesintisiz odak bloklarına bölüp her blok sonunda 5 dakika mola vermeye dayanır. Dört bloktan sonra 15 ile 30 dakika arası uzun mola verilir. 1980'lerin sonunda Francesco Cirillo tarafından geliştirildi; adı, kullandığı domates şeklindeki mutfak zamanlayıcısından gelir.
+**Kısa cevap:** Kısa cevap: Pomodoro tekniği, işi 25 dakikalık kesintisiz odak bloklarına bölüp her blok sonunda 5 dakika mola vermeye dayanır. Dört bloktan sonra 15 ile 30 dakika arası uzun mola verilir. 1980'lerin sonunda Francesco Cirillo tarafından geliştirildi; adı, kullandığı domates şeklindeki mutfak zamanlayıcısından gelir. Hemen denemek istersen tarayıcıda çalışan ücretsiz online Pomodoro sayacını kullanabilirsin.
 
 ## Pomodoro tekniği nedir?
 
@@ -628,7 +628,7 @@ Section: Rehber
 
 Study with me nedir, neden işe yarar? Sosyal kolaylaştırma ve body doubling etkisi, YouTube ve Discord ile uygulama karşılaştırması, Pomi odalarıyla arkadaşlarla uzaktan birlikte ders çalışma rehberi.
 
-**Kısa cevap:** Kısa cevap: Başkalarının çalıştığını görmek, beynin "şu an çalışma zamanı" sinyalini güçlendirir; buna body doubling ve sosyal kolaylaştırma denir. Bunu evde kurmanın en kolay yolu, arkadaşlarınla aynı anda bir odak odasına girip herkesin kendi sayacını çalıştırmasıdır. Kamera ya da mikrofon gerekmez.
+**Kısa cevap:** Kısa cevap: Başkalarının çalıştığını görmek, beynin "şu an çalışma zamanı" sinyalini güçlendirir; buna body doubling ve sosyal kolaylaştırma denir. Bunu evde kurmanın en kolay yolu, arkadaşlarınla aynı anda bir odak odasına girip herkesin kendi sayacını çalıştırmasıdır. Kamera ya da mikrofon gerekmez. Pomi ile arkadaşlarınla nasıl online kütüphane kuracağını ayrı bir sayfada adım adım anlattık.
 
 ## Study with me nedir?
 
@@ -2044,7 +2044,7 @@ Section: Basics
 
 What is the Pomodoro Technique and how does it work? The 25/5 cycle, the long-break rule, Francesco Cirillo's original method, common mistakes and how students and remote workers can adapt the timings.
 
-**Short answer:** Short answer: The Pomodoro Technique splits work into 25-minute blocks of uninterrupted focus followed by 5-minute breaks. After four blocks you take a longer break of 15 to 30 minutes. Francesco Cirillo developed it in the late 1980s and named it after the tomato-shaped kitchen timer he used; pomodoro is Italian for tomato.
+**Short answer:** Short answer: The Pomodoro Technique splits work into 25-minute blocks of uninterrupted focus followed by 5-minute breaks. After four blocks you take a longer break of 15 to 30 minutes. Francesco Cirillo developed it in the late 1980s and named it after the tomato-shaped kitchen timer he used; pomodoro is Italian for tomato. To try it right now, use our free online Pomodoro timer in your browser.
 
 ## What is the Pomodoro Technique?
 
@@ -2142,7 +2142,7 @@ Section: Guide
 
 What is study with me and why does it work? Body doubling and social facilitation explained, YouTube vs Discord vs apps compared, and how to study together remotely with Pomi rooms where everyone runs their own timer.
 
-**Short answer:** Short answer: Seeing other people work strengthens your brain's "this is work time" signal; psychologists call it body doubling and social facilitation. The easiest way to get it at home is to join a focus room with friends at the same time, each running their own timer. No camera or microphone needed.
+**Short answer:** Short answer: Seeing other people work strengthens your brain's "this is work time" signal; psychologists call it body doubling and social facilitation. The easiest way to get it at home is to join a focus room with friends at the same time, each running their own timer. No camera or microphone needed. How to set up a virtual library with friends in Pomi is explained step by step on a separate page.
 
 ## What is "study with me"?
 

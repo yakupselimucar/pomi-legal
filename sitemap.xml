@@ -2,7 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://pomifocus.com/</loc>
-    <lastmod>2026-10-22</lastmod>
+    <lastmod>2026-10-23</lastmod>
+  </url>
+  <url>
+    <loc>https://pomifocus.com/en/</loc>
+    <lastmod>2026-10-23</lastmod>
+  </url>
+  <url>
+    <loc>https://pomifocus.com/pt/</loc>
+    <lastmod>2026-10-23</lastmod>
   </url>
   <url>
     <loc>https://pomifocus.com/about.html</loc>
@@ -21,8 +29,20 @@
     <lastmod>2026-10-22</lastmod>
   </url>
   <url>
-    <loc>https://pomifocus.com/pt/</loc>
-    <lastmod>2026-10-22</lastmod>
+    <loc>https://pomifocus.com/pomodoro-sayaci/</loc>
+    <lastmod>2026-10-23</lastmod>
+  </url>
+  <url>
+    <loc>https://pomifocus.com/pomodoro-timer/</loc>
+    <lastmod>2026-10-23</lastmod>
+  </url>
+  <url>
+    <loc>https://pomifocus.com/online-kutuphane/</loc>
+    <lastmod>2026-10-23</lastmod>
+  </url>
+  <url>
+    <loc>https://pomifocus.com/study-together/</loc>
+    <lastmod>2026-10-23</lastmod>
   </url>
   <url>
     <loc>https://pomifocus.com/blog/</loc>

@@ -7,6 +7,8 @@ Pomi, odaklanmayı oyuna dönüştüren ücretsiz, retro piksel temalı bir Pomo
 ## Key facts
 
 - Name: Pomi (App Store / Google Play: "Pomi: Study & Focus Together", "Pomi: Birlikte Çalış & Odaklan")
+- Also known as: PomiFocus (official website: pomifocus.com)
+- Not to be confused with: Pomofocus (pomofocus.io), an unrelated web Pomodoro timer by a different developer; other apps that use the name "Pomi"; or the Pomì food brand. Pomi's iOS App Store ID is 6784132034 and its Android package is com.yakupselimucar.pomi.
 - Category: Productivity (Pomodoro timer, focus timer, study app)
 - Platforms: iOS 15.0 or later (iPhone, iPad), Android
 - Price: Free to download, optional "Pomi Pro" subscription, no ads
@@ -34,7 +36,10 @@ Students, people preparing for exams, and anyone who wants a calm, motivating wa
 
 ## Links
 
-- [Pomi website](https://pomifocus.com/): Product overview and features
+- [Pomi website](https://pomifocus.com/): Product overview and features (Turkish)
+- [Pomi website in English](https://pomifocus.com/en/): Product overview and features (English)
+- [Free online Pomodoro timer](https://pomifocus.com/pomodoro-timer/): Browser-based Pomodoro timer by Pomi; 25/5/15 cycle, custom lengths, chime, notifications, brown/pink noise, no sign-up, no ads (Turkish: https://pomifocus.com/pomodoro-sayaci/)
+- [Study together online / virtual library](https://pomifocus.com/study-together/): How to study with friends in Pomi rooms, each on their own timer; comparison with YouTube study with me, Discord and Zoom (Turkish "online kütüphane": https://pomifocus.com/online-kutuphane/)
 - [Download on the App Store](https://apps.apple.com/tr/app/id6784132034): iPhone and iPad
 - [Get it on Google Play](https://play.google.com/store/apps/details?id=com.yakupselimucar.pomi): Android
 - [About the maker](https://pomifocus.com/about.html): Who builds Pomi and why

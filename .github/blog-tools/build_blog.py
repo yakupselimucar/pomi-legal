@@ -9,6 +9,8 @@ posts*.py modüllerindeki içerikten şunları üretir:
   sitemap.xml        kök sitemap (statik sayfalar + tüm yazılar)
   llms-full.txt      tüm yazıların düz metni (yapay zeka botları için)
   llms.txt           yalnızca <!-- blog:start --> ... <!-- blog:end --> arası yenilenir
+  pomodoro-sayaci/, pomodoro-timer/, online-kutuphane/, study-together/
+                     anahtar kelime açılış sayfaları (içerik: landing_content.py)
 
 Neden tek betik: yeni yazı eklenince sitemap/llms/feed'in elle güncellenmesi
 unutuluyordu; her şey tek kaynaktan türeyince tutarsızlık kalmıyor.
@@ -17,7 +19,7 @@ import json, html, os, re, sys
 from html.parser import HTMLParser
 sys.path.insert(0, os.path.dirname(__file__))
 from brand_mark import BRAND_SVG
-import posts, posts_technique, posts_students, posts_product, posts_en
+import posts, posts_technique, posts_students, posts_product, posts_en, landing_content
 
 POSTS = posts.POSTS + posts_technique.POSTS + posts_students.POSTS + posts_product.POSTS + posts_en.POSTS
 
@@ -46,7 +48,9 @@ T = {
              blog_desc="Pomodoro tekniği, odaklanma araçları ve öğrenciler için verimlilik rehberleri. Pomi ekibinden kısa, kaynaklı yazılar.",
              blog_h1="Odak üzerine <span class=\"accent\">kısa yazılar</span>",
              blog_lead="Pomodoro tekniği, odaklanma uygulamaları ve birlikte ders çalışma üzerine rehberler. Süslü sözler yok; denenmiş yöntemler ve dürüst karşılaştırmalar.",
-             count="yazı", rss="RSS", all_posts="Tüm yazılar", maker="Yapımcı"),
+             count="yazı", rss="RSS", all_posts="Tüm yazılar", maker="Yapımcı",
+             nav_timer="Pomodoro sayacı", timer_href="/pomodoro-sayaci/",
+             library="Online kütüphane", library_href="/online-kutuphane/"),
   "en": dict(skip="Skip to content", home="Home", blog="Blog", support="Support", get="Get the app",
              nav_how="How it works", nav_features="Features", nav_conquest="Conquest", nav_collection="Collection",
              nav_aria="Sections", by="By", updated="Updated", read="min read",
@@ -59,7 +63,9 @@ T = {
              blog_desc="Guides on the Pomodoro technique, focus apps and productivity for students. Short, sourced articles from the Pomi team.",
              blog_h1="Short reads on <span class=\"accent\">focus</span>",
              blog_lead="Guides on the Pomodoro technique, focus apps and studying together. No fluff; tested methods and honest comparisons.",
-             count="articles", rss="RSS", all_posts="All articles", maker="Maker"),
+             count="articles", rss="RSS", all_posts="All articles", maker="Maker",
+             nav_timer="Pomodoro timer", timer_href="/pomodoro-timer/",
+             library="Study together", library_href="/study-together/"),
 }
 
 # Dizin sayfasında kategori sırası (burada olmayanlar sona eklenir).
@@ -68,15 +74,17 @@ SECTION_ORDER = {
   "en": ["Basics", "Guide", "Comparison", "Students", "Pomi"],
 }
 
-def nav(lang, current, alt_href=None):
+def nav(lang, current, alt_href=None, base="./"):
     """Ana sayfayla (index.html) birebir aynı üst bar.
 
     Neden: blogdan ana sayfaya geçerken bar'ın değişmesi ayrı bir siteye
     gidilmiş hissi veriyordu. Bölüm linkleri ../#… ile ana sayfaya döner.
     alt_href: dil düğmesinin gideceği karşı dildeki sayfa.
+    base: blog dizinine göreli yol (açılış sayfalarında "../blog/").
     """
     t = T[lang]
     other = "en" if lang == "tr" else "tr"
+    home = "../en/" if lang == "en" else "../"   # en/ statik İngilizce ana sayfa
     if alt_href is None:
         alt_href = "en.html" if lang == "tr" else "./"
     pill = {lang: f'<a class="lang-btn active" href="#" aria-current="true">{lang.upper()}</a>',
@@ -85,13 +93,13 @@ def nav(lang, current, alt_href=None):
     return f"""  <a class="skip" href="#main">{t['skip']}</a>
   <header class="nav">
     <div class="wrap">
-      <a class="brand" href="../" aria-label="Pomi">{BRAND_SVG}<span>Pomi</span></a>
+      <a class="brand" href="{home}" aria-label="Pomi">{BRAND_SVG}<span>Pomi</span></a>
       <nav class="nav-links" aria-label="{t['nav_aria']}">
-        <a href="../#how">{t['nav_how']}</a>
-        <a href="../#features">{t['nav_features']}</a>
-        <a href="../#conquest">{t['nav_conquest']}</a>
-        <a href="../#collection">{t['nav_collection']}</a>
-        <a href="./{'' if lang=='tr' else 'en.html'}"{' aria-current="page"' if current=='blog' else ''}>{t['blog']}</a>
+        <a href="{home}#how">{t['nav_how']}</a>
+        <a href="{home}#features">{t['nav_features']}</a>
+        <a href="{home}#conquest">{t['nav_conquest']}</a>
+        <a href="{t['timer_href']}"{' aria-current="page"' if current=='timer' else ''}>{t['nav_timer']}</a>
+        <a href="{base}{'' if lang=='tr' else 'en.html'}"{' aria-current="page"' if current=='blog' else ''}>{t['blog']}</a>
         <a href="../about.html">{t['maker']}</a>
         <a href="../support.html">{t['support']}</a>
       </nav>
@@ -99,12 +107,12 @@ def nav(lang, current, alt_href=None):
         {pill['tr']}
         {pill['en']}
       </div>
-      <a class="btn btn-primary btn-sm" href="../#get">{t['get']}</a>
+      <a class="btn btn-primary btn-sm" href="{home}#get">{t['get']}</a>
     </div>
   </header>
 """
 
-def footer(lang):
+def footer(lang, base=""):
     t = T[lang]
     return f"""  <footer class="site">
     <div class="wrap">
@@ -113,8 +121,10 @@ def footer(lang):
         <a href="../privacy.html">{t['privacy']}</a>
         <a href="../terms.html">{t['terms']}</a>
         <a href="../support.html">{t['support']}</a>
+        <a href="{t['timer_href']}">{t['nav_timer']}</a>
+        <a href="{t['library_href']}">{t['library']}</a>
         <a href="../about.html">{t['maker']}</a>
-        <a href="feed.xml">{t['rss']}</a>
+        <a href="{base}feed.xml">{t['rss']}</a>
         <a href="mailto:support@pomifocus.com">support@pomifocus.com</a>
         <a href="https://www.linkedin.com/company/pomifocus" rel="noopener">LinkedIn</a>
         <a href="https://apps.apple.com/tr/app/id6784132034" rel="noopener">App Store</a>
@@ -123,7 +133,7 @@ def footer(lang):
   </footer>
 """
 
-def head_common(title, desc, url, lang, extra=""):
+def head_common(title, desc, url, lang, extra="", base=""):
     return f"""<!DOCTYPE html>
 <html lang="{lang}">
 <head>
@@ -146,7 +156,7 @@ def head_common(title, desc, url, lang, extra=""):
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="blog.css" />
+  <link rel="stylesheet" href="{base}blog.css" />
 """
 
 def ld(obj):
@@ -171,9 +181,9 @@ def pick_related(p, all_posts):
         if q not in chosen: chosen.append(q)
     return chosen[:RELATED_MAX]
 
-def card(q, t, with_meta=False):
+def card(q, t, with_meta=False, base=""):
     meta = f'<div class="meta"><time datetime="{q["date"]}">{q["date_human"]}</time><span>{q["read"]} {t["read"]}</span></div>' if with_meta else ""
-    return f'<li><a class="post-card" href="{q["slug"]}.html"><span class="kicker">{q["section"]}</span><h3>{html.escape(q["title"])}</h3><p>{html.escape(q["desc"])}</p>{meta}</a></li>'
+    return f'<li><a class="post-card" href="{base}{q["slug"]}.html"><span class="kicker">{q["section"]}</span><h3>{html.escape(q["title"])}</h3><p>{html.escape(q["desc"])}</p>{meta}</a></li>'
 
 def post_page(p, all_posts):
     lang = p["lang"]; t = T[lang]
@@ -347,7 +357,8 @@ def feed(all_posts):
 </rss>
 """
 
-STATIC_PAGES = [("", "2026-10-22"), ("about.html", "2026-10-22"), ("support.html", "2026-10-22"), ("privacy.html", "2026-10-22"), ("terms.html", "2026-10-22"), ("pt/", "2026-10-22")]
+STATIC_PAGES = [("", "2026-10-23"), ("en/", "2026-10-23"), ("pt/", "2026-10-23"), ("about.html", "2026-10-22"), ("support.html", "2026-10-22"), ("privacy.html", "2026-10-22"), ("terms.html", "2026-10-22")]
+STATIC_PAGES += [(q["slug"] + "/", q["modified"]) for q in landing_content.PAGES]
 
 def sitemap(all_posts):
     latest = max(q.get("modified", q["date"]) for q in all_posts)
@@ -355,6 +366,166 @@ def sitemap(all_posts):
     urls += [(BLOG + q["slug"] + ".html", q.get("modified", q["date"])) for q in all_posts]
     body = "".join(f"  <url>\n    <loc>{u}</loc>\n    <lastmod>{d}</lastmod>\n  </url>\n" for u, d in urls)
     return '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + body + "</urlset>\n"
+
+# ── Açılış sayfaları (web sayacı, online kütüphane) ─────────────────────
+# Neden blog betiğinde: üst bar, alt bilgi, şema ve sitemap aynı kaynaktan
+# gelsin; sayfa eklemek landing_content.py'ye bir blok yazmak kadar kolay olsun.
+
+def timer_widget(lang):
+    """Tarayıcıda çalışan Pomodoro sayacı. Mantık /assets/timer.js'te; metinler buradan."""
+    u = landing_content.TIMER_UI[lang]
+    cfg = json.dumps({k: u[k] for k in ("focus", "short", "long", "start", "pause", "resume", "ready",
+                                         "focusRun", "shortRun", "longRun", "paused", "doneFocus", "doneBreak",
+                                         "notifyTitle", "notifyFocus", "notifyBreak", "today", "notifyDenied")},
+                     ensure_ascii=False)
+    return f"""    <section class="wrap timer-wrap" aria-labelledby="timer-h">
+      <div class="timer" id="timer" data-mode="focus">
+        <h2 id="timer-h" class="sr-only">{u['heading']}</h2>
+        <div class="timer-modes" role="group" aria-label="{u['modes']}">
+          <button type="button" data-mode="focus" aria-pressed="true">{u['focus']}</button>
+          <button type="button" data-mode="short" aria-pressed="false">{u['short']}</button>
+          <button type="button" data-mode="long" aria-pressed="false">{u['long']}</button>
+        </div>
+        <p class="timer-clock" id="timerClock" role="timer" aria-atomic="true">25:00</p>
+        <p class="timer-state" id="timerState" aria-live="polite">{u['ready']}</p>
+        <div class="timer-actions">
+          <button type="button" class="btn btn-primary timer-main" id="timerToggle">{u['start']}</button>
+          <button type="button" class="btn btn-ghost" id="timerReset">{u['reset']}</button>
+          <button type="button" class="btn btn-ghost" id="timerSkip">{u['skip']}</button>
+        </div>
+        <div class="timer-garden">
+          <span class="timer-garden-label"><span id="timerCount">0</span> {u['today']}</span>
+          <div class="timer-plants" id="timerPlants" aria-hidden="true"></div>
+        </div>
+        <details class="timer-settings">
+          <summary>{u['settings']}</summary>
+          <div class="timer-grid">
+            <label>{u['focusMin']}<input type="number" id="setFocus" min="1" max="180" value="25" inputmode="numeric" /></label>
+            <label>{u['shortMin']}<input type="number" id="setShort" min="1" max="60" value="5" inputmode="numeric" /></label>
+            <label>{u['longMin']}<input type="number" id="setLong" min="1" max="90" value="15" inputmode="numeric" /></label>
+            <label>{u['longEvery']}<input type="number" id="setEvery" min="2" max="12" value="4" inputmode="numeric" /></label>
+            <label>{u['noise']}
+              <select id="setNoise">
+                <option value="off">{u['noiseOff']}</option>
+                <option value="brown">{u['noiseBrown']}</option>
+                <option value="pink">{u['noisePink']}</option>
+              </select>
+            </label>
+          </div>
+          <div class="timer-checks">
+            <label><input type="checkbox" id="setAuto" /> {u['auto']}</label>
+            <label><input type="checkbox" id="setChime" checked /> {u['chime']}</label>
+            <label><input type="checkbox" id="setNotify" /> {u['notify']}</label>
+          </div>
+        </details>
+        <p class="timer-hint">{u['hint']}</p>
+      </div>
+      <script type="application/json" id="timerText">{cfg}</script>
+    </section>
+    <script src="/assets/timer.js" defer></script>
+"""
+
+def landing_page(p):
+    lang = p["lang"]; t = T[lang]
+    url = SITE + p["slug"] + "/"
+    alt = next(q for q in landing_content.PAGES if q["slug"] == p["pair"])
+    alt_url = SITE + alt["slug"] + "/"
+    en_url = url if lang == "en" else alt_url
+    home = SITE + ("en/" if lang == "en" else "")
+    extra = (f'  <meta property="og:type" content="website" />\n'
+             f'  <link rel="alternate" hreflang="{lang}" href="{url}" />\n'
+             f'  <link rel="alternate" hreflang="{alt["lang"]}" href="{alt_url}" />\n'
+             f'  <link rel="alternate" hreflang="x-default" href="{en_url}" />\n')
+    graph = [
+        {"@type": "WebPage", "@id": url + "#webpage", "url": url, "name": p["title"], "description": p["desc"],
+         "inLanguage": lang, "dateModified": p["modified"], "keywords": p["keywords"],
+         "isPartOf": {"@id": SITE + "#website"}, "about": {"@id": SITE + "#app"},
+         "publisher": {"@id": SITE + "#organization"},
+         "breadcrumb": {"@id": url + "#breadcrumb"}},
+        {"@type": "BreadcrumbList", "@id": url + "#breadcrumb", "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Pomi", "item": home},
+            {"@type": "ListItem", "position": 2, "name": p["short"], "item": url}]},
+        {"@type": "FAQPage", "@id": url + "#faq",
+         "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in p["faq"]]},
+    ]
+    if p.get("webapp"):
+        w = p["webapp"]
+        graph.append({"@type": "WebApplication", "@id": url + "#webapp", "name": w["name"], "url": url,
+                      "description": w["description"], "applicationCategory": "ProductivityApplication",
+                      "operatingSystem": "Web", "browserRequirements": "Requires JavaScript",
+                      "inLanguage": lang, "isAccessibleForFree": True, "featureList": w["features"],
+                      "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"},
+                      "publisher": {"@id": SITE + "#organization"}, "author": {"@id": SITE + "#founder"}})
+    if p.get("howto"):
+        h = p["howto"]
+        graph.append({"@type": "HowTo", "@id": url + "#howto", "name": h["name"],
+                      "step": [{"@type": "HowToStep", "position": i+1, "name": n, "text": txt} for i, (n, txt) in enumerate(h["steps"])]})
+    extra += ld({"@context": "https://schema.org", "@graph": graph})
+
+    faq_html = f'<h2 id="faq">{t["faq"]}</h2>\n<div class="faq">\n' + "\n".join(
+        f'  <details><summary>{html.escape(q)}</summary><p>{html.escape(a)}</p></details>' for q, a in p["faq"]) + "\n</div>\n"
+    by_slug = {q["slug"]: q for q in POSTS}
+    rel_html = "".join("    " + card(by_slug[s], t, base="../blog/") + "\n" for s in p["related"])
+    blog_index = "../blog/" + ("" if lang == "tr" else "en.html")
+    lang_link = (f'<a href="../{alt["slug"]}/" hreflang="{alt["lang"]}" '
+                 f'onclick="try{{localStorage.setItem(\'pomi-lang\',\'{alt["lang"]}\')}}catch(e){{}}">{t["other_lang"]}</a>')
+    body = f"""<body>
+{nav(lang, p.get("nav", ""), f"../{alt['slug']}/", base="../blog/")}
+  <main id="main">
+    <header class="article-head landing-head">
+      <div class="wrap">
+        <ol class="breadcrumb" aria-label="Breadcrumb">
+          <li><a href="{'../en/' if lang == 'en' else '../'}">Pomi</a></li>
+          <li aria-current="page">{html.escape(p['short'])}</li>
+        </ol>
+        <p class="kicker">{p['kicker']}</p>
+        <h1>{p['h1']}</h1>
+        <p class="lead">{p['lead']}</p>
+        <div class="meta"><span>{t['updated']}: <time datetime="{p['modified']}">{p['modified_human']}</time></span>{lang_link}</div>
+      </div>
+    </header>
+
+{timer_widget(lang)}
+    <article class="article-body">
+      <div class="tldr">
+        <p class="kicker">{t['tldr']}</p>
+        {p['tldr']}
+      </div>
+
+{p['body']}
+
+{faq_html}
+      <section class="cta">
+        <h2>{p['cta_h']}</h2>
+        <p>{p['cta_p']}</p>
+        <div class="stores">
+          <a class="store" href="{IOS}" rel="noopener">{t['ios']}</a>
+          <a class="store" href="{ANDROID}" rel="noopener">{t['android']}</a>
+        </div>
+      </section>
+
+      <section class="related">
+        <h2>{t['related']}</h2>
+        <ul class="post-list">
+{rel_html}        </ul>
+        <p class="all-link"><a href="{blog_index}">{t['all_posts']} →</a></p>
+      </section>
+    </article>
+  </main>
+{footer(lang, base="../blog/")}</body>
+</html>
+"""
+    return head_common(p["title"], p["desc"], url, lang, extra, base="../blog/") + "</head>\n" + body
+
+def validate_landing():
+    slugs = {q["slug"] for q in POSTS}
+    pages = {q["slug"] for q in landing_content.PAGES}
+    for q in landing_content.PAGES:
+        assert q["pair"] in pages, f"{q['slug']} çifti yok: {q['pair']}"
+        for s in q["related"]: assert s in slugs, f"{q['slug']} related kırık: {s}"
+        for m in re.findall(r'href="\.\./blog/([a-z0-9-]+)\.html"', q["body"]):
+            assert m in slugs, f"{q['slug']} içinde kırık blog bağlantısı: {m}.html"
+        assert q["faq"] and q["tldr"].strip(), f"{q['slug']} tldr/faq eksik"
 
 class _Text(HTMLParser):
     """HTML'i yapay zeka botlarının okuyacağı sade metne çevirir (llms-full.txt)."""
@@ -431,6 +602,7 @@ def validate(all_posts):
 
 if __name__ == "__main__":
     validate(POSTS)
+    validate_landing()
     os.makedirs(OUT, exist_ok=True)
     for p in POSTS:
         with open(os.path.join(OUT, p["slug"] + ".html"), "w", encoding="utf-8") as f:
@@ -446,4 +618,8 @@ if __name__ == "__main__":
     with open(os.path.join(ROOT, "llms-full.txt"), "w", encoding="utf-8") as f:
         f.write(llms_full(POSTS))
     update_llms_txt(POSTS)
+    for p in landing_content.PAGES:
+        os.makedirs(os.path.join(ROOT, p["slug"]), exist_ok=True)
+        with open(os.path.join(ROOT, p["slug"], "index.html"), "w", encoding="utf-8") as f:
+            f.write(landing_page(p))
     print("built", len(POSTS), "posts;", sum(q["lang"]=="tr" for q in POSTS), "tr /", sum(q["lang"]=="en" for q in POSTS), "en")
